@@ -1,0 +1,28 @@
+name: Update JSONs
+on:
+  schedule:
+    - cron:   '0 * * * *'
+
+jobs:
+  scrape-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+        
+      - name: Set up Dart
+        uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+
+      - name: Clone QuACS data
+        uses: actions/checkout@v3
+        with:
+          repository: quacs/quacs-data
+          path: ./quacs-data
+
+      - name: Run scraper
+        run: |
+         dart courseOfferingsScraper.dart ./quacs-data/semester_data ./terms_offered.json ./cross_listings.json ./prerequisites.json ./corequisites.json ./attributes.json
+      
+      - name: Test
+        run: |
+         cat ./terms_offered.json
