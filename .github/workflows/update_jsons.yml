@@ -22,8 +22,24 @@ jobs:
 
       - name: Run scraper
         run: |
-         dart courseOfferingsScraper.dart ./quacs-data/semester_data ./terms_offered.json ./cross_listings.json ./prerequisites.json ./corequisites.json ./attributes.json
+         mkdir ./data
+         dart courseOfferingsScraper.dart          \
+              ./quacs-data/semester_data           \
+              ./quatalog-data/terms_offered.json   \
+              ./quatalog-data/cross_listings.json  \
+              ./quatalog-data/prerequisites.json   \
+              ./quatalog-data/corequisites.json    \
+              ./quatalog-data/attributes.json
       
-      - name: Test
-        run: |
-         cat ./terms_offered.json
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          path: ./quatalog-data
+          
+      - name: Update JSONs
+        uses: test-room-7/action-update-file@v1
+        with:
+            file-path: ./quatalog-data/*
+            commit-msg: Update data
+            github-token: ${{ secrets.GITHUB_TOKEN }}
+            
