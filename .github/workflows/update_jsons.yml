@@ -23,7 +23,6 @@ jobs:
       - name: Run scraper
         run: |
          mkdir -p ./quatalog-data
-         rm ./quatalog-data/*
          dart courseOfferingsScraper.dart          \
               ./quacs-data/semester_data           \
               ./quatalog-data/terms_offered.json   \
