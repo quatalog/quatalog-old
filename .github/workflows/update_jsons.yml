@@ -22,7 +22,7 @@ jobs:
 
       - name: Run scraper
         run: |
-         mkdir ./data
+         mkdir ./quatalog-data
          dart courseOfferingsScraper.dart          \
               ./quacs-data/semester_data           \
               ./quatalog-data/terms_offered.json   \
