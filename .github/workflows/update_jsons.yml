@@ -31,7 +31,7 @@ jobs:
               ./quatalog-data/corequisites.json    \
               ./quatalog-data/attributes.json
         
-      - run: echo '$DATE="$(date)"' >> $GITHUB_ENV
+      - run: echo 'DATE="$(date)"' >> $GITHUB_ENV
 
       - name: Update JSONs
         uses: test-room-7/action-update-file@v1
