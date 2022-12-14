@@ -31,12 +31,14 @@ jobs:
               ./quatalog-data/corequisites.json    \
               ./quatalog-data/attributes.json
         
-      - run: echo 'DATE="$(date)"' >> $GITHUB_ENV
+      - name: Get date
+        id: date
+        run: echo "::set-output name=date::$(date)"
 
       - name: Update JSONs
         uses: test-room-7/action-update-file@v1
         with:
             file-path: quatalog-data/*
-            commit-msg: ${{ DATE }}
+            commit-msg: ${{ steps.date.outputs.date }}
             github-token: ${{ secrets.GITHUB_TOKEN }}
             
