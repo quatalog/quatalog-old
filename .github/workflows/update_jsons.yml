@@ -35,7 +35,7 @@ jobs:
         run: |
           git config --global user.name "Quatalog Updater"
           git config --global user.email "github@quatalog.invalid"
-          git add -A
+          git add quatalog-data
           git commit -m "$(date)"
           git push origin
           
