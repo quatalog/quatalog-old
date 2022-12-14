@@ -25,12 +25,12 @@ jobs:
          mkdir -p ./quatalog-data
          dart courseOfferingsScraper.dart          \
               ./quacs-data/semester_data           \
-              ./site/quatalog-data/terms_offered.json   \
-              ./site/quatalog-data/cross_listings.json  \
-              ./site/quatalog-data/prerequisites.json   \
-              ./site/quatalog-data/corequisites.json    \
-              ./site/quatalog-data/attributes.json 
-         cp "./quacs-data/semester_data/$(grep -A1 ./quatalog-data/terms_offered.json -e '  "current_term": {' | tail -1 | cut -f2 -d '"')/catalog.json" ./quatalog-data/catalog.json
+              ./docs/quatalog-data/terms_offered.json   \
+              ./docs/quatalog-data/cross_listings.json  \
+              ./docs/quatalog-data/prerequidocss.json   \
+              ./docs/quatalog-data/corequidocss.json    \
+              ./docs/quatalog-data/attributes.json 
+         cp "./quacs-data/semester_data/$(grep -A1 ./docs/quatalog-data/terms_offered.json -e '  "current_term": {' | tail -1 | cut -f2 -d '"')/catalog.json" ./quatalog-data/catalog.json
         
       - name: Update JSONs
         run: |
