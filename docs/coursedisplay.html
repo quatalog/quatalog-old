@@ -2,6 +2,10 @@
 <html>
 	<head>
 		<title id="title"></title>
+		<script src="./coursedisplay.js"></script>
+		<script src="common.js"></script>
+        <link rel="stylesheet" href="./common.css" />
+        <link rel="stylesheet" href="./coursedisplay.css" />
 		<style>
 			ul, ol,
 			h1, h2, h3, h4, h5, h6 {
@@ -35,7 +39,6 @@
 				display:none;
 			}
 		</style>
-		<script src="./coursedisplay.js"></script>
 		<template id="year-row">
 			<tr>
 				<th class="year"></th>
@@ -48,42 +51,52 @@
 		</template>
 	</head>
 	<body>
-		<h1><span id="ccode"></span>: <span id="cname"></span></h1>
-		<p id="cdesc"></p>
-		<div>
-			<p><h3>Credit(s):</h3> <span id="ccredits"></span></p>
-			<p><h3>Prerequisite(s):</h3> <span id="cprereqs"></span></p>
-			<h3 id="hasattr">Attribute(s):</h3>
-			<ul id="cattrs"></ul>
-			<p />
-			<h3 id="hascoreqs">Corequisite(s):</h3>
-			<ul id="ccoreqs"></ul>
-			<p />
-			<h3 id="xlisted">Cross-listed with:</h3>
-			<ul id="cxlists"></ul>
-			<p />
-			<p>
-			<form method="get" action="">
-			<label for="course"><h3>Jump to course:</h3></label>
-			<input name="course" type="text" />
-			</form>
-			</p>
-			<h3>Terms offered:</h3>
+        <div id="qlog-header">
+            <a id="qlog-wordmark" href="./">
+                Quatalog
+			</a>
+            <div id="header-sb-spacer">
+                <div id="header-sb-container">
+                    <input type="text" id="header-sb-input" placeholder="Course Code.." onkeydown="prepSearch(this, event)">
+                </div>
+            </div>
+        </div>
+		<div id="course-info-container">
+			<div id="cname"></div>
+			<div id="ccode"></div>
+			<div id="cdesc"></div>
+			<div id="cattrs-container">
+				<span id="credits-pill" class="attr-pill"><span id="ccredits"></span> credits</span></div>
+			<div>
+				<p><h3>Prerequisite(s):</h3> <span id="cprereqs"></span></p>
+				<p />
+				<h3 id="hascoreqs">Corequisite(s):</h3>
+				<ul id="ccoreqs"></ul>
+				<p />
+				<h3 id="xlisted">Cross-listed with:</h3>
+				<ul id="cxlists"></ul>
+				<p />
+				<p>
+				</p>
+			</div>
 		</div>
-		<table id="years-table">
-			<tr>
-				<th />
-				<th class="spring">Spring</th>
-				<th class="summer" colspan="2">Summer</th>
-				<th class="fall">Fall</th>
-				<th class="winter">Enrichment</th>
-			</tr>
-			<tr>
-				<th colspan="2" />
-				<th class="summer2">(Session 1)</th>
-				<th class="summer3">(Session 2)</th>
-				<th colspan="2"/>
-			</tr>
-		</table>
+		<div id="past-container">
+			<h3>Terms offered:</h3>
+			<table id="years-table">
+				<tr>
+					<th />
+					<th class="spring">Spring</th>
+					<th class="summer" colspan="2">Summer</th>
+					<th class="fall">Fall</th>
+					<th class="winter">Enrichment</th>
+				</tr>
+				<tr>
+					<th colspan="2" />
+					<th class="summer2">(Session 1)</th>
+					<th class="summer3">(Session 2)</th>
+					<th colspan="2"/>
+				</tr>
+			</table>
+		</div>
 	</body>
 </html>

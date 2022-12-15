@@ -34,9 +34,15 @@ body{
     display: grid;
     justify-content: space-around;
     align-items: space-around;
+    transition-property: filter;
+    transition-duration: 250ms;
     /* shadow stuff */
     /* box-shadow: -0.5vmin -0.5vmin 1vmin var(--mid-purple), 0.5vmin 0.5vmin 1vmin var(--deepest-purple); */
     /* box-shadow: -0.1vmin -0.1vmin 1vmin 0.1vmin var(--quacs-whitest), 0.1vmin 0.1vmin 1vmin var(--quacs-yellow); */
+}
+
+#home-sb-container:hover{
+    filter: brightness(1.05);
 }
 
 #home-sb-input{

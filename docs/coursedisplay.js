@@ -92,6 +92,24 @@ const createList = function(list,titleid,listid,catalog = false) {
     }
 }
 
+
+
+// adds the little pills for the attributes
+const addAttrs = (attrList, attrContainerId) => {
+    if(!attrList){
+        return;
+    }
+    for(const thisAttr of attrList) {
+        var idableAttr = thisAttr.replace(" ", "-").toLowerCase();
+        var thisPill = document.getElementById(attrContainerId)
+            .appendChild(document.createElement("span"));
+        thisPill.setAttribute("class", "attr-pill");
+        thisPill.innerHTML = thisAttr;
+        // .setAttribute("id", `attr-pill-${idableAttr}`)
+        thisPill.id = `attr-pill-${idableAttr}`;
+    }
+}
+
 const compare_terms = function(a,b) {
         if(a == b) {
             return 0;
@@ -158,7 +176,8 @@ window.onload = async function() {
                             ["STSH"+c.substring(4),"STSS"+c.substring(4),c])
                         .slice(0,-1);
     createList(coreqs[ccode],"hascoreqs","ccoreqs",catalog);
-    createList(attrs[ccode],"hasattr","cattrs");
+    addAttrs(attrs[ccode],"cattrs-container");
+
 
     const course_data = courses[ccode] || [];
     const terms_offered = new Set(Object.keys(course_data));
