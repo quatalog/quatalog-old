@@ -1,0 +1,384 @@
+body{
+    background-color: var(--deep-purple);
+    overflow-x:hidden;
+}
+
+.term ::selection{
+    background: var(--quacs-yellow);
+}
+
+/*
+db   db d88888b  .d8b.  d8888b. d88888b d8888b.
+88   88 88'     d8' `8b 88  `8D 88'     88  `8D
+88ooo88 88ooooo 88ooo88 88   88 88ooooo 88oobY'
+88~~~88 88~~~~~ 88~~~88 88   88 88~~~~~ 88`8b
+88   88 88.     88   88 88  .8D 88.     88 `88.
+YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
+*/
+
+#qlog-header{
+    border-bottom: 0.2vmin solid var(--quacs-yellow);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5vmin;
+    position: absolute;
+}
+
+#qlog-wordmark{
+    color: var(--quacs-yellow);
+    font-family: "rivalsans";
+    font-size: 3.5vmin;
+    left: 2vmin;
+    top: 0;
+    font-weight: 900;
+    position: absolute;
+    text-decoration: none;
+}
+
+#header-sb-spacer{
+    width: 30vmin;
+    right: 3.5vmin;
+    height: 4.5vmin;
+    position: absolute;
+    display:grid;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+#header-sb-container{
+    height: 4vmin;
+    position: absolute;
+    top: 0.5vmin;
+    width: 30vmin;
+    background: var(--quacs-white);
+    border-radius: 4vmin;
+}
+
+#header-sb-input{
+    position: absolute;
+    height: 3.5vmin;
+    left: 2vmin;
+    top:0.25vmin;
+    background: none;
+    border: none;
+    outline:none;
+    font-size: 2vmin;
+    width: 28vmin;
+    overflow-x: scroll;
+    font-family: "proxima-nova";
+    color: var(--deep-purple);
+}
+
+#course-info-container{
+    position:absolute;
+    top: 7vmin;
+    width: 48vw;
+    left: 2vmin;
+    height: 90vmin;
+}
+
+
+#cname{
+    color: var(--quacs-yellow);
+    font-family: "proxima-nova";
+    font-size: 8vmin;
+    font-weight: 900;
+    margin-bottom: 0vmin;
+    position: relative;
+    left: 0vw;
+}
+
+#ccode{
+    color: var(--quacs-midtone);
+    font-family: "proxima-nova";
+    font-size: 4vmin;
+    font-weight: 900;
+    position: relative;
+    left: 0vw;
+}
+
+#cdesc{
+    color: var(--quacs-white);
+    font-family: "proxima-nova";
+    font-size: 3vmin;
+    position: relative;
+    left: 0vw;
+    margin-top: 1vmin;
+    margin-bottom: 2vmin;
+    font-weight: normal;
+}
+
+#cattrs-container{
+    position: relative;
+    left: 0vw;
+    margin-bottom: 1vmin;
+}
+
+.attr-pill{
+    color: var(--deep-purple);
+    font-family: "proxima-nova";
+    font-size: 2vmin;
+    position: relative;
+    left: 0vw;
+    background: var(--quacs-midtone);
+    border-radius: 2vmin;
+    padding: 0.5vmin 1.5vmin;
+    margin-right: 0.5vmin;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0.5vmin;
+}
+
+.rel-info-container{
+    margin-bottom: 1.25vmin;
+}
+
+.rel-info-title{
+    font-size: 3vmin;
+    font-weight: 700;
+    font-family: "proxima-nova";
+    color: var(--quacs-white);
+    /* display: inline-block; */ 
+    margin-right: 0.5vmin;
+}
+
+.rel-info-courses{
+    margin-top: 0.5vmin;
+}
+
+.course-pill{
+    color: var(--deep-purple);
+    font-family: "proxima-nova";
+    font-size: 2vmin;
+    position: relative;
+    left: 0vw;
+    background: var(--quacs-yellow);
+    border-radius: 2vmin;
+    padding: 0.5vmin 1.5vmin;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 0.5vmin;
+    margin-bottom: 0.5vmin;
+    text-decoration: none;
+    transition-property: filter;
+    transition-duration: 100ms;
+    width: fit-content;
+    /* white-space: nowrap; */
+}
+
+.course-pill:hover{
+    filter: brightness(1.1);
+}
+
+#prereq-classes{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: content;
+}
+
+.pr-or-con{
+    background: var(--blue);
+    display:grid;
+    grid-auto-flow: row;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5vmin;
+    display: inline-block;
+    border-radius: 2vmin;
+    margin-bottom: 0.75vw;
+}
+
+.pr-or-title{
+    color: var(--quacs-white);
+    font-family: "proxima-nova";
+    font-size: 3vmin;
+    font-weight: 700;
+    margin-bottom: 0.5vmin;
+    text-align: center;
+}
+
+.pr-or{
+    background: var(--deep-purple);
+    padding: 1vmin;
+    border-radius: 1.5vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: max-content;
+    width: fit-content;
+}
+
+.pr-or .course-pill{
+    margin-right: 0.25vmin;
+    margin-left: 0.25vmin;
+    margin-bottom: 0.25vmin;
+    margin-top: 0.25vmin
+}
+
+.pr-and{
+    display: inline;
+    margin-left: 0.75vmin;
+    margin-right: 0.75vmin;
+    color: var(--quacs-white);
+    background: var(--red);
+    padding: 1vmin;
+    color: var(--quacs-white);
+    font-family: "proxima-nova";
+    font-size: 3vmin;
+    font-weight: 700;
+    width: min-content;
+    height: min-content;
+    border-radius: 0.75vmin;
+    margin-bottom: 0.75vw;
+}
+
+.none-rect{
+    background: var(--red);
+    color: var(--quacs-white);
+    font-family: "proxima-nova";
+    font-size: 2vmin;
+    position: relative;
+    left: 0vw;
+    border-radius: 0.5vmin;
+    padding: 0.5vmin 1.5vmin;
+    margin-right: 0.5vmin;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0.5vmin;
+}
+
+.unknown-rect{
+    background: var(--pink);
+    color: var(--quacs-white);
+    font-family: "proxima-nova";
+    font-size: 2vmin;
+    position: relative;
+    left: 0vw;
+    border-radius: 0.5vmin;
+    padding: 0.5vmin 1.5vmin;
+    margin-right: 0.5vmin;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0.5vmin;
+}
+
+#past-container{
+    position: absolute;
+    top: 7vmin;
+    width: 45vw;
+    left: 52vw;
+    height: 90vmin;
+    justify-content: right;
+}
+
+#past-title{
+    color: var(--quacs-yellow);
+    font-family: "proxima-nova";
+    font-size: 6vmin;
+    font-weight: 900;
+    margin-bottom: 0vmin;
+    position: relative;
+    right: 0vmin;
+    text-align: right;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#opt-container{
+    width: 100%;
+    height: 10vmin;
+    position: relative;
+    display: grid;
+    grid-template-columns: 63% 33%;
+    justify-content: space-between;
+    margin-bottom: 1vmin;
+}
+
+#control-panel{
+    background: var(--red);
+    width: 100%;
+}
+
+#key-panel{
+    background: var(--blue);
+    width: 100%;
+}
+
+#years-table{
+    position: absolute;
+    right: 0vw;
+    width: 100%;
+}
+
+.term{
+    color: var(--deep-purple);
+    font-family: "proxima-nova";
+    font-size: 1.5vmin;
+    width: max-content;
+}
+
+.season-label{
+    color: var(--quacs-midtone);
+    font-family: "proxima-nova";
+    font-size: 3vmin;
+}
+
+.midsum-label{
+    color: var(--quacs-white);
+    font-family: "proxima-nova";
+    font-size: 2vmin;
+    white-space: nowrap;
+}
+
+.year{
+    color: var(--quacs-midtone);
+    font-family: "proxima-nova";
+    font-size: 2vmin;
+    text-align: left;
+}
+
+
+.offered {
+    background-color: var(--green);
+}
+.offered-diff-code {
+    background-color: var(--quacs-yellow);
+}
+.not-offered {
+    background-color: var(--red);
+}
+.unscheduled {
+    background-color: var(--mid-light-purple);
+}
+
+
+
+@media (orientation: portrait){
+
+    #course-info-container{
+        position:relative;
+        top: 7vmin;
+        width: 90vw;
+        left: 5vmin;
+        height: max-content;
+        /* margin-bottom: 20vmin; */
+    }
+
+    #past-container{
+        position: relative;
+        top: 7vmin;
+        width: 90vw;
+        left: 5vw;
+        height: 90vmin;
+        /* justify-content: right; */
+        justify-content: center;
+    }
+
+    #past-title{
+        text-align: center;
+    }
+}
