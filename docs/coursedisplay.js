@@ -39,6 +39,11 @@ const set_term = function(c,term,type = "offered",l = []) {
     }
 }
 
+// gets just the course link, no HTML
+const getClassHref = (course)=>{
+    return `href="?course=${course}"`;
+}
+
 // Makes courses links
 const linkify = function(course,catalog,name_override) {
         return '<a href="?course='
@@ -48,6 +53,15 @@ const linkify = function(course,catalog,name_override) {
         +(name_override ? " " + name_override : (catalog[course] ? " " + catalog[course]["name"] : ""))
         +"</a>";
 }
+
+// very similar to linkify except adds in pill styling. made separate so we don't mess up the linkify function
+const pillLinkify = (course,catalog,name_override) => {
+    return `<a class="course-pill" ${getClassHref(course)}>${course} ${name_override ? name_override : (catalog[course] ? catalog[course]["name"] : "")}</a>`
+}
+
+
+
+// sam note: leaving these here for now but making new pill based ones
 
 // Helper functions for dealing with prerequisites
 // Catalog prerequisites are occasionally wrong,
@@ -79,6 +93,54 @@ const _formatPrerequisites = function(prereq,catalog) {
     }
 }
 
+const noneRect = `<span class="none-rect">none</span>`;
+const unknownRect = `<span class="unknown-rect">unknown</span>`;
+
+// Helper functions for dealing with prerequisites
+// Catalog prerequisites are occasionally wrong,
+// so we will use SIS data
+// returns up a pill based version of the prereq
+const pillFormatPrerequisites = function(prereq,catalog) {
+    if(prereq) {
+        const fp = _pillFormatPrerequisites(prereq,catalog);
+        if(fp.search(/^\(/) != -1) {
+            return fp.slice(1,-1);
+        } else {
+            return fp;
+        }
+    } else {
+        return noneRect;
+    }
+}
+
+
+
+// Recursive helper function
+const _pillFormatPrerequisites = function(prereq,catalog) {
+    if(prereq["type"] == "course") {
+        const course = prereq["course"];
+        // return linkify(course.substring(0,4)+"-"+course.substring(5),catalog);
+        return pillLinkify(course.substring(0,4)+"-"+course.substring(5),catalog);
+    } else if(prereq["type"] == "or"){
+        return `<div class="pr-or-con"><div class="pr-or-title">one of:</div><div class="pr-or">`
+        + prereq["nested"]
+            .map((x) => _pillFormatPrerequisites(x,catalog))
+            .join("")
+        + "</div></div>";
+    } else if(prereq["type"] == "and"){
+        return prereq["nested"]
+            .map((x) => _pillFormatPrerequisites(x,catalog))
+            .join(`<div class="pr-and">${prereq.type}</div>`);
+    } else {
+        return "";
+    }
+}
+
+
+
+
+
+
 // Used for corequisite and prerequisite displays
 const createList = function(list,titleid,listid,catalog = false) {
     if(!list) {
@@ -104,9 +166,23 @@ const addAttrs = (attrList, attrContainerId) => {
         var thisPill = document.getElementById(attrContainerId)
             .appendChild(document.createElement("span"));
         thisPill.setAttribute("class", "attr-pill");
-        thisPill.innerHTML = thisAttr;
-        // .setAttribute("id", `attr-pill-${idableAttr}`)
         thisPill.id = `attr-pill-${idableAttr}`;
+        thisPill.innerHTML = thisAttr;
+    }
+}
+
+// either displays the cross-listings or hides the container
+// works on coreqs too
+const handleCrossListings = (cList, containerId, listId, catalog) => {
+    var containerElem = document.getElementById(containerId);
+    if(!cList){
+        if(containerElem != null)
+            containerElem.setAttribute("class", "hidden");
+    } else {
+        var listContainerElem = document.getElementById(listId);
+        for(const cLists of cList){
+            listContainerElem.innerHTML += pillLinkify(cLists, catalog);    
+        }
     }
 }
 
@@ -169,13 +245,15 @@ window.onload = async function() {
 
 
     // Create bulleted lists of cross-listings, corequisites, attributes
-    createList(xlistings[ccode],"xlisted","cxlists",catalog);
+    // make the cross listings
+    handleCrossListings(xlistings[ccode], "crosslist-container", "crosslist-classes", catalog);
+    // make the coreqs
+    handleCrossListings(coreqs[ccode], "coreq-container", "coreq-classes", catalog);
     const alt_codes = (xlistings[ccode] || [])
                         .concat([ccode])
                         .flatMap(c => c.search(/^STSO/) == -1 ? c :
                             ["STSH"+c.substring(4),"STSS"+c.substring(4),c])
                         .slice(0,-1);
-    createList(coreqs[ccode],"hascoreqs","ccoreqs",catalog);
     addAttrs(attrs[ccode],"cattrs-container");
 
 
@@ -215,7 +293,8 @@ window.onload = async function() {
     document.getElementById("cname").innerText = cname;
 
     document.getElementById("ccredits").innerText = last_term_offered ? course_data[last_term_offered][1] : "Unknown";
-    document.getElementById("cprereqs").innerHTML = last_term_offered ? formatPrerequisites(prereqs[ccode],catalog) : "Unknown";
+    // document.getElementById("cprereqs").innerHTML = last_term_offered ? formatPrerequisites(prereqs[ccode],catalog) : "Unknown";
+    document.getElementById("prereq-classes").innerHTML = last_term_offered ? pillFormatPrerequisites(prereqs[ccode],catalog) : unknownRect;
 
     // Terms offered under normal code, in green
     // Terms not offered and not scheduled, in red and gray

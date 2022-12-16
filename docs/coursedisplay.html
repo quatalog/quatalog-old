@@ -15,24 +15,6 @@
 			h1, h2, h3, h4, h5, h6 {
 				display: inline;
 			}
-			#years-table,
-			.term {
-				border: 1px solid black;
-				height: 18pt;
-				vertical-align: top;
-			}
-			.offered {
-				background-color: lime;
-			}
-			.offered-diff-code {
-				background-color: yellow;
-			}
-			.not-offered {
-				background-color: red;
-			}
-			.unscheduled {
-				background-color: #444444;
-			}
 		</style>
 		<style id="disable-enrichment" media="not all">
 			.winter {
@@ -65,35 +47,51 @@
 			<div id="cname"></div>
 			<div id="ccode"></div>
 			<div id="cdesc"></div>
-			<div id="cattrs-container">
-				<span id="credits-pill" class="attr-pill"><span id="ccredits"></span> credits</span></div>
-			<div>
-				<p><h3>Prerequisite(s):</h3> <span id="cprereqs"></span></p>
-				<p />
-				<h3 id="hascoreqs">Corequisite(s):</h3>
-				<ul id="ccoreqs"></ul>
-				<p />
-				<h3 id="xlisted">Cross-listed with:</h3>
-				<ul id="cxlists"></ul>
-				<p />
-				<p>
-				</p>
+			<div id="cattrs-container"><span id="credits-pill" class="attr-pill"><span id="ccredits"></span> credits</span></div>
+			<div id="crosslist-container" class="rel-info-container">
+				<div id="crosslist-title" class="rel-info-title">
+					Cross-listed with:
+				</div>
+				<div id="crosslist-classes" class="rel-info-courses">
+				</div>
+			</div>
+			<div id="coreq-container" class="rel-info-container">
+				<div id="coreq-title" class="rel-info-title">
+					Corequisites:
+				</div>
+				<div id="coreq-classes" class="rel-info-courses">
+				</div>
+			</div>
+			<div id="prereq-container" class="rel-info-container">
+				<div id="prereq-title" class="rel-info-title">
+					Prereqs
+				</div>
+				<div id="prereq-classes" class="rel-info-courses">
+				</div>
 			</div>
 		</div>
 		<div id="past-container">
-			<h3>Terms offered:</h3>
+			<div id="past-title">Past Term Data</div>
+			<div id="opt-container">
+				<div id="control-panel">
+
+				</div>
+				<div id="key-panel">
+
+				</div>
+			</div>
 			<table id="years-table">
 				<tr>
 					<th />
-					<th class="spring">Spring</th>
-					<th class="summer" colspan="2">Summer</th>
-					<th class="fall">Fall</th>
-					<th class="winter">Enrichment</th>
+					<th class="spring season-label">Spring</th>
+					<th class="summer season-label" colspan="2">Summer</th>
+					<th class="fall season-label">Fall</th>
+					<th class="winter season-label">Enrichment</th>
 				</tr>
 				<tr>
 					<th colspan="2" />
-					<th class="summer2">(Session 1)</th>
-					<th class="summer3">(Session 2)</th>
+					<th class="summer2 midsum-label">(Session 1)</th>
+					<th class="summer3 midsum-label">(Session 2)</th>
 					<th colspan="2"/>
 				</tr>
 			</table>

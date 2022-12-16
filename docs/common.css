@@ -4,6 +4,7 @@
     --quacs-midtone: #f5cc81;
     --quacs-white: #f5e3c2;
     --quacs-whitest: #fdf8f0;
+
     --deepest-purple: #12121a;
     --deeper-purple: #191823;
     --deep-purple: #201f2c;
@@ -11,6 +12,21 @@
     --mid-purple: #37364d;
     --mid-light-purple: #494766;
     --light-purple: #5c5980;
+
+    --pink: #f53faa;
+    --red: #f53f6a;
+    --green: #3ff57f;
+    --blue: #3f6ef5;
+}
+
+::selection{
+    background: var(--mid-light-purple);
+}
+
+.hidden{
+    visibility: hidden;
+    margin: 0;
+    height: 0vw;
 }
 
 
