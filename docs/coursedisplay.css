@@ -354,3 +354,31 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
 .unscheduled {
     background-color: var(--mid-light-purple);
 }
+
+
+
+@media (orientation: portrait){
+
+    #course-info-container{
+        position:relative;
+        top: 7vmin;
+        width: 90vw;
+        left: 5vmin;
+        height: max-content;
+        /* margin-bottom: 20vmin; */
+    }
+
+    #past-container{
+        position: relative;
+        top: 7vmin;
+        width: 90vw;
+        left: 5vw;
+        height: 90vmin;
+        /* justify-content: right; */
+        justify-content: center;
+    }
+
+    #past-title{
+        text-align: center;
+    }
+}
