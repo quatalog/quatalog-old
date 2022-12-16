@@ -283,6 +283,7 @@ window.onload = async function() {
     const title = document.getElementById("title");
     const catalog_entry = catalog[ccode];
     title.innerText = ccode;
+    var cname;
     if(catalog_entry) {
         cname = catalog_entry["name"];
         document.getElementById("cdesc").innerText = catalog_entry["description"];
