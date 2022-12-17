@@ -44,19 +44,31 @@ const getClassHref = (course)=>{
     return `href="?course=${course}"`;
 }
 
+const getCourseName = function(course,catalog,name_override) {
+	if(name_override) {
+		return " " + name_override;
+	} else {
+		if(catalog[course]) {
+			return " " + catalog[course]["name"];
+		} else {
+			return "";
+		}
+	}
+}
+
 // Makes courses links
 const linkify = function(course,catalog,name_override) {
         return '<a href="?course='
         +course
         +'">'
         +course
-        +(name_override ? " " + name_override : (catalog[course] ? " " + catalog[course]["name"] : ""))
+        +getCourseName(course,catalog,name_override)
         +"</a>";
 }
 
 // very similar to linkify except adds in pill styling. made separate so we don't mess up the linkify function
 const pillLinkify = (course,catalog,name_override) => {
-    return `<a class="course-pill" ${getClassHref(course)}>${course} ${name_override ? name_override : (catalog[course] ? catalog[course]["name"] : "")}</a>`
+    return `<a class="course-pill" ${getClassHref(course)}>${course} ${getCourseName(course,catalog,name_override)}</a>`
 }
 
 
