@@ -7,6 +7,6 @@ var prepSearch = (elem, event)=>{
         courseCodeInput = courseCodeInput.replace(" ", "").replace("-", "");
         var subCode = courseCodeInput.substring(0,4).toUpperCase();
         var courseNum = courseCodeInput.substring(courseCodeInput.length-4,courseCodeInput.length);
-        window.location.href = `./coursedisplay.html?course=${subCode}-${courseNum}`;
+        window.location.href = "./coursedisplay.html?course="+subCode+"-"+courseNum;
     }
 }
