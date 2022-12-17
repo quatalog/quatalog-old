@@ -53,7 +53,11 @@ const getCourseName = function(course,catalog,courses_data) {
 	if(catalog[course]) {
 		return " " + catalog[course]["name"];
 	} else {
-		return " " + courses_data[course][getLastTermOffered(course,courses_data)][0];
+		try {
+			return " " + courses_data[course][getLastTermOffered(course,courses_data)][0];
+		} catch {
+			return "";
+		}
 	}
 }
 
