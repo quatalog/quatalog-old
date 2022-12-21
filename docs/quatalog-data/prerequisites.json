@@ -4653,19 +4653,6 @@
       }
     ]
   },
-  "ECON-4960": {
-    "nested": [
-      {
-        "course": "MATH 1010",
-        "type": "course"
-      },
-      {
-        "course": "MATH 1500",
-        "type": "course"
-      }
-    ],
-    "type": "and"
-  },
   "ISYE-4220": {
     "course": "ISYE 4600",
     "type": "course"
@@ -9008,10 +8995,6 @@
   },
   "STSO-4605": {
     "course": "ENGR 2020",
-    "type": "course"
-  },
-  "LANG-2960": {
-    "course": "LANG 1410",
     "type": "course"
   },
   "CHME-2100": {
