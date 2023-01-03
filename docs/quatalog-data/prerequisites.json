@@ -4695,27 +4695,6 @@
     "course": "ITWS 2110",
     "type": "course"
   },
-  "ITWS-6960": {
-    "nested": [
-      {
-        "course": "ITWS 4300",
-        "type": "course"
-      },
-      {
-        "course": "ITWS 6300",
-        "type": "course"
-      },
-      {
-        "course": "ITWS 4100",
-        "type": "course"
-      },
-      {
-        "course": "ITWS 6800",
-        "type": "course"
-      }
-    ],
-    "type": "or"
-  },
   "MGMT-4960": {
     "course": "MGMT 2100",
     "type": "course"
@@ -9018,19 +8997,6 @@
     "type": "course"
   },
   "ECON-2100": {
-    "nested": [
-      {
-        "course": "IHSS 1200",
-        "type": "course"
-      },
-      {
-        "course": "ECON 1200",
-        "type": "course"
-      }
-    ],
-    "type": "or"
-  },
-  "ECON-4380": {
     "nested": [
       {
         "course": "IHSS 1200",
