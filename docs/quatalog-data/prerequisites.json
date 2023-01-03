@@ -4487,19 +4487,6 @@
       }
     ]
   },
-  "ARTS-4130": {
-    "nested": [
-      {
-        "course": "ARTS 2500",
-        "type": "course"
-      },
-      {
-        "course": "ARTS 2540",
-        "type": "course"
-      }
-    ],
-    "type": "or"
-  },
   "BIOL-4100": {
     "course": "BIOL 2120",
     "type": "course"
