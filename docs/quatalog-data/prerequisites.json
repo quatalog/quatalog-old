@@ -1594,6 +1594,19 @@
     "course": "ENVE 4320",
     "type": "course"
   },
+  "ISCI-4510": {
+    "nested": [
+      {
+        "course": "ISCI 1510",
+        "type": "course"
+      },
+      {
+        "course": "ERTH 1510",
+        "type": "course"
+      }
+    ],
+    "type": "or"
+  },
   "LANG-2110": {
     "type": "course",
     "course": "LANG 1120"
