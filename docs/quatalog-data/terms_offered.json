@@ -103801,6 +103801,7 @@
       "Yong Zheng, Glenn Ciolek",
       "Charles Harold Martin, Glenn Ciolek",
       "Nadarajah Narendran, Glenn Ciolek",
+      "Nadarajah Narendran, Glenn Ciolek, John Schroeder",
       "John Schroeder, Glenn Ciolek"
     ]
   },
@@ -142426,6 +142427,12 @@
       "3",
       "",
       "Matthew Adam Oehlschlaeger"
+    ],
+    "202301": [
+      "Combustion",
+      "3",
+      "",
+      "Matthew Adam Oehlschlaeger"
     ]
   },
   "MANE-6942": {
@@ -178835,7 +178842,8 @@
     "202301": [
       "Prod And Operations Mgmt",
       "3",
-      ""
+      "",
+      "Esra Agca Aktunc"
     ]
   },
   "ISYE-4210": {
@@ -179360,7 +179368,8 @@
     "202301": [
       "Engineering Data Analytics",
       "4",
-      ""
+      "",
+      "Esra Agca Aktunc"
     ]
   },
   "ISYE-4963": {
@@ -181991,7 +182000,8 @@
     "202301": [
       "Engineering Data Analytics",
       "3",
-      ""
+      "",
+      "Esra Agca Aktunc"
     ]
   },
   "ITWS-4963": {
@@ -188100,7 +188110,8 @@
     "202301": [
       "Intro To Isye",
       "1",
-      ""
+      "",
+      "Esra Agca Aktunc"
     ]
   },
   "ISYE-4300": {
@@ -205450,7 +205461,8 @@
     "202301": [
       "Intro Manufacturing Planning",
       "3",
-      ""
+      "",
+      "Esra Agca Aktunc"
     ]
   },
   "ECSE-4740": {
