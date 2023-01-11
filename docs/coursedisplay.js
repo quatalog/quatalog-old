@@ -39,13 +39,24 @@ const set_term = function(c,term,type = "offered",l = []) {
     }
 }
 
+const getCourseData = (course,courses_data)=>{
+	const cd = courses_data[course];
+	if(course.search(/^STSO/) == -1) {
+		return cd || {};
+	} else {
+		const stsh = courses_data["STSH"+course.substring(4)];
+		const stss = courses_data["STSS"+course.substring(4)];
+		return Object.assign(cd || {},stsh || {},stss || {}) || {};
+	}
+}
+
 // gets just the course link, no HTML
 const getCourseHref = (course)=>{
-    return 'href="?course='+course+'"';
+	return 'href="?course='+course+'"';
 }
 
 const getLastTermOffered = (course,courses_data)=>{
-	return Object.keys(courses_data[course]).sort(compare_terms).slice(-1)[0];
+	return Object.keys(getCourseData(course,courses_data)).sort(compare_terms).slice(-1)[0];
 }
 
 // Helper to get the course name. Uses catalog and 
@@ -54,7 +65,7 @@ const getCourseName = function(course,catalog,courses_data) {
 		return " " + catalog[course]["name"];
 	} else {
 		try {
-			return " " + courses_data[course][getLastTermOffered(course,courses_data)][0];
+			return " " + getCourseData(course,courses_data)[getLastTermOffered(course,courses_data)][0];
 		} catch {
 			return "";
 		}
@@ -265,15 +276,11 @@ window.onload = async function() {
     handleCrossListings(xlistings[ccode], "crosslist-container", "crosslist-classes", catalog);
     // make the coreqs
     handleCrossListings(coreqs[ccode], "coreq-container", "coreq-classes", catalog);
-    const alt_codes = (xlistings[ccode] || [])
-                        .concat([ccode])
-                        .flatMap(c => c.search(/^STSO/) == -1 ? c :
-                            ["STSH"+c.substring(4),"STSS"+c.substring(4),c])
-                        .slice(0,-1);
+    const alt_codes = xlistings[ccode] || [];
     addAttrs(attrs[ccode],"cattrs-container");
 
 
-    const course_data = courses[ccode] || [];
+    const course_data = getCourseData(ccode,courses);
     const terms_offered = new Set(Object.keys(course_data));
     const scheduled_terms = new Set(Object.keys(courses["all_terms"]));
     const terms_offered_alt_code = new Set(alt_codes
@@ -313,7 +320,7 @@ window.onload = async function() {
 
     // Terms offered under normal code, in green
     // Terms not offered and not scheduled, in red and gray
-    // Terms offered only under different code, in yellow (e.g. STSS/STSH, Materials Science)
+    // Terms offered only under different code, in yellow (e.g. Materials Science)
     Object.keys(course_data).forEach(t => set_term(course_data,t))
     Array.from(terms_offered_alt_code).forEach(t => set_term("",t,"offered-diff-code",[]));
     Array.from(terms_not_offered).forEach(t => set_term("",t,"not-offered",[]));
