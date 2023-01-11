@@ -41,10 +41,12 @@ body{
     transition: width 0.1s, background 0.1s, border-radius 0.1s;
     display: flex;
     flex-direction: column;
+    /* border-bottom: solid 1vmin var(--mid-purple); */
 }
 
 .courseContainer:hover{
     background: var(--mid-purple);
+    /* border-bottom: solid 1vmin var(--mid-light-purple); */
     width: 71vw;
     border-radius: calc(2vmin + 0.5vw);
 }
@@ -56,7 +58,7 @@ body{
 .courseShelf{
     padding: 1vmin;
     transition: padding .1s;
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
     align-items: baseline;
     /* width: 100%; */
@@ -64,11 +66,59 @@ body{
     color: var(--quacs-midtone);
     border-bottom: solid;
     border-bottom-width: 0.2vmin;
+    flex-wrap: wrap;
+}
+
+.sattr{
+    margin-right: 1vmin;
+    display: flex;
+    margin-bottom: 0.25vmin;
+    margin-top: 0.25vmin;
+}
+
+.sattr-pill{
+    background: var(--quacs-yellow);
+    color: var(--deep-purple);
+    padding-left: 1.5vmin;
+    padding-right: 1.5vmin;
+    border-radius: 3vmin;
+}
+
+.sattr svg{
+    /* display: inline-block; */
+    /* vertical-align:-webkit-baseline-middle; */
+    align-self: center;
+    width: 2.5vmin;
+    /* max-height: 3vmin; */
+    padding-left: 0.5vmin;
+    fill: var(--deep-purple);
+}
+
+.CI-pill{
+    background: var(--green);
+}
+
+.WI-pill{
+    background: var(--quacs-yellow);
+}
+
+.PD-pill{
+    background: var(--red);
+}
+
+.HI-pill{
+    background: var(--pink);
+    color: var(--deep-purple);
+}
+
+.HI-pill svg{
+    fill: var(--deep-purple);
 }
 
 .courseName{
     color: var(--quacs-yellow);
     font-size: 3.25vmin;
+    font-weight: 600;
     margin-left: 0.5vmin;
 }
 

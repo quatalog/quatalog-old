@@ -2,13 +2,67 @@ const displaySearchTerm = () => {
     document.getElementById("searchTerm").innerHTML = '"' + ccode.replaceAll("+", " ").toLowerCase() + '"';
 }
 
+var makeAttrListHTML = (courseCode) => {
+    var attrListHTML = '';
+    if(courseCode in attrs){
+        var thisCourseAttrs = attrs[courseCode];
+        for(var i = 0; i < thisCourseAttrs.length; i++){
+            var thisAttr = thisCourseAttrs[i];
+            if(thisAttr == "Communication Intensive"){
+                attrListHTML += `<div class="attr sattr sattr-pill CI-pill">CI${iconSVGs.message}</div>`;
+                continue;
+            }
+            if(thisAttr == "Writing Intensive"){
+                attrListHTML += `<div class="attr sattr sattr-pill WI-pill">WI${iconSVGs.pencil}</div>`;
+                continue;
+            }
+            if(thisAttr == "HASS Inquiry"){
+                attrListHTML += `<div class="attr sattr sattr-pill HI-pill">HInq${iconSVGs.magnifying}</div>`;
+                continue;
+            }
+            if(thisAttr == "PDII Option for Engr Majors"){
+                attrListHTML += `<div class="attr sattr sattr-pill PD-pill">PDII${iconSVGs.briefcase}</div>`;
+                continue;
+            }
+            if(thisAttr == "Online Course"){
+                attrListHTML += `<div class="attr sattr sattr-pill">Online${iconSVGs.laptop}</div>`;
+                continue;
+            }
+            if(thisAttr == "Hybrid:Online/In-Person Course"){
+                attrListHTML += `<div class="attr sattr sattr-pill">Hybrid${iconSVGs["house-laptop"]}</div>`;
+                continue;
+            }
+            if(thisAttr == "Introductory Level Course") continue;
+            if(thisAttr == "Culminating Exp/Capstone"){
+                attrListHTML += `<div class="attr sattr sattr-pill">CulmExp${iconSVGs.cubes}</div>`;
+                continue;
+            }
+            attrListHTML += `<div class="attr sattr sattr-pill">${thisAttr}</div>`;
+        }
+    }
+    return attrListHTML;
+}
+
+var makeDeadHTML = (courseCode) => {
+    var isDead = isCourseDead(courseCode);
+    if(isDead == 2){
+        return `<div class="dead sattr sattr-pill">Not Yet Offered${iconSVGs.amogus}</div>`;
+    }
+    if(isDead){
+        return `<div class="dead sattr sattr-pill">Probably Dead${iconSVGs.skull}</div>`;
+    }
+    return '';
+}
 
 var makeCourseHTML = (courseCode, score) => {
     var thisCourse = catalog[courseCode];
     return `
     <div class="courseContainer" onclick="gotoCourse('${courseCode}')">
         <div class="courseShelf">
-            <span class="courseName">${thisCourse.name}</span> • <span class="courseCode">${courseCode}</span>
+            <div class="courseName sattr">${thisCourse.name}</div>
+            <div class="courseCode sattr">${courseCode}</div>
+            ${makeAttrListHTML(courseCode)}
+            ${makeDeadHTML(courseCode)}
         </div>
         <div class="attrs"></div>
         <div class="description">${thisCourse.description}</div>
@@ -77,7 +131,7 @@ var showSearchResults = () => {
         if(thisResult){
             var thisCourse = thisResult.item;
             var thisCourseCode = thisCourse.fullCode;
-            if(thisResult.score > 0.2){
+            if(thisResult.score > 0.5){
                 // break;
             }
             validResults.push(thisResult);
