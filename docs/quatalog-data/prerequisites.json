@@ -2515,10 +2515,6 @@
     "type": "course",
     "course": "ARCH 4140"
   },
-  "ARCH-4740": {
-    "course": "ARCH 2360",
-    "type": "course"
-  },
   "ARCH-6880": {
     "course": "ARCH 6870",
     "type": "course"
@@ -6094,6 +6090,10 @@
     "course": "ARCH 4100",
     "type": "course"
   },
+  "ARCH-4770": {
+    "course": "ARCH 2830",
+    "type": "course"
+  },
   "ARTS-4640": {
     "type": "course",
     "course": "ARTS 1030"
@@ -6385,6 +6385,10 @@
       }
     ],
     "type": "or"
+  },
+  "ARCH-4780": {
+    "course": "ARCH 4770",
+    "type": "course"
   },
   "ARCH-4820": {
     "course": "ARCH 2830",
@@ -6739,6 +6743,10 @@
       }
     ],
     "type": "or"
+  },
+  "ARCH-4790": {
+    "course": "ARCH 4780",
+    "type": "course"
   },
   "ARTS-1440": {
     "type": "course",

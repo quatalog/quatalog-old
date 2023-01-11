@@ -1566,6 +1566,11 @@
       "1-6",
       "",
       "Yehuda Emmanul Safran"
+    ],
+    "202301": [
+      "Projects In Arch & Env Design",
+      "1-6",
+      ""
     ]
   },
   "ARCH-4140": {
@@ -2313,6 +2318,12 @@
       "3",
       "",
       "Justin Henry Den Herder"
+    ],
+    "202301": [
+      "Structures 2",
+      "3",
+      "",
+      "Justin Henry Den Herder"
     ]
   },
   "ARCH-4360": {
@@ -2589,6 +2600,12 @@
       "Katrina Pacheco"
     ],
     "202209": [
+      "Professional Practice 1",
+      "2",
+      "",
+      "Katrina Pacheco"
+    ],
+    "202301": [
       "Professional Practice 1",
       "2",
       "",
@@ -2940,6 +2957,11 @@
       "Independent Study In Arch",
       "0-6",
       ""
+    ],
+    "202301": [
+      "Independent Study In Arch",
+      "0-6",
+      ""
     ]
   },
   "ARCH-4961": {
@@ -3134,6 +3156,12 @@
       "2",
       "",
       "Edward Jeremy Keller"
+    ],
+    "202301": [
+      "Comprehensive Design 1",
+      "0",
+      "",
+      "Jillian Marie Crandall"
     ]
   },
   "ARCH-4962": {
@@ -3293,6 +3321,13 @@
       "0",
       "",
       "Edwin Jhinang Liu"
+    ],
+    "202301": [
+      "The Art Of Structure",
+      "2",
+      "",
+      "Justin Henry Den Herder",
+      "Gustavo Enrique Alberto Crembil"
     ]
   },
   "ARCH-4963": {
@@ -3439,6 +3474,12 @@
       "4",
       "",
       "Nadarajah Narendran, Jean Paul Freyssinier, Ukwatte Lokuliyanage Indika Upendra Perera"
+    ],
+    "202301": [
+      "Design Futures & Flood Reslncy",
+      "2",
+      "",
+      "Marcus Carter"
     ]
   },
   "ARCH-4964": {
@@ -3618,6 +3659,12 @@
       "0",
       "",
       "Jillian Marie Crandall"
+    ],
+    "202301": [
+      "Continuous Constructions",
+      "2",
+      "",
+      "Matt Burgermaster"
     ]
   },
   "ARCH-4965": {
@@ -3764,6 +3811,12 @@
       "2",
       "",
       "John Rhett Russo"
+    ],
+    "202301": [
+      "Lighting Workshop",
+      "4",
+      "",
+      "Nadarajah Narendran, Jean Paul Freyssinier, Ukwatte Lokuliyanage Indika Upendra Perera"
     ]
   },
   "ARCH-4966": {
@@ -4082,6 +4135,13 @@
       "3",
       "",
       "Cathryn M Dwyre"
+    ],
+    "202301": [
+      "Geo-actors II",
+      "3",
+      "",
+      "Cathryn M Dwyre",
+      "Gustavo Enrique Alberto Crembil"
     ]
   },
   "ARCH-4980": {
@@ -4585,6 +4645,12 @@
       "4",
       "",
       "Christianna Grace Bennett"
+    ],
+    "202301": [
+      "History, Theory, Criticism 3",
+      "4",
+      "",
+      "Christianna Grace Bennett"
     ]
   },
   "ARCH-6810": {
@@ -4714,6 +4780,13 @@
       "Joshua William Hugo Draper"
     ],
     "202209": [
+      "Research Design Seminar",
+      "2",
+      "",
+      "Ning Xiang",
+      "Joshua William Hugo Draper"
+    ],
+    "202301": [
       "Research Design Seminar",
       "2",
       "",
@@ -4974,6 +5047,11 @@
       "Adv Ind Proj In Arch/env Desgn",
       "1-6",
       ""
+    ],
+    "202301": [
+      "Adv Ind Proj In Arch/env Desgn",
+      "1-6",
+      ""
     ]
   },
   "ARCH-6961": {
@@ -5089,6 +5167,12 @@
       "3",
       "",
       "James Fleet Hower"
+    ],
+    "202301": [
+      "Geo-actors II",
+      "3",
+      "",
+      "Cathryn M Dwyre"
     ]
   },
   "ARCH-6962": {
@@ -5242,6 +5326,12 @@
       "3",
       "",
       "Cathryn M Dwyre"
+    ],
+    "202301": [
+      "Urban Data II",
+      "3",
+      "",
+      "James Fleet Hower"
     ]
   },
   "ARCH-6963": {
@@ -5449,6 +5539,12 @@
       "2",
       "",
       "Ted Krueger"
+    ],
+    "202301": [
+      "Lighting Workshop",
+      "4",
+      "",
+      "Nadarajah Narendran, Jean Paul Freyssinier, Ukwatte Lokuliyanage Indika Upendra Perera"
     ]
   },
   "ARCH-6966": {
@@ -5544,6 +5640,12 @@
     ],
     "202209": [
       "Design Programming 1",
+      "3",
+      "",
+      "Dennis Robert Shelden"
+    ],
+    "202301": [
+      "Design Programming 2",
       "3",
       "",
       "Dennis Robert Shelden"
@@ -6005,6 +6107,15 @@
       "Ning Xiang",
       "Jonas Braasch",
       "Alexandros Tsamis"
+    ],
+    "202301": [
+      "Master's Thesis",
+      "1-12",
+      "",
+      "Ning Xiang",
+      "Jonas Braasch",
+      "Dennis Robert Shelden",
+      "Alexandros Tsamis"
     ]
   },
   "ARCH-9990": {
@@ -6436,6 +6547,16 @@
       "Jonas Braasch",
       "Nadarajah Narendran",
       "Dennis Robert Shelden",
+      "Alexandros Tsamis"
+    ],
+    "202301": [
+      "Architecture Dissertation",
+      "1-15",
+      "",
+      "Dennis Robert Shelden",
+      "Ning Xiang",
+      "Jonas Braasch",
+      "Nadarajah Narendran",
       "Alexandros Tsamis"
     ]
   },
@@ -115965,6 +116086,12 @@
       "4",
       "",
       "Michael Todd Stradley"
+    ],
+    "202301": [
+      "Environmental And Ecol System",
+      "4",
+      "",
+      "Michael Todd Stradley"
     ]
   },
   "ARCH-2510": {
@@ -116439,6 +116566,12 @@
       "4",
       "",
       "John Clifford Loercher"
+    ],
+    "202301": [
+      "Bldg Systems And Environment",
+      "4",
+      "",
+      "John Clifford Loercher"
     ]
   },
   "ARCH-4968": {
@@ -116725,6 +116858,13 @@
       "3",
       "",
       "James Fleet Hower"
+    ],
+    "202301": [
+      "Relationship Btwn Film & Arch",
+      "2-3",
+      "",
+      "Anthony Titus",
+      "Selma Cohen"
     ]
   },
   "ARCH-4970": {
@@ -116787,6 +116927,12 @@
       "2",
       "",
       "Charles A. Portelli"
+    ],
+    "202301": [
+      "Urban Data II",
+      "3",
+      "",
+      "James Fleet Hower"
     ]
   },
   "ARCH-4971": {
@@ -116867,6 +117013,12 @@
       "2",
       "",
       "Ted Krueger"
+    ],
+    "202301": [
+      "Parametrics Of The Environment",
+      "2",
+      "",
+      "Charles A. Portelli"
     ]
   },
   "ARCH-4972": {
@@ -117428,6 +117580,12 @@
       "2",
       "",
       "Ning Xiang"
+    ],
+    "202301": [
+      "Sonics Research Lab 2",
+      "2",
+      "",
+      "Ning Xiang"
     ]
   },
   "ARCH-6900": {
@@ -117541,6 +117699,12 @@
       "2",
       "",
       "Tulay Atak"
+    ],
+    "202301": [
+      "Graduate Thesis Seminar",
+      "2",
+      "",
+      "Enrique Ramirez"
     ]
   },
   "ARCH-6941": {
@@ -117665,6 +117829,12 @@
       "2",
       "",
       "Michael James Oatman"
+    ],
+    "202301": [
+      "Urban Data II",
+      "1-4",
+      "",
+      "James Fleet Hower"
     ]
   },
   "ARCH-6980": {
@@ -117821,6 +117991,14 @@
       "Master's Project",
       "1-9",
       "",
+      "Alexandros Tsamis",
+      "Christopher S Perry"
+    ],
+    "202301": [
+      "Master's Project",
+      "1-9",
+      "",
+      "Dennis Robert Shelden",
       "Alexandros Tsamis",
       "Christopher S Perry"
     ]
@@ -155812,6 +155990,12 @@
       "4",
       "",
       "Ning Xiang"
+    ],
+    "202301": [
+      "Architectural Acoustics 2",
+      "4",
+      "",
+      "David William Kahn"
     ]
   },
   "ARTS-4210": {
@@ -161252,6 +161436,12 @@
       "2",
       "",
       "Selma Cohen"
+    ],
+    "202301": [
+      "Design Programming 2",
+      "3",
+      "",
+      "Dennis Robert Shelden"
     ]
   },
   "ARCH-6310": {
@@ -161548,6 +161738,12 @@
       "3",
       "",
       "Joshua William Hugo Draper"
+    ],
+    "202301": [
+      "Material Systems & Productions",
+      "3",
+      "",
+      "Joshua William Hugo Draper"
     ]
   },
   "ARCH-6350": {
@@ -161778,6 +161974,12 @@
       "Anthony Titus"
     ],
     "202201": [
+      "Relationship Btwn Film & Arch",
+      "2",
+      "",
+      "Anthony Titus"
+    ],
+    "202301": [
       "Relationship Btwn Film & Arch",
       "2",
       "",
@@ -166992,6 +167194,11 @@
       "3",
       "",
       "James Fleet Hower"
+    ],
+    "202301": [
+      "Built Ecologies 2",
+      "3",
+      ""
     ]
   },
   "ARCH-6360": {
@@ -167051,6 +167258,12 @@
       "Joshua William Hugo Draper"
     ],
     "202201": [
+      "Interdisciplinary Research",
+      "4",
+      "",
+      "Alexandros Tsamis"
+    ],
+    "202301": [
       "Interdisciplinary Research",
       "4",
       "",
@@ -167135,6 +167348,12 @@
       "1",
       "",
       "Jonas Braasch"
+    ],
+    "202301": [
+      "Graduate Thesis Smr:acoustics",
+      "1",
+      "",
+      "Ning Xiang"
     ]
   },
   "ARCH-6890": {
@@ -167211,6 +167430,12 @@
       "Jonas Braasch"
     ],
     "202201": [
+      "Aural Architecture",
+      "3",
+      "",
+      "Jonas Braasch"
+    ],
+    "202301": [
       "Aural Architecture",
       "3",
       "",
@@ -176734,6 +176959,12 @@
       "Joshua William Hugo Draper"
     ],
     "202201": [
+      "Res Investigations: Projbuilt",
+      "4",
+      "",
+      "Joshua William Hugo Draper"
+    ],
+    "202301": [
       "Res Investigations: Projbuilt",
       "4",
       "",
@@ -190484,6 +190715,12 @@
       "3",
       "",
       "James Norman Richardson"
+    ],
+    "202301": [
+      "Bedford Seminar",
+      "3",
+      "",
+      "James Norman Richardson"
     ]
   },
   "ARTS-2360": {
@@ -193399,6 +193636,13 @@
       "",
       "Nadarajah Narendran",
       "Alexandros Tsamis"
+    ],
+    "202301": [
+      "Doctoral Seminar 1",
+      "2",
+      "",
+      "Nadarajah Narendran",
+      "Jonas Braasch"
     ]
   },
   "ARCH-6920": {
@@ -193523,6 +193767,14 @@
       "2",
       "",
       "Jonas Braasch"
+    ],
+    "202301": [
+      "Doctoral Seminar 2",
+      "2",
+      "",
+      "Nadarajah Narendran",
+      "Jonas Braasch",
+      "Alexandros Tsamis"
     ]
   },
   "ARTS-1040": {
@@ -196774,6 +197026,13 @@
       "",
       "John Clifford Loercher",
       "Lonn J. Combs"
+    ],
+    "202301": [
+      "Energy, Comfort & Ecology",
+      "2",
+      "",
+      "John Clifford Loercher",
+      "Arta Yazdanseta"
     ]
   },
   "ARCH-2530": {
@@ -196850,6 +197109,14 @@
       "",
       "Adam Hassan Dayem",
       "Edwin Jhinang Liu"
+    ],
+    "202301": [
+      "Digital Constructs 2",
+      "2",
+      "",
+      "Adam Hassan Dayem",
+      "Walaid Sehwail, Caleb White",
+      "Adam Francis Petela"
     ]
   },
   "ARCH-2810": {
@@ -196954,6 +197221,15 @@
       "Yael Erel",
       "Per S. Svedberg",
       "Ryosuke Imaeda",
+      "Walaid Sehwail"
+    ],
+    "202301": [
+      "Architectural Design Studio 2",
+      "5",
+      "",
+      "Anthony Titus",
+      "John Rhett Russo, Anthony Titus",
+      "Per S. Svedberg, Anthony Titus",
       "Walaid Sehwail"
     ]
   },
@@ -197078,6 +197354,14 @@
       "Gustavo Enrique Alberto Crembil",
       "Per S. Svedberg",
       "Florencia Vetcher"
+    ],
+    "202301": [
+      "Architectural Case Studies",
+      "2",
+      "",
+      "Yael Erel",
+      "Leandro Piazzi",
+      "Per S. Svedberg"
     ]
   },
   "ARCH-4120": {
@@ -197199,6 +197483,12 @@
       "3",
       "",
       "Charles Portelli"
+    ],
+    "202301": [
+      "Environmental Parametrics",
+      "3",
+      "",
+      "Charles A. Portelli"
     ]
   },
   "ARCH-4340": {
@@ -197317,6 +197607,12 @@
       "2",
       "",
       "David Jonathon Pacheco"
+    ],
+    "202301": [
+      "Professional Practice 2",
+      "2",
+      "",
+      "David Jonathon Pacheco"
     ]
   },
   "ARCH-4580": {
@@ -197399,6 +197695,12 @@
       "Joshua William Hugo Draper"
     ],
     "202209": [
+      "Materials Systems & Production",
+      "3",
+      "",
+      "Joshua William Hugo Draper"
+    ],
+    "202301": [
       "Materials Systems & Production",
       "3",
       "",
@@ -197617,6 +197919,14 @@
       "James Fleet Hower",
       "Christianna Grace Bennett",
       "Florencia Vetcher"
+    ],
+    "202301": [
+      "Architectural Design Studio 5",
+      "5",
+      "",
+      "Matt Burgermaster",
+      "James Fleet Hower",
+      "Gustavo Enrique Alberto Crembil"
     ]
   },
   "ARCH-4976": {
@@ -199327,6 +199637,14 @@
       "",
       "Ryosuke Imaeda",
       "Matthew Joseph Lopez"
+    ],
+    "202301": [
+      "Digital Constructs 4",
+      "2",
+      "",
+      "Edwin Jhinang Liu, Matthew Joseph Lopez",
+      "Matthew Joseph Lopez",
+      "Hseng Tai Ja Reng Lintner, Matthew Joseph Lopez"
     ]
   },
   "ARCH-2820": {
@@ -199498,6 +199816,12 @@
       "David H Bell"
     ],
     "202201": [
+      "An Architectural Genealogy",
+      "3",
+      "",
+      "David H Bell"
+    ],
+    "202301": [
       "An Architectural Genealogy",
       "3",
       "",
@@ -199819,6 +200143,13 @@
       "",
       "Ryosuke Imaeda",
       "Matthew Joseph Lopez"
+    ],
+    "202301": [
+      "Digital Constructs 2",
+      "2",
+      "",
+      "Ryosuke Imaeda",
+      "Matthew Joseph Lopez"
     ]
   },
   "ARCH-5200": {
@@ -200012,6 +200343,12 @@
       "4",
       "",
       "Michael Todd Stradley"
+    ],
+    "202301": [
+      "Environmental & Ecological Sys",
+      "4",
+      "",
+      "Michael Todd Stradley"
     ]
   },
   "ARCH-5390": {
@@ -200059,6 +200396,12 @@
     ],
     "202201": [
       "Professional Practice II",
+      "2",
+      "",
+      "David Jonathon Pacheco"
+    ],
+    "202301": [
+      "Professional Practice 2",
       "2",
       "",
       "David Jonathon Pacheco"
@@ -200121,6 +200464,12 @@
     ],
     "202209": [
       "Graduate Environmental Parametrics",
+      "2",
+      "",
+      "Charles A. Portelli"
+    ],
+    "202301": [
+      "Environmental Parametrics",
       "2",
       "",
       "Charles A. Portelli"
@@ -200667,6 +201016,16 @@
       "Edwin Jhinang Liu",
       "Matthew Joseph Lopez",
       "Michael Todd Stradley"
+    ],
+    "202301": [
+      "Architectural Design Studio 4",
+      "5",
+      "",
+      "Adam Hassan Dayem",
+      "David H Bell",
+      "Edwin Jhinang Liu",
+      "Matthew Joseph Lopez",
+      "Yael Erel"
     ]
   },
   "ARCH-4110": {
@@ -200725,6 +201084,12 @@
       "2",
       "",
       "Rosaline May Lee"
+    ],
+    "202301": [
+      "Entrepreneurship &architecture",
+      "2",
+      "",
+      "Alec Walker, Daniel Stratford"
     ]
   },
   "ARCH-5360": {
@@ -200769,6 +201134,12 @@
       "4",
       "",
       "John Clifford Loercher"
+    ],
+    "202301": [
+      "Building Systems & Environment",
+      "4",
+      "",
+      "John Clifford Loercher"
     ]
   },
   "ARCH-5380": {
@@ -200809,6 +201180,12 @@
       "Katrina Pacheco"
     ],
     "202201": [
+      "Professional Practice 1",
+      "2",
+      "",
+      "Katrina Pacheco"
+    ],
+    "202301": [
       "Professional Practice 1",
       "2",
       "",
@@ -202293,6 +202670,14 @@
       "James Fleet Hower",
       "Christianna Grace Bennett",
       "Florencia Vetcher"
+    ],
+    "202301": [
+      "Architectural Design Studio 6",
+      "5",
+      "",
+      "Matt Burgermaster",
+      "James Fleet Hower",
+      "Gustavo Enrique Alberto Crembil"
     ]
   },
   "ARCH-4820": {
@@ -202407,6 +202792,13 @@
       "Ted Krueger",
       "Marcus Carter",
       "Yael Erel"
+    ],
+    "202301": [
+      "Comprehensive Design Studio 1",
+      "5",
+      "",
+      "Marcus Carter",
+      "Jillian Marie Crandall"
     ]
   },
   "ARCH-4910": {
@@ -204230,6 +204622,13 @@
       "",
       "Carla Leitao",
       "Jillian Marie Crandall"
+    ],
+    "202301": [
+      "Contemporary Design Approaches",
+      "3",
+      "",
+      "Carla Leitao",
+      "Jillian Marie Crandall"
     ]
   },
   "ARCH-4830": {
@@ -204321,6 +204720,15 @@
       "",
       "Lonn J. Combs",
       "Arta Yazdanseta"
+    ],
+    "202301": [
+      "Comprehensive Design Studio 2",
+      "5",
+      "",
+      "Lonn J. Combs",
+      "Arta Yazdanseta",
+      "Michael Todd Stradley",
+      "Leandro Piazzi"
     ]
   },
   "ARCH-4920": {
@@ -204377,6 +204785,16 @@
       "Christopher S Perry",
       "Hseng Tai Ja Reng Lintner",
       "John Rhett Russo"
+    ],
+    "202301": [
+      "Final Project Design Studio",
+      "5",
+      "[CI] ",
+      "Caleb White",
+      "Christopher S Perry",
+      "Hseng Tai Ja Reng Lintner",
+      "Ryosuke Imaeda",
+      "Florencia Vetcher"
     ]
   },
   "ARCH-4958": {
@@ -204515,6 +204933,12 @@
       "6",
       "",
       "Marcus Carter"
+    ],
+    "202301": [
+      "Graduate Final Project",
+      "6",
+      "",
+      "Christopher S Perry"
     ]
   },
   "ARTS-1050": {
@@ -206191,6 +206615,12 @@
       "2",
       "",
       "Per S. Svedberg"
+    ],
+    "202301": [
+      "Construction Ind Sem 1",
+      "2",
+      "",
+      "Lonn J. Combs"
     ]
   },
   "ARCH-4790": {
@@ -206266,6 +206696,12 @@
       "John Rhett Russo",
       "Florencia Vetcher",
       "Matt Burgermaster"
+    ],
+    "202301": [
+      "Architectural Design Studio 7",
+      "5",
+      "",
+      "Gustavo Enrique Alberto Crembil"
     ]
   },
   "ARCH-4890": {
@@ -207514,6 +207950,12 @@
       "2",
       "",
       "Lonn J. Combs"
+    ],
+    "202301": [
+      "Construction Industry Semr 2",
+      "2",
+      "",
+      "Lonn J. Combs"
     ]
   },
   "ARCH-4530": {
@@ -207542,6 +207984,12 @@
       "Mae-Ling Jovenes Lokko, Gustavo Enrique Alberto Crembil"
     ],
     "202201": [
+      "Building Sciences Capstone",
+      "5",
+      "[CI] ",
+      "John Clifford Loercher"
+    ],
+    "202301": [
       "Building Sciences Capstone",
       "5",
       "[CI] ",
@@ -207590,6 +208038,12 @@
       "2",
       "",
       "Alec Walker, Daniel Stratford"
+    ],
+    "202301": [
+      "Entrepreneurship &architecture",
+      "2",
+      "",
+      "Alec Walker, Daniel Stratford"
     ]
   },
   "ARCH-4880": {
@@ -207618,6 +208072,12 @@
       "Jonas Braasch"
     ],
     "202201": [
+      "Aural Architecture",
+      "3",
+      "",
+      "Jonas Braasch"
+    ],
+    "202301": [
       "Aural Architecture",
       "3",
       "",
@@ -208608,6 +209068,12 @@
   "ARCH-4957": {
     "201809": [
       "Latin American Arch/Urbanism",
+      "3",
+      "",
+      "Gustavo Enrique Alberto Crembil"
+    ],
+    "202301": [
+      "Latin America Arch /urbanism",
       "3",
       "",
       "Gustavo Enrique Alberto Crembil"
@@ -210044,6 +210510,12 @@
       "Daniel Rosenberg"
     ],
     "202201": [
+      "Systems Prototyping",
+      "3",
+      "",
+      "James Fleet Hower"
+    ],
+    "202301": [
       "Systems Prototyping",
       "3",
       "",
@@ -215267,6 +215739,14 @@
       "Matthew Joseph Lopez",
       "Per S. Svedberg",
       "Hseng Tai Ja Reng Lintner"
+    ],
+    "202301": [
+      "Portfolio Development",
+      "1",
+      "",
+      "Florencia Vetcher, Matthew Joseph Lopez",
+      "Claire Eileen Moriarty",
+      "Ryosuke Imaeda, Matthew Joseph Lopez"
     ]
   },
   "BCBP-4470": {
