@@ -288,19 +288,17 @@ var addCourseInfo = ()=>{
 
     title.innerText += ": " + cname;
     document.getElementById("cname").innerText = cname;
-
     document.getElementById("ccredits").innerText = last_term_offered ? course_data[last_term_offered][1] : "Unknown";
-    // document.getElementById("cprereqs").innerHTML = last_term_offered ? formatPrerequisites(prereqs[ccode],catalog) : "Unknown";
     document.getElementById("prereq-classes").innerHTML = last_term_offered ? pillFormatPrerequisites(prereqs[ccode],catalog,courses) : unknownRect;
 }
 
 var makeOfferingData = () => {
-    alt_codes = xlistings[ccode];
-    course_data = getCoursesData(ccode,courses);
+    alt_codes = (xlistings[ccode] || []).flatMap(c => c.search(/^STSO/) == -1 ? c : ["STSH"+c.substring(4),"STSS"+c.substring(4),c])
+    course_data = getCourseData(ccode,courses);
     terms_offered = new Set(Object.keys(course_data));
     scheduled_terms = new Set(Object.keys(courses["all_terms"]));
     terms_offered_alt_code = new Set(alt_codes
-                                .flatMap(c => Object.keys(courses[c] || [])
+                                .flatMap(c => Object.keys(getCourseData(c,courses))
                                 .filter(c => !terms_offered.has(c)
                                     && !terms_offered.has(c+"02")
                                     && !terms_offered.has(c+"03"))));
