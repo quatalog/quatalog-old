@@ -38,6 +38,7 @@ const set_term = function(c,term,type = "offered",l = []) {
     }
 }
 
+
 // just make them available to other functions up here. not like we're gonna be dealing with multiple classes in this scope.
 var all_terms;
 var course_data;
@@ -60,31 +61,64 @@ YP   YP Y88888P Y88888P 88      Y88888P 88   YD `8888Y'
 
 */
 
+const getCourseData = (course,courses_data)=>{
+	const cd = courses_data[course];
+	if(course.search(/^STSO/) == -1) {
+		return cd || {};
+	} else {
+		const stsh = courses_data["STSH"+course.substring(4)];
+		const stss = courses_data["STSS"+course.substring(4)];
+		return Object.assign(cd || {},stsh || {},stss || {}) || {};
+	}
+}
+
+// gets just the course link, no HTML
+const getCourseHref = (course)=>{
+	return 'href="?course='+course+'"';
+}
+
+const getLastTermOffered = (course,courses_data)=>{
+	return Object.keys(getCourseData(course,courses_data)).sort(compare_terms).slice(-1)[0];
+}
+
+// Helper to get the course name. Uses catalog and 
+const getCourseName = function(course,catalog,courses_data) {
+	if(catalog[course]) {
+		return " " + catalog[course]["name"];
+	} else {
+		try {
+			return " " + getCourseData(course,courses_data)[getLastTermOffered(course,courses_data)][0];
+		} catch {
+			return "";
+		}
+	}
+}
+
+
 // Makes courses links
-const linkify = function(course,catalog,name_override) {
-        return '<a href="?course='
+const linkify = function(course,catalog,courses_data) {
+        return "<a "+getCourseHref(course)+">"
         +course
-        +'">'
-        +course
-        +(name_override ? " " + name_override : (catalog[course] ? " " + catalog[course]["name"] : ""))
+        +getCourseName(course,catalog,courses_data)
         +"</a>";
 }
 
 // very similar to linkify except adds in pill styling. made separate so we don't mess up the linkify function
-const pillLinkify = (course,catalog,name_override) => {
-    return `<a class="course-pill" ${getClassHref(course)}>${course} ${name_override ? name_override : (catalog[course] ? catalog[course]["name"] : "")}</a>`
+const pillLinkify = function(course,catalog,courses_data) {
+    return '<a class="course-pill" '+getCourseHref(course)+">"
+    +course
+    +getCourseName(course,catalog,courses_data)
+    +"</a>";
 }
-
-
 
 // sam note: leaving these here for now but making new pill based ones
 
 // Helper functions for dealing with prerequisites
 // Catalog prerequisites are occasionally wrong,
 // so we will use SIS data
-const formatPrerequisites = function(prereq,catalog) {
+const formatPrerequisites = function(prereq,catalog,courses_data) {
     if(prereq) {
-        const fp = _formatPrerequisites(prereq,catalog);
+        const fp = _formatPrerequisites(prereq,catalog,courses_data);
         if(fp.search(/^\(/) != -1) {
             return fp.slice(1,-1);
         } else {
@@ -96,10 +130,10 @@ const formatPrerequisites = function(prereq,catalog) {
 }
 
 // Recursive helper function
-const _formatPrerequisites = function(prereq,catalog) {
+const _formatPrerequisites = function(prereq,catalog,courses_data) {
     if(prereq["type"] == "course") {
         const course = prereq["course"];
-        return linkify(course.substring(0,4)+"-"+course.substring(5),catalog);
+        return linkify(course.substring(0,4)+"-"+course.substring(5),catalog,courses_data);
     } else {
         return "("
             + prereq["nested"]
@@ -109,16 +143,16 @@ const _formatPrerequisites = function(prereq,catalog) {
     }
 }
 
-const noneRect = `<span class="none-rect">none</span>`;
-const unknownRect = `<span class="unknown-rect">unknown</span>`;
+const noneRect = '<span class="none-rect">none</span>';
+const unknownRect = '<span class="unknown-rect">unknown</span>';
 
 // Helper functions for dealing with prerequisites
 // Catalog prerequisites are occasionally wrong,
 // so we will use SIS data
 // returns up a pill based version of the prereq
-const pillFormatPrerequisites = function(prereq,catalog) {
+const pillFormatPrerequisites = function(prereq,catalog,courses_data) {
     if(prereq) {
-        const fp = _pillFormatPrerequisites(prereq,catalog);
+        const fp = _pillFormatPrerequisites(prereq,catalog,courses_data);
         if(fp.search(/^\(/) != -1) {
             return fp.slice(1,-1);
         } else {
@@ -132,21 +166,21 @@ const pillFormatPrerequisites = function(prereq,catalog) {
 
 
 // Recursive helper function
-const _pillFormatPrerequisites = function(prereq,catalog) {
+const _pillFormatPrerequisites = function(prereq,catalog,courses_data) {
     if(prereq["type"] == "course") {
         const course = prereq["course"];
         // return linkify(course.substring(0,4)+"-"+course.substring(5),catalog);
-        return pillLinkify(course.substring(0,4)+"-"+course.substring(5),catalog);
+        return pillLinkify(course.substring(0,4)+"-"+course.substring(5),catalog,courses_data);
     } else if(prereq["type"] == "or"){
-        return `<div class="pr-or-con"><div class="pr-or-title">one of:</div><div class="pr-or">`
+        return '<div class="pr-or-con"><div class="pr-or-title">one of:</div><div class="pr-or">'
         + prereq["nested"]
-            .map((x) => _pillFormatPrerequisites(x,catalog))
+            .map((x) => _pillFormatPrerequisites(x,catalog,courses_data))
             .join("")
         + "</div></div>";
     } else if(prereq["type"] == "and"){
         return prereq["nested"]
-            .map((x) => _pillFormatPrerequisites(x,catalog))
-            .join(`<div class="pr-and">${prereq.type}</div>`);
+            .map((x) => _pillFormatPrerequisites(x,catalog,courses_data))
+            .join('<div class="pr-and">'+prereq.type+"</div>");
     } else {
         return "";
     }
@@ -165,7 +199,7 @@ const createList = function(list,titleid,listid,catalog = false) {
         for(const code of list) {
             document.getElementById(listid)
                 .appendChild(document.createElement("li"))
-                .innerHTML = catalog ? linkify(code,catalog) : code;
+                .innerHTML = catalog ? linkify(code,catalog,courses_data) : code;
         }
     }
 }
@@ -193,7 +227,7 @@ const addAttrs = (attrList, attrContainerId) => {
         var thisPill = document.getElementById(attrContainerId)
             .appendChild(document.createElement("span"));
         thisPill.setAttribute("class", "attr-pill");
-        thisPill.id = `attr-pill-${idableAttr}`;
+        thisPill.id = 'attr-pill-'+idableAttr;
         thisPill.innerHTML = thisAttr;
     }
 }
@@ -240,25 +274,24 @@ var makeTable = () => {
     return all_terms;
 }
 
+
 var addCourseInfo = ()=>{
     // Set up the code, catalog title, and catalog description
     document.getElementById("ccode").innerText = ccode;
     const title = document.getElementById("title");
-    const catalog_entry = catalog[ccode];
     title.innerText = ccode;
-    var cname;
-    if(catalog_entry) {
-        cname = catalog_entry["name"];
-        document.getElementById("cdesc").innerText = catalog_entry["description"];
-    } else {
-        cname = course_data[last_term_offered][0];
-    }
+    const cname = getCourseName(ccode,catalog,courses);
+    const catalog_entry = catalog[ccode];
+    document.getElementById("cdesc").innerText = catalog_entry
+		? catalog_entry["description"]
+		: "This course is not in the most recent catalog. If the course code is X96X or X97X, this is because it is a topics course code, which are often reused and thus do not have a catalog entry. Otherwise, the course may have been discontinued."
+
     title.innerText += ": " + cname;
     document.getElementById("cname").innerText = cname;
 
     document.getElementById("ccredits").innerText = last_term_offered ? course_data[last_term_offered][1] : "Unknown";
     // document.getElementById("cprereqs").innerHTML = last_term_offered ? formatPrerequisites(prereqs[ccode],catalog) : "Unknown";
-    document.getElementById("prereq-classes").innerHTML = last_term_offered ? pillFormatPrerequisites(prereqs[ccode],catalog) : unknownRect;
+    document.getElementById("prereq-classes").innerHTML = last_term_offered ? pillFormatPrerequisites(prereqs[ccode],catalog,courses) : unknownRect;
 }
 
 var makeOfferingData = () => {
@@ -285,7 +318,6 @@ var makeOfferingData = () => {
                                     ));
     unscheduled_terms = new Set(all_terms
                                 .filter(item => !scheduled_terms.has(item)));
-
     
     last_term_offered = Object.keys(course_data).sort(compare_terms).slice(-1)[0];
 }
@@ -293,9 +325,7 @@ var makeOfferingData = () => {
 var colorTable = () => {
     // Terms offered under normal code, in green
     // Terms not offered and not scheduled, in red and gray
-    // Terms offered only under different code, in yellow (e.g. STSS/STSH, Materials Science)
-    console.log(terms_offered)
-    console.log(terms_offered_alt_code)
+    // Terms offered only under different code, in yellow (e.g. Materials Science)
     Object.keys(course_data).forEach(t => set_term(course_data,t))
     Array.from(terms_offered_alt_code).forEach(t => set_term("",t,"offered-diff-code",[]));
     Array.from(terms_not_offered).forEach(t => set_term("",t,"not-offered",[]));
@@ -306,6 +336,7 @@ var colorTable = () => {
         document.getElementById("disable-enrichment").media = "";
     }
 }
+
 
 /*
  .d88b.  d8b   db db       .d88b.   .d8b.  d8888b.
