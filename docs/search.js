@@ -1,5 +1,5 @@
 const displaySearchTerm = () => {
-    document.getElementById("searchTerm").innerHTML = '"' + ccode.replace("+", " ").toLowerCase() + '"';
+    document.getElementById("searchTerm").innerHTML = '"' + ccode.replaceAll("+", " ").toLowerCase() + '"';
 }
 
 
@@ -8,7 +8,7 @@ var makeCourseHTML = (courseCode, score) => {
     return `
     <div class="courseContainer" onclick="gotoCourse('${courseCode}')">
         <div class="courseShelf">
-            <span class="courseName">${thisCourse.name}</span> • <span class="courseCode">${courseCode}</span> -- ${score}
+            <span class="courseName">${thisCourse.name}</span> • <span class="courseCode">${courseCode}</span>
         </div>
         <div class="attrs"></div>
         <div class="description">${thisCourse.description}</div>
@@ -36,16 +36,41 @@ const searchConfig = {
         }
     ]
 }
+const searchConfigFuzzy = {
+    includeScore: true,
+    ignoreLocation: true,
+    threshold: 0.1,
+    keys: [
+        {
+            name: 'fullCode',
+            weight: 0.15
+        },
+        {
+            name: 'name',
+            weight: 0.7
+        },
+        {
+            name: 'description',
+            weight: 0.15
+        }
+    ]
+}
 
 var fuzzySearchCourses = (searchInput) => {
     const fuse = new Fuse(searchableCatalog, searchConfig);
     console.log(`searching for ${searchInput}...`);
     // return fuse.search(`="${searchInput}"`);
-    return fuse.search(`'"${searchInput}"`);
+    var includeResults = fuse.search(`'"${searchInput}"`);
+    if(includeResults.length > 0){
+        return includeResults;
+    } else {
+        const fuzzyFuse = new Fuse(searchableCatalog, searchConfigFuzzy);
+        return fuzzyFuse.search(searchInput);
+    }
 }
 
 var showSearchResults = () => {
-    var searchResults = fuzzySearchCourses(ccode.replace("+", " ").toLowerCase());
+    var searchResults = fuzzySearchCourses(ccode.replaceAll("+", " ").toLowerCase());
     var validResults = [];
     for(var i = 0; i < 20; i++){
         var thisResult = searchResults[i];
@@ -59,6 +84,7 @@ var showSearchResults = () => {
             // document.getElementById("searchResultsContainer").innerHTML += makeCourseHTML(thisCourseCode, thisResult.score);
         }
     }
+    // show the closest matches first but otherwise sort by course code
     validResults.sort((a,b)=>{
         if(a.score - b.score > 0.05){
             return 1;

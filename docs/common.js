@@ -13,7 +13,7 @@ var prepSearch = (elem, event)=>{
             gotoCourse(`${subCode}-${courseNum}`);
         } else {
             // course doesn't exist
-            window.location.href = `./search.html?search=${elem.value.replace(" ", "+")}`;
+            window.location.href = `./search.html?search=${elem.value.replace(/ /g, "+")}`;
             showSearchResults();
         }
     }
