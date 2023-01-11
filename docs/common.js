@@ -1,13 +1,12 @@
-
+"use strict";
 // just redirects you to the course code you enter. 
 // need to add checking here
-var prepSearch = (elem, event)=>{
+const prepSearch = (elem, event)=>{
     console.log(courses.length);
     if(event.key == "Enter"){
-        var courseCodeInput = elem.value;
-        courseCodeInput = courseCodeInput.replace(" ", "").replace("-", "");
-        var subCode = courseCodeInput.substring(0,4).toUpperCase();
-        var courseNum = courseCodeInput.substring(courseCodeInput.length-4,courseCodeInput.length);
+        const courseCodeInput = elem.value.replace(" ", "").replace("-", "");
+        const subCode = courseCodeInput.substring(0,4).toUpperCase();
+        const courseNum = courseCodeInput.substring(courseCodeInput.length-4,courseCodeInput.length);
         if(`${subCode}-${courseNum}` in catalog){
             // course exists
             gotoCourse(`${subCode}-${courseNum}`);
@@ -64,15 +63,15 @@ const isCourseDead = (courseCode)=>{
     if(last_term_offered == undefined){
         return 2;
     }
-    var lastYear = last_term_offered.toString().substring(0,4);
-    var currentYear = current_term.toString().substring(0,4);
+    const lastYear = last_term_offered.toString().substring(0,4);
+    const currentYear = current_term.toString().substring(0,4);
     return currentYear-lastYear > 4;
 }
 
 // so we can use fuse.js to fuzzy search it
-var makeSearchableCatalog = (ctlg) => {
-    var ctlgKeys = Object.keys(ctlg);
-    ctlgArray = [];
+const makeSearchableCatalog = (ctlg) => {
+    const ctlgKeys = Object.keys(ctlg);
+    var ctlgArray = [];
     for(var c = 0; c < ctlgKeys.length; c++){
         var thisElem = ctlg[ctlgKeys[c]];
         thisElem["fullCode"] = ctlgKeys[c];
@@ -91,7 +90,7 @@ const _coreqs = fetch("./quatalog-data/corequisites.json").then(data => data.jso
 const _attrs = fetch("./quatalog-data/attributes.json").then(data => data.json());
 
 // call this from any window.onload that needs access to the data 
-var loadData = async ()=>{
+const loadData = async ()=>{
     return new Promise(async (resolve)=>{
         console.log(`start loading data`);
         globalThis.xlistings = await _xlistings;
@@ -107,9 +106,7 @@ var loadData = async ()=>{
 }
 
 // this will get overridden by other window.onload assignments. It is a backup.
-window.onload = async ()=>{
-    await loadData();
-}
+window.onload = loadData;
 
 /*
 d888888b  .o88b.  .d88b.  d8b   db      db   db d88888b db      d8888b. d88888b d8888b. .d8888.

@@ -1,11 +1,13 @@
+"use strict";
+
 const displaySearchTerm = () => {
     document.getElementById("searchTerm").innerHTML = '"' + ccode.replaceAll("+", " ").toLowerCase() + '"';
 }
 
-var makeAttrListHTML = (courseCode) => {
+const makeAttrListHTML = (courseCode) => {
     var attrListHTML = '';
     if(courseCode in attrs){
-        var thisCourseAttrs = attrs[courseCode];
+        const thisCourseAttrs = attrs[courseCode];
         for(var i = 0; i < thisCourseAttrs.length; i++){
             var thisAttr = thisCourseAttrs[i];
             if(thisAttr == "Communication Intensive"){
@@ -43,7 +45,7 @@ var makeAttrListHTML = (courseCode) => {
     return attrListHTML;
 }
 
-var makeDeadHTML = (courseCode) => {
+const makeDeadHTML = (courseCode) => {
     const isDead = isCourseDead(courseCode);
     if(isDead == 2){
         return `<div class="dead sattr sattr-pill">Not Yet Offered${iconSVGs.amogus}</div>`;
@@ -54,7 +56,7 @@ var makeDeadHTML = (courseCode) => {
     return '';
 }
 
-var makeCourseHTML = (courseCode, score) => {
+const makeCourseHTML = (courseCode, score) => {
     const thisCourse = catalog[courseCode];
     return `
     <div class="courseContainer" onclick="gotoCourse('${courseCode}')">
@@ -110,11 +112,11 @@ const searchConfigFuzzy = {
     ]
 }
 
-var fuzzySearchCourses = (searchInput) => {
+const fuzzySearchCourses = (searchInput) => {
     const fuse = new Fuse(searchableCatalog, searchConfig);
     console.log(`searching for ${searchInput}...`);
     // return fuse.search(`="${searchInput}"`);
-    var includeResults = fuse.search(`'"${searchInput}"`);
+    const includeResults = fuse.search(`'"${searchInput}"`);
     if(includeResults.length > 0){
         return includeResults;
     } else {
@@ -123,8 +125,8 @@ var fuzzySearchCourses = (searchInput) => {
     }
 }
 
-var showSearchResults = () => {
-    var searchResults = fuzzySearchCourses(ccode.replaceAll("+", " ").toLowerCase());
+const showSearchResults = () => {
+    const searchResults = fuzzySearchCourses(ccode.replaceAll("+", " ").toLowerCase());
     var validResults = [];
     for(var i = 0; i < 20; i++){
         var thisResult = searchResults[i];
