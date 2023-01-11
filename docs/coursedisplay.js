@@ -49,6 +49,17 @@ var unscheduled_terms;
 var last_term_offered;
 var alt_codes;
 
+
+/*
+db   db d88888b db      d8888b. d88888b d8888b. .d8888.
+88   88 88'     88      88  `8D 88'     88  `8D 88'  YP
+88ooo88 88ooooo 88      88oodD' 88ooooo 88oobY' `8bo.
+88~~~88 88~~~~~ 88      88~~~   88~~~~~ 88`8b     `Y8b.
+88   88 88.     88booo. 88      88.     88 `88. db   8D
+YP   YP Y88888P Y88888P 88      Y88888P 88   YD `8888Y'
+
+*/
+
 // Makes courses links
 const linkify = function(course,catalog,name_override) {
         return '<a href="?course='
@@ -159,6 +170,17 @@ const createList = function(list,titleid,listid,catalog = false) {
     }
 }
 
+
+/*
+db   db d888888b  d888b  db   db      db      d88888b db    db d88888b db
+88   88   `88'   88' Y8b 88   88      88      88'     88    88 88'     88
+88ooo88    88    88      88ooo88      88      88ooooo Y8    8P 88ooooo 88
+88~~~88    88    88  ooo 88~~~88      88      88~~~~~ `8b  d8' 88~~~~~ 88
+88   88   .88.   88. ~8~ 88   88      88booo. 88.      `8bd8'  88.     88booo.
+YP   YP Y888888P  Y888P  YP   YP      Y88888P Y88888P    YP    Y88888P Y88888P
+
+high level functions called directly from onload.
+*/
 
 
 // adds the little pills for the attributes
@@ -284,6 +306,16 @@ var colorTable = () => {
         document.getElementById("disable-enrichment").media = "";
     }
 }
+
+/*
+ .d88b.  d8b   db db       .d88b.   .d8b.  d8888b.
+.8P  Y8. 888o  88 88      .8P  Y8. d8' `8b 88  `8D
+88    88 88V8o 88 88      88    88 88ooo88 88   88
+88    88 88 V8o88 88      88    88 88~~~88 88   88
+`8b  d8' 88  V888 88booo. `8b  d8' 88   88 88  .8D
+ `Y88P'  VP   V8P Y88888P  `Y88P'  YP   YP Y8888D'
+
+*/
 
 window.onload = async function() {
     await loadData(); // load all quatalog data
