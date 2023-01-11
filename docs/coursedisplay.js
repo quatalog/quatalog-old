@@ -1,6 +1,5 @@
 "use strict";
 // Get course code from URL
-const ccode = window.location.search.substring(1).toUpperCase().split("=").slice(-1)[0];
 
 const set_term = function(c,term,type = "offered",l = []) {
     const inst = c[term] || l;
@@ -39,10 +38,7 @@ const set_term = function(c,term,type = "offered",l = []) {
     }
 }
 
-// gets just the course link, no HTML
-const getClassHref = (course)=>{
-    return `href="?course=${course}"`;
-}
+
 
 // Makes courses links
 const linkify = function(course,catalog,name_override) {
@@ -202,22 +198,8 @@ const compare_terms = function(a,b) {
         }
 }
 
-// Get relevant JSON data...
-const _courses = fetch("./quatalog-data/terms_offered.json").then(data => data.json());
-const _catalog = fetch("./quatalog-data/catalog.json").then(data => data.json());
-const _prereqs = fetch("./quatalog-data/prerequisites.json").then(data => data.json());
-const _xlistings = fetch("./quatalog-data/cross_listings.json").then(data => data.json());
-const _coreqs = fetch("./quatalog-data/corequisites.json").then(data => data.json());
-const _attrs = fetch("./quatalog-data/attributes.json").then(data => data.json());
 window.onload = async function() {
-    // ...and load it once the page has loaded
-    const xlistings = await _xlistings;
-    const catalog = await _catalog;
-    const courses = await _courses;
-    const prereqs = await _prereqs;
-    const coreqs = await _coreqs;
-    const attrs = await _attrs;
-    const current_term = Object.keys(courses["current_term"])[0];
+    await loadData(); // load all quatalog data
 
     // Use HTML template to create rows in the table
     const year_row_template = document.getElementById("year-row").innerHTML;

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title id="Quatalog"></title>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="./common.js"></script>
+    <script src="./search.js"></script>
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./search.css" />
+</head>
+<body>
+    <div id="qlog-header">
+        <a id="qlog-wordmark" href="./">
+            Quatalog
+        </a>
+        <div id="header-sb-spacer">
+            <div id="header-sb-container">
+                <input type="text" id="header-sb-input" placeholder="Course Code.." onkeydown="prepSearch(this, event)">
+            </div>
+        </div>
+    </div>
+    <div id="searchTitle">
+        Search Results for <span id="searchTerm"></span>
+    </div>
+    <div id="searchResultsContainer">
+        
+    </div>
+</body>

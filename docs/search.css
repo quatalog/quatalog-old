@@ -1,0 +1,97 @@
+body{
+    background-color: var(--deep-purple);
+    overflow-x:hidden;
+}
+
+#searchTitle{
+    font-size: 5vmin;
+    font-family: "proxima-nova";
+    position: absolute;
+    width: 100vw;
+    height: 6vmin;
+    left: 0vw;
+    text-align: center;
+    top: 9vmin;
+    color: var(--quacs-yellow);
+}
+
+#searchTerm{
+    color: var(--quacs-midtone);
+}
+
+#searchResultsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 19vmin;
+}
+
+.courseContainer{
+    width: 70vw;
+    background: var(--mid-dark-purple);
+    margin-bottom: 2vmin;
+    color: var(--quacs-white);
+    font-family: 'proxima-nova';
+    cursor: pointer;
+    border-radius: 2vmin;
+    position: relative;
+    transition: width 0.1s, background 0.1s, border-radius 0.1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.courseContainer:hover{
+    background: var(--mid-purple);
+    width: 71vw;
+    border-radius: calc(2vmin + 0.5vw);
+}
+
+.courseContainer:hover .courseShelf{
+    padding-left: calc(1vmin + 0.5vw);
+}
+
+.courseShelf{
+    padding: 1vmin;
+    transition: padding .1s;
+    /* display: flex; */
+    flex-direction: row;
+    align-items: baseline;
+    /* width: 100%; */
+    font-size: 3vmin;
+    color: var(--quacs-midtone);
+    border-bottom: solid;
+    border-bottom-width: 0.2vmin;
+}
+
+.courseName{
+    color: var(--quacs-yellow);
+    font-size: 3.25vmin;
+    margin-left: 0.5vmin;
+}
+
+.courseCode{
+    color: var(--quacs-midtone);
+}
+
+.description{
+    padding: 1.5vmin;
+    transition: padding .1s;
+    font-size: 2.5vmin;
+}
+
+.courseContainer:hover .description{
+    padding-left: calc(1.5vmin + 0.5vw);
+    padding-right: calc(1.5vmin + 0.5vw);
+}
+
+@media (orientation: portrait){
+    .courseContainer{
+        width: 90vw;
+    }
+    .courseContainer:hover{
+        width: 91vw;
+    }
+}

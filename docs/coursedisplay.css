@@ -16,59 +16,6 @@ db   db d88888b  .d8b.  d8888b. d88888b d8888b.
 YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
 */
 
-#qlog-header{
-    border-bottom: 0.2vmin solid var(--quacs-yellow);
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 5vmin;
-    position: absolute;
-}
-
-#qlog-wordmark{
-    color: var(--quacs-yellow);
-    font-family: "rivalsans";
-    font-size: 3.5vmin;
-    left: 2vmin;
-    top: 0;
-    font-weight: 900;
-    position: absolute;
-    text-decoration: none;
-}
-
-#header-sb-spacer{
-    width: 30vmin;
-    right: 3.5vmin;
-    height: 4.5vmin;
-    position: absolute;
-    display:grid;
-    align-content: space-around;
-    justify-content: space-around;
-}
-
-#header-sb-container{
-    height: 4vmin;
-    position: absolute;
-    top: 0.5vmin;
-    width: 30vmin;
-    background: var(--quacs-white);
-    border-radius: 4vmin;
-}
-
-#header-sb-input{
-    position: absolute;
-    height: 3.5vmin;
-    left: 2vmin;
-    top:0.25vmin;
-    background: none;
-    border: none;
-    outline:none;
-    font-size: 2vmin;
-    width: 28vmin;
-    overflow-x: scroll;
-    font-family: "proxima-nova";
-    color: var(--deep-purple);
-}
 
 #course-info-container{
     position:absolute;
