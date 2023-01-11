@@ -54,15 +54,6 @@ const isCourseDead = (courseCode)=>{
     return currentYear-lastYear > 4;
 }
 
-const ccode = window.location.search.substring(1).toUpperCase().split("=").slice(-1)[0];
-// quatalog data loading (in common so other files can access it)
-const _courses = fetch("./quatalog-data/terms_offered.json").then(data => data.json());
-const _catalog = fetch("./quatalog-data/catalog.json").then(data => data.json());
-const _prereqs = fetch("./quatalog-data/prerequisites.json").then(data => data.json());
-const _xlistings = fetch("./quatalog-data/cross_listings.json").then(data => data.json());
-const _coreqs = fetch("./quatalog-data/corequisites.json").then(data => data.json());
-const _attrs = fetch("./quatalog-data/attributes.json").then(data => data.json());
-
 // so we can use fuse.js to fuzzy search it
 var makeSearchableCatalog = (ctlg) => {
     var ctlgKeys = Object.keys(ctlg);
@@ -74,6 +65,15 @@ var makeSearchableCatalog = (ctlg) => {
     }
     return ctlgArray;
 }
+
+const ccode = window.location.search.substring(1).toUpperCase().split("=").slice(-1)[0];
+// quatalog data loading (in common so other files can access it)
+const _courses = fetch("./quatalog-data/terms_offered.json").then(data => data.json());
+const _catalog = fetch("./quatalog-data/catalog.json").then(data => data.json());
+const _prereqs = fetch("./quatalog-data/prerequisites.json").then(data => data.json());
+const _xlistings = fetch("./quatalog-data/cross_listings.json").then(data => data.json());
+const _coreqs = fetch("./quatalog-data/corequisites.json").then(data => data.json());
+const _attrs = fetch("./quatalog-data/attributes.json").then(data => data.json());
 
 // call this from any window.onload that needs access to the data 
 var loadData = async ()=>{
