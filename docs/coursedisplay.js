@@ -61,24 +61,9 @@ YP   YP Y88888P Y88888P 88      Y88888P 88   YD `8888Y'
 
 */
 
-const getCourseData = (course,courses_data)=>{
-	const cd = courses_data[course];
-	if(course.search(/^STSO/) == -1) {
-		return cd || {};
-	} else {
-		const stsh = courses_data["STSH"+course.substring(4)];
-		const stss = courses_data["STSS"+course.substring(4)];
-		return Object.assign(cd || {},stsh || {},stss || {}) || {};
-	}
-}
-
 // gets just the course link, no HTML
 const getCourseHref = (course)=>{
 	return 'href="?course='+course+'"';
-}
-
-const getLastTermOffered = (course,courses_data)=>{
-	return Object.keys(getCourseData(course,courses_data)).sort(compare_terms).slice(-1)[0];
 }
 
 // Helper to get the course name. Uses catalog and 

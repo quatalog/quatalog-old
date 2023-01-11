@@ -44,7 +44,7 @@ var makeAttrListHTML = (courseCode) => {
 }
 
 var makeDeadHTML = (courseCode) => {
-    var isDead = isCourseDead(courseCode);
+    const isDead = isCourseDead(courseCode);
     if(isDead == 2){
         return `<div class="dead sattr sattr-pill">Not Yet Offered${iconSVGs.amogus}</div>`;
     }
@@ -55,7 +55,7 @@ var makeDeadHTML = (courseCode) => {
 }
 
 var makeCourseHTML = (courseCode, score) => {
-    var thisCourse = catalog[courseCode];
+    const thisCourse = catalog[courseCode];
     return `
     <div class="courseContainer" onclick="gotoCourse('${courseCode}')">
         <div class="courseShelf">

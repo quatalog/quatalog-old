@@ -28,6 +28,21 @@ const gotoCourse = (courseCode)=>{
     window.location.href = `./coursedisplay.html?course=${courseCode}`;
 }
 
+const getCourseData = (course)=>{
+	const cd = courses[course];
+	if(course.search(/^STSO/) == -1) {
+		return cd || {};
+	} else {
+		const stsh = courses["STSH"+course.substring(4)];
+		const stss = courses["STSS"+course.substring(4)];
+		return Object.assign(cd || {},stsh || {},stss || {}) || {};
+	}
+}
+
+const getLastTermOffered = (course)=>{
+	return Object.keys(getCourseData(course)).sort(compare_terms).slice(-1)[0];
+}
+
 const compare_terms = function(a,b) {
     if(a == b) {
         return 0;
@@ -45,7 +60,7 @@ const compare_terms = function(a,b) {
 }
 
 const isCourseDead = (courseCode)=>{
-    var last_term_offered = Object.keys(courses[courseCode] || []).sort(compare_terms).slice(-1)[0];
+    const last_term_offered = getLastTermOffered(courseCode);
     if(last_term_offered == undefined){
         return 2;
     }
