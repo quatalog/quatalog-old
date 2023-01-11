@@ -1,6 +1,5 @@
 "use strict";
 // Get course code from URL
-const ccode = window.location.search.substring(1).toUpperCase().split("=").slice(-1)[0];
 
 const set_term = function(c,term,type = "offered",l = []) {
     const inst = c[term] || l;
@@ -39,6 +38,29 @@ const set_term = function(c,term,type = "offered",l = []) {
     }
 }
 
+
+// just make them available to other functions up here. not like we're gonna be dealing with multiple classes in this scope.
+var all_terms;
+var course_data;
+var terms_offered;
+var scheduled_terms;
+var terms_offered_alt_code;
+var terms_not_offered;
+var unscheduled_terms;
+var last_term_offered;
+var alt_codes;
+
+
+/*
+db   db d88888b db      d8888b. d88888b d8888b. .d8888.
+88   88 88'     88      88  `8D 88'     88  `8D 88'  YP
+88ooo88 88ooooo 88      88oodD' 88ooooo 88oobY' `8bo.
+88~~~88 88~~~~~ 88      88~~~   88~~~~~ 88`8b     `Y8b.
+88   88 88.     88booo. 88      88.     88 `88. db   8D
+YP   YP Y88888P Y88888P 88      Y88888P 88   YD `8888Y'
+
+*/
+
 const getCourseData = (course,courses_data)=>{
 	const cd = courses_data[course];
 	if(course.search(/^STSO/) == -1) {
@@ -71,6 +93,7 @@ const getCourseName = function(course,catalog,courses_data) {
 		}
 	}
 }
+
 
 // Makes courses links
 const linkify = function(course,catalog,courses_data) {
@@ -182,6 +205,17 @@ const createList = function(list,titleid,listid,catalog = false) {
 }
 
 
+/*
+db   db d888888b  d888b  db   db      db      d88888b db    db d88888b db
+88   88   `88'   88' Y8b 88   88      88      88'     88    88 88'     88
+88ooo88    88    88      88ooo88      88      88ooooo Y8    8P 88ooooo 88
+88~~~88    88    88  ooo 88~~~88      88      88~~~~~ `8b  d8' 88~~~~~ 88
+88   88   .88.   88. ~8~ 88   88      88booo. 88.      `8bd8'  88.     88booo.
+YP   YP Y888888P  Y888P  YP   YP      Y88888P Y88888P    YP    Y88888P Y88888P
+
+high level functions called directly from onload.
+*/
+
 
 // adds the little pills for the attributes
 const addAttrs = (attrList, attrContainerId) => {
@@ -213,43 +247,11 @@ const handleCrossListings = (cList, containerId, listId, catalog) => {
     }
 }
 
-const compare_terms = function(a,b) {
-        if(a == b) {
-            return 0;
-        } if(a.substring(0,6) < b.substring(0,6)) {
-            return -1;
-        } else if(a.substring(0,6) > b.substring(0,6)) {
-            return 1;
-        } else if(a.length < b.length) {
-            return -1;
-        } else if(a.substring(7) < b.substring(7)) {
-            return -1;
-        } else {
-            return 1;
-        }
-}
-
-// Get relevant JSON data...
-const _courses = fetch("./quatalog-data/terms_offered.json").then(data => data.json());
-const _catalog = fetch("./quatalog-data/catalog.json").then(data => data.json());
-const _prereqs = fetch("./quatalog-data/prerequisites.json").then(data => data.json());
-const _xlistings = fetch("./quatalog-data/cross_listings.json").then(data => data.json());
-const _coreqs = fetch("./quatalog-data/corequisites.json").then(data => data.json());
-const _attrs = fetch("./quatalog-data/attributes.json").then(data => data.json());
-window.onload = async function() {
-    // ...and load it once the page has loaded
-    const xlistings = await _xlistings;
-    const catalog = await _catalog;
-    const courses = await _courses;
-    const prereqs = await _prereqs;
-    const coreqs = await _coreqs;
-    const attrs = await _attrs;
-    const current_term = Object.keys(courses["current_term"])[0];
-
+var makeTable = () => {
     // Use HTML template to create rows in the table
     const year_row_template = document.getElementById("year-row").innerHTML;
     const table = document.getElementById("years-table");
-    var all_terms = [];
+    all_terms = [];
     for(var i = parseInt(current_term.substring(0,4));i >= 2007;i--) {
         const row = table.insertRow(-1);
         row.classList.add(i);
@@ -269,38 +271,11 @@ window.onload = async function() {
                     j+"09",
                     j+"12");
     }
+    return all_terms;
+}
 
 
-    // Create bulleted lists of cross-listings, corequisites, attributes
-    // make the cross listings
-    handleCrossListings(xlistings[ccode], "crosslist-container", "crosslist-classes", catalog);
-    // make the coreqs
-    handleCrossListings(coreqs[ccode], "coreq-container", "coreq-classes", catalog);
-    const alt_codes = xlistings[ccode] || [];
-    addAttrs(attrs[ccode],"cattrs-container");
-
-
-    const course_data = getCourseData(ccode,courses);
-    const terms_offered = new Set(Object.keys(course_data));
-    const scheduled_terms = new Set(Object.keys(courses["all_terms"]));
-    const terms_offered_alt_code = new Set(alt_codes
-                                .flatMap(c => Object.keys(courses[c] || [])
-                                .filter(c => !terms_offered.has(c)
-                                    && !terms_offered.has(c+"02")
-                                    && !terms_offered.has(c+"03"))));
-    const terms_not_offered = new Set(Object.keys(courses["all_terms"])
-                                .filter(item => !terms_offered.has(item)
-                                    && !terms_offered.has(item+"02")
-                                    && !terms_offered.has(item+"03")
-                                    && !terms_offered_alt_code.has(item)
-                                    && !terms_offered_alt_code.has(item+"02")
-                                    && !terms_offered_alt_code.has(item+"03")
-                                    ));
-    const unscheduled_terms = new Set(all_terms
-                                .filter(item => !scheduled_terms.has(item)));
-
-    const last_term_offered = getLastTermOffered(ccode,courses);
-
+var addCourseInfo = ()=>{
     // Set up the code, catalog title, and catalog description
     document.getElementById("ccode").innerText = ccode;
     const title = document.getElementById("title");
@@ -317,7 +292,37 @@ window.onload = async function() {
     document.getElementById("ccredits").innerText = last_term_offered ? course_data[last_term_offered][1] : "Unknown";
     // document.getElementById("cprereqs").innerHTML = last_term_offered ? formatPrerequisites(prereqs[ccode],catalog) : "Unknown";
     document.getElementById("prereq-classes").innerHTML = last_term_offered ? pillFormatPrerequisites(prereqs[ccode],catalog,courses) : unknownRect;
+}
 
+var makeOfferingData = () => {
+    alt_codes = (xlistings[ccode] || [])
+                        .concat([ccode])
+                        .flatMap(c => c.search(/^STSO/) == -1 ? c :
+                            ["STSH"+c.substring(4),"STSS"+c.substring(4),c])
+                        .slice(0,-1);
+    course_data = courses[ccode] || [];
+    terms_offered = new Set(Object.keys(course_data));
+    scheduled_terms = new Set(Object.keys(courses["all_terms"]));
+    terms_offered_alt_code = new Set(alt_codes
+                                .flatMap(c => Object.keys(courses[c] || [])
+                                .filter(c => !terms_offered.has(c)
+                                    && !terms_offered.has(c+"02")
+                                    && !terms_offered.has(c+"03"))));
+    terms_not_offered = new Set(Object.keys(courses["all_terms"])
+                                .filter(item => !terms_offered.has(item)
+                                    && !terms_offered.has(item+"02")
+                                    && !terms_offered.has(item+"03")
+                                    && !terms_offered_alt_code.has(item)
+                                    && !terms_offered_alt_code.has(item+"02")
+                                    && !terms_offered_alt_code.has(item+"03")
+                                    ));
+    unscheduled_terms = new Set(all_terms
+                                .filter(item => !scheduled_terms.has(item)));
+    
+    last_term_offered = Object.keys(course_data).sort(compare_terms).slice(-1)[0];
+}
+
+var colorTable = () => {
     // Terms offered under normal code, in green
     // Terms not offered and not scheduled, in red and gray
     // Terms offered only under different code, in yellow (e.g. Materials Science)
@@ -330,4 +335,39 @@ window.onload = async function() {
     if(!Array.from(terms_offered).filter(item => item.substring(4,6) == "12").length) {
         document.getElementById("disable-enrichment").media = "";
     }
+}
+
+
+/*
+ .d88b.  d8b   db db       .d88b.   .d8b.  d8888b.
+.8P  Y8. 888o  88 88      .8P  Y8. d8' `8b 88  `8D
+88    88 88V8o 88 88      88    88 88ooo88 88   88
+88    88 88 V8o88 88      88    88 88~~~88 88   88
+`8b  d8' 88  V888 88booo. `8b  d8' 88   88 88  .8D
+ `Y88P'  VP   V8P Y88888P  `Y88P'  YP   YP Y8888D'
+
+*/
+
+window.onload = async function() {
+    await loadData(); // load all quatalog data
+
+    // make the table itself
+    makeTable();
+
+    // Create bulleted lists of cross-listings, corequisites, attributes
+
+    // make the cross listings
+    handleCrossListings(xlistings[ccode], "crosslist-container", "crosslist-classes", catalog);
+    // make the coreqs
+    handleCrossListings(coreqs[ccode], "coreq-container", "coreq-classes", catalog);
+    // make the attributes
+    addAttrs(attrs[ccode],"cattrs-container");
+
+    // get the actual data. stores it in global-ish variables for easy access
+    makeOfferingData();
+
+    // adds course info (name, description, etc)
+    addCourseInfo();
+
+    colorTable();
 }

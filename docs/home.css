@@ -65,6 +65,40 @@ body{
     color:var(--mid-dark-purple);
 }
 
+#home-footer{
+    width: 70vw;
+    left: 15vw;
+    position: absolute;
+    text-align: center;
+    color: var(--quacs-white);
+    font-family: 'proxima-nova';
+    font-size: 4vmin;
+    bottom: 10vmin;
+}
+
+#github-link{
+    color: var(--quacs-midtone);
+}
+
+#github-icon svg{
+    height: 4vmin;
+    text-align: justify!important;
+    vertical-align: bottom;
+    display: inline-block;
+    fill: var(--quacs-midtone);
+    padding-bottom: 0.5vmin;
+}
+
+#github-link:hover{
+    color: var(--quacs-yellow);
+}
+
+#github-link:hover svg{
+    fill: var(--quacs-yellow);
+}
+
+
+
 /* @media only screen and (min-width: 600px) {
     #home-title{
         font-size: 5vw;
