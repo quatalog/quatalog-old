@@ -182,22 +182,6 @@ const handleCrossListings = (cList, containerId, listId, catalog) => {
     }
 }
 
-const compare_terms = function(a,b) {
-        if(a == b) {
-            return 0;
-        } if(a.substring(0,6) < b.substring(0,6)) {
-            return -1;
-        } else if(a.substring(0,6) > b.substring(0,6)) {
-            return 1;
-        } else if(a.length < b.length) {
-            return -1;
-        } else if(a.substring(7) < b.substring(7)) {
-            return -1;
-        } else {
-            return 1;
-        }
-}
-
 window.onload = async function() {
     await loadData(); // load all quatalog data
 
@@ -258,6 +242,7 @@ window.onload = async function() {
     const unscheduled_terms = new Set(all_terms
                                 .filter(item => !scheduled_terms.has(item)));
 
+    
     const last_term_offered = Object.keys(course_data).sort(compare_terms).slice(-1)[0];
 
     // Set up the code, catalog title, and catalog description

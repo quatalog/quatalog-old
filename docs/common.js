@@ -28,6 +28,32 @@ const gotoCourse = (courseCode)=>{
     window.location.href = `./coursedisplay.html?course=${courseCode}`;
 }
 
+const compare_terms = function(a,b) {
+    if(a == b) {
+        return 0;
+    } if(a.substring(0,6) < b.substring(0,6)) {
+        return -1;
+    } else if(a.substring(0,6) > b.substring(0,6)) {
+        return 1;
+    } else if(a.length < b.length) {
+        return -1;
+    } else if(a.substring(7) < b.substring(7)) {
+        return -1;
+    } else {
+        return 1;
+    }
+}
+
+const isCourseDead = (courseCode)=>{
+    var last_term_offered = Object.keys(courses[courseCode] || []).sort(compare_terms).slice(-1)[0];
+    if(last_term_offered == undefined){
+        return true;
+    }
+    var lastYear = last_term_offered.toString().substring(0,4);
+    var currentYear = current_term.toString().substring(0,4);
+    return currentYear-lastYear > 4;
+}
+
 const ccode = window.location.search.substring(1).toUpperCase().split("=").slice(-1)[0];
 // quatalog data loading (in common so other files can access it)
 const _courses = fetch("./quatalog-data/terms_offered.json").then(data => data.json());
@@ -61,7 +87,6 @@ var loadData = async ()=>{
         globalThis.attrs = await _attrs;
         globalThis.searchableCatalog = makeSearchableCatalog(catalog);
         globalThis.current_term = Object.keys(courses["current_term"])[0];
-        console.log(current_term.length);  
         resolve();
     })
 }
