@@ -300,7 +300,7 @@ var makeOfferingData = () => {
                         .flatMap(c => c.search(/^STSO/) == -1 ? c :
                             ["STSH"+c.substring(4),"STSS"+c.substring(4),c])
                         .slice(0,-1);
-    course_data = courses[ccode] || [];
+    course_data = getCoursesData(ccode,courses);
     terms_offered = new Set(Object.keys(course_data));
     scheduled_terms = new Set(Object.keys(courses["all_terms"]));
     terms_offered_alt_code = new Set(alt_codes
