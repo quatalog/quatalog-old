@@ -295,11 +295,7 @@ var addCourseInfo = ()=>{
 }
 
 var makeOfferingData = () => {
-    alt_codes = (xlistings[ccode] || [])
-                        .concat([ccode])
-                        .flatMap(c => c.search(/^STSO/) == -1 ? c :
-                            ["STSH"+c.substring(4),"STSS"+c.substring(4),c])
-                        .slice(0,-1);
+    alt_codes = xlistings[ccode];
     course_data = getCoursesData(ccode,courses);
     terms_offered = new Set(Object.keys(course_data));
     scheduled_terms = new Set(Object.keys(courses["all_terms"]));
