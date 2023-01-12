@@ -59,16 +59,18 @@ const makeDeadHTML = (courseCode) => {
 const makeCourseHTML = (courseCode, score) => {
     const thisCourse = catalog[courseCode];
     return `
-    <div class="courseContainer" onclick="gotoCourse('${courseCode}')">
-        <div class="courseShelf">
-            <div class="courseName sattr">${thisCourse.name}</div>
-            <div class="courseCode sattr">${courseCode}</div>
-            ${makeAttrListHTML(courseCode)}
-            ${makeDeadHTML(courseCode)}
+    <a href="./coursedisplay.html?course=${courseCode}" style="text-decoration: none;">;
+        <div class="courseContainer">
+            <div class="courseShelf">
+                <div class="courseName sattr">${thisCourse.name}</div>
+                <div class="courseCode sattr">${courseCode}</div>
+                ${makeAttrListHTML(courseCode)}
+                ${makeDeadHTML(courseCode)}
+            </div>
+            <div class="attrs"></div>
+            <div class="description">${thisCourse.description}</div>
         </div>
-        <div class="attrs"></div>
-        <div class="description">${thisCourse.description}</div>
-    </div>
+    </a>
     `
 }
 

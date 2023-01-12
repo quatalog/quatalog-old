@@ -9,10 +9,10 @@ const prepSearch = (elem, event)=>{
         const courseNum = courseCodeInput.substring(courseCodeInput.length-4,courseCodeInput.length);
         if(`${subCode}-${courseNum}` in catalog){
             // course exists
-            gotoCourse(`${subCode}-${courseNum}`);
+            window.location.href = "./coursedisplay.html?course="+subCode+"-"+courseNum;
         } else {
             // course doesn't exist
-            window.location.href = `./search.html?search=${elem.value.replace(/ /g, "+")}`;
+            window.location.href = "./search.html?search="+elem.value.replace(/ /g, "+");
             showSearchResults();
         }
     }
@@ -20,11 +20,7 @@ const prepSearch = (elem, event)=>{
 
 // gets just the course link, no HTML
 const getClassHref = (course)=>{
-    return `href="?course=${course}"`;
-}
-
-const gotoCourse = (courseCode)=>{
-    window.location.href = `./coursedisplay.html?course=${courseCode}`;
+    return 'href="?course='+course+'"';
 }
 
 const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
@@ -107,7 +103,7 @@ const _attrs = fetch("./quatalog-data/attributes.json").then(data => data.json()
 // call this from any window.onload that needs access to the data 
 const loadData = async ()=>{
     return new Promise(async (resolve)=>{
-        console.log(`start loading data`);
+        console.log("start loading data");
         globalThis.xlistings = await _xlistings;
         globalThis.catalog = await _catalog;
         globalThis.courses = await _courses;
