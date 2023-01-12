@@ -54,7 +54,7 @@ const getCourseData = (course)=>{
 }
 
 const getLastTermOffered = (course)=>{
-	return getCourseData(course).keys().sort(compare_terms).slice(-1)[0];
+	return Object.keys(getCourseData(course)).sort(compare_terms).slice(-1)[0];
 }
 
 const compare_terms = function(a,b) {
