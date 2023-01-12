@@ -1,6 +1,7 @@
 "use strict";
-// just redirects you to the course code you enter. 
-// need to add checking here
+
+// redirects you to the course code you enter, if the course exists
+// otherwise redirects you to the search
 const prepSearch = (elem, event)=>{
     console.log(courses.length);
     if(event.key == "Enter"){
@@ -12,15 +13,10 @@ const prepSearch = (elem, event)=>{
             window.location.href = "./coursedisplay.html?course="+subCode+"-"+courseNum;
         } else {
             // course doesn't exist
-            window.location.href = "./search.html?search="+elem.value.replace(/ /g, "+");
+            window.location.href = "./search.html?search="+elem.value.replaceAll(" ", "+");
             showSearchResults();
         }
     }
-}
-
-// gets just the course link, no HTML
-const getClassHref = (course)=>{
-    return 'href="?course='+course+'"';
 }
 
 const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));

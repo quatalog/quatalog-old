@@ -1,7 +1,10 @@
 "use strict";
 
+const ccode_clean = ccode.replaceAll("+"," ");
+
 const displaySearchTerm = () => {
-    document.getElementById("searchTerm").innerHTML = '"' + ccode.replaceAll("+", " ").toLowerCase() + '"';
+    document.getElementById("title").innerText = ccode_clean + " - Quatalog Search";
+    document.getElementById("searchTerm").innerHTML = '"' + ccode_clean + '"';
 }
 
 const makeAttrListHTML = (courseCode) => {
@@ -128,7 +131,7 @@ const fuzzySearchCourses = (searchInput) => {
 }
 
 const showSearchResults = () => {
-    const searchResults = fuzzySearchCourses(ccode.replaceAll("+", " ").toLowerCase());
+    const searchResults = fuzzySearchCourses(ccode_clean.toLowerCase());
     var validResults = [];
     for(var i = 0; i < 20; i++){
         var thisResult = searchResults[i];
