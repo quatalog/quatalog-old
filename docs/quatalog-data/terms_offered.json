@@ -1566,11 +1566,6 @@
       "1-6",
       "",
       "Yehuda Emmanul Safran"
-    ],
-    "202301": [
-      "Projects In Arch & Env Design",
-      "1-6",
-      ""
     ]
   },
   "ARCH-4140": {
@@ -201247,7 +201242,10 @@
       "Grad Architecture Design 4",
       "5",
       "",
-      "Arta Yazdanseta"
+      "Arta Yazdanseta",
+      "Michael Todd Stradley",
+      "Leandro Piazzi",
+      "Lonn J. Combs"
     ]
   },
   "ARTS-6050": {
