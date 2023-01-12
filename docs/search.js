@@ -1,6 +1,6 @@
 "use strict";
 
-const ccode_clean = ccode.replaceAll("+"," ");
+const ccode_clean = window.location.search.substring(1).split("=").slice(-1)[0].replaceAll("+"," ");
 
 const displaySearchTerm = () => {
     document.getElementById("title").innerText = ccode_clean + " - Quatalog Search";
