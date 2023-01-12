@@ -27,19 +27,34 @@ const gotoCourse = (courseCode)=>{
     window.location.href = `./coursedisplay.html?course=${courseCode}`;
 }
 
+const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
+
 const getCourseData = (course)=>{
-	const cd = courses[course];
-	if(course.search(/^STSO/) == -1) {
-		return cd || {};
-	} else {
-		const stsh = courses["STSH"+course.substring(4)];
-		const stss = courses["STSS"+course.substring(4)];
-		return Object.assign(cd || {},stsh || {},stss || {}) || {};
+	// Handling for topics courses. I want the table to show *all* the topics
+	// courses offered at the given level (1960, 2960, 4960, 6960) in the given
+	// term. This shows *one* of the topics courses offered during a term.
+	// Probably need to rework the object's structure
+	// to get this to work, or do something hacky. Putting it off for now.
+	var subjcodes = [course.substring(0,4)];
+	if(subjcodes[0] == "STSO") {
+		subjcodes.push("STSH","STSS");
 	}
+	var codes = [];
+	for(const subjcode of subjcodes) {
+		if(course.substring(6) == "960") {
+			const level = course.substring(4,6);
+			range(960,979,1).map(c => subjcode+level+c).forEach(c => codes.push(c));
+		} else {
+			codes.push(subjcode+course.substring(4));
+		}
+	}
+	console.log(codes);
+
+	return Object.assign(...codes.map(c => courses[c]));
 }
 
 const getLastTermOffered = (course)=>{
-	return Object.keys(getCourseData(course)).sort(compare_terms).slice(-1)[0];
+	return getCourseData(course).keys().sort(compare_terms).slice(-1)[0];
 }
 
 const compare_terms = function(a,b) {
