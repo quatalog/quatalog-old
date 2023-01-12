@@ -44,9 +44,10 @@ const getCourseData = (course)=>{
 			codes.push(subjcode+course.substring(4));
 		}
 	}
-	console.log(codes);
 
-	return Object.assign(...codes.map(c => courses[c]));
+	const codes_filtered = codes.map(c => courses[c] || {});
+
+	return Object.assign(...codes_filtered);
 }
 
 const getLastTermOffered = (course)=>{
