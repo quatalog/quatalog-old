@@ -232,7 +232,7 @@ const handleCrossListings = (cList, containerId, listId, catalog) => {
     }
 }
 
-var makeTable = () => {
+const makeTable = () => {
     // Use HTML template to create rows in the table
     const year_row_template = document.getElementById("year-row").innerHTML;
     const table = document.getElementById("years-table");
@@ -260,7 +260,7 @@ var makeTable = () => {
 }
 
 
-var addCourseInfo = ()=>{
+const addCourseInfo = ()=>{
     // Set up the code, catalog title, and catalog description
     document.getElementById("ccode").innerText = ccode;
     const title = document.getElementById("title");
@@ -277,7 +277,7 @@ var addCourseInfo = ()=>{
     document.getElementById("prereq-classes").innerHTML = last_term_offered ? pillFormatPrerequisites(prereqs[ccode],catalog,courses) : unknownRect;
 }
 
-var makeOfferingData = () => {
+const makeOfferingData = () => {
     alt_codes = (xlistings[ccode] || []).flatMap(c => c.search(/^STSO/) == -1 ? c : ["STSH"+c.substring(4),"STSS"+c.substring(4),c])
     course_data = getCourseData(ccode,courses);
     terms_offered = new Set(Object.keys(course_data));
@@ -301,7 +301,7 @@ var makeOfferingData = () => {
     last_term_offered = Object.keys(course_data).sort(compare_terms).slice(-1)[0];
 }
 
-var colorTable = () => {
+const colorTable = () => {
     // Terms offered under normal code, in green
     // Terms not offered and not scheduled, in red and gray
     // Terms offered only under different code, in yellow (e.g. Materials Science)
