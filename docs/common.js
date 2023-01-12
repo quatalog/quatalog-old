@@ -41,9 +41,16 @@ const getCourseData = (course)=>{
 		}
 	}
 
-	const codes_filtered = codes.map(c => courses[c] || {});
+	const data_list = codes.map(c => courses[c] || {});
+	
+	var table = {};
+	for(const code_data of data_list) {
+		for(const semester of Object.keys(code_data)) {
+			table[semester] = code_data[semester];
+		}
+	}
 
-	return Object.assign(...codes_filtered);
+	return table;
 }
 
 const getLastTermOffered = (course)=>{
