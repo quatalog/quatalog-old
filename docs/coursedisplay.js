@@ -273,7 +273,7 @@ const makeOfferingData = () => {
     terms_offered = new Set(Object.keys(course_data));
     scheduled_terms = new Set(Object.keys(courses["all_terms"]));
     terms_offered_alt_code = new Set(alt_codes
-                                .flatMap(c => getCourseData(c,courses).keys()
+                                .flatMap(c => Object.keys(getCourseData(c,courses))
                                 .filter(c => !terms_offered.has(c)
                                     && !terms_offered.has(c+"02")
                                     && !terms_offered.has(c+"03"))));
