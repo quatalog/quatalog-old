@@ -152,11 +152,6 @@ const _pillFormatPrerequisites = function(prereq,catalog) {
     }
 }
 
-
-
-
-
-
 // Used for corequisite and prerequisite displays
 const createList = function(list,titleid,listid,catalog = false) {
     if(!list) {
@@ -169,6 +164,7 @@ const createList = function(list,titleid,listid,catalog = false) {
         }
     }
 }
+
 
 
 /*
@@ -307,6 +303,31 @@ var colorTable = () => {
     }
 }
 
+var currentView = 'simple';
+
+var setupControlPanel = () => {
+    var allIcons = document.getElementsByClassName("view-icon")
+    for(var i = 0;i < allIcons.length;i++) {
+        allIcons[i].innerHTML = iconSVGs["circle-empty"];
+    }
+    selectView(`simple`);
+}
+
+var selectView = (view) => {
+    var allIcons = document.getElementsByClassName("view-icon")
+    for(var i = 0;i < allIcons.length;i++) {
+        allIcons[i].innerHTML = iconSVGs["circle-empty"];
+    }
+    var allLabels = document.getElementsByClassName("view-option-label");
+    for(var i = 0;i < allLabels.length;i++) {
+        allLabels[i].classList.remove("checked");
+    }
+    document.getElementById(view+"-view-icon").innerHTML = iconSVGs["circle-dot"];
+    document.getElementById(`${view}-view-input`).checked = true;
+    document.getElementById(`${view}-view-label`).classList.add("checked");
+    currentView = view;
+}
+
 /*
  .d88b.  d8b   db db       .d88b.   .d8b.  d8888b.
 .8P  Y8. 888o  88 88      .8P  Y8. d8' `8b 88  `8D
@@ -339,4 +360,6 @@ window.onload = async function() {
     addCourseInfo();
 
     colorTable();
+
+    setupControlPanel();
 }
