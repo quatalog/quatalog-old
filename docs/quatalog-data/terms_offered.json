@@ -1566,11 +1566,6 @@
       "1-6",
       "",
       "Yehuda Emmanul Safran"
-    ],
-    "202301": [
-      "Projects In Arch & Env Design",
-      "1-6",
-      ""
     ]
   },
   "ARCH-4140": {
@@ -18097,6 +18092,7 @@
       "Catherine Ann Royer",
       "Christopher Bystroff",
       "Ricky A Relyea",
+      "Qun Wan",
       "Jonathan Dordick",
       "Jennifer Marie Hurley",
       "Blanca L. Barquera",
@@ -27742,12 +27738,6 @@
       "2",
       "",
       "Filbert Totsingan"
-    ],
-    "202301": [
-      "Proteomics/str Bioinformatics",
-      "4",
-      "",
-      "Gaetano T. Montelione"
     ]
   },
   "CHEM-4963": {
@@ -29025,12 +29015,6 @@
     "202201": [
       "Proteomics/strc Bioinformatics",
       "3",
-      "",
-      "Gaetano T. Montelione"
-    ],
-    "202301": [
-      "Proteomics/strc Bioinformatics",
-      "4",
       "",
       "Gaetano T. Montelione"
     ]
@@ -40833,12 +40817,6 @@
       "David Eric Goldschmidt"
     ],
     "202201": [
-      "Computer Science Colloquium",
-      "0",
-      "",
-      "Elliot I. Anshelevich"
-    ],
-    "202301": [
       "Computer Science Colloquium",
       "0",
       "",
@@ -66993,7 +66971,8 @@
     "202301": [
       "Writing For A Global Audience",
       "4",
-      "[CI] [HInq] "
+      "[CI] [HInq] ",
+      "Anita Kay Greenfield"
     ]
   },
   "IHSS-1962": {
@@ -93047,9 +93026,8 @@
       "3",
       "[CI] ",
       "Valerie J. Masterson, Junichi Kanai, James Edward Olson, Mark Ernest Vermilyea",
-      "Valerie J. Masterson, Junichi Kanai, James Edward Olson, Mark Ernest Vermilyea, Fred Thomas Willett",
-      "Valerie J. Masterson, Junichi Kanai, Ukwatte Lokuliyanage Indika Upendra Perera, Mark Ernest Vermilyea",
-      "Valerie J. Masterson, Junichi Kanai, Mark Ernest Vermilyea, Fred Thomas Willett"
+      "Valerie J. Masterson, Junichi Kanai, Mark Ernest Vermilyea, Fred Thomas Willett",
+      "Valerie J. Masterson, Junichi Kanai, Ukwatte Lokuliyanage Indika Upendra Perera, Mark Ernest Vermilyea"
     ]
   },
   "MANE-4280": {
@@ -125918,11 +125896,6 @@
       "1-8",
       "",
       "Elizabeth Anne Sprague"
-    ],
-    "202301": [
-      "Readings In Chem",
-      "1-8",
-      ""
     ]
   },
   "CHEM-4960": {
@@ -134087,7 +134060,8 @@
     "202301": [
       "Writing For A Global Audience",
       "4",
-      "[CI] [HInq] "
+      "[CI] [HInq] ",
+      "Anita Kay Greenfield"
     ]
   },
   "ISCI-6240": {
@@ -148679,6 +148653,8 @@
       "Radoslav Svetlozarov Ivanov",
       "Barbara Cutler",
       "Kristin P Bennett",
+      "Mei Si",
+      "Mark S Shephard",
       "Jianxi Gao",
       "Alex Algernon Theodore Gittens",
       "George M. Slota",
@@ -154155,12 +154131,6 @@
       "4",
       "",
       "Lydia Manikonda"
-    ],
-    "202301": [
-      "Intro To Machine Learning Apps",
-      "4",
-      "",
-      "Minor E. Gordon"
     ]
   },
   "MGMT-6180": {
@@ -169139,12 +169109,6 @@
       "",
       "Ravishankar Sundararaman",
       "Tomasz Strzalkowski"
-    ],
-    "202301": [
-      "Computer Science  Seminar",
-      "0",
-      "",
-      "Elliot I. Anshelevich"
     ]
   },
   "ENGR-2960": {
@@ -174395,7 +174359,7 @@
       "Masters Project",
       "1-9",
       "",
-      "Li Liu"
+      "Yinan Wang"
     ]
   },
   "ISYE-6990": {
@@ -180069,7 +180033,8 @@
     "202301": [
       "Introduction To Hci",
       "4",
-      ""
+      "",
+      "Jami Lynn Cotler"
     ]
   },
   "ITWS-2940": {
@@ -201243,6 +201208,15 @@
       "5",
       "",
       "John Clifford Loercher"
+    ],
+    "202301": [
+      "Grad Architecture Design 4",
+      "5",
+      "",
+      "Arta Yazdanseta",
+      "Michael Todd Stradley",
+      "Leandro Piazzi",
+      "Lonn J. Combs"
     ]
   },
   "ARTS-6050": {
@@ -206168,7 +206142,8 @@
       "Inventor's Studio 1",
       "4",
       "",
-      "Asish Ghosh, Jordan L Vener"
+      "Asish Ghosh, James Edward Olson, Jordan L Vener",
+      "James Edward Olson, Jordan L Vener"
     ]
   },
   "MANE-4140": {
@@ -216262,6 +216237,12 @@
       "",
       "Jason Nicholas Kuruzovich",
       "Lydia Manikonda"
+    ],
+    "202301": [
+      "Intro To Machine Learning Apps",
+      "4",
+      "",
+      "Minor E. Gordon"
     ]
   },
   "MANE-1960": {
@@ -219108,6 +219089,14 @@
       "Brett Orzechowski"
     ]
   },
+  "MTLE-6970": {
+    "202301": [
+      "Masters Professional Project",
+      "1-9",
+      "",
+      "Rahmi Ozisik"
+    ]
+  },
   "MANE-6410": {
     "202301": [
       "Appl Atomic & Nucl Phys",
@@ -219122,6 +219111,14 @@
       "4",
       "[CI] ",
       "Gunnar O'neill Babcock"
+    ]
+  },
+  "PHIL-6940": {
+    "202301": [
+      "Philosophy Of Biology And Sex",
+      "3",
+      "",
+      "Susan Lynn Smith"
     ]
   },
   "STSO-4330": {

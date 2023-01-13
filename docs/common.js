@@ -1,31 +1,60 @@
+"use strict";
 
-// just redirects you to the course code you enter. 
-// need to add checking here
-var prepSearch = (elem, event)=>{
+// redirects you to the course code you enter, if the course exists
+// otherwise redirects you to the search
+const prepSearch = (elem, event)=>{
     console.log(courses.length);
     if(event.key == "Enter"){
-        var courseCodeInput = elem.value;
-        courseCodeInput = courseCodeInput.replace(" ", "").replace("-", "");
-        var subCode = courseCodeInput.substring(0,4).toUpperCase();
-        var courseNum = courseCodeInput.substring(courseCodeInput.length-4,courseCodeInput.length);
+        const courseCodeInput = elem.value.replace(" ", "").replace("-", "");
+        const subCode = courseCodeInput.substring(0,4).toUpperCase();
+        const courseNum = courseCodeInput.substring(courseCodeInput.length-4,courseCodeInput.length);
         if(`${subCode}-${courseNum}` in catalog){
             // course exists
-            gotoCourse(`${subCode}-${courseNum}`);
+            window.location.href = "./coursedisplay.html?course="+subCode+"-"+courseNum;
         } else {
             // course doesn't exist
-            window.location.href = `./search.html?search=${elem.value.replace(/ /g, "+")}`;
+            window.location.href = "./search.html?search="+elem.value.replaceAll(" ", "+");
             showSearchResults();
         }
     }
 }
 
-// gets just the course link, no HTML
-const getClassHref = (course)=>{
-    return `href="?course=${course}"`;
+const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
+
+const getCourseData = (course)=>{
+	// Handling for topics courses. I want the table to show *all* the topics
+	// courses offered at the given level (1960, 2960, 4960, 6960) in the given
+	// term. This shows *one* of the topics courses offered during a term.
+	// Probably need to rework the object's structure
+	// to get this to work, or do something hacky. Putting it off for now.
+	var subjcodes = [course.substring(0,4)];
+	if(subjcodes[0] == "STSO") {
+		subjcodes.push("STSH","STSS");
+	}
+	var codes = [];
+	for(const subjcode of subjcodes) {
+		if(course.substring(6) == "960") {
+			const level = course.substring(4,6);
+			range(960,979,1).map(c => subjcode+level+c).forEach(c => codes.push(c));
+		} else {
+			codes.push(subjcode+course.substring(4));
+		}
+	}
+
+	const data_list = codes.map(c => courses[c] || {});
+	
+	var table = {};
+	for(const code_data of data_list) {
+		for(const semester of Object.keys(code_data)) {
+			table[semester] = code_data[semester];
+		}
+	}
+
+	return table;
 }
 
-const gotoCourse = (courseCode)=>{
-    window.location.href = `./coursedisplay.html?course=${courseCode}`;
+const getLastTermOffered = (course)=>{
+	return Object.keys(getCourseData(course)).sort(compare_terms).slice(-1)[0];
 }
 
 const compare_terms = function(a,b) {
@@ -45,19 +74,19 @@ const compare_terms = function(a,b) {
 }
 
 const isCourseDead = (courseCode)=>{
-    var last_term_offered = Object.keys(courses[courseCode] || []).sort(compare_terms).slice(-1)[0];
+    const last_term_offered = getLastTermOffered(courseCode);
     if(last_term_offered == undefined){
         return 2;
     }
-    var lastYear = last_term_offered.toString().substring(0,4);
-    var currentYear = current_term.toString().substring(0,4);
+    const lastYear = last_term_offered.toString().substring(0,4);
+    const currentYear = current_term.toString().substring(0,4);
     return currentYear-lastYear > 4;
 }
 
 // so we can use fuse.js to fuzzy search it
-var makeSearchableCatalog = (ctlg) => {
-    var ctlgKeys = Object.keys(ctlg);
-    ctlgArray = [];
+const makeSearchableCatalog = (ctlg) => {
+    const ctlgKeys = Object.keys(ctlg);
+    var ctlgArray = [];
     for(var c = 0; c < ctlgKeys.length; c++){
         var thisElem = ctlg[ctlgKeys[c]];
         thisElem["fullCode"] = ctlgKeys[c];
@@ -76,9 +105,9 @@ const _coreqs = fetch("./quatalog-data/corequisites.json").then(data => data.jso
 const _attrs = fetch("./quatalog-data/attributes.json").then(data => data.json());
 
 // call this from any window.onload that needs access to the data 
-var loadData = async ()=>{
+const loadData = async ()=>{
     return new Promise(async (resolve)=>{
-        console.log(`start loading data`);
+        console.log("start loading data");
         globalThis.xlistings = await _xlistings;
         globalThis.catalog = await _catalog;
         globalThis.courses = await _courses;
@@ -92,9 +121,7 @@ var loadData = async ()=>{
 }
 
 // this will get overridden by other window.onload assignments. It is a backup.
-window.onload = async ()=>{
-    await loadData();
-}
+window.onload = loadData;
 
 /*
 d888888b  .o88b.  .d88b.  d8b   db      db   db d88888b db      d8888b. d88888b d8888b. .d8888.

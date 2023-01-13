@@ -7,8 +7,8 @@ const viewTypes = [
     "prof"
 ]
 
-const set_term = function(c,term,type = "offered") {
-    const inst = c[term] || []; // has [coursename, credits, attributes, instructors]
+const set_term = function(term,type = "offered", offered=true) {
+    const inst = offered ? course_data[term] : []; // has [coursename, credits, attributes, instructors]
     var elem; 
     if(term.substring(4) == "05") {
         elem = document.getElementById(term+"02");
@@ -92,24 +92,9 @@ YP   YP Y88888P Y88888P 88      Y88888P 88   YD `8888Y'
 
 */
 
-const getCourseData = (course,courses_data)=>{
-	const cd = courses_data[course];
-	if(course.search(/^STSO/) == -1) {
-		return cd || {};
-	} else {
-		const stsh = courses_data["STSH"+course.substring(4)];
-		const stss = courses_data["STSS"+course.substring(4)];
-		return Object.assign(cd || {},stsh || {},stss || {}) || {};
-	}
-}
-
 // gets just the course link, no HTML
 const getCourseHref = (course)=>{
 	return 'href="?course='+course+'"';
-}
-
-const getLastTermOffered = (course,courses_data)=>{
-	return Object.keys(getCourseData(course,courses_data)).sort(compare_terms).slice(-1)[0];
 }
 
 // Helper to get the course name. Uses catalog and 
@@ -194,8 +179,6 @@ const pillFormatPrerequisites = function(prereq,catalog,courses_data) {
     }
 }
 
-
-
 // Recursive helper function
 const _pillFormatPrerequisites = function(prereq,catalog,courses_data) {
     if(prereq["type"] == "course") {
@@ -229,7 +212,6 @@ const createList = function(list,titleid,listid,catalog = false) {
         }
     }
 }
-
 
 
 /*
@@ -274,7 +256,7 @@ const handleCrossListings = (cList, containerId, listId, catalog) => {
     }
 }
 
-var makeTable = () => {
+const makeTable = () => {
     // Use HTML template to create rows in the table
     const year_row_template = document.getElementById("year-row").innerHTML;
     const table = document.getElementById("years-table");
@@ -302,7 +284,7 @@ var makeTable = () => {
 }
 
 
-var addCourseInfo = ()=>{
+const addCourseInfo = ()=>{
     // Set up the code, catalog title, and catalog description
     document.getElementById("ccode").innerText = ccode;
     const title = document.getElementById("title");
@@ -315,23 +297,17 @@ var addCourseInfo = ()=>{
 
     title.innerText += ": " + cname;
     document.getElementById("cname").innerText = cname;
-
     document.getElementById("ccredits").innerText = last_term_offered ? course_data[last_term_offered][1] : "Unknown";
-    // document.getElementById("cprereqs").innerHTML = last_term_offered ? formatPrerequisites(prereqs[ccode],catalog) : "Unknown";
     document.getElementById("prereq-classes").innerHTML = last_term_offered ? pillFormatPrerequisites(prereqs[ccode],catalog,courses) : unknownRect;
 }
 
-var makeOfferingData = () => {
-    alt_codes = (xlistings[ccode] || [])
-                        .concat([ccode])
-                        .flatMap(c => c.search(/^STSO/) == -1 ? c :
-                            ["STSH"+c.substring(4),"STSS"+c.substring(4),c])
-                        .slice(0,-1);
-    course_data = courses[ccode] || [];
+const makeOfferingData = () => {
+    alt_codes = (xlistings[ccode] || []).flatMap(c => c.search(/^STSO/) == -1 ? c : ["STSH"+c.substring(4),"STSS"+c.substring(4),c])
+    course_data = getCourseData(ccode,courses);
     terms_offered = new Set(Object.keys(course_data));
     scheduled_terms = new Set(Object.keys(courses["all_terms"]));
     terms_offered_alt_code = new Set(alt_codes
-                                .flatMap(c => Object.keys(courses[c] || [])
+                                .flatMap(c => Object.keys(getCourseData(c,courses))
                                 .filter(c => !terms_offered.has(c)
                                     && !terms_offered.has(c+"02")
                                     && !terms_offered.has(c+"03"))));
@@ -349,14 +325,14 @@ var makeOfferingData = () => {
     last_term_offered = Object.keys(course_data).sort(compare_terms).slice(-1)[0];
 }
 
-var colorTable = () => {
+const colorTable = () => {
     // Terms offered under normal code, in green
     // Terms not offered and not scheduled, in red and gray
     // Terms offered only under different code, in yellow (e.g. Materials Science)
-    Object.keys(course_data).forEach(t => set_term(course_data,t))
-    Array.from(terms_offered_alt_code).forEach(t => set_term("",t,"offered-diff-code"));
-    Array.from(terms_not_offered).forEach(t => set_term("",t,"not-offered"));
-    Array.from(unscheduled_terms).forEach(t => set_term("",t,"unscheduled"));
+    Object.keys(course_data).forEach(t => set_term(t))
+    Array.from(terms_offered_alt_code).forEach(t => set_term(t,"offered-diff-code",false));
+    Array.from(terms_not_offered).forEach(t => set_term(t,"not-offered",false));
+    Array.from(unscheduled_terms).forEach(t => set_term(t,"unscheduled",false));
 
     // Disable enrichment term if nothing is there
     if(!Array.from(terms_offered).filter(item => item.substring(4,6) == "12").length) {

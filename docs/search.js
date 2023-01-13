@@ -1,11 +1,16 @@
+"use strict";
+
+const ccode_clean = window.location.search.substring(1).split("=").slice(-1)[0].replaceAll("+"," ");
+
 const displaySearchTerm = () => {
-    document.getElementById("searchTerm").innerHTML = '"' + ccode.replaceAll("+", " ").toLowerCase() + '"';
+    document.getElementById("title").innerText = ccode_clean + " - Quatalog Search";
+    document.getElementById("searchTerm").innerHTML = '"' + ccode_clean + '"';
 }
 
-var makeAttrListHTML = (courseCode) => {
+const makeAttrListHTML = (courseCode) => {
     var attrListHTML = '';
     if(courseCode in attrs){
-        var thisCourseAttrs = attrs[courseCode];
+        const thisCourseAttrs = attrs[courseCode];
         for(var i = 0; i < thisCourseAttrs.length; i++){
             var thisAttr = thisCourseAttrs[i];
             if(thisAttr == "Communication Intensive"){
@@ -43,8 +48,8 @@ var makeAttrListHTML = (courseCode) => {
     return attrListHTML;
 }
 
-var makeDeadHTML = (courseCode) => {
-    var isDead = isCourseDead(courseCode);
+const makeDeadHTML = (courseCode) => {
+    const isDead = isCourseDead(courseCode);
     if(isDead == 2){
         return `<div class="dead sattr sattr-pill">Not Yet Offered${iconSVGs.amogus}</div>`;
     }
@@ -54,19 +59,21 @@ var makeDeadHTML = (courseCode) => {
     return '';
 }
 
-var makeCourseHTML = (courseCode, score) => {
-    var thisCourse = catalog[courseCode];
+const makeCourseHTML = (courseCode, score) => {
+    const thisCourse = catalog[courseCode];
     return `
-    <div class="courseContainer" onclick="gotoCourse('${courseCode}')">
-        <div class="courseShelf">
-            <div class="courseName sattr">${thisCourse.name}</div>
-            <div class="courseCode sattr">${courseCode}</div>
-            ${makeAttrListHTML(courseCode)}
-            ${makeDeadHTML(courseCode)}
+    <a href="./coursedisplay.html?course=${courseCode}" style="text-decoration: none;">
+        <div class="courseContainer">
+            <div class="courseShelf">
+                <div class="courseName sattr">${thisCourse.name}</div>
+                <div class="courseCode sattr">${courseCode}</div>
+                ${makeAttrListHTML(courseCode)}
+                ${makeDeadHTML(courseCode)}
+            </div>
+            <div class="attrs"></div>
+            <div class="description">${thisCourse.description}</div>
         </div>
-        <div class="attrs"></div>
-        <div class="description">${thisCourse.description}</div>
-    </div>
+    </a>
     `
 }
 
@@ -110,11 +117,11 @@ const searchConfigFuzzy = {
     ]
 }
 
-var fuzzySearchCourses = (searchInput) => {
+const fuzzySearchCourses = (searchInput) => {
     const fuse = new Fuse(searchableCatalog, searchConfig);
     console.log(`searching for ${searchInput}...`);
     // return fuse.search(`="${searchInput}"`);
-    var includeResults = fuse.search(`'"${searchInput}"`);
+    const includeResults = fuse.search(`'"${searchInput}"`);
     if(includeResults.length > 0){
         return includeResults;
     } else {
@@ -123,8 +130,8 @@ var fuzzySearchCourses = (searchInput) => {
     }
 }
 
-var showSearchResults = () => {
-    var searchResults = fuzzySearchCourses(ccode.replaceAll("+", " ").toLowerCase());
+const showSearchResults = () => {
+    const searchResults = fuzzySearchCourses(ccode_clean.toLowerCase());
     var validResults = [];
     for(var i = 0; i < 20; i++){
         var thisResult = searchResults[i];
