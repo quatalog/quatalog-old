@@ -27738,12 +27738,6 @@
       "2",
       "",
       "Filbert Totsingan"
-    ],
-    "202301": [
-      "Proteomics/str Bioinformatics",
-      "4",
-      "",
-      "Gaetano T. Montelione"
     ]
   },
   "CHEM-4963": {
@@ -29021,12 +29015,6 @@
     "202201": [
       "Proteomics/strc Bioinformatics",
       "3",
-      "",
-      "Gaetano T. Montelione"
-    ],
-    "202301": [
-      "Proteomics/strc Bioinformatics",
-      "4",
       "",
       "Gaetano T. Montelione"
     ]
@@ -206154,7 +206142,8 @@
       "Inventor's Studio 1",
       "4",
       "",
-      "Asish Ghosh, James Edward Olson, Jordan L Vener"
+      "Asish Ghosh, James Edward Olson, Jordan L Vener",
+      "James Edward Olson, Jordan L Vener"
     ]
   },
   "MANE-4140": {
