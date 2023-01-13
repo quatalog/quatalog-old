@@ -354,6 +354,19 @@ label.checked{
     /* word-break: break-all; */
 }
 
+.simple-view-container svg{
+    fill: var(--mid-dark-purple);
+    width: 5vmin;
+    margin: 0.5vmin;
+    height: auto;
+    padding: 0.5vmin;
+}
+
+.simple-view-container{
+    display: flex;
+    justify-content: center;
+}
+
 .season-label{
     color: var(--quacs-midtone);
     font-family: "proxima-nova";
