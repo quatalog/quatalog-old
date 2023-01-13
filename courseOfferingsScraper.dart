@@ -27,6 +27,7 @@ void main(final List<String> args) async {
 	dynamic coursePrereqData;
 	dynamic courseXlData;
 	dynamic section;
+	int credMin, credMax;
 	Set<String> instructors;
 	List<String> titleAndAttributes;
 	int currentTerm = 0;
@@ -47,8 +48,13 @@ void main(final List<String> args) async {
 					section = course["sections"][0];
 					attributes[id] = section["attribute"].split(RegExp(" and |, "));
 					titleAndAttributes = [course["title"],"",""];
-					final credMin = section["credMin"].toInt();
-					final credMax = section["credMax"].toInt();
+					
+					// I hate RCOS
+					credMin = 2147483647;
+					course["sections"].forEach((x) => credMin = min(credMin,x["credMin"].toInt()));
+					credMax = 0;
+					course["sections"].forEach((x) => credMax = max(credMax,x["credMax"].toInt()));
+					
 					titleAndAttributes[1] = (credMin == credMax) ? credMax.toString() : "${credMin.toString()}-${credMax.toString()}";
 					if(attributes[id]?.contains("Communication Intensive") ?? false) {
 						titleAndAttributes[2] += "[CI] ";

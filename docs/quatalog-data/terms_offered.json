@@ -592,7 +592,7 @@
       "Aerospace Studies 100a",
       "1",
       "",
-      "Kristen Gibson, Charles DeUnta Gresham, Jake L Miller"
+      "Charles DeUnta Gresham, Kristen Gibson, Jake L Miller"
     ]
   },
   "USAF-2030": {
@@ -1109,7 +1109,7 @@
     ],
     "20140502": [
       "Design Studio",
-      "4",
+      "4-5",
       ""
     ]
   },
@@ -2894,7 +2894,7 @@
     ],
     "201409": [
       "Light Projectors",
-      "2",
+      "1-2",
       "",
       "Yael Erel",
       "Gustavo Enrique Alberto Crembil",
@@ -2908,7 +2908,7 @@
     ],
     "201509": [
       "Undergraduate Course Assistant",
-      "2",
+      "1-2",
       "",
       "Demetrios Andreas Comodromos",
       "Adam Hassan Dayem",
@@ -3158,10 +3158,10 @@
       "Edward Jeremy Keller"
     ],
     "202301": [
-      "Integrat Dsgn Schematic- Cmptg",
+      "Comprehensive Design 1",
       "0",
       "",
-      "Edwin Jhinang Liu"
+      "Jillian Marie Crandall"
     ]
   },
   "ARCH-4962": {
@@ -3476,10 +3476,10 @@
       "Nadarajah Narendran, Jean Paul Freyssinier, Ukwatte Lokuliyanage Indika Upendra Perera"
     ],
     "202301": [
-      "Medicine, Technol & Landscape",
+      "Design Futures & Flood Reslncy",
       "2",
       "",
-      "Christianna Grace Bennett"
+      "Marcus Carter"
     ]
   },
   "ARCH-4964": {
@@ -3533,7 +3533,7 @@
     ],
     "201201": [
       "Urban Data Analysis & Visual.",
-      "2",
+      "2-3",
       "",
       "Ted T.Ngai",
       "Jason Vollen"
@@ -3607,7 +3607,7 @@
     ],
     "201801": [
       "Hidden Figures",
-      "2",
+      "2-4",
       "",
       "William Miguel Virgil",
       "Joshua William Hugo Draper"
@@ -3661,10 +3661,10 @@
       "Jillian Marie Crandall"
     ],
     "202301": [
-      "Duchamp Seminar",
+      "Continuous Constructions",
       "2",
       "",
-      "Michael James Oatman"
+      "Matt Burgermaster"
     ]
   },
   "ARCH-4965": {
@@ -3738,7 +3738,7 @@
     ],
     "201401": [
       "Latin American Architecture",
-      "2",
+      "2-3",
       "",
       "Gustavo Enrique Alberto Crembil",
       "Demetrios Andreas Comodromos"
@@ -3758,7 +3758,7 @@
     ],
     "201701": [
       "Projective Veils",
-      "2",
+      "2-4",
       "",
       "Brian Anthony De Luna",
       "Ted Krueger"
@@ -3875,7 +3875,7 @@
     ],
     "201201": [
       "Chinese Arch & Urbanism",
-      "4",
+      "3-4",
       "",
       "Gustavo Enrique Alberto Crembil",
       "Matthew E Gindlesparger"
@@ -3900,7 +3900,7 @@
     ],
     "201401": [
       "Urban Data Analysis And Visual",
-      "2",
+      "2-4",
       "",
       "Ted T.Ngai",
       "Kyle Richard Stover"
@@ -3943,7 +3943,7 @@
     ],
     "201801": [
       "A. Hitchcok & The Arch Of Fear",
-      "2",
+      "2-4",
       "",
       "Michael James Oatman",
       "Stefano Passeri"
@@ -3989,12 +3989,6 @@
       "3",
       "",
       "Dennis Robert Shelden"
-    ],
-    "202301": [
-      "Times Of Digital Biology",
-      "2",
-      "",
-      "Zbigniew Oksiuta"
     ]
   },
   "ARCH-4967": {
@@ -4726,7 +4720,7 @@
     ],
     "201509": [
       "Research Design Seminar",
-      "2",
+      "2-3",
       "",
       "Jonas Braasch",
       "James Fleet Hower, Kelly Raymond Winn",
@@ -5220,7 +5214,7 @@
     ],
     "201209": [
       "Computation II",
-      "2",
+      "2-3",
       "",
       "James Fleet Hower",
       "Matthew E Gindlesparger"
@@ -5437,12 +5431,6 @@
       "Ted Krueger"
     ],
     "202201": [
-      "Medicine, Technol & Landscape",
-      "2",
-      "",
-      "Christianna Grace Bennett"
-    ],
-    "202301": [
       "Medicine, Technol & Landscape",
       "2",
       "",
@@ -5666,7 +5654,7 @@
   "ARCH-6990": {
     "200709": [
       "Master's Thesis",
-      "7",
+      "1-12",
       "",
       "Mark Steven Mistur, Ted T.Ngai, Kenneth Warriner",
       "Jefferson A Ellinger, Jacob Nishimura, Peter W Parsons",
@@ -5701,7 +5689,7 @@
     ],
     "200809": [
       "Master's Thesis",
-      "6",
+      "1-12",
       "",
       "Kenneth Warriner, Gustavo Enrique Alberto Crembil, Thomas Mical, David Riebe",
       "Ning Xiang",
@@ -5846,7 +5834,7 @@
     ],
     "201209": [
       "Master's Thesis",
-      "5",
+      "1-12",
       "",
       "Christopher S Perry",
       "Ted T.Ngai, Christopher S Perry",
@@ -5883,7 +5871,7 @@
     ],
     "201309": [
       "Master's Thesis",
-      "5",
+      "1-12",
       "",
       "Christopher S Perry",
       "Ted T.Ngai, Christopher S Perry",
@@ -5919,7 +5907,7 @@
     ],
     "201409": [
       "Master's Thesis",
-      "5",
+      "1-12",
       "",
       "Christopher S Perry, Vicki I Pocorobba",
       "Ted T.Ngai, Christopher S Perry",
@@ -5950,7 +5938,7 @@
     ],
     "201509": [
       "Master's Thesis",
-      "5",
+      "1-12",
       "",
       "Christopher S Perry",
       "Ted T.Ngai, Christopher S Perry",
@@ -8418,6 +8406,12 @@
       "4",
       "[CI] ",
       "Patrick Alan Burke"
+    ],
+    "202301": [
+      "History Of Western Music",
+      "4",
+      "[CI] ",
+      "Michael L. Century"
     ]
   },
   "ARTS-2510": {
@@ -11739,31 +11733,31 @@
   "ASTR-1510": {
     "200709": [
       "Quasars & Cosmology",
-      "1",
+      "1-2",
       "",
       "Heidi Jo Newberg"
     ],
     "200809": [
       "Quasars & Cosmology",
-      "1",
+      "1-2",
       "",
       "Wayne G Roberge, Peter Persans"
     ],
     "200909": [
       "Quasars & Cosmology",
-      "1",
+      "1-2",
       "",
       "Wayne G Roberge, Peter Persans"
     ],
     "201009": [
       "Quasars & Cosmology",
-      "1",
+      "1-2",
       "",
       "Heidi Jo Newberg"
     ],
     "201109": [
       "Quasars & Cosmology",
-      "1",
+      "1-2",
       "",
       "Heidi Jo Newberg"
     ]
@@ -19256,7 +19250,7 @@
     ],
     "200909": [
       "Biomedical Research Enterrpise",
-      "3",
+      "2-3",
       "",
       "Deepak Vashishth"
     ],
@@ -27187,8 +27181,7 @@
       "Modern Techniques In Chemistry",
       "4",
       "",
-      "Simon Nicholas Platts",
-      "Elizabeth Anne Sprague"
+      "Simon Nicholas Platts"
     ]
   },
   "CHEM-4760": {
@@ -27923,7 +27916,7 @@
     ],
     "200801": [
       "Senior Thesis",
-      "3",
+      "1-4",
       "",
       "Chang Yeol Ryu",
       "James A Moore",
@@ -28817,11 +28810,6 @@
       "Wilfredo Colon"
     ],
     "202201": [
-      "Readings In Chem",
-      "1-12",
-      ""
-    ],
-    "202301": [
       "Readings In Chem",
       "1-12",
       ""
@@ -29929,6 +29917,7 @@
       "George I. Makhatadze",
       "Chulsung Bae",
       "Catherine Ann Royer",
+      "Peter John Bonitatibus",
       "Gaetano T. Montelione",
       "Richard Alan Gross",
       "Robert J. Linhardt",
@@ -30294,7 +30283,7 @@
       "Intro To Structural Eng",
       "4",
       "",
-      "Christopher W Letchford"
+      "Julia D Carroll"
     ]
   },
   "CIVL-2940": {
@@ -36558,7 +36547,7 @@
       "Data Structures",
       "4",
       "",
-      "Jasmine A. Plum, Shianne M. Hulbert"
+      "Jasmine A. Plum, Shianne M. Hulbert, Jidong Xiao"
     ]
   },
   "CSCI-2220": {
@@ -37128,8 +37117,7 @@
       "Computer Organization",
       "4",
       "",
-      "George M. Slota",
-      "George M. Slota, David Eric Goldschmidt"
+      "George M. Slota"
     ]
   },
   "CSCI-4050": {
@@ -39158,7 +39146,8 @@
     "202301": [
       "Security And Privacy Of Ml",
       "4",
-      ""
+      "",
+      "Lei Yu"
     ]
   },
   "CSCI-4964": {
@@ -41337,7 +41326,8 @@
     "202301": [
       "Security And Privacy Of Ml",
       "4",
-      ""
+      "",
+      "Lei Yu"
     ]
   },
   "CSCI-6963": {
@@ -41989,7 +41979,7 @@
     ],
     "201809": [
       "Graduate Skills",
-      "1",
+      "0-1",
       "",
       "Mohammed Zaki, Lirong Xia"
     ],
@@ -42001,7 +41991,7 @@
     ],
     "201909": [
       "Graduate Skills",
-      "1",
+      "0-1",
       "",
       "Mohammed Zaki, Lirong Xia"
     ],
@@ -42013,13 +42003,13 @@
     ],
     "202101": [
       "Graduate Skills",
-      "1",
+      "0-1",
       "",
       "Lirong Xia"
     ],
     "202109": [
       "Graduate Skills",
-      "1",
+      "0-1",
       "",
       "Lirong Xia"
     ],
@@ -42031,7 +42021,7 @@
     ],
     "202209": [
       "Graduate Skills",
-      "1",
+      "0-1",
       "",
       "Lirong Xia"
     ]
@@ -44374,7 +44364,7 @@
   "CISH-6900": {
     "200709": [
       "Computer Science Seminar",
-      "0",
+      "0-1",
       "",
       "Houman Younessi",
       "Kenneth Arthur Kousen"
@@ -46006,7 +45996,8 @@
       "4",
       "",
       "Chaitanya Kishore Ullal, John R. LaGraff, Daniel J. Lewis",
-      "John R. LaGraff, Daniel J. Lewis, Chaitanya Kishore Ullal"
+      "John R. LaGraff, Daniel J. Lewis, Chaitanya Kishore Ullal",
+      "Daniel J. Lewis, John R. LaGraff, Chaitanya Kishore Ullal"
     ],
     "202301": [
       "Materials Science For Engrs",
@@ -46842,7 +46833,7 @@
       "",
       "Kimberly Irene Oakes, Christine M Allard, Mark J Anderson",
       "Tathagata Bhaduri, Mark J Anderson, Glen R Gross",
-      "Dana M Chichester, Mark J Anderson, Amy Corron Youmans",
+      "Julia D Carroll, Mark J Anderson, Amy Corron Youmans",
       "Kimberly Irene Oakes, Mark J Anderson, Jordan L Vener",
       "Daniel Chapman Lander, Mark J Anderson, Jordan L Vener",
       "John R. LaGraff, Mark J Anderson, Graham C. Knowles",
@@ -49463,7 +49454,6 @@
       "Judith A. Obiero",
       "Amy Corron Youmans",
       "Susan Victoria Henry",
-      "Tracy N. Sullivan",
       "Glen R Gross"
     ]
   },
@@ -55058,7 +55048,7 @@
     ],
     "200809": [
       "Seminar In Economics",
-      "2",
+      "2-4",
       "[CI] ",
       "John Heim",
       "James Adams",
@@ -55066,7 +55056,7 @@
     ],
     "200901": [
       "Seminar In Economics",
-      "2",
+      "2-4",
       "[CI] ",
       "John M Gowdy",
       "John Heim",
@@ -55160,7 +55150,7 @@
     ],
     "201209": [
       "Seminar In Economics",
-      "2",
+      "2-4",
       "[CI] ",
       "John Heim",
       "James Adams",
@@ -57899,7 +57889,8 @@
     "202301": [
       "Cptr Components & Oper",
       "4",
-      ""
+      "",
+      "William James Stillman"
     ]
   },
   "ECSE-4040": {
@@ -60067,7 +60058,8 @@
     "202301": [
       "Advanced Electronic Circuits",
       "3",
-      ""
+      "",
+      "Kyle Richard Wilt"
     ]
   },
   "ECSE-6230": {
@@ -61478,7 +61470,7 @@
     ],
     "201909": [
       "Master's Project",
-      "2",
+      "1-16",
       "",
       "Tianyi Chen",
       "Ge Wang",
@@ -61487,7 +61479,7 @@
     ],
     "202001": [
       "Master's Project",
-      "4",
+      "1-16",
       "",
       "Robert Frank Karlicek",
       "Michael Shur",
@@ -67180,6 +67172,12 @@
       "4",
       "[CI] [HInq] ",
       "Ralph G Noble"
+    ],
+    "202301": [
+      "Culture And Psychology",
+      "4",
+      "[HInq] ",
+      "Sonja Ann Miller"
     ]
   },
   "IHSS-1964": {
@@ -74906,8 +74904,7 @@
       "Strategy And Policy",
       "4",
       "",
-      "Murali Dharan Raman Chari",
-      "M.V. Shyam Kumar"
+      "Murali Dharan Raman Chari"
     ]
   },
   "MGMT-4900": {
@@ -78014,7 +78011,7 @@
       "Protecting & Commercializing Y",
       "2",
       "",
-      "M.V. Shyam Kumar"
+      "Aparna Gupta"
     ]
   },
   "MGMT-6963": {
@@ -78121,7 +78118,7 @@
       "Aparna Gupta"
     ],
     "202301": [
-      "Decsn Sciences & Risk Mgmt",
+      "Strategic Mgmt:digital Age",
       "3",
       "",
       "Thiagarajan Ravichandran"
@@ -79873,7 +79870,9 @@
       "Aparna Gupta",
       "Timothy D. Golden",
       "Bill Francis",
+      "Brian John Clark",
       "Hao Zhao",
+      "Sebastian Souyris",
       "Thomas Michael Begley",
       "Mert Hakan Hekimoglu",
       "Christopher McDermott",
@@ -82013,6 +82012,7 @@
       "Jian Shi",
       "Edmund Francis Palermo",
       "David J Duquette",
+      "Edwin B. Fohtung",
       "Ravishankar Sundararaman",
       "Chaitanya Kishore Ullal",
       "Paul George Keblinski"
@@ -88148,7 +88148,7 @@
     ],
     "201201": [
       "Intro Hydrodynamic Stability",
-      "4",
+      "3-4",
       "",
       "Isom Herron",
       "Joyce McLaughlin"
@@ -88731,13 +88731,13 @@
     ],
     "201605": [
       "Master's Practicum In Math",
-      "0",
+      "0-6",
       "",
       "Donald W Schwendeman"
     ],
     "20160502": [
       "Master's Practicum In Math",
-      "0",
+      "0-6",
       "",
       "Donald W Schwendeman"
     ],
@@ -88750,13 +88750,13 @@
     ],
     "201705": [
       "Master's Practicum In Math",
-      "0",
+      "0-6",
       "",
       "Donald W Schwendeman"
     ],
     "20170502": [
       "Master's Practicum In Math",
-      "0",
+      "0-6",
       "",
       "Donald W Schwendeman"
     ],
@@ -88769,13 +88769,13 @@
     ],
     "201805": [
       "Master's Practicum In Math",
-      "0",
+      "0-6",
       "",
       "Donald W Schwendeman"
     ],
     "20180502": [
       "Master's Practicum In Math",
-      "0",
+      "0-6",
       "",
       "Donald W Schwendeman"
     ],
@@ -88788,13 +88788,13 @@
     ],
     "201905": [
       "Master's Practicum In Math",
-      "0",
+      "0-6",
       "",
       "Donald W Schwendeman"
     ],
     "20190502": [
       "Master's Practicum In Math",
-      "0",
+      "0-6",
       "",
       "Donald W Schwendeman"
     ],
@@ -88807,13 +88807,13 @@
     ],
     "202005": [
       "Master's Practicum In Math",
-      "0",
+      "0-6",
       "",
       "Donald W Schwendeman"
     ],
     "20200502": [
       "Master's Practicum In Math",
-      "0",
+      "0-6",
       "",
       "Donald W Schwendeman"
     ],
@@ -88860,7 +88860,7 @@
     ],
     "200901": [
       "Master's Project",
-      "3",
+      "1-6",
       "",
       "Joyce McLaughlin",
       "Donald A Drew"
@@ -88880,7 +88880,7 @@
     ],
     "201001": [
       "Master's Project",
-      "3",
+      "1-6",
       "",
       "Joyce McLaughlin",
       "Donald A Drew",
@@ -88900,7 +88900,7 @@
     ],
     "201101": [
       "Master's Project",
-      "3",
+      "1-6",
       "",
       "Joyce McLaughlin",
       "Donald A Drew",
@@ -88922,7 +88922,7 @@
     ],
     "201201": [
       "Master's Project",
-      "3",
+      "1-6",
       "",
       "Joyce McLaughlin",
       "Donald A Drew",
@@ -88944,7 +88944,7 @@
     ],
     "201301": [
       "Master's Project",
-      "3",
+      "1-6",
       "",
       "Joyce McLaughlin",
       "Donald A Drew",
@@ -88966,7 +88966,7 @@
     ],
     "201401": [
       "Master's Project",
-      "3",
+      "1-6",
       "",
       "Joyce McLaughlin",
       "Donald A Drew",
@@ -88990,7 +88990,7 @@
     ],
     "201501": [
       "Master's Project",
-      "3",
+      "1-6",
       "",
       "Joyce McLaughlin",
       "Donald A Drew",
@@ -89017,7 +89017,7 @@
     ],
     "201601": [
       "Master's Project",
-      "3",
+      "1-6",
       "",
       "Joyce McLaughlin",
       "Donald A Drew",
@@ -89045,7 +89045,7 @@
     ],
     "201701": [
       "Master's Project",
-      "3",
+      "1-6",
       "",
       "Joyce McLaughlin",
       "Donald A Drew",
@@ -94828,13 +94828,13 @@
     ],
     "200801": [
       "Sustainability & Design",
-      "3",
+      "1-6",
       "",
       "Daniel Walczyk, Michael Jensen"
     ],
     "200901": [
       "Sustainability & Design",
-      "3",
+      "1-6",
       "",
       "Daniel Walczyk, Michael Jensen"
     ],
@@ -94846,7 +94846,7 @@
     ],
     "201001": [
       "Sustainability & Design",
-      "3",
+      "1-6",
       "",
       "Daniel Walczyk, Michael Jensen"
     ],
@@ -97793,6 +97793,7 @@
       "1-9",
       "",
       "Thierry Blanchet",
+      "Hyun Gook Kang",
       "Michael Amitay",
       "Antoinette Maniatty",
       "Kurt S Anderson",
@@ -102526,11 +102527,6 @@
       "Readings In Phil",
       "1-12",
       ""
-    ],
-    "202301": [
-      "Readings In Phil",
-      "1-12",
-      ""
     ]
   },
   "PHIL-4960": {
@@ -103356,11 +103352,15 @@
       "Physics I",
       "4",
       "",
-      "Julian S. Georg, Yong Sung Kim",
       "Joseph Darryl Michael, Yong Sung Kim",
-      "Gwo Ching Wang, Yong Sung Kim",
+      "Damien J. West, Yong Sung Kim",
+      "Pascal D. Bassene, Yong Sung Kim",
+      "Hesham Hassan, Yong Sung Kim",
+      "Christian M. Wetzel, Yong Sung Kim",
       "Shengbai Zhang, Yong Sung Kim",
-      "Yong Sung Kim"
+      "Yong Sung Kim",
+      "Gwo Ching Wang, Yong Sung Kim",
+      "Juan Pablo Borja, Yong Sung Kim"
     ]
   },
   "PHYS-1200": {
@@ -103792,10 +103792,12 @@
       "Physics II",
       "4",
       "",
-      "Shawn Yu Lin, Glenn Ciolek",
       "Glenn Ciolek",
+      "Yong Zheng, Glenn Ciolek",
+      "Charles Harold Martin, Glenn Ciolek",
       "Nadarajah Narendran, Glenn Ciolek",
-      "Damien J. West, Glenn Ciolek"
+      "Nadarajah Narendran, Glenn Ciolek, John Schroeder",
+      "John Schroeder, Glenn Ciolek"
     ]
   },
   "PHYS-1961": {
@@ -104534,13 +104536,13 @@
     ],
     "201709": [
       "Physics I Mentoring",
-      "2",
+      "1-2",
       "",
       "Peter Persans"
     ],
     "201809": [
       "Physics I Mentoring",
-      "2",
+      "1-2",
       "",
       "Peter Persans"
     ],
@@ -104552,13 +104554,13 @@
     ],
     "201909": [
       "Physics I Mentoring",
-      "2",
+      "1-2",
       "",
       "Peter Persans"
     ],
     "202009": [
       "Physics I Mentoring",
-      "2",
+      "1-2",
       "",
       "Peter Persans"
     ],
@@ -104576,7 +104578,7 @@
     ],
     "202109": [
       "Physics I Mentoring",
-      "2",
+      "1-2",
       "",
       "Peter Persans"
     ],
@@ -104594,7 +104596,7 @@
     ],
     "202209": [
       "Physics I Mentoring",
-      "2",
+      "1-2",
       "",
       "Peter Persans"
     ]
@@ -104886,7 +104888,7 @@
     ],
     "200901": [
       "Particle Physics Seminar",
-      "1",
+      "0-1",
       "",
       "Joel Giedt",
       "Masashi Yamaguchi",
@@ -104900,7 +104902,7 @@
     ],
     "201001": [
       "Physics Colloquium",
-      "1",
+      "0-1",
       "",
       "Sang-Kee Eah",
       "Peter Persans"
@@ -104913,7 +104915,7 @@
     ],
     "201101": [
       "Physics Colloquium",
-      "1",
+      "0-1",
       "",
       "Kim Michelle Lewis",
       "Peter Persans"
@@ -104926,7 +104928,7 @@
     ],
     "201201": [
       "Physics Colloquium",
-      "1",
+      "0-1",
       "",
       "Vincent Meunier",
       "Peter Persans"
@@ -104939,7 +104941,7 @@
     ],
     "201301": [
       "Physics Colloquium",
-      "1",
+      "0-1",
       "",
       "Joel Giedt",
       "Peter Persans"
@@ -104952,7 +104954,7 @@
     ],
     "201401": [
       "Physics Colloquium",
-      "1",
+      "0-1",
       "",
       "Joel Giedt",
       "Peter Persans"
@@ -104965,7 +104967,7 @@
     ],
     "201501": [
       "Physics Colloquium",
-      "1",
+      "0-1",
       "",
       "Joel Giedt",
       "Peter Persans"
@@ -104978,7 +104980,7 @@
     ],
     "201601": [
       "Physics Colloquium",
-      "1",
+      "0-1",
       "",
       "Joel Giedt",
       "Peter Persans"
@@ -104991,7 +104993,7 @@
     ],
     "201701": [
       "Physics Colloquium",
-      "1",
+      "0-1",
       "",
       "Joel Giedt",
       "Wayne G Roberge"
@@ -108080,11 +108082,6 @@
       "4",
       "",
       "Sonja Ann Miller"
-    ],
-    "202301": [
-      "African American Psychology",
-      "4",
-      ""
     ]
   },
   "PSYC-2964": {
@@ -115349,7 +115346,7 @@
       "Aerospace Studies 100b",
       "1",
       "",
-      "Kristen Gibson, Charles DeUnta Gresham"
+      "Charles DeUnta Gresham, Jake L Miller"
     ]
   },
   "USAF-2040": {
@@ -115447,7 +115444,7 @@
       "Aerospace Studies 200b",
       "1",
       "",
-      "Charles DeUnta Gresham"
+      "Jake L Miller, Kristen Gibson"
     ]
   },
   "USAF-2060": {
@@ -116251,7 +116248,7 @@
       "2",
       "",
       "Michael Todd Stradley",
-      "Joshua William Hugo Draper, Leandro Piazzi",
+      "Leandro Piazzi",
       "Marcus Carter"
     ]
   },
@@ -116576,8 +116573,7 @@
       "Bldg Systems And Environment",
       "4",
       "",
-      "John Clifford Loercher",
-      "Marcus Carter"
+      "John Clifford Loercher"
     ]
   },
   "ARCH-4968": {
@@ -116601,7 +116597,7 @@
     ],
     "201009": [
       "Social Ecology In Arch",
-      "2",
+      "2-3",
       "",
       "Anthony Titus",
       "Peter Randolph Hazard Stark"
@@ -116614,7 +116610,7 @@
     ],
     "201109": [
       "Social Ecology In Arch",
-      "4",
+      "3-4",
       "",
       "Anthony Titus",
       "Peter Randolph Hazard Stark"
@@ -116627,7 +116623,7 @@
     ],
     "201209": [
       "Twisted Siblings: Cont Paingi",
-      "2",
+      "2-3",
       "",
       "Anthony Titus",
       "Peter Randolph Hazard Stark"
@@ -116730,12 +116726,6 @@
       "Nadarajah Narendran, Jean Paul Freyssinier, Ukwatte Lokuliyanage Indika Upendra Perera"
     ],
     "202201": [
-      "Tech Prosthetic Or Autonomous",
-      "2",
-      "",
-      "Ted Krueger"
-    ],
-    "202301": [
       "Tech Prosthetic Or Autonomous",
       "2",
       "",
@@ -116873,7 +116863,7 @@
     ],
     "202301": [
       "Relationship Btwn Film & Arch",
-      "2",
+      "2-3",
       "",
       "Anthony Titus",
       "Selma Cohen"
@@ -117715,7 +117705,8 @@
     "202301": [
       "Graduate Thesis Seminar",
       "2",
-      ""
+      "",
+      "Enrique Ramirez"
     ]
   },
   "ARCH-6941": {
@@ -117739,7 +117730,7 @@
     ],
     "201101": [
       "Doctoral Seminar",
-      "2",
+      "1-6",
       "",
       "Ning Xiang",
       "Mariana Figueiro",
@@ -117747,7 +117738,7 @@
     ],
     "201201": [
       "Doctoral Seminar",
-      "2",
+      "1-6",
       "",
       "Ning Xiang",
       "Nadarajah Narendran",
@@ -117842,10 +117833,10 @@
       "Michael James Oatman"
     ],
     "202301": [
-      "Duchamp Seminar",
-      "2",
+      "Urban Data II",
+      "1-4",
       "",
-      "Michael James Oatman"
+      "James Fleet Hower"
     ]
   },
   "ARCH-6980": {
@@ -117864,7 +117855,7 @@
     ],
     "201301": [
       "Master's Project",
-      "6",
+      "1-9",
       "",
       "Christopher S Perry, Andrew Saunders",
       "Ted Krueger",
@@ -117885,7 +117876,7 @@
     ],
     "201409": [
       "Master's Project",
-      "5",
+      "4-5",
       "",
       "Christopher S Perry",
       "Ted T.Ngai",
@@ -117905,7 +117896,7 @@
     ],
     "201509": [
       "Master's Project",
-      "5",
+      "4-5",
       "",
       "Christopher S Perry, Ted T.Ngai",
       "Ted T.Ngai",
@@ -119192,31 +119183,31 @@
   "ASTR-1530": {
     "200801": [
       "Tour Of The Solar System",
-      "1",
+      "1-2",
       "",
       "Douglas CB Whittet"
     ],
     "200901": [
       "Tour Of The Solar System",
-      "1",
+      "1-2",
       "",
       "Douglas CB Whittet"
     ],
     "201001": [
       "Tour Of The Solar System",
-      "1",
+      "1-2",
       "",
       "Douglas CB Whittet"
     ],
     "201101": [
       "Tour Of The Solar System",
-      "1",
+      "1-2",
       "",
       "Michael J Trinkala"
     ],
     "201201": [
       "Tour Of The Solar System",
-      "1",
+      "1-2",
       "",
       "Michael J Trinkala"
     ]
@@ -123163,7 +123154,7 @@
     ],
     "202201": [
       "Data Science & Alzheimer's",
-      "1",
+      "1-2",
       "",
       "Jennifer Marie Hurley",
       "M.V. Shyam Kumar"
@@ -123176,10 +123167,10 @@
     ],
     "202301": [
       "Data Science & Alzheimer's",
-      "1",
+      "1-2",
       "",
       "Jennifer Marie Hurley",
-      "M.V. Shyam Kumar"
+      "Aparna Gupta"
     ]
   },
   "BMED-6962": {
@@ -124942,8 +124933,8 @@
       "Organic Chemistry Lab II",
       "1",
       "",
-      "Margarita L Kirova-Snover",
-      "Margarita L Kirova-Snover, Filbert Totsingan"
+      "Margarita L Kirova-Snover, Filbert Totsingan",
+      "Margarita L Kirova-Snover"
     ]
   },
   "CHEM-2260": {
@@ -125943,13 +125934,13 @@
     ],
     "201509": [
       "Chemistry I Mentoring",
-      "2",
+      "1-2",
       "",
       "Alexander Ma"
     ],
     "201609": [
       "Chemistry I Mentoring",
-      "2",
+      "1-2",
       "",
       "Gerald M Korenowski, Alexander Ma"
     ],
@@ -125961,7 +125952,7 @@
     ],
     "201709": [
       "Chemistry I Mentoring",
-      "2",
+      "1-2",
       "",
       "Alexander Ma"
     ],
@@ -129738,19 +129729,19 @@
     ],
     "200901": [
       "Vasudha Research Experience",
-      "4",
+      "2-4",
       "",
       "Prabhat Hajela, Bradford C Lister"
     ],
     "201001": [
       "Vasudha Research Experience",
-      "4",
+      "2-4",
       "",
       "Prabhat Hajela, Bradford C Lister"
     ],
     "201101": [
       "Vasudha Research Experience",
-      "4",
+      "2-4",
       "",
       "Prabhat Hajela, Bradford C Lister"
     ],
@@ -130111,7 +130102,7 @@
     ],
     "201009": [
       "Heating Ventilation Of Ac",
-      "3",
+      "3-4",
       "",
       "William Dwight Gerstler",
       "Diana Andra Borca Tasciuc"
@@ -130971,7 +130962,7 @@
       "Gis In The Sciences",
       "4",
       "",
-      "Frank Spear"
+      "Stephen Andrew Signell, Frank Spear"
     ]
   },
   "ECON-4210": {
@@ -137921,7 +137912,7 @@
       "Risk Analytics And Management",
       "3",
       "",
-      "Aparna Gupta"
+      "Christopher Joseph Donohue"
     ]
   },
   "MTLE-2100": {
@@ -138393,7 +138384,7 @@
     ],
     "201201": [
       "Design & Application Of Matls",
-      "3",
+      "2-3",
       "[CI] ",
       "Daniel Lewis, Valerie Masterson, Mark Walter Steiner",
       "Daniel Lewis, Valerie Masterson"
@@ -140190,7 +140181,7 @@
     ],
     "201509": [
       "Math Teaching & Mentoring",
-      "2",
+      "1-2",
       "",
       "Bruce Piper"
     ],
@@ -142431,6 +142422,12 @@
       "3",
       "",
       "Matthew Adam Oehlschlaeger"
+    ],
+    "202301": [
+      "Combustion",
+      "3",
+      "",
+      "Matthew Adam Oehlschlaeger"
     ]
   },
   "MANE-6942": {
@@ -142932,7 +142929,7 @@
       "Drill/laboratory",
       "0",
       "",
-      "Joseph Michael Miller, Mark Yu Kersey, Steven Anthony Pique"
+      "Joseph Michael Miller, Mark Yu Kersey, Steven Anthony Pique, Ryan Pusins"
     ]
   },
   "USNA-0040": {
@@ -144949,7 +144946,7 @@
     ],
     "200909": [
       "Physics Teaching Practicum",
-      "2",
+      "2-4",
       "",
       "Peter Persans"
     ],
@@ -145497,7 +145494,8 @@
     "202301": [
       "Particle Astrophysics",
       "4",
-      ""
+      "",
+      "Ethan Craig Brown"
     ]
   },
   "PSYC-2100": {
@@ -148515,7 +148513,7 @@
     ],
     "202009": [
       "Master's Project",
-      "4",
+      "1-9",
       "",
       "Wesley D Turner",
       "David Eric Goldschmidt",
@@ -155999,7 +155997,7 @@
       "Architectural Acoustics 2",
       "4",
       "",
-      "Ning Xiang"
+      "David William Kahn"
     ]
   },
   "ARTS-4210": {
@@ -157484,12 +157482,6 @@
       "",
       "Bram Van Heuveln"
     ],
-    "202212": [
-      "Intro To Deep Learning",
-      "2",
-      "",
-      "Mei Si"
-    ],
     "202301": [
       "Social Computing",
       "4",
@@ -158880,12 +158872,6 @@
       "4",
       "",
       "Prakrati Thakur"
-    ],
-    "202212": [
-      "Intl Trade Models & Policies",
-      "2",
-      "",
-      "Mina Mahmoudi"
     ],
     "202301": [
       "Intl Trade & Environmntl Econ",
@@ -161754,6 +161740,12 @@
       "3",
       "",
       "Joshua William Hugo Draper"
+    ],
+    "202301": [
+      "Material Systems & Productions",
+      "3",
+      "",
+      "Joshua William Hugo Draper"
     ]
   },
   "ARCH-6350": {
@@ -162431,7 +162423,7 @@
     ],
     "201201": [
       "Non-Thesis Research",
-      "4",
+      "3-4",
       "",
       "Eric Matthew Rutledge",
       "Lee Ligon"
@@ -162448,7 +162440,7 @@
     ],
     "201301": [
       "Non-Thesis Research",
-      "4",
+      "3-4",
       "",
       "Eric Matthew Rutledge",
       "Lee Ligon"
@@ -162462,7 +162454,7 @@
     ],
     "201401": [
       "Non-Thesis Research",
-      "4",
+      "3-4",
       "",
       "Eric Matthew Rutledge",
       "Lee Ligon"
@@ -162476,7 +162468,7 @@
     ],
     "201501": [
       "Non-Thesis Research",
-      "4",
+      "3-4",
       "",
       "Eric Matthew Rutledge",
       "Lee Ligon"
@@ -162904,7 +162896,7 @@
     ],
     "201701": [
       "Enrichment In Organic Chem I",
-      "1",
+      "1-2",
       "",
       "Michael Aldersley"
     ],
@@ -163692,7 +163684,7 @@
     ],
     "201309": [
       "Master's Project",
-      "4",
+      "1-9",
       "",
       "Michael J Kalsher",
       "Mei Si"
@@ -164937,7 +164929,7 @@
     ],
     "201109": [
       "Professional Project",
-      "3",
+      "3-4",
       "",
       "John Wen",
       "Jian Sun",
@@ -164951,7 +164943,7 @@
     ],
     "201209": [
       "Probabilistic Graphical M",
-      "3",
+      "3-4",
       "",
       "Qiang Ji",
       "Jian Sun",
@@ -164965,7 +164957,7 @@
     ],
     "201309": [
       "Masters Professional Project",
-      "4",
+      "3-4",
       "",
       "Jian Sun",
       "Leila Parsa"
@@ -164978,14 +164970,14 @@
     ],
     "201409": [
       "Masters Professional Project",
-      "4",
+      "3-4",
       "",
       "Jian Sun",
       "Richard J Radke"
     ],
     "201501": [
       "Professional Project",
-      "6",
+      "3-6",
       "",
       "Wencen Wu",
       "Sudhangshu Bose",
@@ -164999,7 +164991,7 @@
     ],
     "201509": [
       "Professional Project",
-      "3",
+      "3-4",
       "",
       "Wencen Wu",
       "Richard J Radke",
@@ -167363,7 +167355,7 @@
       "Graduate Thesis Smr:acoustics",
       "1",
       "",
-      "Jonas Braasch"
+      "Ning Xiang"
     ]
   },
   "ARCH-6890": {
@@ -167486,7 +167478,7 @@
     ],
     "201309": [
       "Computation I",
-      "4",
+      "2-4",
       "",
       "James Fleet Hower",
       "Matthew E Gindlesparger, Kenton Andrew Phillips"
@@ -167540,12 +167532,6 @@
       "Michael James Oatman"
     ],
     "202201": [
-      "Times Of Digital Biology",
-      "2",
-      "",
-      "Zbigniew Oksiuta"
-    ],
-    "202301": [
       "Times Of Digital Biology",
       "2",
       "",
@@ -167750,12 +167736,6 @@
       "4",
       "[CI] ",
       "Michael Century"
-    ],
-    "202301": [
-      "New Media Theory",
-      "4",
-      "[CI] ",
-      "Michael L. Century"
     ]
   },
   "ARTS-4967": {
@@ -167850,12 +167830,6 @@
       "4",
       "",
       "Michael Century"
-    ],
-    "202301": [
-      "New Media Theory",
-      "4",
-      "",
-      "Michael L. Century"
     ]
   },
   "BIOL-4100": {
@@ -169093,7 +169067,7 @@
     ],
     "201501": [
       "Computer Science Seminar",
-      "0",
+      "0-3",
       "",
       "Elliot Anshelevich",
       "Eugene Eberbach"
@@ -169161,7 +169135,7 @@
     ],
     "202209": [
       "Materials Informatics & Data",
-      "3",
+      "0-6",
       "",
       "Ravishankar Sundararaman",
       "Tomasz Strzalkowski"
@@ -169382,79 +169356,79 @@
     ],
     "201809": [
       "Practicum In College Teaching",
-      "2",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "201901": [
       "Practicum - College Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "201909": [
       "Practicum - College Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "202001": [
       "Practicum-College Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "202005": [
       "Practicum-College Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "202009": [
       "Practicum-College Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "202101": [
       "Practicum-College Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "202105": [
       "Practicum-College Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "202109": [
       "Practicum-college Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "202201": [
       "Practicum-college Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "202205": [
       "Practicum-college Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "202209": [
       "Practicum-college Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ],
     "202301": [
       "Practicum-college Teaching I",
-      "1",
+      "1-2",
       "",
       "Jianqiang Lu"
     ]
@@ -171396,7 +171370,7 @@
   "ARCH-4932": {
     "201009": [
       "Conversations Digital Arch",
-      "2",
+      "2-3",
       "",
       "Thomas Warren Wiscombe",
       "Anna Dyson"
@@ -171420,7 +171394,7 @@
     ],
     "201209": [
       "Seminar In Sensory Culture",
-      "2",
+      "2-3",
       "",
       "Ted Krueger",
       "Anna Dyson"
@@ -172373,12 +172347,6 @@
       "4",
       "",
       "Conor Lennon"
-    ],
-    "202212": [
-      "Econ System Dynamics Expernc",
-      "1",
-      "",
-      "Kenneth L. Simons"
     ]
   },
   "ECON-6960": {
@@ -173049,7 +173017,7 @@
       "Mulitdisciplinary Capstone Design",
       "3",
       "[CI] ",
-      "Rostyslav Korolov, Valerie J. Masterson",
+      "Valerie J. Masterson, Rostyslav Korolov",
       "Junichi Kanai, Valerie J. Masterson"
     ],
     "202301": [
@@ -174715,6 +174683,7 @@
       "1-9",
       "",
       "William Alan Wallace",
+      "Yinan Wang",
       "Jennifer Ann Pazour",
       "David Joseph Mendonca"
     ]
@@ -174753,7 +174722,7 @@
     ],
     "201109": [
       "Dissertation",
-      "2",
+      "1-15",
       "",
       "William Alan Wallace",
       "Thomas R Willemain",
@@ -175151,6 +175120,7 @@
       "Jennifer Ann Pazour",
       "Deborah L. McGuinness",
       "William Alan Wallace",
+      "Yinan Wang",
       "Kristen Rene Schell",
       "David Joseph Mendonca",
       "Kristin P Bennett"
@@ -176020,12 +175990,6 @@
       "3",
       "",
       "Brian Robert Callahan"
-    ],
-    "202301": [
-      "The Business Of Platforms",
-      "3",
-      "",
-      "Kevin R. Stewart"
     ]
   },
   "ITWS-6961": {
@@ -176185,19 +176149,19 @@
     ],
     "20150502": [
       "Master's Project",
-      "3",
+      "1-4",
       "",
       "Peter A Fox"
     ],
     "201505": [
       "Master's Project",
-      "3",
+      "1-4",
       "",
       "Richard Plotka"
     ],
     "20150503": [
       "Master's Project",
-      "3",
+      "1-4",
       "",
       "Peter A Fox"
     ],
@@ -176322,10 +176286,9 @@
       "Brian Robert Callahan"
     ],
     "202301": [
-      "Masters Project",
+      "Master's Project",
       "1-4",
       "",
-      "Brian Robert Callahan",
       "Thilanka Munasinghe",
       "Richard M. Plotka"
     ]
@@ -177730,7 +177693,7 @@
   "COGS-4940": {
     "201101": [
       "Logic Software Development",
-      "3",
+      "3-4",
       "",
       "Bram Van Heuveln",
       "Yingrui Yang"
@@ -178350,7 +178313,7 @@
     ],
     "202101": [
       "Rcos == 1 Credit",
-      "1",
+      "1-4",
       "",
       "Wesley D Turner, David Eric Goldschmidt"
     ],
@@ -178368,7 +178331,7 @@
     ],
     "202205": [
       "Rcos",
-      "4",
+      "2-4",
       "",
       "Wesley D Turner, David Eric Goldschmidt"
     ],
@@ -178577,7 +178540,8 @@
     "202301": [
       "Advanced Electronic Circuits",
       "3",
-      ""
+      "",
+      "Kyle Richard Wilt"
     ]
   },
   "ECSE-4560": {
@@ -178872,7 +178836,8 @@
     "202301": [
       "Prod And Operations Mgmt",
       "3",
-      ""
+      "",
+      "Esra Agca Aktunc"
     ]
   },
   "ISYE-4210": {
@@ -179397,7 +179362,8 @@
     "202301": [
       "Engineering Data Analytics",
       "4",
-      ""
+      "",
+      "Esra Agca Aktunc"
     ]
   },
   "ISYE-4963": {
@@ -181005,13 +180971,13 @@
     ],
     "20220502": [
       "Leadership Theories",
-      "1",
+      "1-4",
       "",
       "Holly A Traver"
     ],
     "202205": [
       "Leadership Theories",
-      "1",
+      "1-4",
       "",
       "Yingrui Yang"
     ],
@@ -181363,16 +181329,11 @@
       "",
       "Elsa V. Richter"
     ],
-    "202212": [
-      "Teds Excellent Adventure",
-      "1",
-      "",
-      "Cristina Claudia Caruso James"
-    ],
     "202301": [
       "Eff Comm For Class Pedagogy",
       "1",
-      ""
+      "",
+      "Anita Kay Greenfield"
     ]
   },
   "MATH-6190": {
@@ -181689,27 +181650,27 @@
     ],
     "202109": [
       "Rcos == 1 Credit",
-      "1",
+      "1-4",
       "",
       "Wesley D Turner, David Eric Goldschmidt, Konstantin Kuzmin",
       "Konstantin Kuzmin, David Eric Goldschmidt, Wesley D Turner"
     ],
     "202201": [
       "Rcos == 1 Credit",
-      "1",
+      "1-4",
       "",
       "Wesley D Turner, David Eric Goldschmidt"
     ],
     "202209": [
       "Rcos == 1 Credit",
-      "1",
+      "1-4",
       "",
       "Wesley D Turner, David Eric Goldschmidt, Konstantin Kuzmin",
       "Konstantin Kuzmin, David Eric Goldschmidt, Wesley D Turner"
     ],
     "202301": [
       "Rcos == 1 Credit",
-      "1",
+      "1-4",
       "",
       "Wesley D Turner, David Eric Goldschmidt"
     ]
@@ -182033,7 +181994,8 @@
     "202301": [
       "Engineering Data Analytics",
       "3",
-      ""
+      "",
+      "Esra Agca Aktunc"
     ]
   },
   "ITWS-4963": {
@@ -184212,7 +184174,7 @@
   "MGMT-2001": {
     "201201": [
       "Event Management (At Hvcc)",
-      "3",
+      "3-4",
       ""
     ]
   },
@@ -184664,12 +184626,6 @@
       "4",
       "",
       "Nadarajah Narendran, Jean Paul Freyssinier, Ukwatte Lokuliyanage Indika Upendra Perera"
-    ],
-    "202301": [
-      "Tech Prosthetic Or Autonomous",
-      "2",
-      "",
-      "Ted Krueger"
     ]
   },
   "ARCH-6981": {
@@ -185354,7 +185310,7 @@
     ],
     "202001": [
       "Undergraduate Thesis",
-      "4",
+      "2-6",
       "",
       "Michael J Kalsher",
       "Bram Van Heuveln",
@@ -187420,7 +187376,8 @@
     "202209": [
       "Bedford Design Studio",
       "3",
-      "[CI] "
+      "[CI] ",
+      "James Norman Richardson"
     ],
     "202301": [
       "Bedford Design Studio",
@@ -187968,8 +187925,8 @@
       "Electronic Instrumentation",
       "4",
       "",
-      "Alex Patterson, Kyle Richard Wilt",
-      "Kyle Richard Wilt, Alex Patterson"
+      "Alex Patterson, Sang In Han",
+      "Sang In Han, Alex Patterson"
     ]
   },
   "ECSE-6120": {
@@ -188148,7 +188105,8 @@
     "202301": [
       "Intro To Isye",
       "1",
-      ""
+      "",
+      "Esra Agca Aktunc"
     ]
   },
   "ISYE-4300": {
@@ -188577,7 +188535,7 @@
     ],
     "201805": [
       "Master's Professional Project",
-      "3",
+      "1-6",
       "",
       "Ernesto Gutierrez-Miravete"
     ],
@@ -190765,7 +190723,7 @@
       "Bedford Seminar",
       "3",
       "",
-      "Marcin D. Marchewka"
+      "James Norman Richardson"
     ]
   },
   "ARTS-2360": {
@@ -191047,7 +191005,7 @@
       "Experimental Game Design",
       "4",
       "",
-      "Sylvain Payen"
+      "Robert F. Nideffer"
     ],
     "202301": [
       "Experimental Game Design",
@@ -192613,7 +192571,7 @@
   "ISCI-6980": {
     "201401": [
       "Master's Project",
-      "9",
+      "2-9",
       "",
       "Chang Yeol Ryu"
     ],
@@ -197077,7 +197035,7 @@
       "2",
       "",
       "John Clifford Loercher",
-      "Lonn J. Combs"
+      "Arta Yazdanseta"
     ]
   },
   "ARCH-2530": {
@@ -197160,7 +197118,8 @@
       "2",
       "",
       "Adam Hassan Dayem",
-      "Edwin Jhinang Liu"
+      "Walaid Sehwail, Caleb White",
+      "Adam Francis Petela"
     ]
   },
   "ARCH-2810": {
@@ -197272,10 +197231,12 @@
       "5",
       "",
       "Anthony Titus",
-      "Yael Erel",
-      "Per S. Svedberg",
-      "Ryosuke Imaeda",
-      "Walaid Sehwail"
+      "John Rhett Russo, Anthony Titus",
+      "Per S. Svedberg, Anthony Titus",
+      "Claire Eileen Moriarty",
+      "Walaid Sehwail",
+      "Adam Francis Petela",
+      "Christianna Grace Bennett"
     ]
   },
   "ARCH-4050": {
@@ -197405,9 +197366,9 @@
       "2",
       "",
       "Yael Erel",
-      "Gustavo Enrique Alberto Crembil",
+      "Leandro Piazzi",
       "Per S. Svedberg",
-      "Florencia Vetcher"
+      "Adam Francis Petela"
     ]
   },
   "ARCH-4120": {
@@ -197529,6 +197490,12 @@
       "3",
       "",
       "Charles Portelli"
+    ],
+    "202301": [
+      "Environmental Parametrics",
+      "3",
+      "",
+      "Charles A. Portelli"
     ]
   },
   "ARCH-4340": {
@@ -197957,15 +197924,14 @@
       "Caleb White",
       "John Rhett Russo",
       "James Fleet Hower",
+      "Christianna Grace Bennett",
       "Florencia Vetcher"
     ],
     "202301": [
       "Architectural Design Studio 5",
       "5",
       "",
-      "Michael James Oatman",
-      "Zbigniew Oksiuta",
-      "Christianna Grace Bennett",
+      "Matt Burgermaster",
       "James Fleet Hower",
       "Gustavo Enrique Alberto Crembil"
     ]
@@ -198074,7 +198040,8 @@
     "202301": [
       "Advanced Digital Imaging",
       "4",
-      ""
+      "",
+      "Carolyn Irene Tennant"
     ]
   },
   "ARTS-6200": {
@@ -198310,7 +198277,8 @@
     "202301": [
       "Advanced Digital Imaging",
       "4",
-      ""
+      "",
+      "Carolyn Irene Tennant"
     ]
   },
   "ASTR-6970": {
@@ -198412,7 +198380,7 @@
   "BIOL-2005": {
     "201501": [
       "Anat & Phys II (At Maria)",
-      "3",
+      "1-3",
       ""
     ]
   },
@@ -199320,7 +199288,7 @@
   "MANE-4941": {
     "201501": [
       "Inertial Microfludics",
-      "3",
+      "2-3",
       "",
       "Aram Chung",
       "Sandipan Mishra"
@@ -199681,8 +199649,9 @@
       "Digital Constructs 4",
       "2",
       "",
-      "Ryosuke Imaeda",
-      "Matthew Joseph Lopez"
+      "Edwin Jhinang Liu, Matthew Joseph Lopez",
+      "Matthew Joseph Lopez",
+      "Hseng Tai Ja Reng Lintner, Matthew Joseph Lopez"
     ]
   },
   "ARCH-2820": {
@@ -199810,12 +199779,6 @@
       "John Clifford Loercher"
     ],
     "202201": [
-      "Building Performance Studio 1",
-      "5",
-      "",
-      "John Clifford Loercher"
-    ],
-    "202301": [
       "Building Performance Studio 1",
       "5",
       "",
@@ -199987,12 +199950,6 @@
       "David H Bell"
     ],
     "202201": [
-      "History, Theory, Criticism 2",
-      "4",
-      "",
-      "David H Bell"
-    ],
-    "202301": [
       "History, Theory, Criticism 2",
       "4",
       "",
@@ -200293,14 +200250,6 @@
       "Adam Hassan Dayem",
       "David H Bell",
       "Matthew Joseph Lopez"
-    ],
-    "202301": [
-      "Graduate Architecture Design 2",
-      "5",
-      "",
-      "Adam Hassan Dayem",
-      "David H Bell",
-      "Matthew Joseph Lopez"
     ]
   },
   "ARCH-5300": {
@@ -200522,6 +200471,12 @@
     ],
     "202209": [
       "Graduate Environmental Parametrics",
+      "2",
+      "",
+      "Charles A. Portelli"
+    ],
+    "202301": [
+      "Environmental Parametrics",
       "2",
       "",
       "Charles A. Portelli"
@@ -201077,7 +201032,7 @@
       "David H Bell",
       "Edwin Jhinang Liu",
       "Matthew Joseph Lopez",
-      "Michael Todd Stradley"
+      "Yael Erel"
     ]
   },
   "ARCH-4110": {
@@ -201140,7 +201095,8 @@
     "202301": [
       "Entrepreneurship &architecture",
       "2",
-      ""
+      "",
+      "Alec Walker, Daniel Stratford"
     ]
   },
   "ARCH-5360": {
@@ -201283,12 +201239,6 @@
       "Jillian Marie Crandall"
     ],
     "202201": [
-      "Grad Architecture Design 4",
-      "5",
-      "",
-      "John Clifford Loercher"
-    ],
-    "202301": [
       "Grad Architecture Design 4",
       "5",
       "",
@@ -201557,7 +201507,7 @@
       "Design For Constructability",
       "3",
       "",
-      "Ryan Christopher McClure"
+      "Steven Paul Hagy"
     ]
   },
   "CIVL-6300": {
@@ -202208,12 +202158,6 @@
       "3",
       "",
       "Richard M. Plotka"
-    ],
-    "202301": [
-      "Software Development",
-      "3",
-      "",
-      "Richard M. Plotka"
     ]
   },
   "MTLE-4440": {
@@ -202565,7 +202509,7 @@
   "ARCH-2941": {
     "201609": [
       "Media Tech & Arch Theory",
-      "2",
+      "1-2",
       "",
       "Carla Leitao",
       "Lydia Kallipoliti"
@@ -202731,15 +202675,14 @@
       "Caleb White",
       "John Rhett Russo",
       "James Fleet Hower",
+      "Christianna Grace Bennett",
       "Florencia Vetcher"
     ],
     "202301": [
       "Architectural Design Studio 6",
       "5",
       "",
-      "Michael James Oatman",
-      "Zbigniew Oksiuta",
-      "Christianna Grace Bennett",
+      "Matt Burgermaster",
       "James Fleet Hower",
       "Gustavo Enrique Alberto Crembil"
     ]
@@ -202861,8 +202804,8 @@
       "Comprehensive Design Studio 1",
       "5",
       "",
-      "Florencia Vetcher",
-      "Gustavo Enrique Alberto Crembil"
+      "Marcus Carter",
+      "Jillian Marie Crandall"
     ]
   },
   "ARCH-4910": {
@@ -204353,7 +204296,7 @@
   "MTLE-2941": {
     "201609": [
       "Undergraduate Research Project",
-      "3",
+      "3-4",
       "",
       "Liping Huang",
       "Rahmi Ozisik"
@@ -204790,8 +204733,9 @@
       "5",
       "",
       "Lonn J. Combs",
-      "Jillian Marie Crandall",
-      "Ted Krueger"
+      "Arta Yazdanseta",
+      "Michael Todd Stradley",
+      "Leandro Piazzi"
     ]
   },
   "ARCH-4920": {
@@ -204853,10 +204797,11 @@
       "Final Project Design Studio",
       "5",
       "[CI] ",
-      "Carla Leitao",
+      "Caleb White",
       "Christopher S Perry",
       "Hseng Tai Ja Reng Lintner",
-      "John Rhett Russo"
+      "Ryosuke Imaeda",
+      "Florencia Vetcher"
     ]
   },
   "ARCH-4958": {
@@ -205000,7 +204945,7 @@
       "Graduate Final Project",
       "6",
       "",
-      "Marcus Carter"
+      "Christopher S Perry"
     ]
   },
   "ARTS-1050": {
@@ -205185,7 +205130,8 @@
     "202301": [
       "3d Digital Modeling",
       "4",
-      ""
+      "",
+      "Cassandra Sammartano"
     ]
   },
   "ARTS-4230": {
@@ -205516,7 +205462,8 @@
     "202301": [
       "Intro Manufacturing Planning",
       "3",
-      ""
+      "",
+      "Esra Agca Aktunc"
     ]
   },
   "ECSE-4740": {
@@ -206761,9 +206708,6 @@
       "Architectural Design Studio 7",
       "5",
       "",
-      "Michael James Oatman",
-      "Zbigniew Oksiuta",
-      "Christianna Grace Bennett",
       "Gustavo Enrique Alberto Crembil"
     ]
   },
@@ -207102,7 +207046,8 @@
       "4",
       "",
       "Chaitanya Kishore Ullal, John R. LaGraff, Daniel J. Lewis",
-      "John R. LaGraff, Daniel J. Lewis, Chaitanya Kishore Ullal"
+      "John R. LaGraff, Daniel J. Lewis, Chaitanya Kishore Ullal",
+      "Daniel J. Lewis, John R. LaGraff, Chaitanya Kishore Ullal"
     ],
     "202301": [
       "Materials Science",
@@ -208104,7 +208049,8 @@
     "202301": [
       "Entrepreneurship &architecture",
       "2",
-      ""
+      "",
+      "Alec Walker, Daniel Stratford"
     ]
   },
   "ARCH-4880": {
@@ -208567,7 +208513,7 @@
     ],
     "202301": [
       "Xray Diffraction & Crystal Str",
-      "2",
+      "0-2",
       "",
       "Peter John Bonitatibus"
     ]
@@ -209108,7 +209054,8 @@
       "4",
       "",
       "Chaitanya Kishore Ullal, John R. LaGraff, Daniel J. Lewis",
-      "John R. LaGraff, Daniel J. Lewis, Chaitanya Kishore Ullal"
+      "John R. LaGraff, Daniel J. Lewis, Chaitanya Kishore Ullal",
+      "Daniel J. Lewis, John R. LaGraff, Chaitanya Kishore Ullal"
     ],
     "202301": [
       "Materials Science",
@@ -213241,7 +213188,7 @@
       "Rosemary Christine Armao"
     ],
     "202301": [
-      "Media & Society",
+      "Media And Society",
       "4",
       "[CI] [HInq] ",
       "Rosemary Christine Armao"
@@ -214677,7 +214624,8 @@
     "202301": [
       "Intro To Astrobiology",
       "4",
-      ""
+      "",
+      "Karyn Lynne Rogers"
     ]
   },
   "ECON-4290": {
@@ -214706,12 +214654,6 @@
       "Vivek Ghosal"
     ],
     "202201": [
-      "Econ Of Biotech & Med Innov",
-      "4",
-      "",
-      "Vivek Ghosal"
-    ],
-    "202301": [
       "Econ Of Biotech & Med Innov",
       "4",
       "",
@@ -214926,12 +214868,6 @@
       "Vivek Ghosal"
     ],
     "202201": [
-      "Econ Of Biotech & Med Innov",
-      "3",
-      "",
-      "Vivek Ghosal"
-    ],
-    "202301": [
       "Econ Of Biotech & Med Innov",
       "3",
       "",
@@ -215815,8 +215751,9 @@
       "Portfolio Development",
       "1",
       "",
-      "Matthew Joseph Lopez",
-      "Hseng Tai Ja Reng Lintner"
+      "Florencia Vetcher, Matthew Joseph Lopez",
+      "Claire Eileen Moriarty",
+      "Ryosuke Imaeda, Matthew Joseph Lopez"
     ]
   },
   "BCBP-4470": {
@@ -217246,7 +217183,7 @@
     ],
     "202205": [
       "Undergraduate Research Project",
-      "1",
+      "1-2",
       "",
       "Yael Erel"
     ]
@@ -218123,13 +218060,16 @@
     ],
     "202301": [
       "Fip Seminar",
-      "0",
+      "0-4",
       "",
       "Janelle P. Fayette",
       "Nanjie Caihua",
-      "Arielle Serena Roberts",
+      "William Charles Woodward",
       "David W. Milford",
-      "Jeannie Steigler"
+      "Jeannie Steigler",
+      "Arielle Serena Roberts",
+      "Lydie Kengne",
+      "Alisha Wein"
     ]
   },
   "ADMN-4400": {
@@ -219015,14 +218955,6 @@
       "James Wilson Malazita"
     ]
   },
-  "LANG-2960": {
-    "202212": [
-      "Spoken Chinese",
-      "1",
-      "",
-      "Yalun Zhou"
-    ]
-  },
   "PSYC-1960": {
     "202212": [
       "Well Being: Creating A Toolbox",
@@ -219117,14 +219049,6 @@
       "4",
       "",
       "Jason Ung Huh"
-    ]
-  },
-  "ECON-4380": {
-    "202301": [
-      "Economics Of Discrimination",
-      "4",
-      "",
-      "Conor Lennon"
     ]
   },
   "ECSE-4141": {
