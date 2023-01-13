@@ -62,7 +62,7 @@ const makeDeadHTML = (courseCode) => {
 const makeCourseHTML = (courseCode, score) => {
     const thisCourse = catalog[courseCode];
     return `
-    <a href="./coursedisplay.html?course=${courseCode}" style="text-decoration: none;">;
+    <a href="./coursedisplay.html?course=${courseCode}" style="text-decoration: none;">
         <div class="courseContainer">
             <div class="courseShelf">
                 <div class="courseName sattr">${thisCourse.name}</div>
