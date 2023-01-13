@@ -93038,9 +93038,8 @@
       "3",
       "[CI] ",
       "Valerie J. Masterson, Junichi Kanai, James Edward Olson, Mark Ernest Vermilyea",
-      "Valerie J. Masterson, Junichi Kanai, James Edward Olson, Mark Ernest Vermilyea, Fred Thomas Willett",
-      "Valerie J. Masterson, Junichi Kanai, Ukwatte Lokuliyanage Indika Upendra Perera, Mark Ernest Vermilyea",
-      "Valerie J. Masterson, Junichi Kanai, Mark Ernest Vermilyea, Fred Thomas Willett"
+      "Valerie J. Masterson, Junichi Kanai, Mark Ernest Vermilyea, Fred Thomas Willett",
+      "Valerie J. Masterson, Junichi Kanai, Ukwatte Lokuliyanage Indika Upendra Perera, Mark Ernest Vermilyea"
     ]
   },
   "MANE-4280": {
@@ -154144,12 +154143,6 @@
       "4",
       "",
       "Lydia Manikonda"
-    ],
-    "202301": [
-      "Intro To Machine Learning Apps",
-      "4",
-      "",
-      "Minor E. Gordon"
     ]
   },
   "MGMT-6180": {
@@ -206161,7 +206154,7 @@
       "Inventor's Studio 1",
       "4",
       "",
-      "Asish Ghosh, Jordan L Vener"
+      "Asish Ghosh, James Edward Olson, Jordan L Vener"
     ]
   },
   "MANE-4140": {
@@ -216255,6 +216248,12 @@
       "",
       "Jason Nicholas Kuruzovich",
       "Lydia Manikonda"
+    ],
+    "202301": [
+      "Intro To Machine Learning Apps",
+      "4",
+      "",
+      "Minor E. Gordon"
     ]
   },
   "MANE-1960": {
