@@ -143,8 +143,8 @@ const createList = function(list,titleid,listid,catalog = false) {
     }
 }
 
-const set_term = function(term,type = "offered",l = []) {
-    const inst = course_data[term] || l;
+const set_term = function(term,type = "offered",offered = true) {
+    const inst = offered ? course_data[term] : [];
     var elem;
     if(term.substring(4) == "05") {
         elem = document.getElementById(term+"02");
@@ -158,19 +158,13 @@ const set_term = function(term,type = "offered",l = []) {
     }
     if(elem) {
         elem.classList.add(type);
-        if(l.length) {
-            elem.innerHTML += "<h4>" + l[0] + "</h4>";
-            if(inst.length > 1) {
-                elem.innerHTML += "<ul><li>"
-                    + Array.from(new Set(l.slice(1))).join("</li><li>")
-                    + "</li></ul>";
-            }
-        } else if(inst.length) {
-            elem.innerHTML += "<h4>"
-                + inst[0] + " (" + inst[1] + "c) " + inst[2]
-                + "</h4>";
+        if(inst.length) {
+            elem.innerHTML += 
+                '<h4><span class="course-title">' + inst[0] + "</span>" +
+                '<span class="credit-count"> (' + inst[1] + "c)</span>" +
+                '<span class="course-attributes"> ' + inst[2] + "</span></h4>";
             if(inst.length > 3) {
-                elem.innerHTML += "<ul><li>"
+                elem.innerHTML += '<ul class="instructor-list"><li>'
                     + Array.from(
                             new Set(inst.slice(3).map(x => x.split(",")[0]))
                         ).join("</li><li>")
@@ -296,9 +290,9 @@ const colorTable = () => {
     // Terms not offered and not scheduled, in red and gray
     // Terms offered only under different code, in yellow (e.g. Materials Science)
     Object.keys(course_data).forEach(t => set_term(t))
-    Array.from(terms_offered_alt_code).forEach(t => set_term(t,"offered-diff-code",[]));
-    Array.from(terms_not_offered).forEach(t => set_term(t,"not-offered",[]));
-    Array.from(unscheduled_terms).forEach(t => set_term(t,"unscheduled",[]));
+    Array.from(terms_offered_alt_code).forEach(t => set_term(t,"offered-diff-code",false));
+    Array.from(terms_not_offered).forEach(t => set_term(t,"not-offered",false));
+    Array.from(unscheduled_terms).forEach(t => set_term(t,"unscheduled",false));
 
     // Disable enrichment term if nothing is there
     if(!Array.from(terms_offered).filter(item => item.substring(4,6) == "12").length) {
