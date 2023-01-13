@@ -21,19 +21,6 @@ const set_term = function(c,term,type = "offered") {
         elem = document.getElementById(term);
     }
     if(elem) {
-        // if(inst.length) {
-        //     elem.innerHTML += "<h4>"
-        //         + inst[0] + " (" + inst[1] + "c) " + inst[2]
-        //         + "</h4>";
-        //     if(inst.length > 3) {
-        //         elem.innerHTML += "<ul><li>"
-        //             + Array.from(
-        //                     new Set(inst.slice(3).map(x => x.split(",")[0]))
-        //                 ).join("</li><li>")
-        //             + "</li></ul>";
-        //     }
-        // }
-
         elem.classList.add(type);
 
         // want to add everything to this. We will hide and unhide based on the view
@@ -46,8 +33,6 @@ const set_term = function(c,term,type = "offered") {
             fullHTML += genCourseNameHTML(inst); // for the name view
             fullHTML += genProfHTML(inst); // for the prof view
         }
-
-        console.log(`put ${term}`)
 
         // put it in there !
         elem.innerHTML = fullHTML;
