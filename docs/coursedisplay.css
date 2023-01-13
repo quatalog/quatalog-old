@@ -350,8 +350,28 @@ label.checked{
     color: var(--deep-purple);
     font-family: "proxima-nova";
     font-size: 1.5vmin;
-    width: fit-content;
+    width: min-content;
     /* word-break: break-all; */
+}
+
+/*
+handle our hidings here
+*/
+
+.view-container{
+    display: none;
+}
+
+.simple-view-mode .simple-view-container{
+    display: flex;
+}
+
+.name-view-mode .name-view-container{
+    display: flex;
+}
+
+.prof-view-mode .prof-view-container{
+    display: flex;
 }
 
 .simple-view-container svg{
@@ -362,9 +382,32 @@ label.checked{
     padding: 0.5vmin;
 }
 
+
+
 .simple-view-container{
-    display: flex;
     justify-content: center;
+}
+
+.name-view-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1vmin;
+    padding-top: 1vmin;
+    font-size: 2vmin;
+    font-weight: 600;
+    color: var(--deep-purple);
+}
+
+.prof-view-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1vmin;
+    padding-top: 1vmin;
+    font-size: 1.8vmin;
+    color: var(--deep-purple);
+    width: 100%;
 }
 
 .season-label{
@@ -389,10 +432,22 @@ label.checked{
 }
 
 .term li{
-    position: relative;
-    left: -2vmin;
-    word-break: break-word;
-    hyphens: auto;
+    /* iffy on how these should go, */
+    /* word-break: break-word; */
+    /* hyphens: auto; */
+    width: 100%;
+    /* margin-left: 0; */
+    /* padding-left: 0; */
+    list-style-position: inside;
+    padding-left: 0.5vmin;
+    padding-right: 0.5vmin;
+    text-align: center;
+    margin-bottom: 0.2vmin;
+}
+
+.term ul{
+    padding-left: 0;
+    padding-right: 1vmin;
 }
 
 

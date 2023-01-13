@@ -1,7 +1,13 @@
 "use strict";
 // Get course code from URL
 
-const set_term = function(c,term,type = "offered",view) {
+const viewTypes = [
+    "simple",
+    "name",
+    "prof"
+]
+
+const set_term = function(c,term,type = "offered") {
     const inst = c[term] || []; // has [coursename, credits, attributes, instructors]
     var elem; 
     if(term.substring(4) == "05") {
@@ -35,6 +41,14 @@ const set_term = function(c,term,type = "offered",view) {
         // add simple view
         fullHTML += genOfferingsHTML(type);
 
+        // only for offered pretty much
+        if(inst.length){
+            fullHTML += genCourseNameHTML(inst); // for the name view
+            fullHTML += genProfHTML(inst); // for the prof view
+        }
+
+        console.log(`put ${term}`)
+
         // put it in there !
         elem.innerHTML = fullHTML;
     }
@@ -43,7 +57,7 @@ const set_term = function(c,term,type = "offered",view) {
 // makes an array of instructors
 var makeInstructorArray = (inst) => {
     // horrible will mess.
-    Array.from(
+    return Array.from(
         new Set(inst.slice(3).map(x => x.split(",")[0]))
     )
 }
@@ -63,7 +77,11 @@ const genOfferingsHTML = (type="offered") => {
 }
 
 var genCourseNameHTML = (inst) => {
+    return `<div class="view-container name-view-container">${inst[0]} (${inst[1]}c) ${inst[2]}</div>`
+}
 
+var genProfHTML = (inst) => {
+    return `<div class="view-container prof-view-container"><ul><li>${makeInstructorArray(inst).join("</li><li>")}</li></ul></div>`
 }
 
 
@@ -351,9 +369,9 @@ var colorTable = () => {
     // Terms not offered and not scheduled, in red and gray
     // Terms offered only under different code, in yellow (e.g. Materials Science)
     Object.keys(course_data).forEach(t => set_term(course_data,t))
-    Array.from(terms_offered_alt_code).forEach(t => set_term("",t,"offered-diff-code",[]));
-    Array.from(terms_not_offered).forEach(t => set_term("",t,"not-offered",[]));
-    Array.from(unscheduled_terms).forEach(t => set_term("",t,"unscheduled",[]));
+    Array.from(terms_offered_alt_code).forEach(t => set_term("",t,"offered-diff-code"));
+    Array.from(terms_not_offered).forEach(t => set_term("",t,"not-offered"));
+    Array.from(unscheduled_terms).forEach(t => set_term("",t,"unscheduled"));
 
     // Disable enrichment term if nothing is there
     if(!Array.from(terms_offered).filter(item => item.substring(4,6) == "12").length) {
@@ -372,6 +390,7 @@ var setupControlPanel = () => {
 }
 
 var selectView = (view) => {
+    // deal with control panel stuff
     var allIcons = document.getElementsByClassName("view-icon")
     for(var i = 0;i < allIcons.length;i++) {
         allIcons[i].innerHTML = iconSVGs["circle-empty"];
@@ -383,6 +402,11 @@ var selectView = (view) => {
     document.getElementById(view+"-view-icon").innerHTML = iconSVGs["circle-dot"];
     document.getElementById(`${view}-view-input`).checked = true;
     document.getElementById(`${view}-view-label`).classList.add("checked");
+
+
+    document.getElementById("years-table").classList.remove(`${currentView}-view-mode`);
+    document.getElementById("years-table").classList.add(`${view}-view-mode`);
+
     currentView = view;
 }
 
@@ -419,5 +443,5 @@ window.onload = async function() {
 
     colorTable();
 
-    setupControlPanel();
+    setupControlPanel(); // also sets currentView to 'simple'
 }
