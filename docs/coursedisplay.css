@@ -20,7 +20,7 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
 #course-info-container{
     position:absolute;
     top: 7vmin;
-    width: 48vw;
+    width: 47vw;
     left: 2vmin;
     height: 90vmin;
 }
@@ -216,8 +216,8 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
 #past-container{
     position: absolute;
     top: 7vmin;
-    width: 45vw;
-    left: 52vw;
+    width: 47.5vw;
+    left: 50vw;
     height: 90vmin;
     justify-content: right;
 }
@@ -236,36 +236,178 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
 }
 
 #opt-container{
-    width: 100%;
-    height: 10vmin;
+    left: 6.875vmin;
+    /* right: 0; */
+    width: calc(47.5vw - 6.9vmin);
+    height: fit-content;
     position: relative;
     display: grid;
-    grid-template-columns: 63% 33%;
+    grid-template-columns: 50% 48%;
     justify-content: space-between;
     margin-bottom: 1vmin;
 }
 
-#control-panel{
-    background: var(--red);
+#key-panel{
+    /* background: var(--blue); */
     width: 100%;
+    display:flex;
+    /* left: 6vmin; */
+    left: 0;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    /* text-align: right; */
 }
 
-#key-panel{
-    background: var(--blue);
+.key-code{
+    font-size: 2.2vmin;
+    color: var(--quacs-midtone);
+    font-family: 'proxima-nova';
+}
+
+.code-icon svg{
+    width: 1.75vmin;
+    text-align: justify!important;
+    vertical-align: bottom;
+    display: inline-block;
+    padding-bottom: 0.5vmin;
+    padding-right: 0vmin;
+    overflow: visible;
+}
+
+#yes-code-icon svg{
+    fill: var(--green);
+}
+#no-code-icon svg{
+    fill: var(--red);
+}
+#diff-code-icon svg{
+    fill: var(--quacs-yellow);
+}
+#nil-code-icon svg{
+    fill: var(--mid-light-purple);
+}
+
+#control-panel{
+    /* background: var(--red); */
     width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.view-option-label{
+    font-size: 2.2vmin;
+    color: var(--quacs-midtone);
+    font-family: 'proxima-nova';
+    cursor:pointer;
+    transition: color .1s;
+}
+
+.view-option-input{
+    accent-color: var(--quacs-midtone);
+    display: none;
+    position: absolute;
+    pointer-events: none;
+}
+
+.view-option-input:hover{
+    accent-color: var(--quacs-yellow);
+}
+
+.view-icon svg{
+    width: 1.75vmin;
+    text-align: justify!important;
+    vertical-align: bottom;
+    display: inline-block;
+    padding-bottom: 0.5vmin;
+    padding-right: 0vmin;
+    overflow: visible;
+    fill: var(--quacs-midtone);
+    transition: fill .1s;
+}
+
+label.checked .view-icon svg{
+    fill: var(--quacs-yellow);
+}
+
+label.checked{
+    color: var(--quacs-yellow);
 }
 
 #years-table{
-    position: absolute;
-    right: 0vw;
+    /* margin-top: 1vmin; */
+    position: relative;
+    left: 0vw;
     width: 100%;
+    border-spacing: 0.25vmin;
+    /* padding-left: 0.25vmin;
+    padding-right: 0.25vmin; */
+    border-width: 0;
 }
 
 .term{
     color: var(--deep-purple);
     font-family: "proxima-nova";
     font-size: 1.5vmin;
-    width: max-content;
+    width: min-content;
+    /* word-break: break-all; */
+}
+
+/*
+handle our hidings here
+*/
+
+.view-container{
+    display: none;
+}
+
+.simple-view-mode .simple-view-container{
+    display: flex;
+}
+
+.name-view-mode .name-view-container{
+    display: flex;
+}
+
+.prof-view-mode .prof-view-container{
+    display: flex;
+}
+
+.simple-view-container svg{
+    fill: var(--mid-dark-purple);
+    width: 5vmin;
+    margin: 0.5vmin;
+    height: auto;
+    padding: 0.5vmin;
+}
+
+
+
+.simple-view-container{
+    justify-content: center;
+}
+
+.name-view-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1vmin;
+    padding-top: 1vmin;
+    font-size: 2vmin;
+    font-weight: 600;
+    color: var(--deep-purple);
+}
+
+.prof-view-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1vmin;
+    padding-top: 1vmin;
+    font-size: 1.8vmin;
+    color: var(--deep-purple);
+    width: 100%;
 }
 
 .season-label{
@@ -278,7 +420,7 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
     color: var(--quacs-white);
     font-family: "proxima-nova";
     font-size: 2vmin;
-    white-space: nowrap;
+    white-space: break-spaces;
 }
 
 .year{
@@ -286,6 +428,26 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
     font-family: "proxima-nova";
     font-size: 2vmin;
     text-align: left;
+    width: 6vmin;
+}
+
+.term li{
+    /* iffy on how these should go, */
+    /* word-break: break-word; */
+    /* hyphens: auto; */
+    width: 100%;
+    /* margin-left: 0; */
+    /* padding-left: 0; */
+    list-style-position: inside;
+    padding-left: 0.5vmin;
+    padding-right: 0.5vmin;
+    text-align: center;
+    margin-bottom: 0.2vmin;
+}
+
+.term ul{
+    padding-left: 0;
+    padding-right: 1vmin;
 }
 
 
@@ -304,7 +466,7 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
 
 
 
-@media (orientation: portrait){
+@media (max-aspect-ratio: 1.25/1){
 
     #course-info-container{
         position:relative;
@@ -327,5 +489,9 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
 
     #past-title{
         text-align: center;
+    }
+
+    #opt-container{
+        width: calc(90vw - 6.9vmin);
     }
 }

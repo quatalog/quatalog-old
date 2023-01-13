@@ -1,4 +1,74 @@
 "use strict";
+// Get course code from URL
+
+const viewTypes = [
+    "simple",
+    "name",
+    "prof"
+]
+
+const set_term = function(term,type = "offered", offered=true) {
+    const inst = offered ? course_data[term] : []; // has [coursename, credits, attributes, instructors]
+    var elem; 
+    if(term.substring(4) == "05") {
+        elem = document.getElementById(term+"02");
+        elem.id = term;
+        elem.classList.remove("summer2");
+        elem.classList.add("summer");
+        elem.colSpan = "2";
+        document.getElementById(term+"03").remove();
+    } else {
+        elem = document.getElementById(term);
+    }
+    if(elem) {
+        elem.classList.add(type);
+
+        // want to add everything to this. We will hide and unhide based on the view
+        var fullHTML = "";
+        // add simple view
+        fullHTML += genOfferingsHTML(type);
+
+        // only for offered pretty much
+        if(inst.length){
+            fullHTML += genCourseNameHTML(inst); // for the name view
+            fullHTML += genProfHTML(inst); // for the prof view
+        }
+
+        // put it in there !
+        elem.innerHTML = fullHTML;
+    }
+}
+
+// makes an array of instructors
+var makeInstructorArray = (inst) => {
+    // horrible will mess.
+    return Array.from(
+        new Set(inst.slice(3).map(x => x.split(",")[0]))
+    )
+}
+
+
+const offeringToIconMap = {
+    "offered": "circle-check",
+    "offered-diff-code": "circle-question",
+    "not-offered": "circle-no",
+    "unscheduled": "circle-empty",
+}
+// make the html for the icons
+const genOfferingsHTML = (type="offered") => {
+    return `<div class="view-container simple-view-container">
+        ${iconSVGs[offeringToIconMap[type]]}
+    </div>`
+}
+
+var genCourseNameHTML = (inst) => {
+    return `<div class="view-container name-view-container">${inst[0]} (${inst[1]}c) ${inst[2]}</div>`
+}
+
+var genProfHTML = (inst) => {
+    return `<div class="view-container prof-view-container"><ul><li>${makeInstructorArray(inst).join("</li><li>")}</li></ul></div>`
+}
+
 
 // just make them available to other functions up here. not like we're gonna be dealing with multiple classes in this scope.
 var all_terms;
@@ -143,36 +213,6 @@ const createList = function(list,titleid,listid,catalog = false) {
     }
 }
 
-const set_term = function(term,type = "offered",offered = true) {
-    const inst = offered ? course_data[term] : [];
-    var elem;
-    if(term.substring(4) == "05") {
-        elem = document.getElementById(term+"02");
-        elem.id = term;
-        elem.classList.remove("summer2");
-        elem.classList.add("summer");
-        elem.colSpan = "2";
-        document.getElementById(term+"03").remove();
-    } else {
-        elem = document.getElementById(term);
-    }
-    if(elem) {
-        elem.classList.add(type);
-        if(inst.length) {
-            elem.innerHTML += 
-                '<h4><span class="course-title">' + inst[0] + "</span>" +
-                '<span class="credit-count"> (' + inst[1] + "c)</span>" +
-                '<span class="course-attributes"> ' + inst[2] + "</span></h4>";
-            if(inst.length > 3) {
-                elem.innerHTML += '<ul class="instructor-list"><li>'
-                    + Array.from(
-                            new Set(inst.slice(3).map(x => x.split(",")[0]))
-                        ).join("</li><li>")
-                    + "</li></ul>";
-            }
-        }
-    }
-}
 
 /*
 db   db d888888b  d888b  db   db      db      d88888b db    db d88888b db
@@ -300,6 +340,36 @@ const colorTable = () => {
     }
 }
 
+var currentView = 'simple';
+
+var setupControlPanel = () => {
+    var allIcons = document.getElementsByClassName("view-icon")
+    for(var i = 0;i < allIcons.length;i++) {
+        allIcons[i].innerHTML = iconSVGs["circle-empty"];
+    }
+    selectView(`simple`);
+}
+
+var selectView = (view) => {
+    // deal with control panel stuff
+    var allIcons = document.getElementsByClassName("view-icon")
+    for(var i = 0;i < allIcons.length;i++) {
+        allIcons[i].innerHTML = iconSVGs["circle-empty"];
+    }
+    var allLabels = document.getElementsByClassName("view-option-label");
+    for(var i = 0;i < allLabels.length;i++) {
+        allLabels[i].classList.remove("checked");
+    }
+    document.getElementById(view+"-view-icon").innerHTML = iconSVGs["circle-dot"];
+    document.getElementById(`${view}-view-input`).checked = true;
+    document.getElementById(`${view}-view-label`).classList.add("checked");
+
+
+    document.getElementById("years-table").classList.remove(`${currentView}-view-mode`);
+    document.getElementById("years-table").classList.add(`${view}-view-mode`);
+
+    currentView = view;
+}
 
 /*
  .d88b.  d8b   db db       .d88b.   .d8b.  d8888b.
@@ -333,4 +403,6 @@ window.onload = async function() {
     addCourseInfo();
 
     colorTable();
+
+    setupControlPanel(); // also sets currentView to 'simple'
 }
