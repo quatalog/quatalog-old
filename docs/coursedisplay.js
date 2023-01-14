@@ -64,7 +64,7 @@ const genOfferingsHTML = (type="offered") => {
 var genCourseNameHTML = (inst) => {
     return '<div class="view-container name-view-container">'
         + '<span class="course-title">' + inst[0] + '</span>'
-        + '<span class="course-credit-count"> (' + inst[1] + 'c)</span>' +
+        + '<span class="course-credit-count"> (' + inst[1] + 'c)</span>'
         + '<span class="course-attributes"> ' + inst[2] + '</span></div>';
 }
 
