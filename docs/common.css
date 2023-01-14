@@ -29,10 +29,9 @@
     height: 0vw;
 }
 
-svg{
+svg {
     overflow: visible;
 }
-
 
 #qlog-header{
     border-bottom: 0.2vmin solid var(--quacs-yellow);

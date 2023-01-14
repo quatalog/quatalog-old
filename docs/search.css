@@ -89,7 +89,7 @@ body{
     /* vertical-align:-webkit-baseline-middle; */
     align-self: center;
     width: 2.5vmin;
-    /* max-height: 3vmin; */
+    max-height: 2.5vmin;
     padding-left: 0.5vmin;
     fill: var(--deep-purple);
 }

@@ -57,7 +57,7 @@ const offeringToIconMap = {
 // make the html for the icons
 const genOfferingsHTML = (type="offered") => {
     return `<div class="view-container simple-view-container">
-        ${iconSVGs[offeringToIconMap[type]]}
+        ${getSVG(offeringToIconMap[type])}
     </div>`
 }
 
@@ -345,7 +345,7 @@ var currentView = 'simple';
 var setupControlPanel = () => {
     var allIcons = document.getElementsByClassName("view-icon")
     for(var i = 0;i < allIcons.length;i++) {
-        allIcons[i].innerHTML = iconSVGs["circle-empty"];
+        allIcons[i].innerHTML = getSVG("circle-empty");
     }
     selectView(`simple`);
 }
@@ -354,13 +354,13 @@ var selectView = (view) => {
     // deal with control panel stuff
     var allIcons = document.getElementsByClassName("view-icon")
     for(var i = 0;i < allIcons.length;i++) {
-        allIcons[i].innerHTML = iconSVGs["circle-empty"];
+        allIcons[i].innerHTML = getSVG("circle-empty");
     }
     var allLabels = document.getElementsByClassName("view-option-label");
     for(var i = 0;i < allLabels.length;i++) {
         allLabels[i].classList.remove("checked");
     }
-    document.getElementById(view+"-view-icon").innerHTML = iconSVGs["circle-dot"];
+    document.getElementById(view+"-view-icon").innerHTML = getSVG("circle-dot");
     document.getElementById(`${view}-view-input`).checked = true;
     document.getElementById(`${view}-view-label`).classList.add("checked");
 
