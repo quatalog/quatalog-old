@@ -33,6 +33,10 @@ svg {
     overflow: visible;
 }
 
+span {
+    display: contents;
+}
+
 #qlog-header{
     border-bottom: 0.2vmin solid var(--quacs-yellow);
     top: 0;
