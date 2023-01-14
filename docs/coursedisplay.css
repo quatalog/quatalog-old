@@ -268,6 +268,7 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
 
 .code-icon svg{
     width: 1.75vmin;
+    max-height: 1.75vmin;
     text-align: justify!important;
     vertical-align: bottom;
     display: inline-block;
