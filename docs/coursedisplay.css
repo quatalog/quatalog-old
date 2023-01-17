@@ -466,7 +466,7 @@ handle our hidings here
 
 
 
-@media (max-aspect-ratio: 5/4) or (orientation: portrait){
+@media (max-aspect-ratio: 5/4), (orientation: portrait){
 
     #course-info-container{
         position:relative;
