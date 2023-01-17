@@ -14,32 +14,32 @@ const makeAttrListHTML = (courseCode) => {
         for(var i = 0; i < thisCourseAttrs.length; i++){
             var thisAttr = thisCourseAttrs[i];
             if(thisAttr == "Communication Intensive"){
-                attrListHTML += `<div class="attr sattr sattr-pill CI-pill">CI${iconSVGs.message}</div>`;
+                attrListHTML += `<div class="attr sattr sattr-pill CI-pill">CI${getSVG("message")}</div>`;
                 continue;
             }
             if(thisAttr == "Writing Intensive"){
-                attrListHTML += `<div class="attr sattr sattr-pill WI-pill">WI${iconSVGs.pencil}</div>`;
+                attrListHTML += `<div class="attr sattr sattr-pill WI-pill">WI${getSVG("pencil")}</div>`;
                 continue;
             }
             if(thisAttr == "HASS Inquiry"){
-                attrListHTML += `<div class="attr sattr sattr-pill HI-pill">HInq${iconSVGs.magnifying}</div>`;
+                attrListHTML += `<div class="attr sattr sattr-pill HI-pill">HInq${getSVG("magnifying")}</div>`;
                 continue;
             }
             if(thisAttr == "PDII Option for Engr Majors"){
-                attrListHTML += `<div class="attr sattr sattr-pill PD-pill">PDII${iconSVGs.briefcase}</div>`;
+                attrListHTML += `<div class="attr sattr sattr-pill PD-pill">PDII${getSVG("briefcase")}</div>`;
                 continue;
             }
             if(thisAttr == "Online Course"){
-                attrListHTML += `<div class="attr sattr sattr-pill">Online${iconSVGs.laptop}</div>`;
+                attrListHTML += `<div class="attr sattr sattr-pill">Online${getSVG("laptop")}</div>`;
                 continue;
             }
             if(thisAttr == "Hybrid:Online/In-Person Course"){
-                attrListHTML += `<div class="attr sattr sattr-pill">Hybrid${iconSVGs["house-laptop"]}</div>`;
+                attrListHTML += `<div class="attr sattr sattr-pill">Hybrid${getSVG("house-laptop")}</div>`;
                 continue;
             }
             if(thisAttr == "Introductory Level Course") continue;
             if(thisAttr == "Culminating Exp/Capstone"){
-                attrListHTML += `<div class="attr sattr sattr-pill">CulmExp${iconSVGs.cubes}</div>`;
+                attrListHTML += `<div class="attr sattr sattr-pill">CulmExp${getSVG("cubes")}</div>`;
                 continue;
             }
             attrListHTML += `<div class="attr sattr sattr-pill">${thisAttr}</div>`;
@@ -51,10 +51,10 @@ const makeAttrListHTML = (courseCode) => {
 const makeDeadHTML = (courseCode) => {
     const isDead = isCourseDead(courseCode);
     if(isDead == 2){
-        return `<div class="dead sattr sattr-pill">Not Yet Offered${iconSVGs.amogus}</div>`;
+        return `<div class="dead sattr sattr-pill">Not Yet Offered${getSVG("amogus")}</div>`;
     }
     if(isDead){
-        return `<div class="dead sattr sattr-pill">Probably Dead${iconSVGs.skull}</div>`;
+        return `<div class="dead sattr sattr-pill">Probably Dead${getSVG("skull")}</div>`;
     }
     return '';
 }

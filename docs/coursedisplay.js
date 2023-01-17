@@ -57,16 +57,19 @@ const offeringToIconMap = {
 // make the html for the icons
 const genOfferingsHTML = (type="offered") => {
     return `<div class="view-container simple-view-container">
-        ${iconSVGs[offeringToIconMap[type]]}
+        ${getSVG(offeringToIconMap[type])}
     </div>`
 }
 
 var genCourseNameHTML = (inst) => {
-    return `<div class="view-container name-view-container">${inst[0]} (${inst[1]}c) ${inst[2]}</div>`
+    return '<div class="view-container name-view-container">'
+        + '<span class="course-title">' + inst[0] + '</span>'
+        + '<span class="course-credit-count"> (' + inst[1] + 'c)</span>'
+        + '<span class="course-attributes"> ' + inst[2] + '</span></div>';
 }
 
 var genProfHTML = (inst) => {
-    return `<div class="view-container prof-view-container"><ul><li>${makeInstructorArray(inst).join("</li><li>")}</li></ul></div>`
+    return `<div class="view-container prof-view-container"><ul><li>${makeInstructorArray(inst).join("</li><li>")}</li></ul></div>`;
 }
 
 
@@ -345,7 +348,7 @@ var currentView = 'simple';
 var setupControlPanel = () => {
     var allIcons = document.getElementsByClassName("view-icon")
     for(var i = 0;i < allIcons.length;i++) {
-        allIcons[i].innerHTML = iconSVGs["circle-empty"];
+        allIcons[i].innerHTML = getSVG("circle-empty");
     }
     selectView(`simple`);
 }
@@ -354,13 +357,13 @@ var selectView = (view) => {
     // deal with control panel stuff
     var allIcons = document.getElementsByClassName("view-icon")
     for(var i = 0;i < allIcons.length;i++) {
-        allIcons[i].innerHTML = iconSVGs["circle-empty"];
+        allIcons[i].innerHTML = getSVG("circle-empty");
     }
     var allLabels = document.getElementsByClassName("view-option-label");
     for(var i = 0;i < allLabels.length;i++) {
         allLabels[i].classList.remove("checked");
     }
-    document.getElementById(view+"-view-icon").innerHTML = iconSVGs["circle-dot"];
+    document.getElementById(view+"-view-icon").innerHTML = getSVG("circle-dot");
     document.getElementById(`${view}-view-input`).checked = true;
     document.getElementById(`${view}-view-label`).classList.add("checked");
 
