@@ -1,21 +1,6 @@
-body{
-    background-color: var(--deep-purple);
-    overflow-x:hidden;
-}
-
 .term ::selection{
     background: var(--quacs-yellow);
 }
-
-/*
-db   db d88888b  .d8b.  d8888b. d88888b d8888b.
-88   88 88'     d8' `8b 88  `8D 88'     88  `8D
-88ooo88 88ooooo 88ooo88 88   88 88ooooo 88oobY'
-88~~~88 88~~~~~ 88~~~88 88   88 88~~~~~ 88`8b
-88   88 88.     88   88 88  .8D 88.     88 `88.
-YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
-*/
-
 
 #course-info-container{
     position:absolute;
@@ -27,12 +12,7 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
 
 
 #cname{
-    color: var(--quacs-yellow);
-    font-family: "proxima-nova";
     font-size: 8vmin;
-    font-weight: 900;
-    margin-bottom: 0vmin;
-    position: relative;
     left: 0vw;
 }
 
@@ -43,17 +23,6 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
     font-weight: 900;
     position: relative;
     left: 0vw;
-}
-
-#cdesc{
-    color: var(--quacs-white);
-    font-family: "proxima-nova";
-    font-size: 3vmin;
-    position: relative;
-    left: 0vw;
-    margin-top: 1vmin;
-    margin-bottom: 2vmin;
-    font-weight: normal;
 }
 
 #cattrs-container{
@@ -223,12 +192,7 @@ YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD
 }
 
 #past-title{
-    color: var(--quacs-yellow);
-    font-family: "proxima-nova";
     font-size: 6vmin;
-    font-weight: 900;
-    margin-bottom: 0vmin;
-    position: relative;
     right: 0vmin;
     text-align: right;
     width: 100%;
