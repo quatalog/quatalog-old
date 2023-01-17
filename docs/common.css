@@ -25,7 +25,7 @@ body{
 }
 
 ::selection{
-    background: var(--deep-purple);
+    background: var(--mid-light-purple);
 }
 
 .hidden{
