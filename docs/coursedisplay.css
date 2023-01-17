@@ -430,7 +430,7 @@ handle our hidings here
 
 
 
-@media (max-aspect-ratio: 1.25/1){
+@media (max-aspect-ratio: 5/4), (orientation: portrait){
 
     #course-info-container{
         position:relative;
