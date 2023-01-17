@@ -134,5 +134,5 @@ Y888888P  `Y88P'  `Y88P'  VP   V8P      YP   YP Y88888P Y88888P 88      Y88888P 
 */
 
 const getSVG = (name) => {
-    return '<svg><use href="/icons.svg#'+name+'"></use></svg>';
+    return '<svg><use href="./icons.svg#'+name+'"></use></svg>';
 }
