@@ -330,11 +330,11 @@ input[value="detailed"]:not(:checked) ~ div #detail-view-icon .view-icon-unselec
 input[value="simple"]:checked ~ div #simple-view-label,
 input[value="detailed"]:checked ~ div #detail-view-label {
     color: var(--quacs-yellow);
-    cursor: pointer;
-    transition: color .1s;
 }
 
 .view-option-label {
+    cursor: pointer;
+    transition: color .1s;
     font-family: "proxima-nova";
     color: var(--quacs-midtone);
 }
