@@ -2,19 +2,38 @@
     font-family: "rivalsans";
     text-align: center;
     font-size: 18vmin;
-    top: 10vmin;
+    position: relative;
+    margin-top: 10vmin;
 }
 
 #home-search{
-    height: 3vmin;
-    font-size: 6vmin;
-    margin: 15vmin auto;
+    /* min-height: 3vmin; */
+    top: 0vmin;
+    position: relative;
+    font-size: 2rem;
+    margin: 10vmin auto;
     width: 50vmin;
     display: block;
-    padding: 1.5%;
+    padding: 1.6vmin;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
 }
 
-#home-footer { text-align: center; }
+#home-footer { 
+    text-align: center;
+}
+
+#home-footer a {
+    text-decoration: none;
+    border-bottom: solid;
+    border-width: 0.05rem;
+    vertical-align: center;
+}
+
+#github-icon{
+    height: 1.2rem;
+    margin-bottom: 0.1rem;
+}
 
 /* @media only screen and (min-width: 600px) {
     #home-title{
