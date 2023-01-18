@@ -267,25 +267,6 @@
     flex-direction: column;
 }
 
-.view-option-label{
-    
-    color: var(--quacs-midtone);
-    font-family: 'proxima-nova';
-    cursor:pointer;
-    transition: color .1s;
-}
-
-.view-option-input{
-    accent-color: var(--quacs-midtone);
-    display: none;
-    position: absolute;
-    pointer-events: none;
-}
-
-.view-option-input:hover{
-    accent-color: var(--quacs-yellow);
-}
-
 .view-icon svg{
     width: 0.9rem;
     max-height: 0.9rem;
@@ -349,7 +330,15 @@ input[value="detailed"]:not(:checked) ~ div #detail-view-icon .view-icon-unselec
 input[value="simple"]:checked ~ div #simple-view-label,
 input[value="detailed"]:checked ~ div #detail-view-label {
     color: var(--quacs-yellow);
+    cursor: pointer;
+    transition: color .1s;
 }
+
+.view-option-label {
+    font-family: "proxima-nova";
+    color: var(--quacs-midtone);
+}
+
 .view-icon-selected svg {
     fill: var(--quacs-yellow);
 }
@@ -424,8 +413,7 @@ input[value="detailed"]:checked ~ table .detail-view-container {
 
 .midsum-label{
     color: var(--quacs-white);
-    font-family: "proxima-nova";
-    
+    font-family: "proxima-nova";    
     white-space: break-spaces;
 }
 
