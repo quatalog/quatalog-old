@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <head>
     <title id="title">Quatalog Search</title>
+
+    <link rel="shortcut icon" href="./favicon/quatalogIcon.png">
+    <link rel="icon" href="./favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
     <meta property="og:title" content="Quatalog" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://quatalog.com" />
@@ -13,7 +21,7 @@
 </head>
 <body>
     <div id="qlog-header">
-        <h1><a id="qlog-wordmark" href="./"> Quatalog </a></h1>
+        <a id="qlog-wordmark" href="./"><svg><use href="./images/quatalogHWordmark.svg#QuatalogHWordmark"></use></svg></a>
         <input type="text" id="header-search" placeholder="Search..." onkeydown="prepSearch(this, event)">
     </div>
     <h1 id="searchTitle">
