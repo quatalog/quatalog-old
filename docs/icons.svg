@@ -2,7 +2,8 @@
     <style>
         #circle-no,
 	#circle-check,
-	#circle-empty {
+	#circle-empty,
+	#circle-question {
             fill: #2c2b3d;
 	}
     </style>
