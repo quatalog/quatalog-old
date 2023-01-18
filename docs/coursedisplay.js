@@ -55,9 +55,9 @@ const offeringToIconMap = {
 }
 // make the html for the icons
 const genOfferingsHTML = (type="offered") => {
-    return `<div class="view-container simple-view-container">
+    return "" /*`<div class="view-container simple-view-container">
         ${getSVG(offeringToIconMap[type])}
-    </div>`
+    </div>`*/
 }
 
 
@@ -342,14 +342,16 @@ const colorTable = () => {
 
 var currentView = 'simple';
 
+/*
 var setupControlPanel = () => {
     var allIcons = document.getElementsByClassName("view-icon")
     for(var i = 0;i < allIcons.length;i++) {
         allIcons[i].innerHTML = getSVG("circle-empty");
     }
     selectView(`simple`);
-}
+}*/
 
+/*
 var selectView = (view) => {
     // deal with control panel stuff
     var allIcons = document.getElementsByClassName("view-icon")
@@ -369,7 +371,7 @@ var selectView = (view) => {
     document.getElementById("years-table").classList.add(`${view}-view-mode`);
 
     currentView = view;
-}
+}*/
 
 /*
  .d88b.  d8b   db db       .d88b.   .d8b.  d8888b.
