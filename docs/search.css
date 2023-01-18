@@ -1,13 +1,15 @@
 #searchTitle{
-    font-size: 5vmin;
+    font-size: 2rem;
     font-family: "proxima-nova";
-    position: absolute;
+    position: relative;
+    display: block;
     width: 100vw;
-    height: 6vmin;
+    height: fit-content;
     left: 0vw;
     text-align: center;
-    top: 9vmin;
+    margin-top: 2.5vmin;
     color: var(--quacs-yellow);
+    font-weight: 500;
 }
 
 #searchTerm{
@@ -18,10 +20,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     justify-content: center;
     align-items: center;
-    top: 19vmin;
+    margin-top: 2vmin;
 }
 
 .courseContainer{
@@ -31,7 +33,7 @@
     color: var(--quacs-white);
     font-family: 'proxima-nova';
     cursor: pointer;
-    border-radius: 2vmin;
+    border-radius: 0.5rem;
     position: relative;
     transition: width 0.1s, background 0.1s, border-radius 0.1s;
     display: flex;
@@ -57,7 +59,7 @@
     flex-direction: row;
     align-items: baseline;
     /* width: 100%; */
-    font-size: 3vmin;
+    font-size: 1.25rem;
     color: var(--quacs-midtone);
     border-bottom: solid;
     border-bottom-width: 0.2vmin;
@@ -69,6 +71,7 @@
     display: flex;
     margin-bottom: 0.25vmin;
     margin-top: 0.25vmin;
+    font-size: 1rem;
 }
 
 .sattr-pill{
@@ -83,8 +86,8 @@
     /* display: inline-block; */
     /* vertical-align:-webkit-baseline-middle; */
     align-self: center;
-    width: 2.5vmin;
-    max-height: 2.5vmin;
+    width: 1rem;
+    max-height: 1rem;
     padding-left: 0.5vmin;
     fill: var(--deep-purple);
 }
@@ -112,7 +115,7 @@
 
 .courseName{
     color: var(--quacs-yellow);
-    font-size: 3.25vmin;
+    font-size: 1.45rem;
     font-weight: 600;
     margin-left: 0.5vmin;
 }
@@ -124,7 +127,7 @@
 .description{
     padding: 1.5vmin;
     transition: padding .1s;
-    font-size: 2.5vmin;
+    font-size: 1rem;
 }
 
 .courseContainer:hover .description{

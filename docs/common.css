@@ -17,11 +17,15 @@
     --red: #f53f6a;
     --green: #3ff57f;
     --blue: #3f6ef5;
+
+    font-size: calc(1vmin + 12px);
 }
 
 body{
     background-color: var(--deep-purple);
     overflow-x:hidden;
+    margin: 0;
+    font-size: 0.9rem; /* default font-size. works well for small-ish thing */
 }
 
 ::selection{
@@ -49,13 +53,24 @@ h1, h1 a {
     font-weight: 900;
     margin-top: 0vmin;
     margin-bottom: 0vmin;
+    padding-bottom: 0;
+    display: block;
     position: relative;
+    font-size: 2.25rem;
+}
+
+h2{
+    font-size: 1.4rem;
+    margin-top: 1vmin;
+    margin-bottom: 0;
 }
 
 p {
     color: var(--quacs-white);
     font-family: "proxima-nova";
-    font-size: 3vmin;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 p a, p svg{
@@ -63,6 +78,9 @@ p a, p svg{
     fill: var(--quacs-midtone);
     height: 4vmin;
     vertical-align: bottom;
+}
+
+p svg {
     display: inline-block;
 }
 
@@ -75,23 +93,34 @@ p a:hover, p a:hover svg {
 #qlog-header{
     border-bottom: 0.2vmin solid var(--quacs-yellow);
     width: 100%;
-    height: 5vmin;
+    min-height: 5.25vmin;
+    left: 0;
+    top: 0;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #qlog-wordmark {
     font-family: "rivalsans";
-    font-size: 3.5vmin;
-    position: absolute;
+    font-size: 1.5rem;
+    top: 0;
+    position: relative;
     text-decoration: none;
+    margin: 1vmin;
+    margin-left: 2vmin;
 }
 
 #header-search {
-    max-height: 4vmin;
-    position: absolute;
-    display: block;
+    position: relative;
     right: 1vmin;
-    font-size: 2vmin;
-    padding: .5%;
+    width: 12rem;
+    height: 1.8rem;
+    font-size: 1.1rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
 }
 
 input[type="text"] {
@@ -100,9 +129,12 @@ input[type="text"] {
     border: none;
     outline:none;
     font-family: "proxima-nova";
-    color: var(--deep-purple);
-    caret-color: var(--deep-purple);
+    color: var(--mid-dark-purple);
+    caret-color: var(--mid-dark-purple);
+}
 
+input[type="text"]::selection{
+    background: var(--quacs-yellow);
 }
 
 

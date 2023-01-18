@@ -2,39 +2,49 @@
     background: var(--quacs-yellow);
 }
 
+#cd-flex{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-right: 1vw;
+    margin-top: 1vmin;
+    justify-content: space-between;
+}
+
 #course-info-container{
-    position:absolute;
-    top: 7vmin;
+    position:relative;
     width: 47vw;
     left: 2vmin;
     height: 90vmin;
+    margin-bottom: 7vmin;
 }
 
 
 #cname{
-    font-size: 8vmin;
+    font-size: 3.75rem;
     left: 0vw;
 }
 
 #ccode{
     color: var(--quacs-midtone);
     font-family: "proxima-nova";
-    font-size: 4vmin;
+    font-size: 1.8rem;
     font-weight: 900;
     position: relative;
     left: 0vw;
+    margin-bottom: 1vmin;
 }
 
 #cattrs-container{
     position: relative;
     left: 0vw;
     margin-bottom: 1vmin;
+    margin-top: 2vmin;
 }
 
 .attr-pill{
     color: var(--deep-purple);
     font-family: "proxima-nova";
-    font-size: 2vmin;
     position: relative;
     left: 0vw;
     background: var(--quacs-midtone);
@@ -51,22 +61,23 @@
 }
 
 .rel-info-title{
-    font-size: 3vmin;
+    font-size: 1.25rem;
     font-weight: 700;
     font-family: "proxima-nova";
     color: var(--quacs-white);
-    /* display: inline-block; */ 
     margin-right: 0.5vmin;
 }
 
 .rel-info-courses{
-    margin-top: 0.5vmin;
+    margin-top: 0.7vmin;
+    position: relative;
+    font-size: 1rem;
 }
 
 .course-pill{
     color: var(--deep-purple);
     font-family: "proxima-nova";
-    font-size: 2vmin;
+    
     position: relative;
     left: 0vw;
     background: var(--quacs-yellow);
@@ -77,19 +88,19 @@
     margin-right: 0.5vmin;
     margin-bottom: 0.5vmin;
     text-decoration: none;
-    transition-property: filter;
+    transition-property: background;
     transition-duration: 100ms;
     width: fit-content;
-    /* white-space: nowrap; */
 }
 
 .course-pill:hover{
-    filter: brightness(1.1);
+    background: var(--quacs-midtone);
 }
 
 #prereq-classes{
     display: flex;
     align-items: center;
+    width: fit-content;
     flex-wrap: wrap;
     flex-basis: content;
 }
@@ -109,7 +120,7 @@
 .pr-or-title{
     color: var(--quacs-white);
     font-family: "proxima-nova";
-    font-size: 3vmin;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 0.5vmin;
     text-align: center;
@@ -144,7 +155,7 @@
     padding: 1vmin;
     color: var(--quacs-white);
     font-family: "proxima-nova";
-    font-size: 3vmin;
+    font-size: 1.2rem;
     font-weight: 700;
     width: min-content;
     height: min-content;
@@ -183,16 +194,12 @@
 }
 
 #past-container{
-    position: absolute;
-    top: 7vmin;
+    position: relative;
     width: 47.5vw;
-    left: 50vw;
-    height: 90vmin;
     justify-content: right;
 }
 
 #past-title{
-    font-size: 6vmin;
     right: 0vmin;
     text-align: right;
     width: 100%;
@@ -225,14 +232,13 @@
 }
 
 .key-code{
-    font-size: 2.2vmin;
     color: var(--quacs-midtone);
     font-family: 'proxima-nova';
 }
 
 .code-icon svg{
-    width: 1.75vmin;
-    max-height: 1.75vmin;
+    width: 0.9rem;
+    max-height: 0.9rem;
     text-align: justify!important;
     vertical-align: bottom;
     display: inline-block;
@@ -262,7 +268,7 @@
 }
 
 .view-option-label{
-    font-size: 2.2vmin;
+    
     color: var(--quacs-midtone);
     font-family: 'proxima-nova';
     cursor:pointer;
@@ -281,8 +287,8 @@
 }
 
 .view-icon svg{
-    width: 1.75vmin;
-    max-height: 1.75vmin;
+    width: 0.9rem;
+    max-height: 0.9rem;
     text-align: justify!important;
     vertical-align: bottom;
     display: inline-block;
@@ -332,11 +338,7 @@ handle our hidings here
     display: flex;
 }
 
-.name-view-mode .name-view-container{
-    display: flex;
-}
-
-.prof-view-mode .prof-view-container{
+.detail-view-mode .detail-view-container{
     display: flex;
 }
 
@@ -352,68 +354,67 @@ handle our hidings here
     justify-content: center;
 }
 
-.name-view-container{
+.detail-view-container{
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 1vmin;
     padding-top: 1vmin;
-    font-size: 2vmin;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--deep-purple);
 }
 
-.prof-view-container{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1vmin;
-    padding-top: 1vmin;
-    font-size: 1.8vmin;
-    color: var(--deep-purple);
-    width: 100%;
+.term-course-info{
+    text-align: center;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    height: 100%;
+}
+
+
+.term li{
+    /* iffy on how these should go, */
+    /* word-break: break-word; */
+    /* hyphens: auto; */
+    width: fit-content;
+    list-style-position: inside;
+    padding-left: 0.5vmin;
+    padding-right: 0.5vmin;
+    margin-bottom: 0.2vmin;
+    font-weight: 500;
+    
+}
+
+.term ul{
+    padding-left: 0.5vmin;
+    padding-right: 1vmin;
+    display: inline;
+    width: fit-content;
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
 }
 
 .season-label{
     color: var(--quacs-midtone);
     font-family: "proxima-nova";
-    font-size: 3vmin;
+    font-size: 1.4rem;
 }
 
 .midsum-label{
     color: var(--quacs-white);
     font-family: "proxima-nova";
-    font-size: 2vmin;
+    
     white-space: break-spaces;
 }
 
 .year{
     color: var(--quacs-midtone);
     font-family: "proxima-nova";
-    font-size: 2vmin;
+    
     text-align: left;
     width: 6vmin;
 }
-
-.term li{
-    /* iffy on how these should go, */
-    /* word-break: break-word; */
-    /* hyphens: auto; */
-    width: 100%;
-    /* margin-left: 0; */
-    /* padding-left: 0; */
-    list-style-position: inside;
-    padding-left: 0.5vmin;
-    padding-right: 0.5vmin;
-    text-align: center;
-    margin-bottom: 0.2vmin;
-}
-
-.term ul{
-    padding-left: 0;
-    padding-right: 1vmin;
-}
-
 
 .offered {
     background-color: var(--green);
@@ -423,6 +424,7 @@ handle our hidings here
 }
 .not-offered {
     background-color: var(--red);
+    height: 2rem;
 }
 .unscheduled {
     background-color: var(--mid-light-purple);
@@ -432,22 +434,24 @@ handle our hidings here
 
 @media (max-aspect-ratio: 5/4), (orientation: portrait){
 
+    #cd-flex{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 1vw;
+        margin-left: 1vw;
+        padding-bottom: 3vmin;
+    }
+
     #course-info-container{
         position:relative;
-        top: 7vmin;
         width: 90vw;
-        left: 5vmin;
+        margin-bottom: 1vmin;
         height: max-content;
-        /* margin-bottom: 20vmin; */
     }
 
     #past-container{
         position: relative;
-        top: 7vmin;
-        width: 90vw;
-        left: 5vw;
-        height: 90vmin;
-        /* justify-content: right; */
+        width: 95vw;
         justify-content: center;
     }
 

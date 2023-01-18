@@ -30,8 +30,7 @@ const set_term = function(term,type = "offered", offered=true) {
 
         // only for offered pretty much
         if(inst.length){
-            fullHTML += genCourseNameHTML(inst); // for the name view
-            fullHTML += genProfHTML(inst); // for the prof view
+            fullHTML += genDetailedViewHTML(inst); // for the detailed view
         }
 
         // put it in there !
@@ -61,15 +60,13 @@ const genOfferingsHTML = (type="offered") => {
     </div>`
 }
 
-var genCourseNameHTML = (inst) => {
-    return '<div class="view-container name-view-container">'
-        + '<span class="course-title">' + inst[0] + '</span>'
-        + '<span class="course-credit-count"> (' + inst[1] + 'c)</span>'
-        + '<span class="course-attributes"> ' + inst[2] + '</span></div>';
-}
 
-var genProfHTML = (inst) => {
-    return `<div class="view-container prof-view-container"><ul><li>${makeInstructorArray(inst).join("</li><li>")}</li></ul></div>`;
+var genDetailedViewHTML = (inst) => {
+    return '<div class="view-container detail-view-container"><div class="term-course-info">'
+    + '<span class="course-title">' + inst[0] + '</span>'
+    + '<span class="course-credit-count"> (' + inst[1] + 'c)</span>'
+    + '<span class="course-attributes"> ' + inst[2] + '</span></div>' 
+    + '<ul class="prof-list"><li>' + makeInstructorArray(inst).join("</li><li>") + '</li></ul>' + '</div>';
 }
 
 

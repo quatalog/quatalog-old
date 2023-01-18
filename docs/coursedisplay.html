@@ -8,7 +8,7 @@
 		<meta property="og:title" content="Quatalog" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://quatalog.com" />
-		<meta property="og:description" content="Quatalog is a course catalog archive for RPI"/>
+		<meta property="og:description" content="It's like the catalog but based"/>
 		<style id="disable-enrichment" media="not all">
 .winter {
 	display:none;
@@ -22,107 +22,104 @@
 			<h1><a id="qlog-wordmark" href="./"> Quatalog </a></h1>
 			<input type="text" id="header-search" placeholder="Search..." onkeydown="prepSearch(this, event)">
 		</div>
-		<div id="course-info-container">
-			<h1 id="cname"></h1>
-			<h2 id="ccode"></h2>
-			<p id="cdesc"></p>
-			<div id="cattrs-container"><span id="credits-pill" class="attr-pill"><span id="ccredits"></span> credits</span></div>
-			<div id="crosslist-container" class="rel-info-container">
-				<div id="crosslist-title" class="rel-info-title">
-					Cross-listed with:
-				</div>
-				<div id="crosslist-classes" class="rel-info-courses">
-				</div>
-			</div>
-			<div id="coreq-container" class="rel-info-container">
-				<div id="coreq-title" class="rel-info-title">
-					Corequisites:
-				</div>
-				<div id="coreq-classes" class="rel-info-courses">
-				</div>
-			</div>
-			<div id="prereq-container" class="rel-info-container">
-				<div id="prereq-title" class="rel-info-title">
-					Prereqs
-				</div>
-				<div id="prereq-classes" class="rel-info-courses">
-				</div>
-			</div>
-		</div>
-		<div id="past-container">
-			<h1 id="past-title">Past Term Data</h1>
-			<div id="opt-container">
-				<div id="key-panel">
-					<div id="yes-code" class="key-code">
-						<span class="code-icon" id="yes-code-icon">
-						<svg><use href="./icons.svg#circle-check"></use></svg>
-						</span>
-						Offered
+		<div id="cd-flex"> <!-- This is the flow container for the course display page -->
+			<div id="course-info-container">
+				<h1 id="cname"></h1>
+				<h2 id="ccode"></h2>
+				<p id="cdesc"></p>
+				<div id="cattrs-container"><span id="credits-pill" class="attr-pill"><span id="ccredits"></span> credits</span></div>
+				<div id="crosslist-container" class="rel-info-container">
+					<div id="crosslist-title" class="rel-info-title">
+						Cross-listed with:
 					</div>
-					<div id="no-code" class="key-code">
-						<span class="code-icon" id="no-code-icon">
-						<svg><use href="./icons.svg#circle-no"></use></svg>
-						</span>
-						Not Offered
-					</div>
-					<div id="diff-code" class="key-code">
-						<span class="code-icon" id="diff-code-icon">
-						<svg><use href="./icons.svg#circle-question"></use></svg>
-						</span>
-						Different Course Code
-					</div>
-					<div id="nil-code" class="key-code">
-						<span class="code-icon" id="nil-code-icon">
-						<svg><use href="./icons.svg#circle-empty"></use></svg>
-						</span>
-						No Term Data
+					<div id="crosslist-classes" class="rel-info-courses">
 					</div>
 				</div>
-				<div id="control-panel">
-					<label for="simple-view-input" id="simple-view-label" class="view-option-label" onclick="selectView(`simple`)">
-						<span id="simple-view-icon" class="view-icon"></span>
-						<input type="radio" id="simple-view-input" class="view-option-input" name="past-view" value="simple"> 
-						Simple View
-					</label>
-					<label for="name-view-input" id="name-view-label" class="view-option-label" onclick="selectView(`name`)">
-						<span id="name-view-icon" class="view-icon"></span>
-						<input type="radio" id="name-view-input" class="view-option-input" name="past-view" value="name"> 
-						Names
-					</label>
-					<label for="prof-view-input" id="prof-view-label" class="view-option-label" onclick="selectView(`prof`)">
-						<span id="prof-view-icon" class="view-icon"></span>
-						<input type="radio" id="prof-view-input" class="view-option-input" name="past-view" value="prof"> 
-						Professors
-					</label>
+				<div id="coreq-container" class="rel-info-container">
+					<div id="coreq-title" class="rel-info-title">
+						Corequisites:
+					</div>
+					<div id="coreq-classes" class="rel-info-courses">
+					</div>
+				</div>
+				<div id="prereq-container" class="rel-info-container">
+					<div id="prereq-title" class="rel-info-title">
+						Prereqs
+					</div>
+					<div id="prereq-classes" class="rel-info-courses">
+					</div>
 				</div>
 			</div>
-			<template id="year-row">
-				<table>
+			<div id="past-container">
+				<h1 id="past-title">Past Term Data</h1>
+				<div id="opt-container">
+					<div id="key-panel">
+						<div id="yes-code" class="key-code">
+							<span class="code-icon" id="yes-code-icon">
+							<svg><use href="./icons.svg#circle-check"></use></svg>
+							</span>
+							Offered
+						</div>
+						<div id="no-code" class="key-code">
+							<span class="code-icon" id="no-code-icon">
+							<svg><use href="./icons.svg#circle-no"></use></svg>
+							</span>
+							Not Offered
+						</div>
+						<div id="diff-code" class="key-code">
+							<span class="code-icon" id="diff-code-icon">
+							<svg><use href="./icons.svg#circle-question"></use></svg>
+							</span>
+							Different Course Code
+						</div>
+						<div id="nil-code" class="key-code">
+							<span class="code-icon" id="nil-code-icon">
+							<svg><use href="./icons.svg#circle-empty"></use></svg>
+							</span>
+							No Term Data
+						</div>
+					</div>
+					<div id="control-panel">
+						<label for="simple-view-input" id="simple-view-label" class="view-option-label" onclick="selectView(`simple`)">
+							<span id="simple-view-icon" class="view-icon"></span>
+							<input type="radio" id="simple-view-input" class="view-option-input" name="past-view" value="simple"> 
+							Simple View
+						</label>
+						<label for="detail-view-input" id="detail-view-label" class="view-option-label" onclick="selectView(`detail`)">
+							<span id="detail-view-icon" class="view-icon"></span>
+							<input type="radio" id="detail-view-input" class="view-option-input" name="past-view" value="detail"> 
+							Detailed View
+						</label>
+					</div>
+				</div>
+				<template id="year-row">
+					<table>
+						<tr>
+							<th class="year" />
+								<td class="term spring" />
+									<td class="term summer2" />
+										<td class="term summer3" />
+											<td class="term fall" />
+												<td class="term winter" />
+						</tr>
+					</table>
+				</template>
+				<table id="years-table">
 					<tr>
-						<th class="year" />
-							<td class="term spring" />
-								<td class="term summer2" />
-									<td class="term summer3" />
-										<td class="term fall" />
-											<td class="term winter" />
+						<th />
+							<th class="spring season-label">Spring</th>
+							<th class="summer season-label" colspan="2">Summer</th>
+							<th class="fall season-label">Fall</th>
+							<th class="winter season-label">Enrichment</th>
+					</tr>
+					<tr>
+						<th colspan="2" />
+							<th class="summer2 midsum-label">(Session 1)</th>
+							<th class="summer3 midsum-label">(Session 2)</th>
+							<th colspan="2"/>
 					</tr>
 				</table>
-			</template>
-			<table id="years-table">
-				<tr>
-					<th />
-						<th class="spring season-label">Spring</th>
-						<th class="summer season-label" colspan="2">Summer</th>
-						<th class="fall season-label">Fall</th>
-						<th class="winter season-label">Enrichment</th>
-				</tr>
-				<tr>
-					<th colspan="2" />
-						<th class="summer2 midsum-label">(Session 1)</th>
-						<th class="summer3 midsum-label">(Session 2)</th>
-						<th colspan="2"/>
-				</tr>
-			</table>
+			</div>
 		</div>
 	</body>
 </html>
