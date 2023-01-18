@@ -2,6 +2,14 @@
 <html>
 	<head>
 		<title>Quatalog Home</title>
+
+		<link rel="shortcut icon" href="./favicon/quatalogIcon.png">
+		<link rel="icon" href="./favicon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+		<link rel="manifest" href="./favicon/site.webmanifest">
+		
 		<link rel="stylesheet" href="common.css" />
 		<link rel="stylesheet" href="home.css" />
 		<meta property="og:title" content="Quatalog" />
@@ -11,7 +19,7 @@
 		<script src="common.js"></script>
 	</head>
 	<body>
-		<h1 id="home-title">Quatalog</h1>
+		<svg id="home-title"><use href="./images/quatalogVWordmark.svg#QuatalogVWordmark"></use></svg>
 		<input type="text" id="home-search" placeholder="Search..." onkeydown="prepSearch(this, event)">
 		<!-- idk put link to github source or something -->
 		<p id="home-footer">

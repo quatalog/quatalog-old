@@ -103,13 +103,14 @@ p a:hover, p a:hover svg {
     align-items: center;
 }
 
-#qlog-wordmark {
-    font-family: "rivalsans";
-    font-size: 1.5rem;
+#qlog-wordmark svg {
+    height: 4.5vmin;
+    aspect-ratio: 454/100;
+    left: 0;
     top: 0;
     position: relative;
-    text-decoration: none;
     margin: 1vmin;
+    margin-bottom: 0.75vmin;
     margin-left: 2vmin;
 }
 

@@ -383,13 +383,11 @@ handle our hidings here
     padding-right: 0.5vmin;
     margin-bottom: 0.2vmin;
     font-weight: 500;
-    
 }
 
 .term ul{
     padding-left: 0.5vmin;
     padding-right: 1vmin;
-    display: inline;
     width: fit-content;
     margin-top: 0.15rem;
     margin-bottom: 0.15rem;
@@ -404,14 +402,12 @@ handle our hidings here
 .midsum-label{
     color: var(--quacs-white);
     font-family: "proxima-nova";
-    
     white-space: break-spaces;
 }
 
 .year{
     color: var(--quacs-midtone);
     font-family: "proxima-nova";
-    
     text-align: left;
     width: 6vmin;
 }

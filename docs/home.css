@@ -1,9 +1,9 @@
 #home-title{
-    font-family: "rivalsans";
-    text-align: center;
-    font-size: 18vmin;
+    left: 30vw;
+    aspect-ratio: 337/181;
     position: relative;
     margin-top: 10vmin;
+    width: 40vw;
 }
 
 #home-search{
@@ -12,6 +12,7 @@
     position: relative;
     font-size: 2rem;
     margin: 10vmin auto;
+    margin-top: 5vmin;
     width: 50vmin;
     display: block;
     padding: 1.6vmin;
@@ -35,9 +36,11 @@
     margin-bottom: 0.1rem;
 }
 
-/* @media only screen and (min-width: 600px) {
-    #home-title{
-        font-size: 5vw;
-    }
-} */
 
+@media (max-aspect-ratio: 5/4), (orientation: portrait){
+
+    #home-title{
+        left: 12.5vw;
+        width: 75vw;
+    }
+}
