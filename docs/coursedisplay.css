@@ -267,25 +267,6 @@
     flex-direction: column;
 }
 
-.view-option-label{
-    
-    color: var(--quacs-midtone);
-    font-family: 'proxima-nova';
-    cursor:pointer;
-    transition: color .1s;
-}
-
-.view-option-input{
-    accent-color: var(--quacs-midtone);
-    display: none;
-    position: absolute;
-    pointer-events: none;
-}
-
-.view-option-input:hover{
-    accent-color: var(--quacs-yellow);
-}
-
 .view-icon svg{
     width: 0.9rem;
     max-height: 0.9rem;
@@ -297,14 +278,6 @@
     overflow: visible;
     fill: var(--quacs-midtone);
     transition: fill .1s;
-}
-
-label.checked .view-icon svg{
-    fill: var(--quacs-yellow);
-}
-
-label.checked{
-    color: var(--quacs-yellow);
 }
 
 #years-table{
@@ -330,31 +303,68 @@ label.checked{
 handle our hidings here
 */
 
-.view-container{
+.term {
+    background-size: 5vmin 5vmin;
+    height: 5vmin;
+    background-origin: content-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1vmin;
+}
+
+input[type="radio"] {
     display: none;
 }
 
-.simple-view-mode .simple-view-container{
+.view-icon-selected, .view-icon-unselected {
+    display: none;
+}
+
+input[value="simple"]:checked ~ div #simple-view-icon .view-icon-selected,
+input[value="simple"]:not(:checked) ~ div #simple-view-icon .view-icon-unselected,
+input[value="detailed"]:checked ~ div #detail-view-icon .view-icon-selected,
+input[value="detailed"]:not(:checked) ~ div #detail-view-icon .view-icon-unselected {
+    display: inline-block;
+}
+
+input[value="simple"]:checked ~ div #simple-view-label,
+input[value="detailed"]:checked ~ div #detail-view-label {
+    color: var(--quacs-yellow);
+}
+
+.view-option-label {
+    cursor: pointer;
+    transition: color .1s;
+    font-family: "proxima-nova";
+    color: var(--quacs-midtone);
+}
+
+.view-icon-selected svg {
+    fill: var(--quacs-yellow);
+}
+
+input[value="simple"]:checked ~ table .not-offered {
+    background-image: url(./icons.svg#circle-no-view);
+}
+
+input[value="simple"]:checked ~ table .offered {
+    background-image: url(./icons.svg#circle-check-view);
+}
+
+input[value="simple"]:checked ~ table .offered-diff-code {
+    background-image: url(./icons.svg#circle-question-view);
+}
+
+input[value="simple"]:checked ~ table .unscheduled {
+    background-image: url(./icons.svg#circle-empty-view);
+}
+
+input[value="detailed"]:checked ~ table .detail-view-container {
     display: flex;
-}
-
-.detail-view-mode .detail-view-container{
-    display: flex;
-}
-
-.simple-view-container svg{
-    fill: var(--mid-dark-purple);
-    width: 5vmin;
-    margin: 0.5vmin;
-    max-height: 5vmin;
-    padding: 0.5vmin;
-}
-
-.simple-view-container{
-    justify-content: center;
 }
 
 .detail-view-container{
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -401,7 +411,7 @@ handle our hidings here
 
 .midsum-label{
     color: var(--quacs-white);
-    font-family: "proxima-nova";
+    font-family: "proxima-nova";    
     white-space: break-spaces;
 }
 

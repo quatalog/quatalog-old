@@ -65,6 +65,8 @@
 			</div>
 			<div id="past-container">
 				<h1 id="past-title">Past Term Data</h1>
+				<input type="radio" id="simple-view-input" name="view-select" value="simple" checked="checked">
+				<input type="radio" id="detail-view-input" name="view-select" value="detailed">
 				<div id="opt-container">
 					<div id="key-panel">
 						<div id="yes-code" class="key-code">
@@ -93,14 +95,18 @@
 						</div>
 					</div>
 					<div id="control-panel">
-						<label for="simple-view-input" id="simple-view-label" class="view-option-label" onclick="selectView(`simple`)">
-							<span id="simple-view-icon" class="view-icon"></span>
-							<input type="radio" id="simple-view-input" class="view-option-input" name="past-view" value="simple"> 
+						<label for="simple-view-input" id="simple-view-label" class="view-option-label">
+							<span class="view-icon" id="simple-view-icon">
+								<span class="view-icon-selected"><svg><use href="./icons.svg#circle-dot"></use></svg></span>
+								<span class="view-icon-unselected"><svg><use href="./icons.svg#circle-empty"></use></svg></span>
+							</span>
 							Simple View
 						</label>
-						<label for="detail-view-input" id="detail-view-label" class="view-option-label" onclick="selectView(`detail`)">
-							<span id="detail-view-icon" class="view-icon"></span>
-							<input type="radio" id="detail-view-input" class="view-option-input" name="past-view" value="detail"> 
+						<label for="detail-view-input" id="detail-view-label" class="view-option-label">
+							<span class="view-icon" id="detail-view-icon">
+								<span class="view-icon-selected"><svg><use href="./icons.svg#circle-dot"></use></svg></span>
+								<span class="view-icon-unselected"><svg><use href="./icons.svg#circle-empty"></use></svg></span>
+							</span>
 							Detailed View
 						</label>
 					</div>
