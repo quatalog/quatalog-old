@@ -3,7 +3,7 @@
         #circle-no,
 	#circle-check,
 	#circle-empty {
-            fill: #201f2c;
+            fill: #2c2b3d;
 	}
     </style>
     <symbol id="message" viewBox="0 0 640 512">
