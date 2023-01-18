@@ -25,8 +25,6 @@ const set_term = function(term,type = "offered", offered=true) {
 
         // want to add everything to this. We will hide and unhide based on the view
         var fullHTML = "";
-        // add simple view
-        fullHTML += genOfferingsHTML(type);
 
         // only for offered pretty much
         if(inst.length){
@@ -45,21 +43,6 @@ var makeInstructorArray = (inst) => {
         new Set(inst.slice(3).map(x => x.split(",")[0]))
     )
 }
-
-
-const offeringToIconMap = {
-    "offered": "circle-check",
-    "offered-diff-code": "circle-question",
-    "not-offered": "circle-no",
-    "unscheduled": "circle-empty",
-}
-// make the html for the icons
-const genOfferingsHTML = (type="offered") => {
-    return `<div class="view-container simple-view-container">
-        ${getSVG(offeringToIconMap[type])}
-    </div>`
-}
-
 
 var genDetailedViewHTML = (inst) => {
     return '<div class="view-container detail-view-container"><div class="term-course-info">'
@@ -340,37 +323,6 @@ const colorTable = () => {
     }
 }
 
-var currentView = 'simple';
-
-var setupControlPanel = () => {
-    var allIcons = document.getElementsByClassName("view-icon")
-    for(var i = 0;i < allIcons.length;i++) {
-        allIcons[i].innerHTML = getSVG("circle-empty");
-    }
-    selectView(`simple`);
-}
-
-var selectView = (view) => {
-    // deal with control panel stuff
-    var allIcons = document.getElementsByClassName("view-icon")
-    for(var i = 0;i < allIcons.length;i++) {
-        allIcons[i].innerHTML = getSVG("circle-empty");
-    }
-    var allLabels = document.getElementsByClassName("view-option-label");
-    for(var i = 0;i < allLabels.length;i++) {
-        allLabels[i].classList.remove("checked");
-    }
-    document.getElementById(view+"-view-icon").innerHTML = getSVG("circle-dot");
-    document.getElementById(`${view}-view-input`).checked = true;
-    document.getElementById(`${view}-view-label`).classList.add("checked");
-
-
-    document.getElementById("years-table").classList.remove(`${currentView}-view-mode`);
-    document.getElementById("years-table").classList.add(`${view}-view-mode`);
-
-    currentView = view;
-}
-
 /*
  .d88b.  d8b   db db       .d88b.   .d8b.  d8888b.
 .8P  Y8. 888o  88 88      .8P  Y8. d8' `8b 88  `8D
@@ -403,6 +355,4 @@ window.onload = async function() {
     addCourseInfo();
 
     colorTable();
-
-    setupControlPanel(); // also sets currentView to 'simple'
 }
