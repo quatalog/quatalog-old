@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 192 192">
+  <defs>
+    <symbol id="QuatalogIcon" data-name="QuatalogIcon" viewBox="0 0 192 192">
+      <rect id="Back_Rectangle" data-name="Back Rectangle" width="192" height="192" rx="36" style="fill: #494766"/>
+      <g id="BR_Circle" data-name="BR Circle">
+        <circle cx="156" cy="156" r="30" style="fill: #201f2c"/>
+        <path d="M156,128a28,28,0,1,1-28,28,28.0314,28.0314,0,0,1,28-28m0-4a32,32,0,1,0,32,32,32,32,0,0,0-32-32Z" style="fill: #201f2c"/>
+      </g>
+      <g id="BC_Circle" data-name="BC Circle">
+        <circle cx="96" cy="156" r="30" style="fill: #f5b53f"/>
+        <path d="M96,128a28,28,0,1,1-28,28,28.0314,28.0314,0,0,1,28-28m0-4a32,32,0,1,0,32,32,32,32,0,0,0-32-32Z" style="fill: #201f2c"/>
+      </g>
+      <g id="BL_Circle" data-name="BL Circle">
+        <circle cx="36" cy="156" r="30" style="fill: #f5b53f"/>
+        <path d="M36,128A28,28,0,1,1,8,156a28.0314,28.0314,0,0,1,28-28m0-4a32,32,0,1,0,32,32,32,32,0,0,0-32-32Z" style="fill: #201f2c"/>
+      </g>
+      <g id="MR_Circle" data-name="MR Circle">
+        <circle cx="156" cy="96" r="30" style="fill: #f5b53f"/>
+        <path d="M156,68a28,28,0,1,1-28,28,28.0314,28.0314,0,0,1,28-28m0-4a32,32,0,1,0,32,32,32,32,0,0,0-32-32Z" style="fill: #201f2c"/>
+      </g>
+      <g id="MC_Circle" data-name="MC Circle">
+        <circle cx="96" cy="96" r="30" style="fill: #201f2c"/>
+        <path d="M96,68A28,28,0,1,1,68,96,28.0314,28.0314,0,0,1,96,68m0-4a32,32,0,1,0,32,32A32,32,0,0,0,96,64Z" style="fill: #201f2c"/>
+      </g>
+      <g id="ML_Circle" data-name="ML Circle">
+        <circle cx="36" cy="96" r="30" style="fill: #f5b53f"/>
+        <path d="M36,68A28,28,0,1,1,8,96,28.0314,28.0314,0,0,1,36,68m0-4A32,32,0,1,0,68,96,32,32,0,0,0,36,64Z" style="fill: #201f2c"/>
+      </g>
+      <g id="TR_Circle" data-name="TR Circle">
+        <circle cx="156" cy="36" r="30" style="fill: #f5b53f"/>
+        <path d="M156,8a28,28,0,1,1-28,28A28.0314,28.0314,0,0,1,156,8m0-4a32,32,0,1,0,32,32A32,32,0,0,0,156,4Z" style="fill: #201f2c"/>
+      </g>
+      <g id="TC_Circle" data-name="TC Circle">
+        <circle cx="96" cy="36" r="30" style="fill: #f5b53f"/>
+        <path d="M96,8A28,28,0,1,1,68,36,28.0314,28.0314,0,0,1,96,8m0-4a32,32,0,1,0,32,32A32,32,0,0,0,96,4Z" style="fill: #201f2c"/>
+      </g>
+      <g id="TL_Circle" data-name="TL Circle">
+        <circle cx="36" cy="36" r="30" style="fill: #f5b53f"/>
+        <path d="M36,8A28,28,0,1,1,8,36,28.0314,28.0314,0,0,1,36,8m0-4A32,32,0,1,0,68,36,32,32,0,0,0,36,4Z" style="fill: #201f2c"/>
+      </g>
+    </symbol>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="qicon">
+      <use width="192" height="192" xlink:href="#QuatalogIcon"/>
+    </g>
+  </g>
+</svg>

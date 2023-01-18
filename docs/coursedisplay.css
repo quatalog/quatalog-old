@@ -393,13 +393,11 @@ input[value="detailed"]:checked ~ table .detail-view-container {
     padding-right: 0.5vmin;
     margin-bottom: 0.2vmin;
     font-weight: 500;
-    
 }
 
 .term ul{
     padding-left: 0.5vmin;
     padding-right: 1vmin;
-    display: inline;
     width: fit-content;
     margin-top: 0.15rem;
     margin-bottom: 0.15rem;
@@ -420,7 +418,6 @@ input[value="detailed"]:checked ~ table .detail-view-container {
 .year{
     color: var(--quacs-midtone);
     font-family: "proxima-nova";
-    
     text-align: left;
     width: 6vmin;
 }
