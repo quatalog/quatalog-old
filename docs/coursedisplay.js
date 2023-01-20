@@ -77,6 +77,9 @@ YP   YP Y88888P Y88888P 88      Y88888P 88   YD `8888Y'
 
 // gets just the course link, no HTML
 const getCourseHref = (course)=>{
+	if(course.search(/^STS[SH]/)) {
+		course = "STSO";
+	}
 	return 'href="?course='+course+'"';
 }
 
@@ -93,7 +96,6 @@ const getCourseName = function(course,catalog,courses_data) {
 	}
 }
 
-// very similar to linkify except adds in pill styling. made separate so we don't mess up the linkify function
 const pillLinkify = function(course,catalog,courses_data) {
     return '<a class="course-pill" '+getCourseHref(course)+">"
     +course
@@ -216,8 +218,8 @@ const getPrereqs = (code) => {
     if(pr || code.search(/^STSO/) == -1) {
         return pr;
     }
-    const stss = "STSS"+c.substring(4);
-    const stsh = "STSH"+c.substring(4);
+    const stss = "STSS"+code.substring(4);
+    const stsh = "STSH"+code.substring(4);
     if(prereqs[stss]) {
         return prereqs[stss];
     } else {
