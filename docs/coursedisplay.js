@@ -211,6 +211,19 @@ const makeTable = () => {
     return all_terms;
 }
 
+const getPrereqs = (code) => {
+    const pr = prereqs[code];
+    if(pr || code.search(/^STSO/) == -1) {
+        return pr;
+    }
+    const stss = "STSS"+c.substring(4);
+    const stsh = "STSH"+c.substring(4);
+    if(prereqs[stss]) {
+        return prereqs[stss];
+    } else {
+        return prereqs[stsh];
+    }
+}
 
 const addCourseInfo = ()=>{
     // Set up the code, catalog title, and catalog description
@@ -226,7 +239,7 @@ const addCourseInfo = ()=>{
     title.innerText += ": " + cname;
     document.getElementById("cname").innerText = cname;
     document.getElementById("ccredits").innerText = last_term_offered ? course_data[last_term_offered][1] : "Unknown";
-    document.getElementById("prereq-classes").innerHTML = last_term_offered ? pillFormatPrerequisites(prereqs[ccode],catalog,courses) : unknownRect;
+    document.getElementById("prereq-classes").innerHTML = last_term_offered ? pillFormatPrerequisites(getPrereqs(ccode),catalog,courses) : unknownRect;
 }
 
 const makeOfferingData = () => {
