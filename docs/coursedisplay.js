@@ -93,15 +93,6 @@ const getCourseName = function(course,catalog,courses_data) {
 	}
 }
 
-
-// Makes courses links
-const linkify = function(course,catalog,courses_data) {
-        return "<a "+getCourseHref(course)+">"
-        +course
-        +getCourseName(course,catalog,courses_data)
-        +"</a>";
-}
-
 // very similar to linkify except adds in pill styling. made separate so we don't mess up the linkify function
 const pillLinkify = function(course,catalog,courses_data) {
     return '<a class="course-pill" '+getCourseHref(course)+">"
@@ -134,7 +125,6 @@ const pillFormatPrerequisites = function(prereq,catalog,courses_data) {
 const _pillFormatPrerequisites = function(prereq,catalog,courses_data) {
     if(prereq["type"] == "course") {
         const course = prereq["course"];
-        // return linkify(course.substring(0,4)+"-"+course.substring(5),catalog);
         return pillLinkify(course.substring(0,4)+"-"+course.substring(5),catalog,courses_data);
     } else if(prereq["type"] == "or"){
         return '<div class="pr-or-con"><div class="pr-or-title">one of:</div><div class="pr-or">'
@@ -148,19 +138,6 @@ const _pillFormatPrerequisites = function(prereq,catalog,courses_data) {
             .join('<div class="pr-and">'+prereq.type+"</div>");
     } else {
         return "";
-    }
-}
-
-// Used for corequisite and prerequisite displays
-const createList = function(list,titleid,listid,catalog = false) {
-    if(!list) {
-        document.getElementById(titleid).style.display = "none";
-    } else {
-        for(const code of list) {
-            document.getElementById(listid)
-                .appendChild(document.createElement("li"))
-                .innerHTML = catalog ? linkify(code,catalog,courses_data) : code;
-        }
     }
 }
 
