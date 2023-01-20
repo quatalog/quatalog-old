@@ -77,8 +77,8 @@ YP   YP Y88888P Y88888P 88      Y88888P 88   YD `8888Y'
 
 // gets just the course link, no HTML
 const getCourseHref = (course)=>{
-	if(course.search(/^STS[SH]/)) {
-		course = "STSO";
+	if(course.search(/^STS[SH]/) != -1) {
+		course = "STSO"+course.substring(4);
 	}
 	return 'href="?course='+course+'"';
 }
