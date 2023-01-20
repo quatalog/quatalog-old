@@ -110,38 +110,6 @@ const pillLinkify = function(course,catalog,courses_data) {
     +"</a>";
 }
 
-// sam note: leaving these here for now but making new pill based ones
-
-// Helper functions for dealing with prerequisites
-// Catalog prerequisites are occasionally wrong,
-// so we will use SIS data
-const formatPrerequisites = function(prereq,catalog,courses_data) {
-    if(prereq) {
-        const fp = _formatPrerequisites(prereq,catalog,courses_data);
-        if(fp.search(/^\(/) != -1) {
-            return fp.slice(1,-1);
-        } else {
-            return fp;
-        }
-    } else {
-        return "None";
-    }
-}
-
-// Recursive helper function
-const _formatPrerequisites = function(prereq,catalog,courses_data) {
-    if(prereq["type"] == "course") {
-        const course = prereq["course"];
-        return linkify(course.substring(0,4)+"-"+course.substring(5),catalog,courses_data);
-    } else {
-        return "("
-            + prereq["nested"]
-                .map((x) => _formatPrerequisites(x,catalog))
-                .join(" "+prereq.type+" ")
-            + ")";
-    }
-}
-
 const noneRect = '<span class="none-rect">none</span>';
 const unknownRect = '<span class="unknown-rect">unknown</span>';
 
