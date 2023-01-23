@@ -1,4 +1,7 @@
 {
+  "ADMN-1010": [
+    "Online Course"
+  ],
   "USAF-0010": [
     "Introductory Level Course"
   ],
@@ -178,6 +181,9 @@
   "ECSE-4900": [
     "Communication Intensive",
     "Culminating Exp/Capstone"
+  ],
+  "ECSE-4980": [
+    "Writing Intensive"
   ],
   "ECSE-6530": [
     "Online Course"
@@ -1154,6 +1160,9 @@
   "STSS-4610": [
     "In-Person Course"
   ],
+  "WRIT-2008": [
+    "Writing Intensive"
+  ],
   "COGS-4600": [
     "Hybrid:Online/In-Person Course"
   ],
@@ -1280,6 +1289,13 @@
   "ECSE-6180": [
     "Hybrid:Online/In-Person Course"
   ],
+  "GSAS-1600": [
+    "Communication Intensive",
+    "HASS Inquiry"
+  ],
+  "GSAS-2520": [
+    "Communication Intensive"
+  ],
   "ISYE-6190": [
     "Online Course"
   ],
@@ -1304,13 +1320,6 @@
     "Online Course"
   ],
   "ECON-4170": [
-    "Communication Intensive"
-  ],
-  "GSAS-1600": [
-    "Communication Intensive",
-    "HASS Inquiry"
-  ],
-  "GSAS-2520": [
     "Communication Intensive"
   ],
   "IHSS-1080": [
@@ -1575,6 +1584,7 @@
     "Online Course"
   ],
   "IHSS-1500": [
+    "Communication Intensive",
     "Introductory Level Course",
     "HASS Inquiry",
     "Online Course"
@@ -1672,7 +1682,7 @@
   "STSO-4350": [
     "PDII Option for Engr Majors"
   ],
-  "STSO-4610": [
+  "STSO-4605": [
     "PDII Option for Engr Majors"
   ],
   "STSO-4970": [
@@ -1704,6 +1714,9 @@
   "STSO-4530": [
     "Communication Intensive"
   ],
+  "STSO-4610": [
+    "PDII Option for Engr Majors"
+  ],
   "STSO-4720": [
     "PDII Option for Engr Majors"
   ],
@@ -1727,9 +1740,6 @@
   ],
   "STSO-4440": [
     "Communication Intensive"
-  ],
-  "STSO-4605": [
-    "PDII Option for Engr Majors"
   ],
   "IHSS-1776": [
     "Communication Intensive",

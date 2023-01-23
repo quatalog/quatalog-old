@@ -1,11 +1,11 @@
 {
   "ARCH-2130": {
-    "type": "course",
-    "course": "ARCH 2120"
+    "course": "ARCH 2120",
+    "type": "course"
   },
   "ARCH-2220": {
-    "type": "course",
-    "course": "ARCH 2210"
+    "course": "ARCH 2210",
+    "type": "course"
   },
   "ARCH-2330": {
     "course": "ARCH 2510",
@@ -16,41 +16,41 @@
     "type": "course"
   },
   "ARCH-2620": {
-    "type": "course",
-    "course": "ARCH 2610"
+    "course": "ARCH 2610",
+    "type": "course"
   },
   "ARCH-4140": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "ARCH 2120"
+        "course": "ARCH 2120",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ARCH 2130"
+        "course": "ARCH 2130",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "ARCH-4240": {
-    "type": "course",
-    "course": "ARCH 2230"
+    "course": "ARCH 2230",
+    "type": "course"
   },
   "ARCH-4250": {
-    "type": "course",
-    "course": "ARCH 4240"
+    "course": "ARCH 4240",
+    "type": "course"
   },
   "ARCH-4330": {
     "course": "ARCH 2510",
     "type": "course"
   },
   "ARCH-4360": {
-    "type": "course",
-    "course": "ARCH 2630"
+    "course": "ARCH 2630",
+    "type": "course"
   },
   "ARCH-4990": {
-    "type": "course",
-    "course": "ARCH 4980"
+    "course": "ARCH 4980",
+    "type": "course"
   },
   "ARTS-2010": {
     "course": "ARTS 1030",
@@ -78,8 +78,8 @@
     "type": "or"
   },
   "ARTS-2400": {
-    "type": "course",
-    "course": "ARTS 1010"
+    "course": "ARTS 1010",
+    "type": "course"
   },
   "ARTS-4060": {
     "course": "ARTS 2230",
@@ -103,21 +103,21 @@
     "type": "course"
   },
   "ARTS-4510": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ARTS 4540"
+        "course": "ARTS 4540",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "COGS 4540"
+        "course": "COGS 4540",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 4540"
+        "course": "CSCI 4540",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ARTS-4961": {
     "nested": [
@@ -133,8 +133,8 @@
     "type": "or"
   },
   "ARTS-4964": {
-    "type": "course",
-    "course": "ARTS 2230"
+    "course": "ARTS 2230",
+    "type": "course"
   },
   "ARTS-6961": {
     "nested": [
@@ -154,17 +154,17 @@
     "type": "course"
   },
   "ASTR-4220": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "PHYS 2220"
+        "course": "PHYS 2220",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "PHYS 4420"
+        "course": "PHYS 4420",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "BCBP-4760": {
     "nested": [
@@ -244,8 +244,8 @@
     "type": "course"
   },
   "BIOL-4060": {
-    "type": "course",
-    "course": "BIOL 2120"
+    "course": "BIOL 2120",
+    "type": "course"
   },
   "BIOL-4270": {
     "nested": [
@@ -274,8 +274,8 @@
     "type": "and"
   },
   "BIOL-4400": {
-    "type": "course",
-    "course": "BIOL 1010"
+    "course": "BIOL 1010",
+    "type": "course"
   },
   "BIOL-4540": {
     "nested": [
@@ -373,8 +373,8 @@
     "type": "or"
   },
   "BIOL-4963": {
-    "type": "course",
-    "course": "BIOL 2120"
+    "course": "BIOL 2120",
+    "type": "course"
   },
   "BIOL-6961": {
     "nested": [
@@ -500,17 +500,17 @@
     "type": "course"
   },
   "CHEM-2210": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "CHEM 1100"
+        "course": "CHEM 1100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CHEM 1300"
+        "course": "CHEM 1300",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CHEM-2230": {
     "course": "CHEM 2250",
@@ -547,17 +547,17 @@
     "type": "and"
   },
   "CHEM-4330": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "CHEM 2220"
+        "course": "CHEM 2220",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CHEM 2260"
+        "course": "CHEM 2260",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CHEM-4410": {
     "course": "MATH 2400",
@@ -615,17 +615,17 @@
     "type": "course"
   },
   "CIVL-4120": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "ENGR 2530"
+        "course": "ENGR 2530",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ENGR 2600"
+        "course": "ENGR 2600",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "CIVL-4240": {
     "nested": [
@@ -662,34 +662,34 @@
     "type": "or"
   },
   "COMM-4570": {
-    "type": "course",
-    "course": "COMM 2610"
+    "course": "COMM 2610",
+    "type": "course"
   },
   "COMM-4710": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "COMM 4420"
+        "course": "COMM 4420",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ITWS 2210"
+        "course": "ITWS 2210",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "COMM-4964": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "COMM 2660"
+        "course": "COMM 2660",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "COMM 2570"
+        "course": "COMM 2570",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CSCI-1200": {
     "course": "CSCI 1100",
@@ -734,8 +734,8 @@
     "type": "course"
   },
   "CSCI-4050": {
-    "type": "course",
-    "course": "CSCI 2300"
+    "course": "CSCI 2300",
+    "type": "course"
   },
   "CSCI-4100": {
     "course": "CSCI 2300",
@@ -811,26 +811,26 @@
     "type": "course"
   },
   "CSCI-4520": {
-    "type": "or",
     "nested": [
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "COGS 2520"
+            "course": "COGS 2520",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "GSAS 2520"
+            "course": "GSAS 2520",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       },
       {
-        "type": "course",
-        "course": "CSCI 2300"
+        "course": "CSCI 2300",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CSCI-4800": {
     "nested": [
@@ -1151,26 +1151,26 @@
     "type": "or"
   },
   "ENGR-4300": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "MATH 2400"
+        "course": "MATH 2400",
+        "type": "course"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "PHYS 1200"
+            "course": "PHYS 1200",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "PHYS 1250"
+            "course": "PHYS 1250",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       }
-    ]
+    ],
+    "type": "and"
   },
   "ERTH-2330": {
     "nested": [
@@ -1290,8 +1290,8 @@
     "type": "and"
   },
   "ECON-4120": {
-    "type": "course",
-    "course": "ECON 2010"
+    "course": "ECON 2010",
+    "type": "course"
   },
   "ECON-4130": {
     "nested": [
@@ -1311,12 +1311,12 @@
     "type": "or"
   },
   "ECON-4140": {
-    "type": "course",
-    "course": "ECON 2010"
+    "course": "ECON 2010",
+    "type": "course"
   },
   "ECON-4160": {
-    "type": "course",
-    "course": "ECON 2010"
+    "course": "ECON 2010",
+    "type": "course"
   },
   "ECON-4190": {
     "nested": [
@@ -1336,47 +1336,47 @@
     "type": "or"
   },
   "ECON-4900": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "ECON 4570"
+        "course": "ECON 4570",
+        "type": "course"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "ECON 1200"
+            "course": "ECON 1200",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "IHSS 1975"
+            "course": "IHSS 1975",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "IHSS 1200"
+            "course": "IHSS 1200",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       }
-    ]
+    ],
+    "type": "and"
   },
   "EPOW-4010": {
-    "type": "course",
-    "course": "ECSE 2010"
+    "course": "ECSE 2010",
+    "type": "course"
   },
   "EPOW-4080": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ENGR 4300"
+        "course": "ENGR 4300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ECSE 2050"
+        "course": "ECSE 2050",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ECSE-2010": {
     "course": "MATH 2400",
@@ -1471,8 +1471,8 @@
     "type": "course"
   },
   "ECSE-4500": {
-    "type": "course",
-    "course": "ECSE 2410"
+    "course": "ECSE 2410",
+    "type": "course"
   },
   "ECSE-4520": {
     "nested": [
@@ -1505,17 +1505,17 @@
     "type": "course"
   },
   "ECSE-4750": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ECSE 2610"
+        "course": "ECSE 2610",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 2500"
+        "course": "CSCI 2500",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ECSE-4770": {
     "course": "ECSE 2610",
@@ -1552,26 +1552,26 @@
     "type": "and"
   },
   "ECSE-6969": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "ECSE 2010"
+        "course": "ECSE 2010",
+        "type": "course"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "MATH 2010"
+            "course": "MATH 2010",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "MATH 2400"
+            "course": "MATH 2400",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       }
-    ]
+    ],
+    "type": "and"
   },
   "ENVE-2110": {
     "nested": [
@@ -1608,38 +1608,38 @@
     "type": "or"
   },
   "LANG-2110": {
-    "type": "course",
-    "course": "LANG 1120"
+    "course": "LANG 1120",
+    "type": "course"
   },
   "LANG-2210": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "LANG 1210"
+        "course": "LANG 1210",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "LANG 1220"
+        "course": "LANG 1220",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "LANG-2420": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "LANG 1420"
+        "course": "LANG 1420",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "LANG 2410"
+        "course": "LANG 2410",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "LANG-4400": {
-    "type": "course",
-    "course": "LANG 2120"
+    "course": "LANG 2120",
+    "type": "course"
   },
   "MGMT-2100": {
     "nested": [
@@ -1702,8 +1702,8 @@
     "type": "and"
   },
   "MGMT-4380": {
-    "type": "course",
-    "course": "MGMT 4320"
+    "course": "MGMT 4320",
+    "type": "course"
   },
   "MGMT-4470": {
     "course": "MGMT 2430",
@@ -1731,8 +1731,8 @@
     "type": "and"
   },
   "MGMT-6170": {
-    "type": "course",
-    "course": "MGMT 6140"
+    "course": "MGMT 6140",
+    "type": "course"
   },
   "MGMT-6380": {
     "course": "MGMT 6310",
@@ -1743,17 +1743,17 @@
     "type": "course"
   },
   "MGMT-6964": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "MGMT 6020"
+        "course": "MGMT 6020",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MGMT 6370"
+        "course": "MGMT 6370",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "MTLE-4910": {
     "nested": [
@@ -1982,30 +1982,30 @@
     "type": "and"
   },
   "MANE-4010": {
-    "type": "course",
-    "course": "ENGR 2250"
+    "course": "ENGR 2250",
+    "type": "course"
   },
   "MANE-4050": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "MATH 2400"
+        "course": "MATH 2400",
+        "type": "course"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "PHYS 1200"
+            "course": "PHYS 1200",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "PHYS 1250"
+            "course": "PHYS 1250",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       }
-    ]
+    ],
+    "type": "and"
   },
   "MANE-4060": {
     "course": "ENGR 2530",
@@ -2082,8 +2082,8 @@
     "type": "and"
   },
   "MANE-4200": {
-    "type": "course",
-    "course": "MANE 4070"
+    "course": "MANE 4070",
+    "type": "course"
   },
   "MANE-4220": {
     "nested": [
@@ -2171,43 +2171,43 @@
     "type": "course"
   },
   "MANE-4490": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "ENGR 2350"
+        "course": "ENGR 2350",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MANE 4050"
+        "course": "MANE 4050",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "MANE-4550": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "ENGR 2530"
+        "course": "ENGR 2530",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MANE 4030"
+        "course": "MANE 4030",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "MANE-4610": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "ENGR 2090"
+        "course": "ENGR 2090",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 2400"
+        "course": "MATH 2400",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "MANE-4670": {
     "nested": [
@@ -2223,16 +2223,16 @@
     "type": "or"
   },
   "MANE-4710": {
-    "type": "course",
-    "course": "MANE 4010"
+    "course": "MANE 4010",
+    "type": "course"
   },
   "MANE-6390": {
-    "type": "course",
-    "course": "MANE 2830"
+    "course": "MANE 2830",
+    "type": "course"
   },
   "MANE-6550": {
-    "type": "course",
-    "course": "MANE 4070"
+    "course": "MANE 4070",
+    "type": "course"
   },
   "PHYS-1200": {
     "nested": [
@@ -2248,55 +2248,55 @@
     "type": "or"
   },
   "PHYS-2330": {
-    "type": "and",
     "nested": [
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "PHYS 1200"
+            "course": "PHYS 1200",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "PHYS 1250"
+            "course": "PHYS 1250",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       },
       {
-        "type": "course",
-        "course": "MATH 2400"
+        "course": "MATH 2400",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 2010"
+        "course": "MATH 2010",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "PHYS-2510": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "PHYS 2110"
+        "course": "PHYS 2110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 2400"
+        "course": "MATH 2400",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 2010"
+        "course": "MATH 2010",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "PHYS-4720": {
     "course": "PHYS 2220",
     "type": "course"
   },
   "PSYC-2220": {
-    "type": "course",
-    "course": "PSYC 1200"
+    "course": "PSYC 1200",
+    "type": "course"
   },
   "PSYC-2310": {
     "nested": [
@@ -2316,8 +2316,8 @@
     "type": "course"
   },
   "PSYC-2800": {
-    "type": "course",
-    "course": "PSYC 1200"
+    "course": "PSYC 1200",
+    "type": "course"
   },
   "PSYC-2961": {
     "course": "PSYC 1200",
@@ -2396,87 +2396,87 @@
     "type": "course"
   },
   "PSYC-4520": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "PSYC 2520"
+        "course": "PSYC 2520",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 2300"
+        "course": "CSCI 2300",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "PSYC-4740": {
-    "type": "course",
-    "course": "PSYC 1200"
+    "course": "PSYC 1200",
+    "type": "course"
   },
   "STSH-4800": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 2100"
+        "course": "STSS 2100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2300"
+        "course": "STSS 2300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2510"
+        "course": "STSS 2510",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2520"
+        "course": "STSS 2520",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2700"
+        "course": "STSS 2700",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 2500"
+        "course": "STSH 2500",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2210"
+        "course": "STSS 2210",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "STSS-4800": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 2100"
+        "course": "STSS 2100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2300"
+        "course": "STSS 2300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2510"
+        "course": "STSS 2510",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2520"
+        "course": "STSS 2520",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2700"
+        "course": "STSS 2700",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 2500"
+        "course": "STSH 2500",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2210"
+        "course": "STSS 2210",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "WRIT-4550": {
     "nested": [
@@ -2496,44 +2496,44 @@
     "type": "or"
   },
   "ARCH-2120": {
-    "type": "course",
-    "course": "ARCH 2110"
+    "course": "ARCH 2110",
+    "type": "course"
   },
   "ARCH-2140": {
-    "type": "course",
-    "course": "ARCH 2120"
+    "course": "ARCH 2120",
+    "type": "course"
   },
   "ARCH-2230": {
-    "type": "course",
-    "course": "ARCH 2220"
+    "course": "ARCH 2220",
+    "type": "course"
   },
   "ARCH-2630": {
-    "type": "course",
-    "course": "ARCH 2620"
+    "course": "ARCH 2620",
+    "type": "course"
   },
   "ARCH-4040": {
-    "type": "course",
-    "course": "ARCH 4140"
+    "course": "ARCH 4140",
+    "type": "course"
   },
   "ARCH-6880": {
     "course": "ARCH 6870",
     "type": "course"
   },
   "ARTS-2030": {
-    "type": "course",
-    "course": "ARTS 1020"
+    "course": "ARTS 1020",
+    "type": "course"
   },
   "ARTS-4020": {
-    "type": "course",
-    "course": "ARTS 4070"
+    "course": "ARTS 4070",
+    "type": "course"
   },
   "ARTS-4200": {
     "course": "ARTS 1200",
     "type": "course"
   },
   "ARTS-4400": {
-    "type": "course",
-    "course": "ARTS 2400"
+    "course": "ARTS 2400",
+    "type": "course"
   },
   "ASTR-2050": {
     "nested": [
@@ -2562,8 +2562,8 @@
     "type": "and"
   },
   "ASTR-4510": {
-    "type": "course",
-    "course": "ASTR 2050"
+    "course": "ASTR 2050",
+    "type": "course"
   },
   "BCBP-4310": {
     "course": "BIOL 4620",
@@ -2596,8 +2596,8 @@
     "type": "and"
   },
   "BIOL-4450": {
-    "type": "course",
-    "course": "BIOL 1010"
+    "course": "BIOL 1010",
+    "type": "course"
   },
   "BIOL-4550": {
     "nested": [
@@ -2690,34 +2690,34 @@
     "type": "and"
   },
   "BMED-2200": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "MATH 2400"
+        "course": "MATH 2400",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "PHYS 1200"
+        "course": "PHYS 1200",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "BMED-4240": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "BMED 2100"
+        "course": "BMED 2100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ENGR 1600"
+        "course": "ENGR 1600",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "BMED-4420": {
-    "type": "course",
-    "course": "BMED 4500"
+    "course": "BMED 4500",
+    "type": "course"
   },
   "BMED-4500": {
     "course": "BIOL 2120",
@@ -2750,17 +2750,17 @@
     "type": "and"
   },
   "BMED-4967": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "MATH 2400"
+        "course": "MATH 2400",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "PHYS 1200"
+        "course": "PHYS 1200",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "CHME-2020": {
     "nested": [
@@ -2841,8 +2841,8 @@
     "type": "or"
   },
   "CHEM-2220": {
-    "type": "course",
-    "course": "CHEM 2210"
+    "course": "CHEM 2210",
+    "type": "course"
   },
   "CHEM-2240": {
     "nested": [
@@ -2871,17 +2871,17 @@
     "type": "or"
   },
   "CHEM-2540": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ERTH 1100"
+        "course": "ERTH 1100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ERTH 1200"
+        "course": "ERTH 1200",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CHEM-4110": {
     "nested": [
@@ -2897,17 +2897,17 @@
     "type": "and"
   },
   "CHEM-4460": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "CHEM 4410"
+        "course": "CHEM 4410",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CHME 2020"
+        "course": "CHME 2020",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CHEM-4620": {
     "course": "CHEM 2260",
@@ -2939,17 +2939,17 @@
     "type": "course"
   },
   "CIVL-4962": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "CIVL 2050"
+        "course": "CIVL 2050",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ENGR 2250"
+        "course": "ENGR 2250",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CIVL-6520": {
     "nested": [
@@ -2965,25 +2965,25 @@
     "type": "and"
   },
   "COMM-4180": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "COMM 4170"
+        "course": "COMM 4170",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "COMM 4420"
+        "course": "COMM 4420",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "COMM 4770"
+        "course": "COMM 4770",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "COMM 4710"
+        "course": "COMM 4710",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "COMM-4690": {
     "nested": [
@@ -3016,17 +3016,17 @@
     "type": "or"
   },
   "CSCI-2962": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "CSCI 1100"
+        "course": "CSCI 1100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 1200"
+        "course": "CSCI 1200",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CSCI-4020": {
     "course": "CSCI 2300",
@@ -3064,8 +3064,8 @@
     "type": "and"
   },
   "CSCI-4670": {
-    "type": "course",
-    "course": "CSCI 4650"
+    "course": "CSCI 4650",
+    "type": "course"
   },
   "CSCI-4820": {
     "nested": [
@@ -3118,17 +3118,17 @@
     "type": "and"
   },
   "ERTH-2140": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ERTH 1100"
+        "course": "ERTH 1100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ERTH 1200"
+        "course": "ERTH 1200",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ERTH-4540": {
     "nested": [
@@ -3188,12 +3188,12 @@
     "type": "and"
   },
   "ECON-4240": {
-    "type": "course",
-    "course": "ECON 1200"
+    "course": "ECON 1200",
+    "type": "course"
   },
   "ECON-4250": {
-    "type": "course",
-    "course": "ECON 1200"
+    "course": "ECON 1200",
+    "type": "course"
   },
   "ECON-4570": {
     "nested": [
@@ -3234,8 +3234,8 @@
     "type": "course"
   },
   "ECSE-4780": {
-    "type": "course",
-    "course": "ECSE 4770"
+    "course": "ECSE 4770",
+    "type": "course"
   },
   "ECSE-4964": {
     "nested": [
@@ -3251,17 +3251,17 @@
     "type": "and"
   },
   "ECSE-6260": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ECSE 6230"
+        "course": "ECSE 6230",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ECSE 6290"
+        "course": "ECSE 6290",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ECSE-6300": {
     "course": "ECSE 4250",
@@ -3272,8 +3272,8 @@
     "type": "course"
   },
   "ECSE-6700": {
-    "type": "course",
-    "course": "ECSE 4770"
+    "course": "ECSE 4770",
+    "type": "course"
   },
   "ENVE-4180": {
     "course": "ENVE 2110",
@@ -3318,36 +3318,36 @@
     "type": "and"
   },
   "ITEC-2110": {
-    "type": "course",
-    "course": "CSCI 1200"
+    "course": "CSCI 1200",
+    "type": "course"
   },
   "LANG-1120": {
-    "type": "course",
-    "course": "LANG 1110"
+    "course": "LANG 1110",
+    "type": "course"
   },
   "LANG-1220": {
-    "type": "course",
-    "course": "LANG 1210"
+    "course": "LANG 1210",
+    "type": "course"
   },
   "LANG-1420": {
-    "type": "course",
-    "course": "LANG 1410"
+    "course": "LANG 1410",
+    "type": "course"
   },
   "LANG-1520": {
-    "type": "course",
-    "course": "LANG 1510"
+    "course": "LANG 1510",
+    "type": "course"
   },
   "LANG-2120": {
-    "type": "course",
-    "course": "LANG 2110"
+    "course": "LANG 2110",
+    "type": "course"
   },
   "LANG-2220": {
-    "type": "course",
-    "course": "LANG 2210"
+    "course": "LANG 2210",
+    "type": "course"
   },
   "LANG-4410": {
-    "type": "course",
-    "course": "LANG 4400"
+    "course": "LANG 4400",
+    "type": "course"
   },
   "LANG-4961": {
     "nested": [
@@ -3371,63 +3371,63 @@
     "type": "or"
   },
   "LGHT-6760": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "LGHT 4230"
+        "course": "LGHT 4230",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "LGHT 6750"
+        "course": "LGHT 6750",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "LGHT-6770": {
-    "type": "course",
-    "course": "LGHT 4840"
+    "course": "LGHT 4840",
+    "type": "course"
   },
   "MGMT-4130": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "CSCI 2300"
+        "course": "CSCI 2300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MGMT 4240"
+        "course": "MGMT 4240",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "MGMT-4310": {
     "course": "MGMT 2320",
     "type": "course"
   },
   "MGMT-4330": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "MGMT 2320"
+        "course": "MGMT 2320",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MGMT 4320"
+        "course": "MGMT 4320",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "MGMT-4340": {
     "course": "MGMT 2320",
     "type": "course"
   },
   "MGMT-4350": {
-    "type": "course",
-    "course": "MGMT 2320"
+    "course": "MGMT 2320",
+    "type": "course"
   },
   "MGMT-4370": {
-    "type": "course",
-    "course": "MGMT 2320"
+    "course": "MGMT 2320",
+    "type": "course"
   },
   "MGMT-4460": {
     "course": "MGMT 2430",
@@ -3460,8 +3460,8 @@
     "type": "or"
   },
   "MGMT-6660": {
-    "type": "course",
-    "course": "MGMT 6650"
+    "course": "MGMT 6650",
+    "type": "course"
   },
   "MTLE-2100": {
     "nested": [
@@ -3498,8 +3498,8 @@
     "type": "and"
   },
   "MTLE-4450": {
-    "type": "course",
-    "course": "MTLE 4400"
+    "course": "MTLE 4400",
+    "type": "course"
   },
   "MTLE-4920": {
     "course": "MTLE 4910",
@@ -3549,17 +3549,17 @@
     "type": "and"
   },
   "MATH-1620": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "MATH 1010"
+        "course": "MATH 1010",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 1500"
+        "course": "MATH 1500",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "MATH-4030": {
     "nested": [
@@ -3610,8 +3610,8 @@
     "type": "and"
   },
   "MATH-4210": {
-    "type": "course",
-    "course": "MATH 4200"
+    "course": "MATH 4200",
+    "type": "course"
   },
   "MATH-4300": {
     "course": "MATH 2010",
@@ -3631,8 +3631,8 @@
     "type": "and"
   },
   "MATH-6200": {
-    "type": "course",
-    "course": "MATH 4210"
+    "course": "MATH 4210",
+    "type": "course"
   },
   "MATH-6620": {
     "nested": [
@@ -3686,8 +3686,8 @@
     "type": "course"
   },
   "MANE-4440": {
-    "type": "course",
-    "course": "MANE 4480"
+    "course": "MANE 4480",
+    "type": "course"
   },
   "MANE-4470": {
     "nested": [
@@ -3716,17 +3716,17 @@
     "type": "course"
   },
   "MANE-4720": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "MANE 4010"
+        "course": "MANE 4010",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MANE 4400"
+        "course": "MANE 4400",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "MANE-4750": {
     "nested": [
@@ -3865,38 +3865,38 @@
     "type": "course"
   },
   "PSYC-4400": {
-    "type": "course",
-    "course": "PSYC 1200"
+    "course": "PSYC 1200",
+    "type": "course"
   },
   "PSYC-4770": {
-    "type": "course",
-    "course": "PSYC 1200"
+    "course": "PSYC 1200",
+    "type": "course"
   },
   "STSS-4330": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 1110"
+        "course": "STSS 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 1110"
+        "course": "STSH 1110",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "STSS-4560": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 1110"
+        "course": "STSS 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 1110"
+        "course": "STSH 1110",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ECSE-4320": {
     "nested": [
@@ -3912,75 +3912,75 @@
     "type": "or"
   },
   "BMED-4964": {
-    "type": "course",
-    "course": "ENGR 2250"
+    "course": "ENGR 2250",
+    "type": "course"
   },
   "CHEM-4310": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "CHEM 2220"
+        "course": "CHEM 2220",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CHEM 2260"
+        "course": "CHEM 2260",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "COGS-4520": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "COGS 2520"
+        "course": "COGS 2520",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 2300"
+        "course": "CSCI 2300",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "COMM-4400": {
-    "type": "course",
-    "course": "COMM 4570"
+    "course": "COMM 4570",
+    "type": "course"
   },
   "COMM-4660": {
-    "type": "course",
-    "course": "COMM 2610"
+    "course": "COMM 2610",
+    "type": "course"
   },
   "COMM-4670": {
-    "type": "course",
-    "course": "COMM 4570"
+    "course": "COMM 4570",
+    "type": "course"
   },
   "CSCI-4480": {
     "course": "MATH 2400",
     "type": "course"
   },
   "DSES-4963": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "DSES 4770"
+        "course": "DSES 4770",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATP 4700"
+        "course": "MATP 4700",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "DSES 4630"
+        "course": "DSES 4630",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "DSES 4610"
+        "course": "DSES 4610",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "DSES 4600"
+        "course": "DSES 4600",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ERTH-2120": {
     "course": "ERTH 2210",
@@ -4009,16 +4009,16 @@
     "type": "and"
   },
   "IHSS-2610": {
-    "type": "course",
-    "course": "IHSS 1610"
+    "course": "IHSS 1610",
+    "type": "course"
   },
   "MGMT-4220": {
-    "type": "course",
-    "course": "MGMT 2300"
+    "course": "MGMT 2300",
+    "type": "course"
   },
   "MGMT-4360": {
-    "type": "course",
-    "course": "MGMT 2320"
+    "course": "MGMT 2320",
+    "type": "course"
   },
   "MATH-4040": {
     "course": "MATH 4090",
@@ -4029,37 +4029,37 @@
     "type": "course"
   },
   "STSH-4420": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSH 2500"
+        "course": "STSH 2500",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 1110"
+        "course": "STSS 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 1110"
+        "course": "STSH 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1410"
+        "course": "IHSS 1410",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1420"
+        "course": "IHSS 1420",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1430"
+        "course": "IHSS 1430",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2520"
+        "course": "STSS 2520",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ARCH-4850": {
     "course": "ARCH 4840",
@@ -4087,12 +4087,12 @@
     "type": "course"
   },
   "COGS-4320": {
-    "type": "course",
-    "course": "COGS 2520"
+    "course": "COGS 2520",
+    "type": "course"
   },
   "COMM-4210": {
-    "type": "course",
-    "course": "COGS 2520"
+    "course": "COGS 2520",
+    "type": "course"
   },
   "CSCI-4320": {
     "nested": [
@@ -4156,8 +4156,8 @@
     "type": "or"
   },
   "LANG-2430": {
-    "type": "course",
-    "course": "LANG 2420"
+    "course": "LANG 2420",
+    "type": "course"
   },
   "MATP-6620": {
     "nested": [
@@ -4190,29 +4190,29 @@
     "type": "and"
   },
   "MATH-6791": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "MATH 4200"
+        "course": "MATH 4200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 6500"
+        "course": "MATH 6500",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 4800"
+        "course": "MATH 4800",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 6840"
+        "course": "MATH 6840",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "MANE-4340": {
-    "type": "course",
-    "course": "MANE 2830"
+    "course": "MANE 2830",
+    "type": "course"
   },
   "MANE-6460": {
     "course": "MANE 4670",
@@ -4313,125 +4313,125 @@
     "type": "or"
   },
   "PSYC-4510": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "PSYC 1200"
+        "course": "PSYC 1200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 2300"
+        "course": "CSCI 2300",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "STSH-4430": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 1110"
+        "course": "STSS 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 1110"
+        "course": "STSH 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2100"
+        "course": "STSS 2100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2520"
+        "course": "STSS 2520",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2700"
+        "course": "STSS 2700",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 2500"
+        "course": "STSH 2500",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2210"
+        "course": "STSS 2210",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "STSS-4430": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 1110"
+        "course": "STSS 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 1110"
+        "course": "STSH 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2100"
+        "course": "STSS 2100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2520"
+        "course": "STSS 2520",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2700"
+        "course": "STSS 2700",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 2500"
+        "course": "STSH 2500",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2210"
+        "course": "STSS 2210",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "STSS-4965": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 1110"
+        "course": "STSS 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 1110"
+        "course": "STSH 1110",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ARTS-4030": {
-    "type": "course",
-    "course": "ARTS 1020"
+    "course": "ARTS 1020",
+    "type": "course"
   },
   "ASTR-4960": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "ASTR 2050"
+        "course": "ASTR 2050",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 2400"
+        "course": "MATH 2400",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "BIOL-4860": {
-    "type": "course",
-    "course": "BIOL 2500"
+    "course": "BIOL 2500",
+    "type": "course"
   },
   "CHEM-4300": {
-    "type": "course",
-    "course": "CHEM 2260"
+    "course": "CHEM 2260",
+    "type": "course"
   },
   "CHEM-6300": {
-    "type": "course",
-    "course": "CHEM 6210"
+    "course": "CHEM 6210",
+    "type": "course"
   },
   "CIVL-4620": {
     "course": "CIVL 2030",
@@ -4475,30 +4475,30 @@
     "type": "or"
   },
   "PHYS-2110": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "PHYS 1250"
+        "course": "PHYS 1250",
+        "type": "course"
       },
       {
-        "type": "and",
         "nested": [
           {
-            "type": "course",
-            "course": "PHYS 1200"
+            "course": "PHYS 1200",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "MATH 2400"
+            "course": "MATH 2400",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "MATH 2010"
+            "course": "MATH 2010",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "and"
       }
-    ]
+    ],
+    "type": "or"
   },
   "BIOL-4100": {
     "course": "BIOL 2120",
@@ -4535,34 +4535,34 @@
     "type": "and"
   },
   "ENGR-2960": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ENGR 2720"
+        "course": "ENGR 2720",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ENGR 4710"
+        "course": "ENGR 4710",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ECON-4962": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ECON 1200"
+        "course": "ECON 1200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1975"
+        "course": "IHSS 1975",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1200"
+        "course": "IHSS 1200",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ECSE-4120": {
     "course": "ECSE 2110",
@@ -4603,80 +4603,80 @@
     "type": "and"
   },
   "MTLE-4310": {
-    "type": "course",
-    "course": "MTLE 4910"
+    "course": "MTLE 4910",
+    "type": "course"
   },
   "MATH-6400": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "MATH 4300"
+        "course": "MATH 4300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 4400"
+        "course": "MATH 4400",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "STSH-4960": {
-    "type": "course",
-    "course": "STSS 2210"
+    "course": "STSS 2210",
+    "type": "course"
   },
   "ARTS-4040": {
     "course": "ARTS 1030",
     "type": "course"
   },
   "ARTS-4968": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "ARTS 1020"
+        "course": "ARTS 1020",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "COMM 2610"
+        "course": "COMM 2610",
+        "type": "course"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "CSCI 1100"
+            "course": "CSCI 1100",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "CSCI 1200"
+            "course": "CSCI 1200",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       }
-    ]
+    ],
+    "type": "and"
   },
   "ISYE-4220": {
     "course": "ISYE 4600",
     "type": "course"
   },
   "ISYE-4280": {
-    "type": "course",
-    "course": "ENGR 2600"
+    "course": "ENGR 2600",
+    "type": "course"
   },
   "ISYE-4530": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "CSCI 1190"
+        "course": "CSCI 1190",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 1100"
+        "course": "CSCI 1100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 1010"
+        "course": "CSCI 1010",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ISYE-4600": {
     "nested": [
@@ -4739,8 +4739,8 @@
     "type": "or"
   },
   "ARTS-4630": {
-    "type": "course",
-    "course": "ARTS 1030"
+    "course": "ARTS 1030",
+    "type": "course"
   },
   "CHEM-4690": {
     "nested": [
@@ -4760,12 +4760,12 @@
     "type": "course"
   },
   "CIVL-6440": {
-    "type": "course",
-    "course": "CIVL 4440"
+    "course": "CIVL 4440",
+    "type": "course"
   },
   "COMM-4770": {
-    "type": "course",
-    "course": "COMM 4420"
+    "course": "COMM 4420",
+    "type": "course"
   },
   "CSCI-2960": {
     "nested": [
@@ -4781,38 +4781,38 @@
     "type": "and"
   },
   "CSCI-4974": {
-    "type": "course",
-    "course": "CSCI 2300"
+    "course": "CSCI 2300",
+    "type": "course"
   },
   "CSCI-4975": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "CSCI 2300"
+        "course": "CSCI 2300",
+        "type": "course"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "CSCI 2500"
+            "course": "CSCI 2500",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "ECSE 2660"
+            "course": "ECSE 2660",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       }
-    ]
+    ],
+    "type": "and"
   },
   "ECSE-4050": {
     "course": "ECSE 2050",
     "type": "course"
   },
   "ECSE-4560": {
-    "type": "course",
-    "course": "ECSE 4520"
+    "course": "ECSE 4520",
+    "type": "course"
   },
   "ENVE-4110": {
     "nested": [
@@ -4876,17 +4876,17 @@
     "type": "or"
   },
   "ISYE-4250": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ISYE 2210"
+        "course": "ISYE 2210",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ISYE 4140"
+        "course": "ISYE 4140",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ITWS-2110": {
     "nested": [
@@ -4902,17 +4902,17 @@
     "type": "and"
   },
   "ITWS-4962": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "CSCI 1200"
+        "course": "CSCI 1200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 4380"
+        "course": "CSCI 4380",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "MANE-4360": {
     "nested": [
@@ -4984,25 +4984,25 @@
     "type": "and"
   },
   "STSS-4250": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 1110"
+        "course": "STSS 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 1110"
+        "course": "STSH 1110",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "BMED-4966": {
-    "type": "course",
-    "course": "BMED 2100"
+    "course": "BMED 2100",
+    "type": "course"
   },
   "COGS-4210": {
-    "type": "course",
-    "course": "CSCI 2300"
+    "course": "CSCI 2300",
+    "type": "course"
   },
   "CSCI-2961": {
     "nested": [
@@ -5035,21 +5035,21 @@
     "type": "and"
   },
   "ITWS-4969": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ITWS 4200"
+        "course": "ITWS 4200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ITEC 4200"
+        "course": "ITEC 4200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 4961"
+        "course": "CSCI 4961",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "MGMT-6420": {
     "nested": [
@@ -5095,43 +5095,43 @@
     "type": "course"
   },
   "PSYC-4600": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "PSYC 1200"
+        "course": "PSYC 1200",
+        "type": "course"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "PHIL 2120"
+            "course": "PHIL 2120",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "PSYC 2120"
+            "course": "PSYC 2120",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "COGS 2120"
+            "course": "COGS 2120",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "COGS 4330"
+            "course": "COGS 4330",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "PSYC 4330"
+            "course": "PSYC 4330",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CHME-4480": {
     "course": "CHME 4020",
@@ -5151,12 +5151,12 @@
     "type": "and"
   },
   "CIVL-4964": {
-    "type": "course",
-    "course": "CIVL 2670"
+    "course": "CIVL 2670",
+    "type": "course"
   },
   "COMM-4550": {
-    "type": "course",
-    "course": "COMM 1510"
+    "course": "COMM 1510",
+    "type": "course"
   },
   "ECSE-2110": {
     "nested": [
@@ -5185,71 +5185,71 @@
     "type": "course"
   },
   "BIOL-4330": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "BIOL 2500"
+        "course": "BIOL 2500",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "BIOL 4620"
+        "course": "BIOL 4620",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "BIOL-6330": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "BIOL 2500"
+        "course": "BIOL 2500",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "BIOL 4620"
+        "course": "BIOL 4620",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "COGS-4410": {
     "course": "CSCI 2300",
     "type": "course"
   },
   "ISYE-4200": {
-    "type": "course",
-    "course": "ENGR 2600"
+    "course": "ENGR 2600",
+    "type": "course"
   },
   "ISYE-4260": {
     "course": "ENGR 2600",
     "type": "course"
   },
   "STSS-4260": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 2100"
+        "course": "STSS 2100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2300"
+        "course": "STSS 2300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2510"
+        "course": "STSS 2510",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2520"
+        "course": "STSS 2520",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 2010"
+        "course": "STSH 2010",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 2500"
+        "course": "STSH 2500",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ARTS-2070": {
     "nested": [
@@ -5337,30 +5337,30 @@
     "type": "course"
   },
   "ARTS-4973": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ARTS 1020"
+        "course": "ARTS 1020",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ARTS 2530"
+        "course": "ARTS 2530",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "BMED-4560": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "BMED 2100"
+        "course": "BMED 2100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "BMED 4240"
+        "course": "BMED 4240",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "BMED-4580": {
     "course": "ENGR 2250",
@@ -5380,25 +5380,25 @@
     "type": "and"
   },
   "CSCI-4977": {
-    "type": "course",
-    "course": "CSCI 2300"
+    "course": "CSCI 2300",
+    "type": "course"
   },
   "ECON-4150": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ECON 1200"
+        "course": "ECON 1200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1200"
+        "course": "IHSS 1200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1975"
+        "course": "IHSS 1975",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ENVE-4710": {
     "course": "MATH 1020",
@@ -5427,12 +5427,12 @@
     "type": "and"
   },
   "MGMT-4230": {
-    "type": "course",
-    "course": "MGMT 2300"
+    "course": "MGMT 2300",
+    "type": "course"
   },
   "MGMT-4280": {
-    "type": "course",
-    "course": "MGMT 4270"
+    "course": "MGMT 4270",
+    "type": "course"
   },
   "MTLE-4470": {
     "nested": [
@@ -5465,8 +5465,8 @@
     "type": "or"
   },
   "ARTS-2360": {
-    "type": "course",
-    "course": "ARTS 2340"
+    "course": "ARTS 2340",
+    "type": "course"
   },
   "BCBP-4550": {
     "nested": [
@@ -5542,35 +5542,35 @@
     "type": "or"
   },
   "CHME-4460": {
-    "type": "and",
     "nested": [
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "BIOL 1010"
+            "course": "BIOL 1010",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "BIOL 2120"
+            "course": "BIOL 2120",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "CHME 2020"
+            "course": "CHME 2020",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "ENGR 2250"
+            "course": "ENGR 2250",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       }
-    ]
+    ],
+    "type": "and"
   },
   "COGS-4330": {
     "nested": [
@@ -5599,56 +5599,56 @@
     "type": "or"
   },
   "COGS-4540": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "COGS 4520"
+        "course": "COGS 4520",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 4520"
+        "course": "CSCI 4520",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "COGS-4610": {
     "course": "PSYC 1200",
     "type": "course"
   },
   "COMM-4240": {
-    "type": "or",
     "nested": [
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "COMM 2520"
+            "course": "COMM 2520",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "GSAS 2520"
+            "course": "GSAS 2520",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       },
       {
-        "type": "course",
-        "course": "WRIT 2330"
+        "course": "WRIT 2330",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "COMM-4350": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "COMM 4340"
+        "course": "COMM 4340",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ARTS 4840"
+        "course": "ARTS 4840",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CSCI-4400": {
     "nested": [
@@ -5673,8 +5673,8 @@
     "type": "and"
   },
   "ENGR-4200": {
-    "type": "course",
-    "course": "MATH 1010"
+    "course": "MATH 1010",
+    "type": "course"
   },
   "ENGR-4610": {
     "nested": [
@@ -5724,21 +5724,21 @@
     "type": "or"
   },
   "ECON-4963": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ECON 1200"
+        "course": "ECON 1200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1975"
+        "course": "IHSS 1975",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1200"
+        "course": "IHSS 1200",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ECSE-4030": {
     "course": "ECSE 2050",
@@ -5758,12 +5758,12 @@
     "type": "and"
   },
   "MATH-2011": {
-    "type": "course",
-    "course": "MATH 1020"
+    "course": "MATH 1020",
+    "type": "course"
   },
   "MATH-2960": {
-    "type": "course",
-    "course": "MATH 1010"
+    "course": "MATH 1010",
+    "type": "course"
   },
   "PSYC-4330": {
     "nested": [
@@ -5795,16 +5795,16 @@
     "type": "course"
   },
   "ARCH-4750": {
-    "type": "course",
-    "course": "ARCH 4740"
+    "course": "ARCH 4740",
+    "type": "course"
   },
   "ARCH-6920": {
     "course": "ARCH 6910",
     "type": "course"
   },
   "ARTS-4090": {
-    "type": "course",
-    "course": "ARTS 1020"
+    "course": "ARTS 1020",
+    "type": "course"
   },
   "ARTS-4160": {
     "course": "ARTS 2020",
@@ -5815,17 +5815,17 @@
     "type": "course"
   },
   "ARTS-4520": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ARTS 4060"
+        "course": "ARTS 4060",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "COGS 2520"
+        "course": "COGS 2520",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "BCBP-4800": {
     "nested": [
@@ -5892,17 +5892,17 @@
     "type": "course"
   },
   "BMED-4710": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "MATH 2400"
+        "course": "MATH 2400",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "BMED 2100"
+        "course": "BMED 2100",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "COGS-4360": {
     "nested": [
@@ -5939,8 +5939,8 @@
     "type": "and"
   },
   "COMM-4220": {
-    "type": "course",
-    "course": "COGS 2520"
+    "course": "COGS 2520",
+    "type": "course"
   },
   "COMM-4250": {
     "course": "COMM 4240",
@@ -6019,51 +6019,51 @@
     "type": "course"
   },
   "ECSE-6590": {
-    "type": "course",
-    "course": "ECSE 6510"
+    "course": "ECSE 6510",
+    "type": "course"
   },
   "ITWS-4350": {
     "course": "CSCI 1200",
     "type": "course"
   },
   "STSH-4310": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 1110"
+        "course": "STSS 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 1110"
+        "course": "STSH 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2300"
+        "course": "STSS 2300",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "STSS-4310": {
-    "type": "or",
     "nested": [
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "STSS 1110"
+            "course": "STSS 1110",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "STSH 1110"
+            "course": "STSH 1110",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       },
       {
-        "type": "course",
-        "course": "STSS 2300"
+        "course": "STSS 2300",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ARCH-2530": {
     "course": "ARCH 2520",
@@ -6095,20 +6095,20 @@
     "type": "course"
   },
   "ARTS-4640": {
-    "type": "course",
-    "course": "ARTS 1030"
+    "course": "ARTS 1030",
+    "type": "course"
   },
   "BMED-4460": {
     "course": "BMED 2300",
     "type": "course"
   },
   "CHEM-2960": {
-    "type": "course",
-    "course": "CHEM 2250"
+    "course": "CHEM 2250",
+    "type": "course"
   },
   "COGS-4550": {
-    "type": "course",
-    "course": "CSCI 2300"
+    "course": "CSCI 2300",
+    "type": "course"
   },
   "COGS-4640": {
     "nested": [
@@ -6124,29 +6124,29 @@
     "type": "and"
   },
   "CSCI-4240": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "CSCI 4230"
+        "course": "CSCI 4230",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ECSE 4670"
+        "course": "ECSE 4670",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 4210"
+        "course": "CSCI 4210",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CSCI-4540": {
-    "type": "course",
-    "course": "GSAS 4520"
+    "course": "GSAS 4520",
+    "type": "course"
   },
   "CSCI-4680": {
-    "type": "course",
-    "course": "CSCI 4660"
+    "course": "CSCI 4660",
+    "type": "course"
   },
   "ERTH-6690": {
     "nested": [
@@ -6162,20 +6162,20 @@
     "type": "or"
   },
   "ENVE-4360": {
-    "type": "course",
-    "course": "BIOL 1010"
+    "course": "BIOL 1010",
+    "type": "course"
   },
   "ITWS-4500": {
     "course": "ITWS 2110",
     "type": "course"
   },
   "MGMT-6470": {
-    "type": "course",
-    "course": "MGMT 6100"
+    "course": "MGMT 6100",
+    "type": "course"
   },
   "STSS-4610": {
-    "type": "course",
-    "course": "ENGR 2020"
+    "course": "ENGR 2020",
+    "type": "course"
   },
   "ARCH-2540": {
     "course": "ARCH 2530",
@@ -6195,8 +6195,8 @@
     "type": "and"
   },
   "ARCH-4130": {
-    "type": "course",
-    "course": "ARCH 4120"
+    "course": "ARCH 4120",
+    "type": "course"
   },
   "ARCH-5110": {
     "course": "ARCH 5100",
@@ -6211,94 +6211,94 @@
     "type": "course"
   },
   "COGS-4600": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "PSYC 1200"
+        "course": "PSYC 1200",
+        "type": "course"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "COGS 4330"
+            "course": "COGS 4330",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "PSYC 4330"
+            "course": "PSYC 4330",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "PHIL 2120"
+            "course": "PHIL 2120",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "PSYC 2120"
+            "course": "PSYC 2120",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "COGS 2120"
+            "course": "COGS 2120",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ISYE-4330": {
     "course": "ISYE 4140",
     "type": "course"
   },
   "MGMT-2150": {
-    "type": "or",
     "nested": [
       {
-        "type": "and",
         "nested": [
           {
-            "type": "course",
-            "course": "MATH 1010"
+            "course": "MATH 1010",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "MATH 1020"
+            "course": "MATH 1020",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "and"
       },
       {
-        "type": "and",
         "nested": [
           {
-            "type": "course",
-            "course": "MGMT 1500"
+            "course": "MGMT 1500",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "MATH 1520"
+            "course": "MATH 1520",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "and"
       }
-    ]
+    ],
+    "type": "or"
   },
   "MGMT-4390": {
-    "type": "course",
-    "course": "MGMT 1100"
+    "course": "MGMT 1100",
+    "type": "course"
   },
   "ARCH-2830": {
     "course": "ARCH 2820",
     "type": "course"
   },
   "ARCH-4110": {
-    "type": "course",
-    "course": "ARCH 4100"
+    "course": "ARCH 4100",
+    "type": "course"
   },
   "BIOL-4360": {
-    "type": "course",
-    "course": "BIOL 1010"
+    "course": "BIOL 1010",
+    "type": "course"
   },
   "BMED-4510": {
     "course": "BMED 2540",
@@ -6344,8 +6344,8 @@
     "type": "or"
   },
   "ECON-4965": {
-    "type": "course",
-    "course": "ECON 1200"
+    "course": "ECON 1200",
+    "type": "course"
   },
   "ENVE-4560": {
     "nested": [
@@ -6361,17 +6361,17 @@
     "type": "or"
   },
   "MTLE-4520": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "MTLE 4100"
+        "course": "MTLE 4100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MTLE 4150"
+        "course": "MTLE 4150",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "COMM-4880": {
     "nested": [
@@ -6395,8 +6395,8 @@
     "type": "course"
   },
   "BIOL-4870": {
-    "type": "course",
-    "course": "BIOL 4850"
+    "course": "BIOL 4850",
+    "type": "course"
   },
   "BMED-4590": {
     "course": "BMED 2300",
@@ -6420,8 +6420,8 @@
     "type": "or"
   },
   "CSCI-4110": {
-    "type": "course",
-    "course": "CSCI 2300"
+    "course": "CSCI 2300",
+    "type": "course"
   },
   "CSCI-4250": {
     "nested": [
@@ -6551,34 +6551,34 @@
     "type": "and"
   },
   "ARTS-2150": {
-    "type": "course",
-    "course": "ARTS 1440"
+    "course": "ARTS 1440",
+    "type": "course"
   },
   "BIOL-4120": {
     "course": "BIOL 4110",
     "type": "course"
   },
   "CSCI-4500": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "CSCI 4430"
+        "course": "CSCI 4430",
+        "type": "course"
       },
       {
-        "type": "or",
         "nested": [
           {
-            "type": "course",
-            "course": "CSCI 4210"
+            "course": "CSCI 4210",
+            "type": "course"
           },
           {
-            "type": "course",
-            "course": "CSCI 4220"
+            "course": "CSCI 4220",
+            "type": "course"
           }
-        ]
+        ],
+        "type": "or"
       }
-    ]
+    ],
+    "type": "and"
   },
   "ENGR-2700": {
     "course": "MATH 1020",
@@ -6724,8 +6724,8 @@
     "type": "course"
   },
   "STSS-4970": {
-    "type": "course",
-    "course": "ENGR 2020"
+    "course": "ENGR 2020",
+    "type": "course"
   },
   "ECON-4230": {
     "nested": [
@@ -6749,8 +6749,8 @@
     "type": "course"
   },
   "ARTS-1440": {
-    "type": "course",
-    "course": "ARTS 1010"
+    "course": "ARTS 1010",
+    "type": "course"
   },
   "ARTS-4390": {
     "course": "ARTS 4380",
@@ -6813,8 +6813,8 @@
     "type": "and"
   },
   "CSCI-4030": {
-    "type": "course",
-    "course": "CSCI 4020"
+    "course": "CSCI 4020",
+    "type": "course"
   },
   "CSCI-4040": {
     "course": "CSCI 4020",
@@ -6869,25 +6869,25 @@
     "type": "course"
   },
   "ECON-4964": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "ECON 1200"
+        "course": "ECON 1200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1975"
+        "course": "IHSS 1975",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ECON 2010"
+        "course": "ECON 2010",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ECON 2020"
+        "course": "ECON 2020",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ECSE-4620": {
     "nested": [
@@ -7071,47 +7071,47 @@
     "type": "or"
   },
   "CSCI-4130": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "CSCI 2300"
+        "course": "CSCI 2300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MATH 2010"
+        "course": "MATH 2010",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "CSCI-4450": {
     "course": "CSCI 4430",
     "type": "course"
   },
   "CSCI-4550": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "CSCI 2300"
+        "course": "CSCI 2300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 2600"
+        "course": "CSCI 2600",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "CSCI-6550": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "CSCI 2300"
+        "course": "CSCI 2300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "CSCI 2600"
+        "course": "CSCI 2600",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "ECON-4310": {
     "nested": [
@@ -7131,33 +7131,76 @@
     "type": "or"
   },
   "ECSE-6180": {
-    "type": "course",
-    "course": "ECSE 6190"
+    "course": "ECSE 6190",
+    "type": "course"
   },
-  "ISYE-4320": {
-    "type": "course",
-    "course": "ISYE 4600"
-  },
-  "LGHT-4870": {
-    "type": "course",
-    "course": "LGHT 4840"
-  },
-  "MANE-4190": {
-    "type": "and",
+  "GSAS-4510": {
     "nested": [
       {
-        "type": "course",
-        "course": "ENGR 2250"
+        "nested": [
+          {
+            "course": "ARTS 1040",
+            "type": "course"
+          },
+          {
+            "course": "GSAS 1040",
+            "type": "course"
+          }
+        ],
+        "type": "or"
       },
       {
-        "type": "course",
-        "course": "MATH 2010"
-      },
-      {
-        "type": "course",
-        "course": "MATH 2400"
+        "course": "ARTS 1020",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
+  },
+  "GSAS-4540": {
+    "nested": [
+      {
+        "course": "CSCI 4520",
+        "type": "course"
+      },
+      {
+        "course": "GSAS 4520",
+        "type": "course"
+      },
+      {
+        "course": "COGS 4520",
+        "type": "course"
+      },
+      {
+        "course": "ARTS 4520",
+        "type": "course"
+      }
+    ],
+    "type": "or"
+  },
+  "ISYE-4320": {
+    "course": "ISYE 4600",
+    "type": "course"
+  },
+  "LGHT-4870": {
+    "course": "LGHT 4840",
+    "type": "course"
+  },
+  "MANE-4190": {
+    "nested": [
+      {
+        "course": "ENGR 2250",
+        "type": "course"
+      },
+      {
+        "course": "MATH 2010",
+        "type": "course"
+      },
+      {
+        "course": "MATH 2400",
+        "type": "course"
+      }
+    ],
+    "type": "and"
   },
   "PHYS-1600": {
     "nested": [
@@ -7181,21 +7224,21 @@
     "type": "course"
   },
   "COGS-4440": {
-    "type": "and",
     "nested": [
       {
-        "type": "course",
-        "course": "IHSS 1150"
+        "course": "IHSS 1150",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1140"
+        "course": "IHSS 1140",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "PSYC 1200"
+        "course": "PSYC 1200",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "and"
   },
   "COGS-4560": {
     "course": "COGS 2340",
@@ -7270,73 +7313,51 @@
     ],
     "type": "and"
   },
-  "GSAS-4510": {
+  "MTLE-4720": {
+    "course": "MATH 2400",
+    "type": "course"
+  },
+  "PSYC-4440": {
     "nested": [
       {
-        "nested": [
-          {
-            "course": "ARTS 1040",
-            "type": "course"
-          },
-          {
-            "course": "GSAS 1040",
-            "type": "course"
-          }
-        ],
-        "type": "or"
+        "course": "IHSS 1150",
+        "type": "course"
       },
       {
-        "course": "ARTS 1020",
+        "course": "IHSS 1140",
+        "type": "course"
+      },
+      {
+        "course": "PSYC 1200",
         "type": "course"
       }
     ],
     "type": "or"
   },
-  "MTLE-4720": {
-    "type": "course",
-    "course": "MATH 2400"
-  },
-  "PSYC-4440": {
-    "type": "or",
-    "nested": [
-      {
-        "type": "course",
-        "course": "IHSS 1150"
-      },
-      {
-        "type": "course",
-        "course": "IHSS 1140"
-      },
-      {
-        "type": "course",
-        "course": "PSYC 1200"
-      }
-    ]
-  },
   "STSH-4990": {
-    "type": "course",
-    "course": "STSS 4980"
+    "course": "STSS 4980",
+    "type": "course"
   },
   "STSS-4990": {
-    "type": "course",
-    "course": "STSS 4980"
+    "course": "STSS 4980",
+    "type": "course"
   },
   "WRIT-4170": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "WRIT 1110"
+        "course": "WRIT 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "WRIT 2110"
+        "course": "WRIT 2110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "COMM 1510"
+        "course": "COMM 1510",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "ARTS-4380": {
     "course": "ARTS 2380",
@@ -7364,17 +7385,17 @@
     "type": "course"
   },
   "BMED-4280": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "BMED 2540"
+        "course": "BMED 2540",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "ENGR 2530"
+        "course": "ENGR 2530",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "BMED-4480": {
     "nested": [
@@ -7394,8 +7415,8 @@
     "type": "course"
   },
   "ECON-6965": {
-    "type": "course",
-    "course": "ECON 1200"
+    "course": "ECON 1200",
+    "type": "course"
   },
   "ECSE-4370": {
     "course": "ECSE 2210",
@@ -7417,27 +7438,6 @@
       }
     ],
     "type": "and"
-  },
-  "GSAS-4540": {
-    "nested": [
-      {
-        "course": "CSCI 4520",
-        "type": "course"
-      },
-      {
-        "course": "GSAS 4520",
-        "type": "course"
-      },
-      {
-        "course": "COGS 4520",
-        "type": "course"
-      },
-      {
-        "course": "ARTS 4520",
-        "type": "course"
-      }
-    ],
-    "type": "or"
   },
   "GSAS-4961": {
     "course": "GSAS 2510",
@@ -7540,34 +7540,34 @@
     "type": "or"
   },
   "MANE-4540": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "MANE 4050"
+        "course": "MANE 4050",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MANE 4500"
+        "course": "MANE 4500",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "MANE-4770": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "MANE 4010"
+        "course": "MANE 4010",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MANE 4730"
+        "course": "MANE 4730",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MANE 4400"
+        "course": "MANE 4400",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "MANE-6610": {
     "nested": [
@@ -7647,8 +7647,8 @@
     "type": "and"
   },
   "COGS-4340": {
-    "type": "course",
-    "course": "COGS 2340"
+    "course": "COGS 2340",
+    "type": "course"
   },
   "COGS-4700": {
     "course": "PSYC 1200",
@@ -7870,33 +7870,33 @@
     "type": "course"
   },
   "STSH-4970": {
-    "type": "course",
-    "course": "ENGR 2020"
+    "course": "ENGR 2020",
+    "type": "course"
   },
   "STSS-2100": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 1110"
+        "course": "STSS 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 1110"
+        "course": "STSH 1110",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 1200"
+        "course": "STSS 1200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSH 1200"
+        "course": "STSH 1200",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "IHSS 1110"
+        "course": "IHSS 1110",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CHEM-4200": {
     "course": "CHEM 2250",
@@ -7962,8 +7962,8 @@
     "type": "and"
   },
   "STSH-4300": {
-    "type": "course",
-    "course": "STSS 2300"
+    "course": "STSS 2300",
+    "type": "course"
   },
   "ENGR-6221": {
     "course": "ENGR 6220",
@@ -8292,17 +8292,17 @@
     "type": "course"
   },
   "MGMT-4175": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "MGMT 4100"
+        "course": "MGMT 4100",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "MGMT 4110"
+        "course": "MGMT 4110",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "PSYC-4360": {
     "nested": [
@@ -8322,30 +8322,30 @@
     "type": "or"
   },
   "STSH-4290": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 2300"
+        "course": "STSS 2300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2210"
+        "course": "STSS 2210",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "STSS-4290": {
-    "type": "or",
     "nested": [
       {
-        "type": "course",
-        "course": "STSS 2300"
+        "course": "STSS 2300",
+        "type": "course"
       },
       {
-        "type": "course",
-        "course": "STSS 2210"
+        "course": "STSS 2210",
+        "type": "course"
       }
-    ]
+    ],
+    "type": "or"
   },
   "CHEM-4030": {
     "course": "CHEM 4410",
@@ -8505,18 +8505,9 @@
     ],
     "type": "or"
   },
-  "STSO-4610": {
-    "nested": [
-      {
-        "course": "ENGR 2020",
-        "type": "course"
-      },
-      {
-        "course": "STSO 2020",
-        "type": "course"
-      }
-    ],
-    "type": "or"
+  "STSO-4605": {
+    "course": "ENGR 2020",
+    "type": "course"
   },
   "STSO-4970": {
     "course": "ENGR 2020",
@@ -8797,6 +8788,19 @@
     ],
     "type": "or"
   },
+  "STSO-4610": {
+    "nested": [
+      {
+        "course": "ENGR 2020",
+        "type": "course"
+      },
+      {
+        "course": "STSO 2020",
+        "type": "course"
+      }
+    ],
+    "type": "or"
+  },
   "STSO-4961": {
     "nested": [
       {
@@ -8971,10 +8975,6 @@
       }
     ],
     "type": "or"
-  },
-  "STSO-4605": {
-    "course": "ENGR 2020",
-    "type": "course"
   },
   "CHME-2100": {
     "course": "CHME 2020",
