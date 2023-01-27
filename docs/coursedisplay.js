@@ -36,12 +36,14 @@ const set_term = function(term,type = "offered", offered=true) {
     }
 }
 
-// makes an array of instructors
 var makeInstructorArray = (inst) => {
-    // horrible will mess.
-    return Array.from(
-        new Set(inst.slice(3).map(x => x.split(",")[0]))
-    )
+    // ["Konstantin Kuzmin, Shianne M. Hulbert, George M. Slota", "George M. Slota, Shianne M. Hulbert, Konstantin Kuzmin"]
+    // =>
+    // ["George M. Slota", "Shianne M. Hulbert", "Konstantin Kuzmin"]
+    const instructor_list = inst.slice(3)
+	.flatMap(x => x.split(","))
+	.map(x => x.trim());
+    return Array.from(new Set(instructor_list));
 }
 
 var genDetailedViewHTML = (inst) => {
