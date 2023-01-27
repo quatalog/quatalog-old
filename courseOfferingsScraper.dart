@@ -97,7 +97,7 @@ void main(final List<String> args) async {
 						for(final sec in course["sections"]) {
 							for(final timeslot in sec["timeslots"]) {
 								if(timeslot["instructor"] != "TBA" && timeslot["instructor"] != "") {
-									instructors.add(timeslot["instructor"].split(", ").map((c) => c.replaceAll(exp.key,exp.value)).join(", "));
+									instructors.add(timeslot["instructor"]);
 								}
 							}
 						}
