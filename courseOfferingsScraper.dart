@@ -11,7 +11,6 @@ void main(final List<String> args) async {
 	final File corequisites_outfile = File(args[4]);
 	final File attributes_outfile = File(args[5]);
 	final List<Directory> semesterDirs = (await dataDir.list().toList()).whereType<Directory>().toList();
-	final MapEntry exp = prepareExp();
 	semesterDirs.sort((a,b) => int.parse(dirname(a)) - int.parse(dirname(b)));
 
 	final HttpClient client = HttpClient();
@@ -88,7 +87,7 @@ void main(final List<String> args) async {
 									// are "-" or the empty string, instead of an actual date
 								}
 								if(timeslot["instructor"] != "TBA" && timeslot["instructor"] != "") {
-									instructors.add(timeslot["instructor"].split(", ").map((c) => c.replaceAll(exp.key,exp.value)).join(", "));
+									instructors.add(timeslot["instructor"]);
 								}
 								courses_terms_offered[id]?[term_real] = titleAndAttributes + instructors.toList();
 							}
@@ -148,12 +147,6 @@ void main(final List<String> args) async {
 	prerequisites_outfile.openWrite()..write(prerequisites_string)..close();
 	corequisites_outfile.openWrite()..write(corequisites_string)..close();
 	attributes_outfile.openWrite()..write(attributes_string)..close();
-}
-
-MapEntry<RegExp,String> prepareExp() {
-	final List<int> a = [0,94,-22,19,3,-46,-3,12,15,21,-51,30,19,3,20,-21,-51,72,-78];
-	const List<int> b = [-38,-3,-137,-90,-102,-156,-104,-20,-65,-87,-168,-79];
-	return MapEntry(RegExp(String.fromCharCodes(a.sublist(1).map((c)=>a[0]+=c))),String.fromCharCodes(b.asMap().entries.map((e)=>-e.value+a[e.key])));
 }
 
 bool isNotTopicsCourse(id) {
