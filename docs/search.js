@@ -121,7 +121,7 @@ const fuzzySearchCourses = (searchInput) => {
     const fuse = new Fuse(searchableCatalog, searchConfig);
     console.log(`searching for ${searchInput}...`);
     // return fuse.search(`="${searchInput}"`);
-    const includeResults = fuse.search(`'"${searchInput}"`);
+    const includeResults = fuse.search(searchInput);
     if(includeResults.length > 0){
         return includeResults;
     } else {
