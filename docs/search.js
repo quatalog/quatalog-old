@@ -1,10 +1,10 @@
 "use strict";
 
-const ccode_clean = window.location.search.substring(1).split("=").slice(-1)[0].replaceAll("+"," ");
+const searchQuery = window.location.search.substring(1).split("=").slice(-1)[0].replaceAll("+"," ");
 
 const displaySearchTerm = () => {
-    document.getElementById("title").innerText = ccode_clean + " - Quatalog Search";
-    document.getElementById("searchTerm").innerHTML = '"' + ccode_clean + '"';
+    document.getElementById("title").innerText = searchQuery + " - Quatalog Search";
+    document.getElementById("searchTerm").innerHTML = '"' + searchQuery + '"';
 }
 
 const makeAttrListHTML = (courseCode) => {
@@ -59,7 +59,7 @@ const makeDeadHTML = (courseCode) => {
     return '';
 }
 
-const makeCourseHTML = (courseCode, score) => {
+const makeCourseHTML = (courseCode,score) => {
     const thisCourse = catalog[courseCode];
     return `
     <a href="./coursedisplay.html?course=${courseCode}" style="text-decoration: none;">
@@ -75,6 +75,18 @@ const makeCourseHTML = (courseCode, score) => {
         </div>
     </a>
     `
+}
+
+// so we can use fuse.js to fuzzy search it
+const makeSearchableCatalog = (ctlg) => {
+    const ctlgKeys = Object.keys(ctlg);
+    var ctlgArray = [];
+    for(var c = 0; c < ctlgKeys.length; c++){
+        var thisElem = ctlg[ctlgKeys[c]];
+        thisElem["fullCode"] = ctlgKeys[c];
+        ctlgArray.push(thisElem);
+    }
+    return ctlgArray;
 }
 
 const searchConfig = {
@@ -95,70 +107,30 @@ const searchConfig = {
             name: 'description',
             weight: 0.15
         }
-    ]
-}
-const searchConfigFuzzy = {
-    includeScore: true,
-    ignoreLocation: true,
-    threshold: 0.1,
-    keys: [
-        {
-            name: 'fullCode',
-            weight: 0.15
-        },
-        {
-            name: 'name',
-            weight: 0.7
-        },
-        {
-            name: 'description',
-            weight: 0.15
-        }
-    ]
+    ],
 }
 
 const fuzzySearchCourses = (searchInput) => {
-    const fuse = new Fuse(searchableCatalog, searchConfig);
-    console.log(`searching for ${searchInput}...`);
-    // return fuse.search(`="${searchInput}"`);
-    const includeResults = fuse.search(searchInput);
-    if(includeResults.length > 0){
-        return includeResults;
-    } else {
-        const fuzzyFuse = new Fuse(searchableCatalog, searchConfigFuzzy);
-        return fuzzyFuse.search(searchInput);
-    }
+    const fuse = new Fuse(makeSearchableCatalog(catalog), searchConfig);
+    console.log(`searching for "${searchInput}"...`);
+    return fuse.search(searchInput, {limit: 25});
 }
 
 const showSearchResults = () => {
-    const searchResults = fuzzySearchCourses(ccode_clean.toLowerCase());
-    var validResults = [];
-    for(var i = 0; i < 20; i++){
-        var thisResult = searchResults[i];
-        if(thisResult){
-            var thisCourse = thisResult.item;
-            var thisCourseCode = thisCourse.fullCode;
-            if(thisResult.score > 0.5){
-                // break;
-            }
-            validResults.push(thisResult);
-            // document.getElementById("searchResultsContainer").innerHTML += makeCourseHTML(thisCourseCode, thisResult.score);
-        }
-    }
-    // show the closest matches first but otherwise sort by course code
-    validResults.sort((a,b)=>{
-        if(a.score - b.score > 0.05){
+    const searchResults = fuzzySearchCourses(searchQuery.toLowerCase());
+    searchResults.sort((a,b)=>{ //prioritize lower course code for similar scores
+        if(a.score - b.score > 0.05)
             return 1;
-        } else if(b.score - a.score > 0.05){
+        else if(b.score - a.score > 0.05)
             return -1;
-        }
         return (a.item.crse > b.item.crse) || -1;
     })
-    for(var i = 0; i < validResults.length; i++){
-        var thisResult = validResults[i];
-        var thisCourse = thisResult.item;
-        var thisCourseCode = thisCourse.fullCode;
-        document.getElementById("searchResultsContainer").innerHTML += makeCourseHTML(thisCourseCode, thisResult.score);
+    // console.table(searchResults);
+    for(var i = 0; i < searchResults.length; i++) {
+        const code = searchResults[i].item.fullCode;
+        const score = searchResults[i].score;
+        const entry = makeCourseHTML(code, score);
+        document.getElementById("searchResultsContainer").innerHTML += entry;
     }
 }
 
