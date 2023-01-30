@@ -152,7 +152,7 @@ const showSearchResults = () => {
         } else if(b.score - a.score > 0.05){
             return -1;
         }
-        return a.item.crse > b.item.crse;
+        return (a.item.crse > b.item.crse) || -1;
     })
     for(var i = 0; i < validResults.length; i++){
         var thisResult = validResults[i];
