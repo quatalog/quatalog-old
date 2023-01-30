@@ -242,7 +242,9 @@ const addCourseInfo = ()=>{
 
     title.innerText += ": " + cname;
     document.getElementById("cname").innerText = cname;
-    document.getElementById("ccredits").innerText = last_term_offered ? course_data[last_term_offered][1] : "Unknown";
+    const credit_count = last_term_offered ? course_data[last_term_offered][1] : "Unknown";
+    document.getElementById("ccredits").innerText = credit_count;
+    if(credit_count == 1) { document.getElementById("ccreditsplural").style.display = "none"; }
     document.getElementById("prereq-classes").innerHTML = last_term_offered ? pillFormatPrerequisites(getPrereqs(ccode),catalog,courses) : unknownRect;
 }
 

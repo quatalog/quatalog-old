@@ -19,55 +19,76 @@ const displaySearchTerm = () => {
 }
 
 const makeAttrListHTML = (courseCode) => {
+    const beginPill = '<div class="attr sattr sattr-pill ';
     var attrListHTML = '';
     if(courseCode in attrs){
         const thisCourseAttrs = attrs[courseCode];
         for(var i = 0; i < thisCourseAttrs.length; i++){
             var thisAttr = thisCourseAttrs[i];
             if(thisAttr == "Communication Intensive"){
-                attrListHTML += `<div class="attr sattr sattr-pill CI-pill">CI${getSVG("message")}</div>`;
+                attrListHTML += beginPill+`CI-pill">CI${getSVG("message")}</div>`;
                 continue;
             }
             if(thisAttr == "Writing Intensive"){
-                attrListHTML += `<div class="attr sattr sattr-pill WI-pill">WI${getSVG("pencil")}</div>`;
+                attrListHTML += beginPill+`WI-pill">WI${getSVG("pencil")}</div>`;
                 continue;
             }
             if(thisAttr == "HASS Inquiry"){
-                attrListHTML += `<div class="attr sattr sattr-pill HI-pill">HInq${getSVG("magnifying")}</div>`;
+                attrListHTML += beginPill+`HI-pill">HInq${getSVG("magnifying")}</div>`;
                 continue;
             }
             if(thisAttr == "PDII Option for Engr Majors"){
-                attrListHTML += `<div class="attr sattr sattr-pill PD-pill">PDII${getSVG("briefcase")}</div>`;
+                attrListHTML += beginPill+`PD-pill">PDII${getSVG("briefcase")}</div>`;
                 continue;
             }
             if(thisAttr == "Online Course"){
-                attrListHTML += `<div class="attr sattr sattr-pill">Online${getSVG("laptop")}</div>`;
+                //attrListHTML += beginPill+`">Online${getSVG("laptop")}</div>`;
                 continue;
             }
             if(thisAttr == "Hybrid:Online/In-Person Course"){
-                attrListHTML += `<div class="attr sattr sattr-pill">Hybrid${getSVG("house-laptop")}</div>`;
+                //attrListHTML += beginPill+`">Hybrid${getSVG("house-laptop")}</div>`;
                 continue;
             }
             if(thisAttr == "Introductory Level Course") continue;
             if(thisAttr == "Culminating Exp/Capstone"){
-                attrListHTML += `<div class="attr sattr sattr-pill">CulmExp${getSVG("cubes")}</div>`;
+                attrListHTML += beginPill+`">CulmExp${getSVG("cubes")}</div>`;
                 continue;
             }
-            attrListHTML += `<div class="attr sattr sattr-pill">${thisAttr}</div>`;
+            attrListHTML += beginPill+`">${thisAttr}</div>`;
         }
     }
     return attrListHTML;
 }
 
+const isCourseDead = (courseCode)=>{
+    const last_term_offered = getLastTermOffered(courseCode);
+    if(last_term_offered == undefined){
+        return 2;
+    }
+    const lastYear = last_term_offered.toString().substring(0,4);
+    const currentYear = current_term.toString().substring(0,4);
+    return currentYear-lastYear > 4;
+}
+
 const makeDeadHTML = (courseCode) => {
     const isDead = isCourseDead(courseCode);
-    if(isDead == 2){
-        return `<div class="dead sattr sattr-pill">Not Yet Offered${getSVG("amogus")}</div>`;
-    }
-    if(isDead){
-        return `<div class="dead sattr sattr-pill">Probably Dead${getSVG("skull")}</div>`;
+    const beginPill = '<div class="attr sattr sattr-pill>';
+    if(isDead == 2) {
+        return beginPill+`Not Yet Offered${getSVG("amogus")}</div>`;
+    } else if(isDead) {
+        return beginPill+`Probably Dead${getSVG("skull")}</div>`;
     }
     return '';
+}
+
+const makeCreditCountHTML = (courseCode) => {
+    const last_term_offered = getLastTermOffered(courseCode);
+    const credit_count = last_term_offered ? courses[courseCode][last_term_offered][1] : "Unknown";
+    return '<div class="attr sattr sattr-pill">'
+        +credit_count
+        +' credit'
+        +(credit_count == 1 ? '' : 's')
+        +'</div>';
 }
 
 const makeCourseHTML = (courseCode,score) => {
@@ -78,6 +99,7 @@ const makeCourseHTML = (courseCode,score) => {
             <div class="courseShelf">
                 <div class="courseName sattr">${thisCourse.name}</div>
                 <div class="courseCode sattr">${courseCode}</div>
+                ${makeCreditCountHTML(courseCode)}
                 ${makeAttrListHTML(courseCode)}
                 ${makeDeadHTML(courseCode)}
             </div>

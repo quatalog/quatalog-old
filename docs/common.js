@@ -73,16 +73,6 @@ const compare_terms = function(a,b) {
     }
 }
 
-const isCourseDead = (courseCode)=>{
-    const last_term_offered = getLastTermOffered(courseCode);
-    if(last_term_offered == undefined){
-        return 2;
-    }
-    const lastYear = last_term_offered.toString().substring(0,4);
-    const currentYear = current_term.toString().substring(0,4);
-    return currentYear-lastYear > 4;
-}
-
 const ccode = window.location.search.substring(1).toUpperCase().split("=").slice(-1)[0];
 // quatalog data loading (in common so other files can access it)
 const _courses = fetch("./quatalog-data/terms_offered.json").then(data => data.json());
