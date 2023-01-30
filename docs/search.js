@@ -1,6 +1,6 @@
 "use strict";
 
-const searchQuery = window.location.search.split("=")[1].replaceAll("+"," ");
+const searchQuery = window.location.search.substring(1).split("=").slice(-1)[0].replaceAll("+"," ");
 
 const displaySearchTerm = () => {
     document.getElementById("title").innerText = searchQuery + " - Quatalog Search";
