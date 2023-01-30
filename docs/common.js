@@ -13,7 +13,7 @@ const prepSearch = (elem, event)=>{
             window.location.href = "./coursedisplay.html?course="+subCode+"-"+courseNum;
         } else {
             // course doesn't exist
-            window.location.href = "./search.html?search="+elem.value.replaceAll(" ", "+");
+            window.location.href = "./search.html?search="+encodeURIComponent(elem.value);
             showSearchResults();
         }
     }
