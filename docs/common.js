@@ -83,18 +83,6 @@ const isCourseDead = (courseCode)=>{
     return currentYear-lastYear > 4;
 }
 
-// so we can use fuse.js to fuzzy search it
-const makeSearchableCatalog = (ctlg) => {
-    const ctlgKeys = Object.keys(ctlg);
-    var ctlgArray = [];
-    for(var c = 0; c < ctlgKeys.length; c++){
-        var thisElem = ctlg[ctlgKeys[c]];
-        thisElem["fullCode"] = ctlgKeys[c];
-        ctlgArray.push(thisElem);
-    }
-    return ctlgArray;
-}
-
 const ccode = window.location.search.substring(1).toUpperCase().split("=").slice(-1)[0];
 // quatalog data loading (in common so other files can access it)
 const _courses = fetch("./quatalog-data/terms_offered.json").then(data => data.json());
@@ -114,7 +102,6 @@ const loadData = async ()=>{
         globalThis.prereqs = await _prereqs;
         globalThis.coreqs = await _coreqs;
         globalThis.attrs = await _attrs;
-        globalThis.searchableCatalog = makeSearchableCatalog(catalog);
         globalThis.current_term = Object.keys(courses["current_term"])[0];
         resolve();
     })
