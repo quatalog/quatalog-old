@@ -83,7 +83,7 @@ const makeDeadHTML = (courseCode) => {
 
 const makeCreditCountHTML = (courseCode) => {
     const last_term_offered = getLastTermOffered(courseCode);
-    const credit_count = last_term_offered ? courses[courseCode][last_term_offered][1] : "Unknown";
+    const credit_count = last_term_offered ? getCourseData(courseCode)[last_term_offered][1] : "Unknown";
     return '<div class="attr sattr sattr-pill">'
         +credit_count
         +' credit'
