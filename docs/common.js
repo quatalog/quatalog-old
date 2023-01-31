@@ -1,5 +1,17 @@
 "use strict";
 
+// parses URL params
+const params = window
+	.location
+	.search
+	.slice(1)
+	.split("&")
+	.map(p => p.split("="))
+	.reduce((obj,[key,value]) =>
+		({ ...obj, [key]: decodeURIComponent(value) }),
+		{}
+	);
+
 // redirects you to the course code you enter, if the course exists
 // otherwise redirects you to the search
 const prepSearch = (elem, event)=>{
@@ -73,7 +85,7 @@ const compare_terms = function(a,b) {
     }
 }
 
-const ccode = window.location.search.substring(1).toUpperCase().split("=").slice(-1)[0];
+const ccode = params["course"]
 // quatalog data loading (in common so other files can access it)
 const _courses = fetch("./quatalog-data/terms_offered.json").then(data => data.json());
 const _catalog = fetch("./quatalog-data/catalog.json").then(data => data.json());

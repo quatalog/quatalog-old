@@ -1,17 +1,6 @@
 "use strict";
 
-// parses URL params
-const getParams = window
-	.location
-	.search
-	.slice(1)
-	.split("&")
-	.map(p => p.split("="))
-	.reduce((obj,[key,value]) =>
-		({ ...obj, [key]: decodeURIComponent(value) }),
-		{}
-	);
-const searchQuery = getParams["search"];
+const searchQuery = params["search"];
 
 const displaySearchTerm = () => {
     document.getElementById("title").innerText = searchQuery + " - Quatalog Search";
