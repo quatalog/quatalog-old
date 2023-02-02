@@ -403,6 +403,11 @@ input[value="detailed"]:checked ~ table .detail-view-container {
     margin-bottom: 0.15rem;
 }
 
+.course-capacity-meter {
+    font-family: monospace;
+    font-size: 0.3rem;
+}
+
 .season-label{
     color: var(--quacs-midtone);
     font-family: "proxima-nova";

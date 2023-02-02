@@ -27,6 +27,7 @@ void main(final List<String> args) async {
 	dynamic courseXlData;
 	dynamic section;
 	int credMin, credMax;
+	int cap, act;
 	Set<String> instructors;
 	List<String> titleAndAttributes;
 	int currentTerm = 0;
@@ -71,8 +72,12 @@ void main(final List<String> args) async {
 						titleAndAttributes[2] += "[PDII] ";
 					}
 
+					act = 0;
+					cap = 0;
 					if(term.substring(4) == "05") {
 						for(final sec in course["sections"]) {
+							act += (sec["act"] as int);
+							cap += (sec["cap"] as int);
 							instructors = {};
 							for(final timeslot in sec["timeslots"]) {
 								var term_real = term;
@@ -89,19 +94,21 @@ void main(final List<String> args) async {
 								if(timeslot["instructor"] != "TBA" && timeslot["instructor"] != "") {
 									instructors.add(timeslot["instructor"]);
 								}
-								courses_terms_offered[id]?[term_real] = titleAndAttributes + instructors.toList();
+								courses_terms_offered[id]?[term_real] = titleAndAttributes + [act.toString(),cap.toString()] + instructors.toList();
 							}
 						}
 					} else {
 						instructors = {};
 						for(final sec in course["sections"]) {
+							act += (sec["act"] as int);
+							cap += (sec["cap"] as int);
 							for(final timeslot in sec["timeslots"]) {
 								if(timeslot["instructor"] != "TBA" && timeslot["instructor"] != "") {
 									instructors.add(timeslot["instructor"]);
 								}
 							}
 						}
-						courses_terms_offered[id]?[term] = titleAndAttributes + instructors.toList();
+						courses_terms_offered[id]?[term] = titleAndAttributes + [act.toString(),cap.toString()] + instructors.toList();
 					}
 
 					coursePrereqData = semesterPrereqData[section["crn"].toString()];

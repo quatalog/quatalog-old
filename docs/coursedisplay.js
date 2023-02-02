@@ -36,24 +36,41 @@ const set_term = function(term,type = "offered", offered=true) {
     }
 }
 
-var makeInstructorArray = (inst) => {
+const makeInstructorArray = (inst) => {
     // ["Konstantin Kuzmin, Shianne M. Hulbert, George M. Slota", "George M. Slota, Shianne M. Hulbert, Konstantin Kuzmin"]
     // =>
     // ["George M. Slota", "Shianne M. Hulbert", "Konstantin Kuzmin"]
-    const instructor_list = inst.slice(3)
+    const instructor_list = inst.slice(5)
 	.flatMap(x => x.split(","))
 	.map(x => x.trim());
     return Array.from(new Set(instructor_list));
 }
 
-var genDetailedViewHTML = (inst) => {
+const genDetailedViewHTML = (inst) => {
     return '<div class="view-container detail-view-container"><div class="term-course-info">'
     + '<span class="course-title">' + inst[0] + '</span>'
     + '<span class="course-credit-count"> (' + inst[1] + 'c)</span>'
     + '<span class="course-attributes"> ' + inst[2] + '</span></div>' 
-    + '<ul class="prof-list"><li>' + makeInstructorArray(inst).join("</li><li>") + '</li></ul>' + '</div>';
+    + '<ul class="prof-list"><li>' + makeInstructorArray(inst).join("</li><li>") + '</li></ul>'
+    + '<span class="course-capacity">' + makeCapacityMeter(inst) + '</span>'
+    + '</div>';
 }
 
+const makeCapacityMeter = (inst) => {
+	const width = 25;
+	const act = Number(inst[3]);
+	const cap = Number(inst[4]);
+	const fullness = Math.floor(Math.min(1,act/cap) * width);
+	const emptyness = Math.max(0,width-fullness);
+	return 'Seats Taken: ' + act
+		+ '/'
+		+ cap
+		+ '</span>'
+		/*+ '<br><span class="course-capacity-meter">['
+		+ '|'.repeat(fullness)
+		+ '.'.repeat(emptyness)
+		+ ((act > cap) ? ']+' : '] ');*/
+}
 
 // just make them available to other functions up here. not like we're gonna be dealing with multiple classes in this scope.
 var all_terms;

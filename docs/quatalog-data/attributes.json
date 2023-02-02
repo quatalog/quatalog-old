@@ -121,6 +121,9 @@
   "CSCI-4440": [
     "Communication Intensive"
   ],
+  "CSCI-4966": [
+    "Communication Intensive"
+  ],
   "CSCI-4970": [
     "Hybrid:Online/In-Person Course"
   ],
@@ -266,6 +269,9 @@
   "LANG-1210": [
     "Introductory Level Course"
   ],
+  "LANG-1410": [
+    "Introductory Level Course"
+  ],
   "LANG-2420": [
     "Communication Intensive"
   ],
@@ -304,9 +310,6 @@
     "Introductory Level Course"
   ],
   "MGMT-1260": [
-    "Introductory Level Course"
-  ],
-  "MGMT-2300": [
     "Introductory Level Course"
   ],
   "MGMT-2510": [
@@ -372,9 +375,6 @@
   "MANE-6390": [
     "In-Person Course"
   ],
-  "MANE-6900": [
-    "Hybrid:Online/In-Person Course"
-  ],
   "USAR-1010": [
     "Introductory Level Course"
   ],
@@ -394,9 +394,6 @@
     "Introductory Level Course"
   ],
   "PHIL-2600": [
-    "Communication Intensive"
-  ],
-  "PHIL-2830": [
     "Communication Intensive"
   ],
   "PHIL-2962": [
@@ -580,6 +577,9 @@
   "CHME-4050": [
     "Communication Intensive"
   ],
+  "CHEM-1200": [
+    "Introductory Level Course"
+  ],
   "CHEM-2540": [
     "Online Course"
   ],
@@ -639,6 +639,7 @@
     "Online Course"
   ],
   "IHSS-1960": [
+    "Communication Intensive",
     "Introductory Level Course",
     "HASS Inquiry"
   ],
@@ -924,7 +925,8 @@
     "Communication Intensive"
   ],
   "ITWS-4100": [
-    "Communication Intensive"
+    "Communication Intensive",
+    "Writing Intensive"
   ],
   "ITWS-6961": [
     "Communication Intensive",
@@ -979,9 +981,6 @@
   "STSS-4250": [
     "Communication Intensive",
     "PDII Option for Engr Majors"
-  ],
-  "COMM-1960": [
-    "Online Course"
   ],
   "COGS-4210": [
     "Online Course"
@@ -1133,6 +1132,9 @@
   "STSS-4310": [
     "Communication Intensive",
     "PDII Option for Engr Majors"
+  ],
+  "ARCH-4170": [
+    "Online Course"
   ],
   "ARTS-4640": [
     "Communication Intensive",
@@ -1497,8 +1499,7 @@
     "Communication Intensive"
   ],
   "PHIL-4500": [
-    "Communication Intensive",
-    "PDII Option for Engr Majors"
+    "Communication Intensive"
   ],
   "STSH-2500": [
     "Online Course"
@@ -1730,6 +1731,9 @@
     "Communication Intensive"
   ],
   "COMM-2616": [
+    "Communication Intensive"
+  ],
+  "COMM-4188": [
     "Communication Intensive"
   ],
   "ARTS-2570": [
