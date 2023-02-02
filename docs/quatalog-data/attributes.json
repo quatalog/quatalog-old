@@ -121,9 +121,6 @@
   "CSCI-4440": [
     "Communication Intensive"
   ],
-  "CSCI-4966": [
-    "Communication Intensive"
-  ],
   "CSCI-4970": [
     "Hybrid:Online/In-Person Course"
   ],
@@ -131,9 +128,6 @@
     "Online Course"
   ],
   "ENGR-1100": [
-    "Introductory Level Course"
-  ],
-  "ENGR-1200": [
     "Introductory Level Course"
   ],
   "ENGR-1300": [
@@ -266,9 +260,6 @@
     "Introductory Level Course"
   ],
   "LANG-1210": [
-    "Introductory Level Course"
-  ],
-  "LANG-1410": [
     "Introductory Level Course"
   ],
   "LANG-2420": [
@@ -576,9 +567,6 @@
   "CHME-4050": [
     "Communication Intensive"
   ],
-  "CHEM-1200": [
-    "Introductory Level Course"
-  ],
   "CHEM-2540": [
     "Online Course"
   ],
@@ -601,6 +589,9 @@
     "Communication Intensive"
   ],
   "COMM-4962": [
+    "Communication Intensive"
+  ],
+  "CSCI-4963": [
     "Communication Intensive"
   ],
   "CSCI-6860": [
@@ -920,6 +911,9 @@
   "ISYE-4530": [
     "Online Course"
   ],
+  "ISYE-4600": [
+    "Communication Intensive"
+  ],
   "ITWS-1100": [
     "Communication Intensive"
   ],
@@ -932,6 +926,9 @@
     "Online Course"
   ],
   "WRIT-4410": [
+    "Communication Intensive"
+  ],
+  "ARTS-4960": [
     "Communication Intensive"
   ],
   "BIOL-4980": [
@@ -1381,9 +1378,6 @@
   "PHIL-4130": [
     "Communication Intensive"
   ],
-  "IHSS-2960": [
-    "Communication Intensive"
-  ],
   "BCBP-4960": [
     "Hybrid:Online/In-Person Course"
   ],
@@ -1730,9 +1724,6 @@
     "Communication Intensive"
   ],
   "COMM-2616": [
-    "Communication Intensive"
-  ],
-  "COMM-4188": [
     "Communication Intensive"
   ],
   "ARTS-2570": [

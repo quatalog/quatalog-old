@@ -78,7 +78,10 @@
     "20220503": [],
     "202209": [],
     "202212": [],
-    "202301": []
+    "202301": [],
+    "202305": [],
+    "20230502": [],
+    "20230503": []
   },
   "ADMN-1010": {
     "200709": [
@@ -3571,6 +3574,12 @@
       "0",
       "",
       "Jillian Marie Crandall"
+    ],
+    "202305": [
+      "Construction & Slavery",
+      "3",
+      "",
+      "Jonah A. Rowen"
     ]
   },
   "ARCH-4962": {
@@ -3889,6 +3898,12 @@
       "2",
       "",
       "Marcus Carter"
+    ],
+    "202305": [
+      "Main Streets Resurfaced",
+      "3",
+      "",
+      "Reif Irgens Larsen"
     ]
   },
   "ARCH-4964": {
@@ -6524,6 +6539,12 @@
       "Jonas Braasch",
       "Dennis Robert Shelden",
       "Alexandros Tsamis"
+    ],
+    "202305": [
+      "Master's Thesis",
+      "1-12",
+      "",
+      "Ning Xiang"
     ]
   },
   "ARCH-9990": {
@@ -6965,6 +6986,12 @@
       "Ning Xiang",
       "Jonas Braasch",
       "Nadarajah Narendran",
+      "Alexandros Tsamis"
+    ],
+    "202305": [
+      "Architecture Dissertation",
+      "1-15",
+      "",
       "Alexandros Tsamis"
     ]
   },
@@ -9560,6 +9587,12 @@
       "Silvia Ruzanka"
     ],
     "20220502": [
+      "3d Visual Effects",
+      "4",
+      "",
+      "Silvia Ruzanka"
+    ],
+    "20230502": [
       "3d Visual Effects",
       "4",
       "",
@@ -13839,6 +13872,12 @@
       "4",
       "",
       "George I. Makhatadze"
+    ],
+    "202305": [
+      "Molecular Biochemistry I",
+      "4",
+      "",
+      "Keith Fraser"
     ]
   },
   "BCBP-4870": {
@@ -15074,6 +15113,12 @@
       "Darrin Scott Hunt, Georgi G. Shablovsky",
       "Susan P. Gilbert, Georgi G. Shablovsky",
       "Jeremy Lynch Farrell, Georgi G. Shablovsky"
+    ],
+    "20230502": [
+      "Introduction To Biology",
+      "3",
+      "",
+      "Seemanti Ramanath, Georgi G. Shablovsky"
     ]
   },
   "BIOL-2500": {
@@ -16008,6 +16053,12 @@
       "6",
       "[CI] ",
       "Eric Matthew Rutledge"
+    ],
+    "202305": [
+      "Molecular Biology Lab",
+      "6",
+      "[CI] ",
+      "Eric Matthew Rutledge"
     ]
   },
   "BIOL-4760": {
@@ -16150,6 +16201,12 @@
       "4",
       "",
       "George I. Makhatadze"
+    ],
+    "202305": [
+      "Molecular Biochemistry I",
+      "4",
+      "",
+      "Keith Fraser"
     ]
   },
   "BIOL-4940": {
@@ -17736,6 +17793,12 @@
       "Christopher Bystroff, Sandra Nierzwicki-Bauer",
       "Eric Matthew Rutledge",
       "Sandra Nierzwicki-Bauer"
+    ],
+    "202305": [
+      "Master's Thesis",
+      "1-9",
+      "",
+      "Chunyu Wang"
     ]
   },
   "BIOL-9990": {
@@ -18518,6 +18581,12 @@
       "Mattheos Koffas",
       "Lee Ligon",
       "Douglas Martin Swank"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-20",
+      "",
+      "Chunyu Wang"
     ]
   },
   "BMED-2940": {
@@ -18873,6 +18942,12 @@
       "Monica Agarwal, Natalia Maldonado Martinez"
     ],
     "202301": [
+      "Biomedical Engineering Lab",
+      "4",
+      "",
+      "Monica Agarwal"
+    ],
+    "202305": [
       "Biomedical Engineering Lab",
       "4",
       "",
@@ -21899,6 +21974,12 @@
       "4",
       "",
       "Nihat Baysal"
+    ],
+    "202305": [
+      "Transport Phenomena I",
+      "4",
+      "",
+      "Nihat Baysal"
     ]
   },
   "CHME-4040": {
@@ -22656,6 +22737,12 @@
       "2",
       "",
       "Nihat Baysal"
+    ],
+    "202305": [
+      "Molecular Model & Simulations",
+      "2",
+      "",
+      "Nihat Baysal"
     ]
   },
   "CHME-4964": {
@@ -22702,6 +22789,12 @@
       "Sangwoo Lee"
     ],
     "202205": [
+      "Chemical Process Safety",
+      "1",
+      "",
+      "Joel Plawsky"
+    ],
+    "202305": [
       "Chemical Process Safety",
       "1",
       "",
@@ -22935,6 +23028,12 @@
     ],
     "202209": [
       "Chem Engr Process Simulations",
+      "3",
+      "",
+      "Nihat Baysal"
+    ],
+    "202305": [
+      "Chemical Engineering Pro Simul",
       "3",
       "",
       "Nihat Baysal"
@@ -24524,6 +24623,12 @@
       "Todd Przybycien",
       "Vidhya Chakrapani",
       "Pankaj Karande"
+    ],
+    "202305": [
+      "Masters Thesis",
+      "1-12",
+      "",
+      "Wilfredo Colon"
     ]
   },
   "CHME-9990": {
@@ -25420,6 +25525,12 @@
       "Theodorian Borca-Tasciuc",
       "Diana Andra Borca Tasciuc",
       "Mattheos Koffas"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-15",
+      "",
+      "Joel Plawsky"
     ]
   },
   "CHEM-1100": {
@@ -25794,6 +25905,13 @@
       "Steven A. Tysoe, Alexander C. Ma, Kathleen Lillian Morrissey",
       "Cody Bryant Edson, Kathleen Lillian Morrissey",
       "Kathleen Lillian Morrissey, Filbert Totsingan"
+    ],
+    "20230502": [
+      "Chemistry I",
+      "4",
+      "",
+      "Alexander C. Ma",
+      "Kathleen Lillian Morrissey"
     ]
   },
   "CHEM-2110": {
@@ -26194,6 +26312,12 @@
       "",
       "Margarita L Kirova-Snover",
       "Margarita L Kirova-Snover, Filbert Totsingan"
+    ],
+    "20230502": [
+      "Organic Chemistry Lab I",
+      "1",
+      "",
+      "Margarita L Kirova-Snover"
     ]
   },
   "CHEM-2250": {
@@ -26383,6 +26507,12 @@
       "",
       "Margarita L Kirova-Snover, Christopher Lawrence Cioffi",
       "Margarita L Kirova-Snover"
+    ],
+    "20230502": [
+      "Organic Chemistry I",
+      "3",
+      "",
+      "Filbert Totsingan"
     ]
   },
   "CHEM-2440": {
@@ -26614,6 +26744,12 @@
       "Out-of-classroom Experience",
       "1-4",
       ""
+    ],
+    "202305": [
+      "Out-of-classroom Experience",
+      "1",
+      "",
+      "Peter Henry Dinolfo"
     ]
   },
   "CHEM-2940": {
@@ -27038,6 +27174,12 @@
       "3",
       "",
       "Peter John Bonitatibus"
+    ],
+    "202305": [
+      "Inorganic Chemistry II",
+      "3",
+      "",
+      "Peter John Bonitatibus"
     ]
   },
   "CHEM-4020": {
@@ -27346,6 +27488,12 @@
       "3",
       "",
       "Gerald M Korenowski, Amgalanbaatar Baldansuren"
+    ],
+    "202305": [
+      "Macroscopic Physical Chemistry",
+      "3",
+      "",
+      "Gerald M Korenowski"
     ]
   },
   "CHEM-4530": {
@@ -27591,6 +27739,13 @@
       "4",
       "",
       "Simon Nicholas Platts"
+    ],
+    "202305": [
+      "Modern Techniques In Chemistry",
+      "4",
+      "",
+      "Elizabeth Anne Sprague, Steven A. Tysoe",
+      "Elizabeth Anne Sprague"
     ]
   },
   "CHEM-4760": {
@@ -27731,6 +27886,12 @@
       "4",
       "",
       "George I. Makhatadze"
+    ],
+    "202305": [
+      "Molecular Biochemistry I",
+      "4",
+      "",
+      "Keith Fraser"
     ]
   },
   "CHEM-4900": {
@@ -28147,6 +28308,12 @@
       "Gaetano T. Montelione"
     ],
     "20220503": [
+      "Food Chemistry And Technology",
+      "2",
+      "",
+      "Filbert Totsingan"
+    ],
+    "20230503": [
       "Food Chemistry And Technology",
       "2",
       "",
@@ -32773,6 +32940,12 @@
       "Xiaokun Wang",
       "Mourad Zeghal",
       "Victoria Gene Bennett"
+    ],
+    "202305": [
+      "Masters Thesis",
+      "1-12",
+      "",
+      "Tarek H Abdoun"
     ]
   },
   "CIVL-9990": {
@@ -33372,6 +33545,12 @@
       "Tarek H Abdoun",
       "Victoria Gene Bennett",
       "Shun Uchida"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-15",
+      "",
+      "Tarek H Abdoun"
     ]
   },
   "COOP-4010": {
@@ -36086,6 +36265,12 @@
       "4",
       "",
       "Rosemary Christine Armao"
+    ],
+    "202305": [
+      "Media & Disinformation",
+      "4",
+      "",
+      "Rosemary Christine Armao"
     ]
   },
   "COMM-4964": {
@@ -37875,6 +38060,12 @@
       "4",
       "",
       "Uzma Mushtaque, Shianne M. Hulbert"
+    ],
+    "202305": [
+      "Computer Science I",
+      "4",
+      "",
+      "Uzma Mushtaque, Shianne M. Hulbert"
     ]
   },
   "CSCI-1190": {
@@ -39328,6 +39519,12 @@
       "4",
       "",
       "David Eric Goldschmidt"
+    ],
+    "202305": [
+      "Operating Systems",
+      "4",
+      "",
+      "David Eric Goldschmidt, Shianne M. Hulbert, Jasmine A. Plum"
     ]
   },
   "CSCI-4380": {
@@ -39982,6 +40179,12 @@
       "4",
       "[CI] ",
       "John Sturman"
+    ],
+    "202305": [
+      "Software Design & Docume",
+      "4",
+      "[CI] ",
+      "John Sturman"
     ]
   },
   "CSCI-4520": {
@@ -40599,6 +40802,12 @@
       "4",
       "",
       "Jeffrey William Banks"
+    ],
+    "202305": [
+      "Numerical Computing",
+      "4",
+      "",
+      "William Douglas Henshaw"
     ]
   },
   "CSCI-4940": {
@@ -41118,6 +41327,12 @@
       "4",
       "",
       "Oshani W. Seneviratne"
+    ],
+    "202305": [
+      "Computer Communication Network",
+      "4",
+      "",
+      "Jasmine A. Plum"
     ]
   },
   "CSCI-4965": {
@@ -41457,6 +41672,12 @@
       "Game Ai",
       "4",
       "[CI] ",
+      "Mei Si"
+    ],
+    "20230502": [
+      "Learning & Advanced Game Ai",
+      "4",
+      "",
       "Mei Si"
     ]
   },
@@ -42904,6 +43125,12 @@
       "4",
       "",
       "Jianxi Gao"
+    ],
+    "20230502": [
+      "Learning & Advanced Game Ai",
+      "4",
+      "",
+      "Mei Si"
     ]
   },
   "CSCI-6962": {
@@ -44929,6 +45156,12 @@
       "Lirong Xia",
       "Malik Magdon-Ismail",
       "Sergei Nirenburg"
+    ],
+    "202305": [
+      "Masters Thesis",
+      "1-16",
+      "",
+      "Ana L. Milanova"
     ]
   },
   "CSCI-9990": {
@@ -46105,6 +46338,12 @@
       "Oshani W. Seneviratne",
       "Carlos A Varela",
       "Ana L. Milanova"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-15",
+      "",
+      "Ana L. Milanova"
     ]
   },
   "ENGR-1010": {
@@ -46651,6 +46890,12 @@
       "Etana Alemayehe Ferede",
       "Christos Varsamis",
       "Jason Mark Warner"
+    ],
+    "20230502": [
+      "Intro To Engr Analysis",
+      "4",
+      "",
+      "Xiaokun Wang"
     ]
   },
   "ENGR-1200": {
@@ -46940,6 +47185,12 @@
       "Jeffrey Phillip Morris"
     ],
     "202301": [
+      "Eng Graphics & Cad",
+      "1",
+      "",
+      "Jeffrey Phillip Morris"
+    ],
+    "20230502": [
       "Eng Graphics & Cad",
       "1",
       "",
@@ -47259,6 +47510,12 @@
       "",
       "John P Szczesniak",
       "Scott Frederick Yerbury, John P Szczesniak"
+    ],
+    "20230503": [
+      "Engineeriing Processes",
+      "1",
+      "",
+      "John P Szczesniak"
     ]
   },
   "ENGR-1310": {
@@ -47684,6 +47941,12 @@
       "John R. LaGraff",
       "Jian Shi, John R. LaGraff",
       "Jian Shi"
+    ],
+    "20230502": [
+      "Materials Science",
+      "4",
+      "",
+      "Ganpati Ramanath"
     ]
   },
   "ENGR-1961": {
@@ -48510,6 +48773,12 @@
       "Daniel Chapman Lander, Mark J Anderson, Jordan L Vener",
       "John R. LaGraff, Mark J Anderson, Graham C. Knowles",
       "Tathagata Bhaduri, Mark J Anderson, Jordan L Vener"
+    ],
+    "202305": [
+      "Intro Engineering Design",
+      "4",
+      "",
+      "Tathagata Bhaduri, Graham C. Knowles"
     ]
   },
   "ENGR-2090": {
@@ -48853,6 +49122,12 @@
       "4",
       "",
       "John A Tichy"
+    ],
+    "202305": [
+      "Engineering Dynamics",
+      "4",
+      "",
+      "Keith Robert Taylor"
     ]
   },
   "ENGR-2250": {
@@ -49954,6 +50229,12 @@
       "",
       "Omar Osama El-Shafee",
       "Kristen Lynn Mills"
+    ],
+    "202305": [
+      "Strength Of Materials",
+      "4",
+      "",
+      "Omar Osama El-Shafee, Rahmi Ozisik"
     ]
   },
   "ENGR-2600": {
@@ -50331,6 +50612,12 @@
       "Xun Wang",
       "Natalia Maldonado Martinez, Xun Wang",
       "Hyun Gook Kang, Xun Wang"
+    ],
+    "202305": [
+      "Mod & Analysis Uncertainty",
+      "3",
+      "",
+      "Xun Wang"
     ]
   },
   "ENGR-2710": {
@@ -51127,6 +51414,18 @@
       "Amy Corron Youmans",
       "Susan Victoria Henry",
       "Glen R Gross"
+    ],
+    "20230502": [
+      "Pd: Leadership Competencies",
+      "1",
+      "",
+      "Judith A. Obiero, Tracy N. Sullivan"
+    ],
+    "20230503": [
+      "Pd: Leadership Competencies",
+      "1",
+      "",
+      "Tracy N. Sullivan, Judith A. Obiero"
     ]
   },
   "ENGR-4100": {
@@ -51804,6 +52103,12 @@
       "John M. Reilly"
     ],
     "202301": [
+      "Engineering Economics",
+      "3",
+      "",
+      "Tathagata Bhaduri"
+    ],
+    "202305": [
       "Engineering Economics",
       "3",
       "",
@@ -52735,6 +53040,12 @@
       "4",
       "",
       "Sarah Beth Cadieux"
+    ],
+    "202305": [
+      "Planet Earth I",
+      "4",
+      "",
+      "Sarah Beth Cadieux"
     ]
   },
   "ERTH-1100": {
@@ -53095,6 +53406,12 @@
       "Sasha Joy Wagner"
     ],
     "202205": [
+      "Environmental Measurements",
+      "4",
+      "",
+      "Sasha Joy Wagner"
+    ],
+    "202305": [
       "Environmental Measurements",
       "4",
       "",
@@ -55618,6 +55935,18 @@
       "",
       "Robert W. Jones",
       "Conor Lennon"
+    ],
+    "202305": [
+      "Intermediate Microeconomic Theory",
+      "4",
+      "",
+      "Robert W. Jones"
+    ],
+    "20230503": [
+      "Intermediate Microeconomic Theory",
+      "4",
+      "",
+      "Conor Lennon"
     ]
   },
   "ECON-2020": {
@@ -55842,6 +56171,12 @@
       "",
       "Mina Mahmoudi",
       "Huaming Peng"
+    ],
+    "20230502": [
+      "Intermediate Macroeconomic Theory",
+      "4",
+      "",
+      "Mina Mahmoudi"
     ]
   },
   "ECON-2940": {
@@ -56426,6 +56761,12 @@
       "4",
       "",
       "Sarah Marsden Greene"
+    ],
+    "202305": [
+      "Money & Banking",
+      "4",
+      "",
+      "Sarah Marsden Greene"
     ]
   },
   "ECON-4140": {
@@ -56698,6 +57039,12 @@
       "[CI] [PDII] ",
       "Mina Mahmoudi",
       "Michael A. Klein"
+    ],
+    "20230503": [
+      "International Economics And Globalization",
+      "4",
+      "[CI] [PDII] ",
+      "Mina Mahmoudi"
     ]
   },
   "ECON-4900": {
@@ -58811,6 +59158,12 @@
       "4",
       "",
       "Shayla Maya Sawyer"
+    ],
+    "202305": [
+      "Electric Circuits",
+      "4",
+      "",
+      "Shayla Maya Sawyer"
     ]
   },
   "ECSE-2050": {
@@ -59792,6 +60145,12 @@
       "Prabhakar Neti"
     ],
     "202301": [
+      "Signals And Systems",
+      "3",
+      "",
+      "Prabhakar Neti"
+    ],
+    "202305": [
       "Signals And Systems",
       "3",
       "",
@@ -63723,6 +64082,18 @@
       "Koushik Kar",
       "Mona Mostafa Hella",
       "E. Fred Schubert"
+    ],
+    "202305": [
+      "Master's Project",
+      "1-16",
+      "",
+      "E. Fred Schubert"
+    ],
+    "20230502": [
+      "Master's Project",
+      "1-16",
+      "",
+      "Kyle Richard Wilt"
     ]
   },
   "ECSE-6990": {
@@ -65205,6 +65576,18 @@
       "Ali Tajer",
       "Meng Wang",
       "Bulent Yener"
+    ],
+    "202305": [
+      "Masters Thesis",
+      "1-12",
+      "",
+      "Joe H Chow"
+    ],
+    "20230503": [
+      "Masters Thesis",
+      "1-12",
+      "",
+      "Richard J Radke"
     ]
   },
   "ECSE-9990": {
@@ -66759,6 +67142,12 @@
       "Meng Wang",
       "Sufei Shi",
       "Bulent Yener"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-18",
+      "",
+      "Zhaoran Huang"
     ]
   },
   "ESCI-9990": {
@@ -68502,6 +68891,12 @@
       "1-15",
       "",
       "Marianne C. Nyman",
+      "James Kilduff"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-15",
+      "",
       "James Kilduff"
     ]
   },
@@ -70590,6 +70985,11 @@
       "Sibel Adali",
       "Gyorgy Korniss",
       "Karyn Lynne Rogers"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-15",
+      ""
     ]
   },
   "LANG-1110": {
@@ -70786,6 +71186,12 @@
       "Yalun Zhou"
     ],
     "202301": [
+      "Chinese I",
+      "4",
+      "",
+      "Jianling Yue"
+    ],
+    "20230502": [
       "Chinese I",
       "4",
       "",
@@ -71005,6 +71411,12 @@
       "Yalun Zhou"
     ],
     "20220502": [
+      "Teaching Chinese As Forgn Lang",
+      "2",
+      "",
+      "Jianling Yue"
+    ],
+    "20230502": [
       "Teaching Chinese As Forgn Lang",
       "2",
       "",
@@ -72017,6 +72429,12 @@
       "Nadarajah Narendran"
     ],
     "202205": [
+      "Master's Project",
+      "1-9",
+      "",
+      "Nadarajah Narendran"
+    ],
+    "202305": [
       "Master's Project",
       "1-9",
       "",
@@ -73306,6 +73724,12 @@
       "Margaret A McDermott",
       "Brett Orzechowski",
       "Adrienne Susan Frank"
+    ],
+    "202305": [
+      "Management In The Digital Age",
+      "4",
+      "",
+      "Clinton T. Ballinger"
     ]
   },
   "MGMT-1240": {
@@ -74300,6 +74724,12 @@
       "4",
       "",
       "Johan Maharjan"
+    ],
+    "202305": [
+      "Managerial Finance",
+      "4",
+      "",
+      "Brian John Clark"
     ]
   },
   "MGMT-2510": {
@@ -74670,6 +75100,12 @@
       "Readings In Mgmt",
       "1-6",
       ""
+    ],
+    "202305": [
+      "Applied Marketing In Business",
+      "1",
+      "",
+      "Clinton T. Ballinger"
     ]
   },
   "MGMT-4100": {
@@ -75378,6 +75814,12 @@
       "4",
       "[CI] ",
       "Nishtha Langer"
+    ],
+    "202305": [
+      "Computer Info Systems",
+      "4",
+      "[CI] ",
+      "Jonathan Alexis McKinney"
     ]
   },
   "MGMT-4160": {
@@ -76599,6 +77041,12 @@
       "4",
       "",
       "Julia Yuching Lee"
+    ],
+    "202305": [
+      "Org Behavior In High Perf Org",
+      "4",
+      "",
+      "Azita Hirsa"
     ]
   },
   "MGMT-4860": {
@@ -81975,6 +82423,12 @@
       "Nishtha Langer",
       "M.V. Shyam Kumar",
       "Jason Nicholas Kuruzovich"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-15",
+      "",
+      "M.V. Shyam Kumar"
     ]
   },
   "EMBA-6170": {
@@ -84314,6 +84768,12 @@
       "Ravishankar Sundararaman",
       "Chaitanya Kishore Ullal",
       "Paul George Keblinski"
+    ],
+    "202305": [
+      "Master's Project",
+      "1-12",
+      "",
+      "Robert Hull"
     ]
   },
   "MTLE-6990": {
@@ -85003,6 +85463,12 @@
       "Jian Shi",
       "Edmund Francis Palermo",
       "Daniel J. Lewis"
+    ],
+    "202305": [
+      "Master's Thesis",
+      "1-15",
+      "",
+      "Daniel Gall"
     ]
   },
   "MTLE-9990": {
@@ -85905,6 +86371,11 @@
       "Jian Shi",
       "Edmund Francis Palermo",
       "Sufei Shi"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-15",
+      ""
     ]
   },
   "MATP-4600": {
@@ -88509,6 +88980,12 @@
       "4",
       "[CI] ",
       "Margaret Z. Kiehl"
+    ],
+    "202305": [
+      "Foundations Of Analysis",
+      "4",
+      "[CI] ",
+      "Eliane Zerbetto Traldi, Daniel Franklin Stevenson"
     ]
   },
   "MATH-4100": {
@@ -88674,6 +89151,12 @@
       "",
       "Belmiro Galo da Silva",
       "Chjan C Lim"
+    ],
+    "202305": [
+      "Linear Algebra",
+      "4",
+      "",
+      "Eliane Zerbetto Traldi"
     ]
   },
   "MATH-4200": {
@@ -89090,6 +89573,12 @@
       "4",
       "",
       "Ashwani Kumar Kapila"
+    ],
+    "202305": [
+      "Advanced Calculus",
+      "4",
+      "",
+      "Gregor Kovacic"
     ]
   },
   "MATH-4700": {
@@ -89670,6 +90159,12 @@
       "4",
       "",
       "Jeffrey William Banks"
+    ],
+    "202305": [
+      "Numerical Computing",
+      "4",
+      "",
+      "William Douglas Henshaw"
     ]
   },
   "MATH-4940": {
@@ -91510,6 +92005,12 @@
       "William Douglas Henshaw",
       "Bruce Piper",
       "Jeffrey William Banks"
+    ],
+    "202305": [
+      "Master's Project",
+      "1-6",
+      "",
+      "Bruce Piper"
     ]
   },
   "MATH-9990": {
@@ -92417,6 +92918,17 @@
       "Peter R Kramer",
       "Rongjie Lai",
       "Yangyang Xu"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-15",
+      ""
+    ],
+    "20230502": [
+      "Dissertation",
+      "1-15",
+      "",
+      "Kristin P Bennett"
     ]
   },
   "MANE-2400": {
@@ -93531,6 +94043,12 @@
       "4",
       "",
       "Bharat Bagepalli"
+    ],
+    "202305": [
+      "Elements Of Mech Design",
+      "4",
+      "",
+      "Ali Shahsavari"
     ]
   },
   "MANE-4040": {
@@ -94190,6 +94708,12 @@
       "4",
       "",
       "Fotios Kopsaftopoulos"
+    ],
+    "202305": [
+      "Aerospace Struc & Materials",
+      "4",
+      "",
+      "Ali Shahsavari"
     ]
   },
   "MANE-4070": {
@@ -94366,6 +94890,12 @@
       "4",
       "",
       "Amir Hirsa"
+    ],
+    "202305": [
+      "Aerodynamics I",
+      "4",
+      "",
+      "Kevin Wayne Housley"
     ]
   },
   "MANE-4080": {
@@ -94517,6 +95047,12 @@
       "3",
       "",
       "Amir Hirsa"
+    ],
+    "20230502": [
+      "Propulsion Systems",
+      "3",
+      "",
+      "Matthew Adam Oehlschlaeger"
     ]
   },
   "MANE-4090": {
@@ -95092,6 +95628,12 @@
       "",
       "Karthikeyan Panneerselvam",
       "Kartik Josyula"
+    ],
+    "20230502": [
+      "Intro To Finite Elements",
+      "3",
+      "",
+      "Karthikeyan Panneerselvam"
     ]
   },
   "MANE-4260": {
@@ -97109,6 +97651,12 @@
       "3",
       "",
       "Karthikeyan Panneerselvam"
+    ],
+    "20230502": [
+      "Sustainable Energy Systems",
+      "4",
+      "",
+      "Matthew Adam Oehlschlaeger"
     ]
   },
   "MANE-4961": {
@@ -100116,6 +100664,12 @@
       "Diana Andra Borca Tasciuc",
       "John A Tichy",
       "Jie Lian"
+    ],
+    "202305": [
+      "Master's Project",
+      "1-9",
+      "",
+      "Fotios Kopsaftopoulos"
     ]
   },
   "MANE-6990": {
@@ -101354,6 +101908,12 @@
       "Michael David Hughes",
       "Matthew Adam Oehlschlaeger",
       "Wei Ji"
+    ],
+    "202305": [
+      "Master's Thesis",
+      "1-12",
+      "",
+      "Lucy T. Zhang"
     ]
   },
   "MANE-9990": {
@@ -104348,6 +104908,12 @@
       "4",
       "",
       "Selmer Bringsjord"
+    ],
+    "20230502": [
+      "Introduction To Logic",
+      "4",
+      "",
+      "Bram Van Heuveln"
     ]
   },
   "PHIL-2600": {
@@ -105653,6 +106219,12 @@
       "Gwo Ching Wang, Yong Sung Kim",
       "Hesham Hassan, Yong Sung Kim, Damien J. West",
       "Juan Pablo Borja, Yong Sung Kim"
+    ],
+    "20230502": [
+      "Physics I",
+      "4",
+      "",
+      "Yong Sung Kim"
     ]
   },
   "PHYS-1200": {
@@ -106090,6 +106662,12 @@
       "Nadarajah Narendran, Glenn Ciolek, John Schroeder",
       "Yong Zheng, Glenn Ciolek",
       "Yong Zheng, Glenn Ciolek, John Schroeder"
+    ],
+    "20230503": [
+      "Physics II",
+      "4",
+      "",
+      "Yong Sung Kim"
     ]
   },
   "PHYS-1961": {
@@ -106890,6 +107468,12 @@
       "1-2",
       "",
       "Peter Persans"
+    ],
+    "202305": [
+      "Mathematical Phys For Physics",
+      "4",
+      "",
+      "Julian S. Georg"
     ]
   },
   "PHYS-6210": {
@@ -108083,6 +108667,12 @@
       "Trevor David Rhone",
       "Gyorgy Korniss",
       "Hesham Hassan"
+    ],
+    "20230502": [
+      "Master's Project",
+      "1-9",
+      "",
+      "Gwo Ching Wang"
     ]
   },
   "PHYS-6990": {
@@ -109880,6 +110470,12 @@
       "4",
       "[CI] ",
       "Jason Sean Jacobskind"
+    ],
+    "20230503": [
+      "Research Methods And Statistics I",
+      "4",
+      "[CI] ",
+      "Jason Sean Jacobskind"
     ]
   },
   "PSYC-2520": {
@@ -111139,6 +111735,12 @@
       "Alicia Ann Walf"
     ],
     "202205": [
+      "Behavioral Neuroscience",
+      "4",
+      "",
+      "Alicia Ann Walf"
+    ],
+    "202305": [
       "Behavioral Neuroscience",
       "4",
       "",
@@ -116841,6 +117443,12 @@
       "4",
       "[CI] ",
       "Samuel Estabrooks"
+    ],
+    "202305": [
+      "Strategic Writing",
+      "4",
+      "[CI] ",
+      "Samuel Estabrooks"
     ]
   },
   "WRIT-2340": {
@@ -117097,6 +117705,12 @@
       "4",
       "[CI] ",
       "Alexander Scott Hiland"
+    ],
+    "202305": [
+      "Speech Communication",
+      "4",
+      "[CI] ",
+      "Terry W. Gipson"
     ]
   },
   "WRIT-2510": {
@@ -122559,6 +123173,12 @@
       "Master's Thesis",
       "1-9",
       ""
+    ],
+    "202305": [
+      "Master's Thesis",
+      "1-9",
+      "",
+      "Chunyu Wang"
     ]
   },
   "BCBP-9990": {
@@ -123060,6 +123680,12 @@
       "Steven Cramer",
       "Jennifer Marie Hurley",
       "Mattheos Koffas"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-15",
+      "",
+      "Chunyu Wang"
     ]
   },
   "BIOL-2120": {
@@ -123887,6 +124513,12 @@
       "Michael T Klein"
     ],
     "202209": [
+      "Advanced Cell Biology Laboratory",
+      "6",
+      "[CI] ",
+      "Michael T Klein"
+    ],
+    "202305": [
       "Advanced Cell Biology Laboratory",
       "6",
       "[CI] ",
@@ -124739,6 +125371,12 @@
       "4",
       "",
       "Ryan James Gilbert",
+      "Mariah Somer Hahn"
+    ],
+    "202305": [
+      "Biomaterials Sci & Engineering",
+      "4",
+      "",
       "Mariah Somer Hahn"
     ]
   },
@@ -126097,6 +126735,12 @@
       "4",
       "",
       "Corey Christopher Woodcock"
+    ],
+    "202305": [
+      "Transport Phenomena II",
+      "4",
+      "",
+      "Joel Plawsky, Corey Christopher Woodcock"
     ]
   },
   "CHME-4030": {
@@ -126273,6 +126917,12 @@
       "4",
       "",
       "B Wayne Bequette"
+    ],
+    "202305": [
+      "Chem Process Dynamics & Cntrl",
+      "4",
+      "",
+      "Ronald C. Hedden"
     ]
   },
   "CHME-4050": {
@@ -127075,6 +127725,13 @@
       "Alexander C. Ma, Kathleen Lillian Morrissey",
       "Amgalanbaatar Baldansuren, Kathleen Lillian Morrissey",
       "Kathleen Lillian Morrissey, Steven A. Tysoe"
+    ],
+    "20230503": [
+      "Chemistry II",
+      "4",
+      "",
+      "Steven A. Tysoe",
+      "Kathleen Lillian Morrissey"
     ]
   },
   "CHEM-2030": {
@@ -127382,6 +128039,12 @@
       "Margarita L Kirova-Snover",
       "Margarita L Kirova-Snover, Filbert Totsingan",
       "Cody Bryant Edson, Margarita L Kirova-Snover"
+    ],
+    "20230503": [
+      "Organic Chemistry Lab II",
+      "1",
+      "",
+      "Filbert Totsingan"
     ]
   },
   "CHEM-2260": {
@@ -127566,6 +128229,12 @@
       "Margarita L Kirova-Snover"
     ],
     "202301": [
+      "Organic Chemistry II",
+      "3",
+      "",
+      "Margarita L Kirova-Snover"
+    ],
+    "20230503": [
       "Organic Chemistry II",
       "3",
       "",
@@ -128946,6 +129615,12 @@
       "Peter Henry Dinolfo",
       "Chulsung Bae",
       "Richard Alan Gross"
+    ],
+    "202305": [
+      "Master's Thesis",
+      "1-12",
+      "",
+      "Wilfredo Colon"
     ]
   },
   "CIVL-2961": {
@@ -130837,6 +131512,12 @@
       "4",
       "[CI] ",
       "Terry W. Gipson, James A. Hendler"
+    ],
+    "202305": [
+      "Strat Public Speakng For Tech",
+      "4",
+      "[CI] ",
+      "Terry W. Gipson, James A. Hendler"
     ]
   },
   "COMM-4965": {
@@ -132057,6 +132738,12 @@
       "4",
       "",
       "Radoslav Svetlozarov Ivanov"
+    ],
+    "202305": [
+      "Application Prog Using Java",
+      "4",
+      "[CI] ",
+      "Konstantin Kuzmin"
     ]
   },
   "CSCI-4969": {
@@ -134026,6 +134713,12 @@
       "Rui Fan",
       "Huaming Peng",
       "Prakrati Thakur"
+    ],
+    "20230503": [
+      "Econometrics",
+      "4",
+      "",
+      "Huaming Peng"
     ]
   },
   "ECON-6190": {
@@ -134591,6 +135284,12 @@
       "4",
       "",
       "Tong Zhang"
+    ],
+    "202305": [
+      "Comp Architecture & Networks",
+      "4",
+      "",
+      "James D. Rees"
     ]
   },
   "ECSE-2900": {
@@ -137080,6 +137779,12 @@
       "Jianling Yue"
     ],
     "20220502": [
+      "Chinese Lang & Culture In Film",
+      "4",
+      "",
+      "Jianling Yue"
+    ],
+    "20230502": [
       "Chinese Lang & Culture In Film",
       "4",
       "",
@@ -141528,6 +142233,12 @@
       "4",
       "",
       "Rahmi Ozisik"
+    ],
+    "202305": [
+      "Mechanical Properties Of Materials",
+      "4",
+      "",
+      "Rahmi Ozisik"
     ]
   },
   "MTLE-4450": {
@@ -143169,6 +143880,12 @@
       "4",
       "",
       "Fengyan Li"
+    ],
+    "202305": [
+      "Intro To Complex Variables",
+      "4",
+      "",
+      "Gregor Kovacic"
     ]
   },
   "MATH-4500": {
@@ -145584,6 +146301,12 @@
       "3",
       "",
       "Francisco J Cunha"
+    ],
+    "202305": [
+      "Computational Fluid Dynamics",
+      "3",
+      "",
+      "Francisco J Cunha"
     ]
   },
   "MANE-6830": {
@@ -147661,6 +148384,12 @@
       "Joseph Darryl Michael"
     ],
     "202301": [
+      "Experimental Physics",
+      "4",
+      "[CI] ",
+      "Joseph Darryl Michael"
+    ],
+    "202305": [
       "Experimental Physics",
       "4",
       "[CI] ",
@@ -149886,6 +150615,12 @@
       "4",
       "",
       "Yingrui Yang"
+    ],
+    "202305": [
+      "Physics Meets Social Science",
+      "4",
+      "",
+      "Yingrui Yang"
     ]
   },
   "PSYC-4962": {
@@ -151122,6 +151857,17 @@
       "Summer Administ Registration",
       "0",
       ""
+    ],
+    "202305": [
+      "Summer Administ Registration",
+      "0",
+      "",
+      "Constance M Grega"
+    ],
+    "20230503": [
+      "Summer Administ Registration",
+      "0",
+      ""
     ]
   },
   "BIOL-6970": {
@@ -152020,6 +152766,12 @@
       "Wesley D Turner",
       "W. Randolph Franklin",
       "Charles V Stewart"
+    ],
+    "202305": [
+      "Master's Project",
+      "1-9",
+      "",
+      "Ana L. Milanova"
     ]
   },
   "ECON-6990": {
@@ -157386,6 +158138,18 @@
       "4",
       "",
       "Damien J. West"
+    ],
+    "20230502": [
+      "Intro Physics Teach Practicum",
+      "2",
+      "",
+      "Peter Persans"
+    ],
+    "20230503": [
+      "Intro Physics Teach Practicum",
+      "2",
+      "",
+      "Peter Persans"
     ]
   },
   "PHYS-4640": {
@@ -158923,6 +159687,12 @@
       "3",
       "",
       "Nihat Baysal"
+    ],
+    "202305": [
+      "Chem Eng In Drug Disc & Deliv",
+      "3",
+      "",
+      "Pankaj Karande"
     ]
   },
   "CHEM-4420": {
@@ -162079,6 +162849,12 @@
       "4",
       "",
       "Yingrui Yang"
+    ],
+    "20230502": [
+      "Well-being:creating A Toolbox",
+      "1",
+      "",
+      "Alicia Ann Walf"
     ]
   },
   "PSYC-4510": {
@@ -163180,6 +163956,12 @@
       "3",
       "",
       "Dennis Robert Shelden"
+    ],
+    "202305": [
+      "Tale Of Two Cities",
+      "3",
+      "",
+      "Jesse Liam McCormick"
     ]
   },
   "ARCH-6310": {
@@ -164689,6 +165471,12 @@
       "3",
       "",
       "Steven A. Tysoe"
+    ],
+    "20230502": [
+      "Chemistry In The Movies",
+      "3",
+      "",
+      "Steven A. Tysoe"
     ]
   },
   "CHEM-6300": {
@@ -165677,6 +166465,12 @@
       "4",
       "[CI] ",
       "Tamar Gordon"
+    ],
+    "20230503": [
+      "Documentary Film",
+      "4",
+      "[CI] ",
+      "Tamar Gordon"
     ]
   },
   "COMM-2961": {
@@ -166415,6 +167209,12 @@
       "3",
       "",
       "Tianyi Chen"
+    ],
+    "202305": [
+      "Engineering Probability",
+      "3",
+      "",
+      "Uwe Kruger"
     ]
   },
   "ECSE-4090": {
@@ -166835,6 +167635,12 @@
       "Anak Agung Julius",
       "Richard J Radke",
       "Tianyi Chen"
+    ],
+    "20230503": [
+      "Professional Project",
+      "3",
+      "",
+      "John Wen"
     ]
   },
   "ENVE-6110": {
@@ -167879,6 +168685,12 @@
       "3",
       "",
       "Antoinette Maniatty"
+    ],
+    "202305": [
+      "Mechanics Of Solids",
+      "3",
+      "",
+      "Ernesto Gutierrez-Miravete"
     ]
   },
   "MANE-6840": {
@@ -168755,6 +169567,12 @@
       "Skye Anicca"
     ],
     "20220502": [
+      "Intro To Creative Writing",
+      "4",
+      "",
+      "Skye Anicca"
+    ],
+    "20230502": [
       "Intro To Creative Writing",
       "4",
       "",
@@ -170547,6 +171365,12 @@
       "4",
       "",
       "Yalun Zhou"
+    ],
+    "20230503": [
+      "Social Media: East & West",
+      "4",
+      "",
+      "Yalun Zhou"
     ]
   },
   "COMM-6620": {
@@ -171153,6 +171977,12 @@
       "Jianqiang Lu"
     ],
     "202301": [
+      "Practicum-college Teaching I",
+      "1-2",
+      "",
+      "Jianqiang Lu"
+    ],
+    "202305": [
       "Practicum-college Teaching I",
       "1-2",
       "",
@@ -173099,6 +173929,12 @@
       "4",
       "",
       "Samuel Estabrooks"
+    ],
+    "202305": [
+      "Writing About Diversity",
+      "4",
+      "",
+      "Samuel Estabrooks"
     ]
   },
   "WRIT-6160": {
@@ -173330,6 +174166,12 @@
       "",
       "Constance M Grega",
       "Natalina Ann Sutera"
+    ],
+    "202305": [
+      "Academic Orientation Seminar For Graduate Students",
+      "0",
+      "",
+      "Natalina Ann Sutera"
     ]
   },
   "ADMN-6800": {
@@ -173504,6 +174346,12 @@
       "0",
       "",
       "Jennifer Sue Mullet"
+    ],
+    "202305": [
+      "Ta Training Seminar",
+      "0",
+      "",
+      "Jennifer Sue Mullet, Stanley M. Dunn"
     ]
   },
   "ADMN-6960": {
@@ -174501,6 +175349,12 @@
       "4",
       "",
       "Conor Lennon"
+    ],
+    "20230503": [
+      "Current Events In Econ",
+      "1",
+      "",
+      "Sarah Marsden Greene"
     ]
   },
   "ECON-6960": {
@@ -174945,6 +175799,12 @@
       "Rostyslav Korolov"
     ],
     "202301": [
+      "Statistical Analysis",
+      "4",
+      "",
+      "Rostyslav Korolov"
+    ],
+    "202305": [
       "Statistical Analysis",
       "4",
       "",
@@ -175463,6 +176323,12 @@
       "4",
       "",
       "James Bailey"
+    ],
+    "202305": [
+      "Operations Research Method",
+      "4",
+      "[CI] ",
+      "Diana Gineth Ramirez Rios"
     ]
   },
   "ISYE-4750": {
@@ -175939,6 +176805,12 @@
       "3",
       "",
       "Amit Mathur"
+    ],
+    "202305": [
+      "Systems Modeling In Dses",
+      "3",
+      "",
+      "Diana Gineth Ramirez Rios"
     ]
   },
   "ISYE-6780": {
@@ -176551,6 +177423,12 @@
       "1-9",
       "",
       "Yinan Wang"
+    ],
+    "202305": [
+      "Masters Project",
+      "1-9",
+      "",
+      "Diana Gineth Ramirez Rios"
     ]
   },
   "ISYE-6990": {
@@ -176841,6 +177719,12 @@
       "Yinan Wang",
       "Jennifer Ann Pazour",
       "David Joseph Mendonca"
+    ],
+    "202305": [
+      "Master's Thesis",
+      "1-9",
+      "",
+      "Jennifer Ann Pazour"
     ]
   },
   "ISYE-9990": {
@@ -177278,6 +178162,12 @@
       "Yinan Wang",
       "Kristen Rene Schell",
       "David Joseph Mendonca",
+      "Kristin P Bennett"
+    ],
+    "202305": [
+      "Dissertation",
+      "1-15",
+      "",
       "Kristin P Bennett"
     ]
   },
@@ -179225,6 +180115,12 @@
       "4",
       "",
       "Kenneth A. Ragsdale"
+    ],
+    "202305": [
+      "Music, Sound, & Screen Media",
+      "4",
+      "[CI] ",
+      "Kathleen A. Galloway"
     ]
   },
   "ARTS-4971": {
@@ -180505,6 +181401,12 @@
       "4",
       "",
       "Brian Robert Callahan"
+    ],
+    "202305": [
+      "Rcos",
+      "2-4",
+      "",
+      "Wesley D Turner, David Eric Goldschmidt"
     ]
   },
   "CSCI-4974": {
@@ -181627,6 +182529,12 @@
       "David Joseph Stec"
     ],
     "202205": [
+      "Theory Of Prod Schedule",
+      "3",
+      "",
+      "David Joseph Stec"
+    ],
+    "202305": [
       "Theory Of Prod Schedule",
       "3",
       "",
@@ -183158,6 +184066,18 @@
       "4",
       "",
       "Ralph G Noble"
+    ],
+    "20230502": [
+      "Leadership Theories",
+      "1-4",
+      "",
+      "Holly A Traver"
+    ],
+    "202305": [
+      "Leadership Theories",
+      "1-4",
+      "",
+      "Yingrui Yang"
     ]
   },
   "STSH-1961": {
@@ -185081,6 +186001,12 @@
       "4",
       "",
       "Ross A. Rice"
+    ],
+    "20230502": [
+      "Storytelling: Podcasts & Radio",
+      "4",
+      "",
+      "Elizabeth Press"
     ]
   },
   "ARTS-6900": {
@@ -185520,6 +186446,12 @@
       "",
       "Bram Van Heuveln, Benjamin P. Weissman",
       "Benjamin P. Weissman, Bram Van Heuveln"
+    ],
+    "202305": [
+      "Intro To Cognitive Science",
+      "4",
+      "",
+      "Benjamin P. Weissman"
     ]
   },
   "COGS-2940": {
@@ -185974,6 +186906,12 @@
       "3",
       "",
       "Prabhakar Neti"
+    ],
+    "202305": [
+      "Electrical Energy Systems",
+      "3",
+      "",
+      "Prabhakar Neti"
     ]
   },
   "ENVE-6250": {
@@ -186158,6 +187096,12 @@
       "Michael David Hughes"
     ],
     "202301": [
+      "Engr Proj Management",
+      "3",
+      "",
+      "Antonella Zompa"
+    ],
+    "202305": [
       "Engr Proj Management",
       "3",
       "",
@@ -186992,6 +187936,12 @@
       "2",
       "",
       "Michael T Klein"
+    ],
+    "202305": [
+      "Biology In Popular Fiction",
+      "2",
+      "",
+      "Michael T Klein"
     ]
   },
   "BIOL-4200": {
@@ -187134,6 +188084,12 @@
       "4",
       "",
       "Jeremy Lynch Farrell",
+      "Jonathan T Stetler"
+    ],
+    "202305": [
+      "Biostatistics",
+      "4",
+      "",
       "Jonathan T Stetler"
     ]
   },
@@ -189055,6 +190011,12 @@
       "3",
       "",
       "Joel Plawsky"
+    ],
+    "202305": [
+      "Finite Element Simulation Chme",
+      "2",
+      "",
+      "Joel Plawsky, Corey Christopher Woodcock"
     ]
   },
   "CHME-6968": {
@@ -190091,6 +191053,12 @@
       "",
       "Alex Patterson, Sang In Han",
       "Sang In Han, Alex Patterson"
+    ],
+    "202305": [
+      "Electronic Instrumentation",
+      "4",
+      "",
+      "Kyle Richard Wilt"
     ]
   },
   "ECSE-6120": {
@@ -190797,6 +191765,12 @@
       "",
       "Francisco J Cunha",
       "Ernesto Gutierrez-Miravete"
+    ],
+    "202305": [
+      "Master's Professional Project",
+      "3",
+      "",
+      "Ernesto Gutierrez-Miravete"
     ]
   },
   "PHYS-2220": {
@@ -190879,6 +191853,12 @@
       "Peter Persans"
     ],
     "202301": [
+      "Quantum Physics II",
+      "4",
+      "",
+      "Peter Persans"
+    ],
+    "202305": [
       "Quantum Physics II",
       "4",
       "",
@@ -191190,6 +192170,12 @@
       "",
       "Darrin Scott Hunt, Georgi G. Shablovsky",
       "Jonathan T Stetler, Georgi G. Shablovsky",
+      "Seemanti Ramanath, Georgi G. Shablovsky"
+    ],
+    "20230502": [
+      "Introduction To Biology Laboratory",
+      "1",
+      "",
       "Seemanti Ramanath, Georgi G. Shablovsky"
     ]
   },
@@ -192508,6 +193494,12 @@
       "Vincent Meunier, Peter Persans"
     ],
     "202205": [
+      "Introduction To Observing",
+      "2",
+      "",
+      "Charles Harold Martin"
+    ],
+    "202305": [
       "Introduction To Observing",
       "2",
       "",
@@ -196585,6 +197577,12 @@
       "6",
       "[CI] ",
       "Richard Peter Bonocora"
+    ],
+    "20230502": [
+      "Microbiology Laboratory",
+      "6",
+      "[CI] ",
+      "Richard Peter Bonocora"
     ]
   },
   "BIOL-4350": {
@@ -196797,6 +197795,12 @@
       "4",
       "",
       "Uwe Kruger"
+    ],
+    "202305": [
+      "Modeling Of Biomedical Systems",
+      "4",
+      "",
+      "Hisham S. Mohamed"
     ]
   },
   "BMED-4260": {
@@ -197301,6 +198305,12 @@
       "4",
       "",
       "Jason Sean Jacobskind"
+    ],
+    "202305": [
+      "Behavioral Neuroscience",
+      "4",
+      "",
+      "Alicia Ann Walf"
     ]
   },
   "COGS-4420": {
@@ -197677,6 +198687,12 @@
       "4",
       "",
       "Konstantin Kuzmin, Shianne M. Hulbert"
+    ],
+    "202305": [
+      "Principles Of Software",
+      "4",
+      "",
+      "Konstantin Kuzmin, Shianne M. Hulbert"
     ]
   },
   "CSCI-4230": {
@@ -197742,6 +198758,12 @@
     ],
     "202301": [
       "Crypt & Network Security I",
+      "4",
+      "[CI] ",
+      "Bulent Yener"
+    ],
+    "202305": [
+      "Cryptography And Network Security I",
       "4",
       "[CI] ",
       "Bulent Yener"
@@ -199098,6 +200120,12 @@
       "2",
       "",
       "Peter Persans"
+    ],
+    "202305": [
+      "Computing For Physicists",
+      "4",
+      "",
+      "Damien J. West"
     ]
   },
   "PHYS-2964": {
@@ -200113,6 +201141,12 @@
       "Matt Burgermaster",
       "James Fleet Hower",
       "Gustavo Enrique Alberto Crembil"
+    ],
+    "202305": [
+      "Architectural Design Studio 5",
+      "5",
+      "",
+      "Caleb White"
     ]
   },
   "ARCH-4976": {
@@ -204420,6 +205454,12 @@
       "3",
       "",
       "Ganpati Ramanath"
+    ],
+    "202305": [
+      "Nanosynthesis & Properties",
+      "3",
+      "",
+      "Ganpati Ramanath"
     ]
   },
   "MTLE-6440": {
@@ -204586,6 +205626,12 @@
       "4",
       "",
       "Benjamin P. Weissman"
+    ],
+    "202305": [
+      "Linguistics Ug Research",
+      "4",
+      "",
+      "Benjamin P. Weissman"
     ]
   },
   "COMM-4880": {
@@ -204630,6 +205676,12 @@
       "4",
       "",
       "Patricia Search"
+    ],
+    "20230502": [
+      "Interactive Data Visualization",
+      "4",
+      "",
+      "Patricia Search"
     ]
   },
   "COMM-6880": {
@@ -204670,6 +205722,12 @@
       "Patricia Search"
     ],
     "20220502": [
+      "Interactive Data Visualization",
+      "3",
+      "",
+      "Patricia Search"
+    ],
+    "20230502": [
       "Interactive Data Visualization",
       "3",
       "",
@@ -204899,6 +205957,12 @@
       "Matt Burgermaster",
       "James Fleet Hower",
       "Gustavo Enrique Alberto Crembil"
+    ],
+    "202305": [
+      "Architectural Design Studio 6",
+      "5",
+      "",
+      "Caleb White"
     ]
   },
   "ARCH-4820": {
@@ -205273,6 +206337,12 @@
       "4",
       "",
       "Igor Vamos"
+    ],
+    "20230503": [
+      "Hactivism",
+      "4",
+      "",
+      "Igor Vamos"
     ]
   },
   "ARTS-6560": {
@@ -205453,6 +206523,12 @@
       "1",
       "",
       "Peter John Bonitatibus"
+    ],
+    "202305": [
+      "Undergraduate Research Project",
+      "1",
+      "",
+      "Peter John Bonitatibus"
     ]
   },
   "CIVL-6360": {
@@ -205607,6 +206683,12 @@
       "[CI] ",
       "Weina Ran",
       "Alexander Scott Hiland"
+    ],
+    "20230502": [
+      "Comm Theory & Practice",
+      "4",
+      "[CI] ",
+      "Weina Ran"
     ]
   },
   "COMM-4610": {
@@ -208472,6 +209554,12 @@
       "",
       "Asish Ghosh, James Edward Olson, Jordan L Vener",
       "James Edward Olson, Jordan L Vener"
+    ],
+    "202305": [
+      "Inventor's Studio 1",
+      "4",
+      "",
+      "Asish Ghosh, Susan Victoria Henry, Tracy N. Sullivan"
     ]
   },
   "MANE-4140": {
@@ -208871,6 +209959,12 @@
       "Sarah Marsden Greene"
     ],
     "20220502": [
+      "Environmental Economics",
+      "4",
+      "[CI] [PDII] ",
+      "Sarah Marsden Greene"
+    ],
+    "20230502": [
       "Environmental Economics",
       "4",
       "[CI] [PDII] ",
@@ -209427,6 +210521,12 @@
       "4",
       "",
       "Gerald M Korenowski, Amgalanbaatar Baldansuren, Wilfredo Colon"
+    ],
+    "202305": [
+      "Physical Chem For Life Science",
+      "4",
+      "",
+      "Wilfredo Colon, Gerald M Korenowski"
     ]
   },
   "CIVL-6350": {
@@ -209552,6 +210652,12 @@
       "[CI] ",
       "Sara L. Tack",
       "Simona Gabriela Bortis-Schultz"
+    ],
+    "202305": [
+      "Intro To Graphic Design",
+      "4",
+      "[CI] ",
+      "Benjamin David Gleeksman"
     ]
   },
   "CSCI-4030": {
@@ -210202,6 +211308,12 @@
       "0",
       "",
       "Randy James McDougall, Antoinette Maniatty"
+    ],
+    "202305": [
+      "Mane Laboratory Safety Program",
+      "0",
+      "",
+      "Randy James McDougall, Suvranu De"
     ]
   },
   "MANE-6570": {
@@ -211175,6 +212287,12 @@
       "4",
       "",
       "Nina Stanley"
+    ],
+    "202305": [
+      "Art For Interactive Media",
+      "4",
+      "",
+      "Robert F. Nideffer"
     ]
   },
   "GSAS-1600": {
@@ -211572,6 +212690,12 @@
       "4",
       "",
       "Benjamin Chia-Ming Chang"
+    ],
+    "20230502": [
+      "Game Development II",
+      "4",
+      "",
+      "Sylvain Payen"
     ]
   },
   "ISYE-4320": {
@@ -211989,6 +213113,12 @@
       "0",
       "",
       "Joseph Louis Trzepacz"
+    ],
+    "202305": [
+      "Student Success Labs",
+      "0",
+      "",
+      "Joseph Louis Trzepacz"
     ]
   },
   "ARCH-4957": {
@@ -212342,6 +213472,12 @@
       "",
       "Benjamin P. Weissman",
       "Marjorie McShane"
+    ],
+    "202305": [
+      "Introduction To Linguistics",
+      "4",
+      "",
+      "Benjamin P. Weissman"
     ]
   },
   "COGS-4440": {
@@ -213585,6 +214721,12 @@
       "4",
       "",
       "Ralph G Noble"
+    ],
+    "202305": [
+      "Music, Sound, & Screen Media",
+      "4",
+      "",
+      "Kathleen A. Galloway"
     ]
   },
   "GSAS-4961": {
@@ -213631,6 +214773,12 @@
       "Sylvain Payen"
     ],
     "20220502": [
+      "Intermediate Game Design",
+      "4",
+      "",
+      "Sylvain Payen"
+    ],
+    "20230502": [
       "Intermediate Game Design",
       "4",
       "",
@@ -213865,6 +215013,12 @@
       "3",
       "",
       "Corey Christopher Woodcock"
+    ],
+    "202305": [
+      "Fluid Mechanics",
+      "3",
+      "",
+      "Corey Christopher Woodcock"
     ]
   },
   "MANE-4520": {
@@ -214064,6 +215218,12 @@
       "4",
       "[CI] ",
       "John R Milanese"
+    ],
+    "20230503": [
+      "Philosophy Of Science",
+      "4",
+      "[CI] ",
+      "John R Milanese"
     ]
   },
   "ASTR-2960": {
@@ -214080,6 +215240,12 @@
       "Julian S. Georg"
     ],
     "202205": [
+      "Cosmology: Our Universe",
+      "4",
+      "",
+      "Julian S. Georg"
+    ],
+    "202305": [
       "Cosmology: Our Universe",
       "4",
       "",
@@ -214212,6 +215378,12 @@
       "3",
       "",
       "Stefanie Gwen Reay"
+    ],
+    "202305": [
+      "Data-driven Decision Making",
+      "3",
+      "",
+      "Stefanie Gwen Reay"
     ]
   },
   "ENGR-6230": {
@@ -214296,6 +215468,12 @@
       "4",
       "[CI] ",
       "Alicia Ann Walf, Christopher James Fisher-Lochhead"
+    ],
+    "20230503": [
+      "Dialogue Faciliation Methods",
+      "4",
+      "",
+      "Christopher C. Jeansonne, Amy Corron Youmans"
     ]
   },
   "LANG-4960": {
@@ -214312,6 +215490,12 @@
       "Yalun Zhou"
     ],
     "20220503": [
+      "Chinese Calligraphy",
+      "4",
+      "",
+      "Yalun Zhou"
+    ],
+    "20230503": [
       "Chinese Calligraphy",
       "4",
       "",
@@ -214338,6 +215522,12 @@
       "Daniel J. Lewis"
     ],
     "202205": [
+      "Materials Laboratory Skills",
+      "1",
+      "",
+      "Daniel J. Lewis"
+    ],
+    "202305": [
       "Materials Laboratory Skills",
       "1",
       "",
@@ -214417,6 +215607,12 @@
       "3",
       "",
       "Sarah Helen Felix"
+    ],
+    "202305": [
+      "Modeling And Contrl Of Dyn Sys",
+      "3",
+      "",
+      "Luiz Victor Repolho Cagliari"
     ]
   },
   "MANE-4730": {
@@ -214492,6 +215688,12 @@
       "3",
       "",
       "Shankar Narayan"
+    ],
+    "202305": [
+      "Heat Transfer",
+      "3",
+      "",
+      "Theodorian Borca-Tasciuc, Diana Andra Borca Tasciuc"
     ]
   },
   "ADMN-1030": {
@@ -214962,6 +216164,12 @@
       "4",
       "",
       "Alicia Ann Walf"
+    ],
+    "202305": [
+      "Hormones, Brain & Behavior",
+      "4",
+      "",
+      "Alicia Ann Walf"
     ]
   },
   "COGS-4780": {
@@ -215054,6 +216262,12 @@
       "David Eric Goldschmidt"
     ],
     "202205": [
+      "Large Scale Program & Testing",
+      "4",
+      "[CI] ",
+      "David Eric Goldschmidt"
+    ],
+    "202305": [
       "Large Scale Program & Testing",
       "4",
       "[CI] ",
@@ -215168,6 +216382,12 @@
       "3",
       "",
       "Christopher Shiu-Pui Tong"
+    ],
+    "202305": [
+      "Production & Logistic Analysis",
+      "3",
+      "",
+      "Christopher Shiu-Pui Tong"
     ]
   },
   "ENGR-6215": {
@@ -215236,6 +216456,12 @@
       "3",
       "",
       "Christopher Shiu-Pui Tong"
+    ],
+    "202305": [
+      "Business Intelligence Analysis",
+      "3",
+      "",
+      "Christopher Shiu-Pui Tong"
     ]
   },
   "ENGR-6231": {
@@ -215258,6 +216484,12 @@
       "Antonella Zompa"
     ],
     "202205": [
+      "Lean Six Sigma II",
+      "3",
+      "",
+      "Antonella Zompa"
+    ],
+    "202305": [
       "Lean Six Sigma II",
       "3",
       "",
@@ -216404,6 +217636,12 @@
       "4",
       "[CI] ",
       "Susan Lynn Smith"
+    ],
+    "20230502": [
+      "Bioethics",
+      "4",
+      "[CI] ",
+      "Susan Lynn Smith"
     ]
   },
   "PSYC-4700": {
@@ -216414,6 +217652,12 @@
       "Alicia Ann Walf"
     ],
     "202205": [
+      "Hormones, Brain & Behavior",
+      "4",
+      "",
+      "Alicia Ann Walf"
+    ],
+    "202305": [
       "Hormones, Brain & Behavior",
       "4",
       "",
@@ -216660,6 +217904,12 @@
       "4",
       "",
       "Ross A. Rice"
+    ],
+    "20230502": [
+      "Sound Recording & Prod I",
+      "4",
+      "",
+      "Ross A. Rice"
     ]
   },
   "ARTS-2750": {
@@ -216809,6 +218059,12 @@
       "Christopher James Fisher-Lochhead, Katherine Anne Skovira",
       "Omar Williams, Christopher James Fisher-Lochhead",
       "Matthew P. Steckler, Christopher James Fisher-Lochhead"
+    ],
+    "202305": [
+      "Private Music Lessons: Violin",
+      "1",
+      "",
+      "Paul J. Quigley, Christopher James Fisher-Lochhead"
     ]
   },
   "ARTS-4180": {
@@ -216819,6 +218075,12 @@
       "Stephanie D Loveless"
     ],
     "20220502": [
+      "Topics In Deep Listening",
+      "4",
+      "[CI] ",
+      "Stephanie D Loveless"
+    ],
+    "20230502": [
       "Topics In Deep Listening",
       "4",
       "[CI] ",
@@ -216873,6 +218135,12 @@
       "Stephanie D Loveless"
     ],
     "20220502": [
+      "Topics In Deep Listening",
+      "4",
+      "",
+      "Stephanie D Loveless"
+    ],
+    "20230502": [
       "Topics In Deep Listening",
       "4",
       "",
@@ -217051,6 +218319,12 @@
       "3",
       "",
       "Rushabh S. Padalia"
+    ],
+    "202305": [
+      "Modeling Production Decisions",
+      "3",
+      "",
+      "Rushabh S. Padalia"
     ]
   },
   "ENGR-6216": {
@@ -217113,6 +218387,12 @@
       "3",
       "",
       "Rushabh S. Padalia"
+    ],
+    "202305": [
+      "Modeling Business Decisions",
+      "3",
+      "",
+      "Rushabh S. Padalia"
     ]
   },
   "ENGR-6220": {
@@ -217171,6 +218451,12 @@
       "Jan P. Olausson"
     ],
     "202301": [
+      "Data Architecture",
+      "3",
+      "",
+      "Jan P. Olausson"
+    ],
+    "202305": [
       "Data Architecture",
       "3",
       "",
@@ -217730,6 +219016,12 @@
       "4",
       "[CI] ",
       "Skye Anicca"
+    ],
+    "20230502": [
+      "Community Read Seminar",
+      "4",
+      "[CI] ",
+      "Skye Anicca"
     ]
   },
   "ISCI-1510": {
@@ -218159,6 +219451,12 @@
       "3",
       "",
       "Thomas M. Abbott"
+    ],
+    "202305": [
+      "Markets, Strategy & People",
+      "3",
+      "",
+      "Thomas M. Abbott"
     ]
   },
   "BUSN-6105": {
@@ -218193,6 +219491,12 @@
       "David Joseph Stec"
     ],
     "202301": [
+      "Agile Planning & Execution",
+      "3",
+      "",
+      "David Joseph Stec"
+    ],
+    "202305": [
       "Agile Planning & Execution",
       "3",
       "",
@@ -218253,6 +219557,12 @@
       "3",
       "",
       "Rushabh S. Padalia"
+    ],
+    "202305": [
+      "Machine Learning Frameworks",
+      "3",
+      "",
+      "Rushabh S. Padalia"
     ]
   },
   "GSAS-2962": {
@@ -218269,6 +219579,12 @@
       "Nicholas J. Mizer"
     ],
     "202205": [
+      "Analog Role-playing Games",
+      "4",
+      "",
+      "Nicholas J. Mizer"
+    ],
+    "202305": [
       "Analog Role-playing Games",
       "4",
       "",
@@ -218293,6 +219609,12 @@
       "4",
       "",
       "Nicholas J. Mizer"
+    ],
+    "202305": [
+      "Introduction To Worldbuilding",
+      "4",
+      "",
+      "Nicholas J. Mizer"
     ]
   },
   "ISYE-2960": {
@@ -218303,6 +219625,12 @@
       "Azita Hirsa"
     ],
     "20220503": [
+      "Mgmt Of Engineering & Tech",
+      "3",
+      "",
+      "Azita Hirsa"
+    ],
+    "20230503": [
       "Mgmt Of Engineering & Tech",
       "3",
       "",
@@ -218695,6 +220023,12 @@
       "4",
       "",
       "Mei Si"
+    ],
+    "20230502": [
+      "Learning & Advanced Game Ai",
+      "4",
+      "",
+      "Mei Si"
     ]
   },
   "COGS-6430": {
@@ -218705,6 +220039,12 @@
       "Mei Si"
     ],
     "20220502": [
+      "Learning & Advanced Game Ai",
+      "4",
+      "",
+      "Mei Si"
+    ],
+    "20230502": [
       "Learning & Advanced Game Ai",
       "4",
       "",
@@ -218755,6 +220095,12 @@
       "Jan P. Olausson"
     ],
     "202301": [
+      "Deep Learning In Ai Systems",
+      "3",
+      "",
+      "Jan P. Olausson"
+    ],
+    "202305": [
       "Deep Learning In Ai Systems",
       "3",
       "",
@@ -219194,6 +220540,12 @@
       "2",
       "",
       "Jonathan T Stetler"
+    ],
+    "202305": [
+      "Limnological Monitoring",
+      "2",
+      "",
+      "Jonathan T Stetler"
     ]
   },
   "BMED-2050": {
@@ -219236,6 +220588,12 @@
       "",
       "George Jiren Lee",
       "Monica Agarwal"
+    ],
+    "202305": [
+      "Programming For Biomed Engr",
+      "3",
+      "",
+      "Uwe Kruger"
     ]
   },
   "BMED-4250": {
@@ -219280,6 +220638,12 @@
       "4",
       "",
       "Deanna Marie Thompson"
+    ],
+    "202305": [
+      "Biomed Transport Phenomena",
+      "4",
+      "",
+      "Hisham S. Mohamed"
     ]
   },
   "BUSN-6107": {
@@ -219308,6 +220672,12 @@
       "Richard Green Chapman"
     ],
     "202301": [
+      "Changing And Innovating",
+      "3",
+      "",
+      "Richard Green Chapman"
+    ],
+    "202305": [
       "Changing And Innovating",
       "3",
       "",
@@ -219424,6 +220794,12 @@
       "Wesley D Turner"
     ],
     "202205": [
+      "Open Source Software",
+      "4",
+      "",
+      "Wesley D Turner"
+    ],
+    "202305": [
       "Open Source Software",
       "4",
       "",
@@ -219951,6 +221327,12 @@
       "1-2",
       "",
       "Yael Erel"
+    ],
+    "202305": [
+      "Undergraduate Research Project",
+      "1-2",
+      "",
+      "Yael Erel"
     ]
   },
   "ENGR-6970": {
@@ -219984,6 +221366,12 @@
       "Michael David Hughes"
     ],
     "202301": [
+      "Masters Professional Project",
+      "3",
+      "",
+      "Michael David Hughes"
+    ],
+    "202305": [
       "Masters Professional Project",
       "3",
       "",
@@ -220370,6 +221758,18 @@
       "Daniel Allen Lyles",
       "Allison Beth Hoffman",
       "Azita Hirsa"
+    ],
+    "20230502": [
+      "Pd - Tech Issues & Solutions",
+      "2",
+      "[PDII] ",
+      "Allison Beth Hoffman"
+    ],
+    "20230503": [
+      "Pd - Tech Issues & Solutions",
+      "2",
+      "[PDII] ",
+      "Azita Hirsa"
     ]
   },
   "STSO-4250": {
@@ -220398,6 +221798,12 @@
       "Susan Lynn Smith"
     ],
     "202301": [
+      "Bioethics",
+      "4",
+      "[CI] [PDII] ",
+      "Susan Lynn Smith"
+    ],
+    "20230502": [
       "Bioethics",
       "4",
       "[CI] [PDII] ",
@@ -220827,6 +222233,12 @@
       "6",
       "",
       "Mei Si"
+    ],
+    "202305": [
+      "Immersive Virtual Reality Game",
+      "6",
+      "",
+      "Mei Si"
     ]
   },
   "GSAS-9990": {
@@ -221064,6 +222476,12 @@
       "4",
       "",
       "Matthew Adam Oehlschlaeger"
+    ],
+    "20230502": [
+      "Sustainable Energy Systems",
+      "4",
+      "",
+      "Matthew Adam Oehlschlaeger"
     ]
   },
   "STSO-4961": {
@@ -221146,6 +222564,12 @@
       "4",
       "[CI] ",
       "Kathleen A. Galloway"
+    ],
+    "202305": [
+      "Popular Music And Society",
+      "4",
+      "[CI] ",
+      "Kathleen A. Galloway"
     ]
   },
   "BIOL-2960": {
@@ -221154,10 +222578,22 @@
       "2",
       "",
       "Seemanti Ramanath"
+    ],
+    "202305": [
+      "Human Evolution Lab",
+      "2",
+      "",
+      "Seemanti Ramanath"
     ]
   },
   "COMM-2616": {
     "20220503": [
+      "Superheroes In The Classroom",
+      "4",
+      "[CI] ",
+      "Christopher C. Jeansonne"
+    ],
+    "20230503": [
       "Superheroes In The Classroom",
       "4",
       "[CI] ",
@@ -221176,6 +222612,12 @@
       "4",
       "[CI] ",
       "Weina Ran"
+    ],
+    "20230502": [
+      "Social Media & Stratgc Comm",
+      "4",
+      "",
+      "Weina Ran"
     ]
   },
   "ENVE-4370": {
@@ -221190,6 +222632,12 @@
       "4",
       "",
       "Eyosias Legesse Ashenafi"
+    ],
+    "202305": [
+      "Applied Hydrology & Design",
+      "4",
+      "",
+      "Christopher W Letchford"
     ]
   },
   "GSAS-4530": {
@@ -221198,10 +222646,22 @@
       "4",
       "",
       "Eric Louis Ameres"
+    ],
+    "202305": [
+      "Computer Graphics For Games",
+      "4",
+      "",
+      "Eric Louis Ameres"
     ]
   },
   "STSO-4600": {
     "202205": [
+      "Design & Innovation Studio A",
+      "4",
+      "",
+      "Shayla Maya Sawyer, Amelia Harriet Peterson"
+    ],
+    "202305": [
       "Design & Innovation Studio A",
       "4",
       "",
@@ -221606,6 +223066,6 @@
     ]
   },
   "current_term": {
-    "202301": []
+    "202305": []
   }
 }
