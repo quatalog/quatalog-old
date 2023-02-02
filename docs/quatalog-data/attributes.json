@@ -130,6 +130,9 @@
   "ENGR-1100": [
     "Introductory Level Course"
   ],
+  "ENGR-1200": [
+    "Introductory Level Course"
+  ],
   "ENGR-1300": [
     "Introductory Level Course"
   ],
@@ -214,6 +217,7 @@
     "HASS Inquiry"
   ],
   "IHSS-1963": [
+    "Communication Intensive",
     "HASS Inquiry"
   ],
   "IHSS-1964": [
@@ -302,6 +306,9 @@
   "MGMT-1260": [
     "Introductory Level Course"
   ],
+  "MGMT-2300": [
+    "Introductory Level Course"
+  ],
   "MGMT-2510": [
     "Introductory Level Course"
   ],
@@ -365,6 +372,9 @@
   "MANE-6390": [
     "In-Person Course"
   ],
+  "MANE-6900": [
+    "Hybrid:Online/In-Person Course"
+  ],
   "USAR-1010": [
     "Introductory Level Course"
   ],
@@ -384,6 +394,9 @@
     "Introductory Level Course"
   ],
   "PHIL-2600": [
+    "Communication Intensive"
+  ],
+  "PHIL-2830": [
     "Communication Intensive"
   ],
   "PHIL-2962": [
@@ -591,9 +604,6 @@
   "COMM-4962": [
     "Communication Intensive"
   ],
-  "CSCI-4963": [
-    "Communication Intensive"
-  ],
   "CSCI-6860": [
     "Online Course"
   ],
@@ -629,7 +639,6 @@
     "Online Course"
   ],
   "IHSS-1960": [
-    "Communication Intensive",
     "Introductory Level Course",
     "HASS Inquiry"
   ],
@@ -911,24 +920,17 @@
   "ISYE-4530": [
     "Online Course"
   ],
-  "ISYE-4600": [
-    "Communication Intensive"
-  ],
   "ITWS-1100": [
     "Communication Intensive"
   ],
   "ITWS-4100": [
-    "Communication Intensive",
-    "Writing Intensive"
+    "Communication Intensive"
   ],
   "ITWS-6961": [
     "Communication Intensive",
     "Online Course"
   ],
   "WRIT-4410": [
-    "Communication Intensive"
-  ],
-  "ARTS-4960": [
     "Communication Intensive"
   ],
   "BIOL-4980": [
@@ -977,6 +979,9 @@
   "STSS-4250": [
     "Communication Intensive",
     "PDII Option for Engr Majors"
+  ],
+  "COMM-1960": [
+    "Online Course"
   ],
   "COGS-4210": [
     "Online Course"
@@ -1492,7 +1497,8 @@
     "Communication Intensive"
   ],
   "PHIL-4500": [
-    "Communication Intensive"
+    "Communication Intensive",
+    "PDII Option for Engr Majors"
   ],
   "STSH-2500": [
     "Online Course"
