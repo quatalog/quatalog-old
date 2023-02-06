@@ -6920,6 +6920,10 @@
     ],
     "type": "and"
   },
+  "CIVL-6350": {
+    "course": "CIVL 4080",
+    "type": "course"
+  },
   "CSCI-4030": {
     "course": "CSCI 4020",
     "type": "course"
