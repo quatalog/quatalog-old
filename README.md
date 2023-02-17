@@ -1,3 +1,5 @@
+## This is the old quatalog. This repository is no longer maintained.
+
 # The Quatalog
 
 The official RPI course catalog is well-known for being a garbage fire.
